@@ -38,6 +38,7 @@
     <Reference Include="RestSharp.MonoTouch">
       <HintPath>..\Components\restsharp-104.1.0\lib\ios\RestSharp.MonoTouch.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -51,10 +52,12 @@
     <Compile Include="..\SalesforceSharp\SalesforceRestService.cs">
       <Link>SalesforceRestService.cs</Link>
     </Compile>
+    <Compile Include="..\SalesforceSharp\SalesforceObjects.cs">
+      <Link>SalesforceObjects.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="restsharp">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>104.1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>

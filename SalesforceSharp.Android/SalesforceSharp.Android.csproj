@@ -43,6 +43,7 @@
     <Reference Include="RestSharp.MonoDroid">
       <HintPath>..\Components\restsharp-104.1.0\lib\android\RestSharp.MonoDroid.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -52,6 +53,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\SalesforceSharp\SalesforceRestService.cs">
       <Link>SalesforceRestService.cs</Link>
+    </Compile>
+    <Compile Include="..\SalesforceSharp\SalesforceObjects.cs">
+      <Link>SalesforceObjects.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -63,7 +67,6 @@
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <XamarinComponentReference Include="restsharp">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>104.1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
