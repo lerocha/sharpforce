@@ -57,6 +57,9 @@
     <Compile Include="..\SalesforceSharp\SalesforceObjects.cs">
       <Link>SalesforceObjects.cs</Link>
     </Compile>
+    <Compile Include="..\SalesforceSharp\Attributes\SalesforceObjectAttribute.cs">
+      <Link>Attributes\SalesforceObjectAttribute.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -70,5 +73,8 @@
       <Version>104.1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Attributes\" />
   </ItemGroup>
 </Project>

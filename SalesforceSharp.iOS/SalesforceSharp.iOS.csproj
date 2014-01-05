@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Attributes\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -54,6 +55,9 @@
     </Compile>
     <Compile Include="..\SalesforceSharp\SalesforceObjects.cs">
       <Link>SalesforceObjects.cs</Link>
+    </Compile>
+    <Compile Include="..\SalesforceSharp\Attributes\SalesforceObjectAttribute.cs">
+      <Link>Attributes\SalesforceObjectAttribute.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
