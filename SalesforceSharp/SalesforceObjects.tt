@@ -14,36 +14,35 @@
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 //using Newtonsoft.Json;
+using SalesforceSharp.Attributes;
+
 
 // ReSharper disable PartialTypeWithSinglePart
 // ReSharper disable UnusedMember.Local
 
-namespace SalesforceSharp 
+namespace SalesforceSharp
 {
 <#
-	var path = Path.Combine(Path.GetDirectoryName(Host.TemplateFile), @"Schema\SObjects.xml");
-	System.Xml.Linq.XDocument xdoc = System.Xml.Linq.XDocument.Load(path);
-	var entities = from c in xdoc.Descendants("sobjects") 
-				   select new { 
-						Name = c.Element("name").Value,
-						SObject = c.Element("urls").Element("sobject").Value,
-						Describe = c.Element("urls").Element("describe").Value,
-						RowTemplate = c.Element("urls").Element("rowTemplate").Value,
-				   };
+        var path = Path.Combine(Path.GetDirectoryName(Host.TemplateFile), @"Schema\SObjects.xml");
+        System.Xml.Linq.XDocument xdoc = System.Xml.Linq.XDocument.Load(path);
+        var entities = from c in xdoc.Descendants("sobjects")
+                                   select new {
+                                                Name = c.Element("name").Value,
+                                                SObject = c.Element("urls").Element("sobject").Value,
+                                                Describe = c.Element("urls").Element("describe").Value,
+                                                RowTemplate = c.Element("urls").Element("rowTemplate").Value,
+                                   };
 
-    foreach (var entity in entities) 
-	{
+    foreach (var entity in entities)
+        {
 #>
     /// <summary>
     /// POCO for <#= entity.Name #>
     /// </summary>
     [DebuggerDisplay("Id={Id}")]
+    [SalesforceObject(Describe = "<#= entity.Describe #>", SObject = "<#= entity.SObject #>", RowTemplate = "<#= entity.RowTemplate #>")]
     public partial class <#= entity.Name #>
     {
-        public const string Describe = "<#= entity.Describe #>";
-        public const string SObject = "<#= entity.SObject #>";
-        public const string RowTemplate = "<#= entity.RowTemplate #>";
-
         /// <summary>
         /// <#= entity.Name #> Id
         /// </summary>
@@ -58,7 +57,7 @@ namespace SalesforceSharp
 
 // ReSharper restore PartialTypeWithSinglePart
 // ReSharper restore UnusedMember.Local
- 
+
 <#+
   // Insert any template procedures here
 #>
