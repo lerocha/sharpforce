@@ -38,18 +38,18 @@ namespace SalesforceSharp
     /// POCO for <#= entity.Name #>
     /// </summary>
     [DebuggerDisplay("Id={Id}")]
-	public partial class <#= entity.Name #>
-	{
-		public const string Describe = "<#= entity.Describe #>";
+    public partial class <#= entity.Name #>
+    {
+        public const string Describe = "<#= entity.Describe #>";
         public const string SObject = "<#= entity.SObject #>";
         public const string RowTemplate = "<#= entity.RowTemplate #>";
 
         /// <summary>
         /// <#= entity.Name #> Id
         /// </summary>
-		[StringLength(18)]
-		public string Id { get; set; }
-	}
+        [StringLength(18)]
+        public string Id { get; set; }
+    }
 
 <#
     }
