@@ -4,6 +4,33 @@
     <maxBatchSize>200</maxBatchSize>
     <sobjects>
         <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix xsi:nil="true"/>
+        <label>Accepted Event Relation</label>
+        <labelPlural>Accepted Event Relations</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>AcceptedEventRelation</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/AcceptedEventRelation</sobject>
+            <describe>/services/data/v29.0/sobjects/AcceptedEventRelation/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AcceptedEventRelation/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
         <createable>true</createable>
         <custom>false</custom>
         <customSetting>false</customSetting>
@@ -24,9 +51,12 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Account</sobject>
-            <describe>/services/data/v26.0/sobjects/Account/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Account/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Account</sobject>
+            <quickActions>/services/data/v29.0/sobjects/Account/quickActions</quickActions>
+            <describe>/services/data/v29.0/sobjects/Account/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Account/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Account/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Account/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -51,9 +81,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/AccountContactRole</sobject>
-            <describe>/services/data/v26.0/sobjects/AccountContactRole/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/AccountContactRole/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/AccountContactRole</sobject>
+            <describe>/services/data/v29.0/sobjects/AccountContactRole/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AccountContactRole/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -78,9 +108,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/AccountFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/AccountFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/AccountFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/AccountFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/AccountFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AccountFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -105,9 +135,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/AccountHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/AccountHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/AccountHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/AccountHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/AccountHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AccountHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -132,9 +162,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/AccountPartner</sobject>
-            <describe>/services/data/v26.0/sobjects/AccountPartner/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/AccountPartner/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/AccountPartner</sobject>
+            <describe>/services/data/v29.0/sobjects/AccountPartner/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AccountPartner/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -159,9 +189,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/AccountShare</sobject>
-            <describe>/services/data/v26.0/sobjects/AccountShare/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/AccountShare/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/AccountShare</sobject>
+            <describe>/services/data/v29.0/sobjects/AccountShare/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AccountShare/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -186,9 +216,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ActivityHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/ActivityHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ActivityHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ActivityHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/ActivityHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ActivityHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -213,9 +243,9 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/AdditionalNumber</sobject>
-            <describe>/services/data/v26.0/sobjects/AdditionalNumber/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/AdditionalNumber/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/AdditionalNumber</sobject>
+            <describe>/services/data/v29.0/sobjects/AdditionalNumber/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AdditionalNumber/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -240,9 +270,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/AggregateResult</sobject>
-            <describe>/services/data/v26.0/sobjects/AggregateResult/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/AggregateResult/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/AggregateResult</sobject>
+            <describe>/services/data/v29.0/sobjects/AggregateResult/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AggregateResult/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -267,9 +297,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ApexClass</sobject>
-            <describe>/services/data/v26.0/sobjects/ApexClass/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ApexClass/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ApexClass</sobject>
+            <describe>/services/data/v29.0/sobjects/ApexClass/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ApexClass/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -294,9 +324,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ApexComponent</sobject>
-            <describe>/services/data/v26.0/sobjects/ApexComponent/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ApexComponent/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ApexComponent</sobject>
+            <describe>/services/data/v29.0/sobjects/ApexComponent/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ApexComponent/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -321,9 +351,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ApexLog</sobject>
-            <describe>/services/data/v26.0/sobjects/ApexLog/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ApexLog/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ApexLog</sobject>
+            <describe>/services/data/v29.0/sobjects/ApexLog/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ApexLog/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -348,9 +378,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ApexPage</sobject>
-            <describe>/services/data/v26.0/sobjects/ApexPage/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ApexPage/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ApexPage</sobject>
+            <describe>/services/data/v29.0/sobjects/ApexPage/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ApexPage/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -375,9 +405,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ApexTestQueueItem</sobject>
-            <describe>/services/data/v26.0/sobjects/ApexTestQueueItem/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ApexTestQueueItem/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ApexTestQueueItem</sobject>
+            <describe>/services/data/v29.0/sobjects/ApexTestQueueItem/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ApexTestQueueItem/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -402,9 +432,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ApexTestResult</sobject>
-            <describe>/services/data/v26.0/sobjects/ApexTestResult/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ApexTestResult/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ApexTestResult</sobject>
+            <describe>/services/data/v29.0/sobjects/ApexTestResult/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ApexTestResult/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -429,9 +459,36 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ApexTrigger</sobject>
-            <describe>/services/data/v26.0/sobjects/ApexTrigger/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ApexTrigger/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ApexTrigger</sobject>
+            <describe>/services/data/v29.0/sobjects/ApexTrigger/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ApexTrigger/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix>0DS</keyPrefix>
+        <label>AppMenuItem</label>
+        <labelPlural>AppMenuItems</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>AppMenuItem</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/AppMenuItem</sobject>
+            <describe>/services/data/v29.0/sobjects/AppMenuItem/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AppMenuItem/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -456,9 +513,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Approval</sobject>
-            <describe>/services/data/v26.0/sobjects/Approval/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Approval/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Approval</sobject>
+            <describe>/services/data/v29.0/sobjects/Approval/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Approval/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -483,9 +540,11 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Asset</sobject>
-            <describe>/services/data/v26.0/sobjects/Asset/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Asset/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Asset</sobject>
+            <describe>/services/data/v29.0/sobjects/Asset/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Asset/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Asset/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Asset/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -510,9 +569,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/AssetFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/AssetFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/AssetFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/AssetFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/AssetFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AssetFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -537,9 +596,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/AssignmentRule</sobject>
-            <describe>/services/data/v26.0/sobjects/AssignmentRule/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/AssignmentRule/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/AssignmentRule</sobject>
+            <describe>/services/data/v29.0/sobjects/AssignmentRule/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AssignmentRule/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -564,9 +623,36 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/AsyncApexJob</sobject>
-            <describe>/services/data/v26.0/sobjects/AsyncApexJob/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/AsyncApexJob/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/AsyncApexJob</sobject>
+            <describe>/services/data/v29.0/sobjects/AsyncApexJob/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AsyncApexJob/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix xsi:nil="true"/>
+        <label>Attached Content Document</label>
+        <labelPlural>Attached Content Documents</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>AttachedContentDocument</name>
+        <queryable>false</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>false</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/AttachedContentDocument</sobject>
+            <describe>/services/data/v29.0/sobjects/AttachedContentDocument/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AttachedContentDocument/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -591,9 +677,63 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Attachment</sobject>
-            <describe>/services/data/v26.0/sobjects/Attachment/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Attachment/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Attachment</sobject>
+            <describe>/services/data/v29.0/sobjects/Attachment/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Attachment/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>true</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix>0SO</keyPrefix>
+        <label>Auth. Provider</label>
+        <labelPlural>Auth. Providers</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>AuthProvider</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>true</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/AuthProvider</sobject>
+            <describe>/services/data/v29.0/sobjects/AuthProvider/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AuthProvider/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix>0Ak</keyPrefix>
+        <label>Auth Session</label>
+        <labelPlural>Auth Sessions</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>AuthSession</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/AuthSession</sobject>
+            <describe>/services/data/v29.0/sobjects/AuthSession/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/AuthSession/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -618,9 +758,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/BrandTemplate</sobject>
-            <describe>/services/data/v26.0/sobjects/BrandTemplate/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/BrandTemplate/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/BrandTemplate</sobject>
+            <describe>/services/data/v29.0/sobjects/BrandTemplate/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/BrandTemplate/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -645,9 +785,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/BusinessHours</sobject>
-            <describe>/services/data/v26.0/sobjects/BusinessHours/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/BusinessHours/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/BusinessHours</sobject>
+            <describe>/services/data/v29.0/sobjects/BusinessHours/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/BusinessHours/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -672,9 +812,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/BusinessProcess</sobject>
-            <describe>/services/data/v26.0/sobjects/BusinessProcess/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/BusinessProcess/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/BusinessProcess</sobject>
+            <describe>/services/data/v29.0/sobjects/BusinessProcess/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/BusinessProcess/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -699,9 +839,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CallCenter</sobject>
-            <describe>/services/data/v26.0/sobjects/CallCenter/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CallCenter/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CallCenter</sobject>
+            <describe>/services/data/v29.0/sobjects/CallCenter/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CallCenter/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -726,9 +866,12 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Campaign</sobject>
-            <describe>/services/data/v26.0/sobjects/Campaign/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Campaign/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Campaign</sobject>
+            <quickActions>/services/data/v29.0/sobjects/Campaign/quickActions</quickActions>
+            <describe>/services/data/v29.0/sobjects/Campaign/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Campaign/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Campaign/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Campaign/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -753,9 +896,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CampaignFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/CampaignFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CampaignFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CampaignFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/CampaignFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CampaignFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -780,9 +923,10 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CampaignMember</sobject>
-            <describe>/services/data/v26.0/sobjects/CampaignMember/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CampaignMember/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CampaignMember</sobject>
+            <describe>/services/data/v29.0/sobjects/CampaignMember/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CampaignMember/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/CampaignMember/describe/layouts</layouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -807,9 +951,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CampaignMemberStatus</sobject>
-            <describe>/services/data/v26.0/sobjects/CampaignMemberStatus/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CampaignMemberStatus/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CampaignMemberStatus</sobject>
+            <describe>/services/data/v29.0/sobjects/CampaignMemberStatus/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CampaignMemberStatus/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -834,9 +978,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CampaignShare</sobject>
-            <describe>/services/data/v26.0/sobjects/CampaignShare/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CampaignShare/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CampaignShare</sobject>
+            <describe>/services/data/v29.0/sobjects/CampaignShare/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CampaignShare/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -861,9 +1005,12 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Case</sobject>
-            <describe>/services/data/v26.0/sobjects/Case/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Case/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Case</sobject>
+            <quickActions>/services/data/v29.0/sobjects/Case/quickActions</quickActions>
+            <describe>/services/data/v29.0/sobjects/Case/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Case/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Case/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Case/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -888,9 +1035,9 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseComment</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseComment/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseComment/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseComment</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseComment/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseComment/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -915,9 +1062,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseContactRole</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseContactRole/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseContactRole/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseContactRole</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseContactRole/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseContactRole/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -942,9 +1089,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -969,9 +1116,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -996,9 +1143,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseShare</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseShare/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseShare/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseShare</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseShare/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseShare/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1023,9 +1170,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseSolution</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseSolution/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseSolution/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseSolution</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseSolution/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseSolution/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1050,9 +1197,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseStatus</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseStatus/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseStatus/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseStatus</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseStatus/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseStatus/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1077,9 +1224,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseTeamMember</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseTeamMember/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseTeamMember/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseTeamMember</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseTeamMember/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseTeamMember/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1104,9 +1251,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseTeamRole</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseTeamRole/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseTeamRole/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseTeamRole</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseTeamRole/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseTeamRole/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1131,9 +1278,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseTeamTemplate</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseTeamTemplate/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseTeamTemplate/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseTeamTemplate</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseTeamTemplate/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseTeamTemplate/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1158,9 +1305,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseTeamTemplateMember</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseTeamTemplateMember/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseTeamTemplateMember/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseTeamTemplateMember</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseTeamTemplateMember/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseTeamTemplateMember/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1185,9 +1332,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CaseTeamTemplateRecord</sobject>
-            <describe>/services/data/v26.0/sobjects/CaseTeamTemplateRecord/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CaseTeamTemplateRecord/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CaseTeamTemplateRecord</sobject>
+            <describe>/services/data/v29.0/sobjects/CaseTeamTemplateRecord/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CaseTeamTemplateRecord/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1212,9 +1359,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CategoryData</sobject>
-            <describe>/services/data/v26.0/sobjects/CategoryData/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CategoryData/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CategoryData</sobject>
+            <describe>/services/data/v29.0/sobjects/CategoryData/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CategoryData/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1239,9 +1386,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CategoryNode</sobject>
-            <describe>/services/data/v26.0/sobjects/CategoryNode/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CategoryNode/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CategoryNode</sobject>
+            <describe>/services/data/v29.0/sobjects/CategoryNode/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CategoryNode/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1266,9 +1413,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ChatterActivity</sobject>
-            <describe>/services/data/v26.0/sobjects/ChatterActivity/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ChatterActivity/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ChatterActivity</sobject>
+            <describe>/services/data/v29.0/sobjects/ChatterActivity/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ChatterActivity/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1293,9 +1440,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ClientBrowser</sobject>
-            <describe>/services/data/v26.0/sobjects/ClientBrowser/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ClientBrowser/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ClientBrowser</sobject>
+            <describe>/services/data/v29.0/sobjects/ClientBrowser/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ClientBrowser/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1309,7 +1456,7 @@
         <keyPrefix>0F9</keyPrefix>
         <label>Chatter Group</label>
         <labelPlural>Chatter Groups</labelPlural>
-        <layoutable>false</layoutable>
+        <layoutable>true</layoutable>
         <mergeable>false</mergeable>
         <name>CollaborationGroup</name>
         <queryable>true</queryable>
@@ -1320,9 +1467,11 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CollaborationGroup</sobject>
-            <describe>/services/data/v26.0/sobjects/CollaborationGroup/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CollaborationGroup/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CollaborationGroup</sobject>
+            <describe>/services/data/v29.0/sobjects/CollaborationGroup/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CollaborationGroup/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/CollaborationGroup/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/CollaborationGroup/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -1347,9 +1496,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CollaborationGroupFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/CollaborationGroupFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CollaborationGroupFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CollaborationGroupFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/CollaborationGroupFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CollaborationGroupFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1374,9 +1523,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CollaborationGroupMember</sobject>
-            <describe>/services/data/v26.0/sobjects/CollaborationGroupMember/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CollaborationGroupMember/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CollaborationGroupMember</sobject>
+            <describe>/services/data/v29.0/sobjects/CollaborationGroupMember/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CollaborationGroupMember/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1401,9 +1550,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CollaborationGroupMemberRequest</sobject>
-            <describe>/services/data/v26.0/sobjects/CollaborationGroupMemberRequest/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CollaborationGroupMemberRequest/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CollaborationGroupMemberRequest</sobject>
+            <describe>/services/data/v29.0/sobjects/CollaborationGroupMemberRequest/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CollaborationGroupMemberRequest/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1428,9 +1577,36 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CollaborationInvitation</sobject>
-            <describe>/services/data/v26.0/sobjects/CollaborationInvitation/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CollaborationInvitation/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CollaborationInvitation</sobject>
+            <describe>/services/data/v29.0/sobjects/CollaborationInvitation/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CollaborationInvitation/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix xsi:nil="true"/>
+        <label>Note, Attachment, Google Doc And File</label>
+        <labelPlural>Notes, Attachments, Google Docs And Files</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>CombinedAttachment</name>
+        <queryable>false</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>false</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/CombinedAttachment</sobject>
+            <describe>/services/data/v29.0/sobjects/CombinedAttachment/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CombinedAttachment/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1455,9 +1631,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Community</sobject>
-            <describe>/services/data/v26.0/sobjects/Community/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Community/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Community</sobject>
+            <describe>/services/data/v29.0/sobjects/Community/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Community/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1482,9 +1658,12 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Contact</sobject>
-            <describe>/services/data/v26.0/sobjects/Contact/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Contact/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Contact</sobject>
+            <quickActions>/services/data/v29.0/sobjects/Contact/quickActions</quickActions>
+            <describe>/services/data/v29.0/sobjects/Contact/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Contact/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Contact/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Contact/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -1509,9 +1688,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContactFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/ContactFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContactFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContactFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/ContactFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContactFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1536,9 +1715,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContactHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/ContactHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContactHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContactHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/ContactHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContactHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1563,9 +1742,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContactShare</sobject>
-            <describe>/services/data/v26.0/sobjects/ContactShare/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContactShare/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContactShare</sobject>
+            <describe>/services/data/v29.0/sobjects/ContactShare/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContactShare/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1590,9 +1769,9 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContentDocument</sobject>
-            <describe>/services/data/v26.0/sobjects/ContentDocument/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContentDocument/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContentDocument</sobject>
+            <describe>/services/data/v29.0/sobjects/ContentDocument/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContentDocument/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1617,9 +1796,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContentDocumentFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/ContentDocumentFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContentDocumentFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContentDocumentFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/ContentDocumentFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContentDocumentFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1644,9 +1823,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContentDocumentHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/ContentDocumentHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContentDocumentHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContentDocumentHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/ContentDocumentHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContentDocumentHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1671,9 +1850,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContentDocumentLink</sobject>
-            <describe>/services/data/v26.0/sobjects/ContentDocumentLink/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContentDocumentLink/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContentDocumentLink</sobject>
+            <describe>/services/data/v29.0/sobjects/ContentDocumentLink/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContentDocumentLink/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1698,9 +1877,11 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContentVersion</sobject>
-            <describe>/services/data/v26.0/sobjects/ContentVersion/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContentVersion/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContentVersion</sobject>
+            <describe>/services/data/v29.0/sobjects/ContentVersion/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContentVersion/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/ContentVersion/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/ContentVersion/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -1725,9 +1906,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContentVersionHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/ContentVersionHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContentVersionHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContentVersionHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/ContentVersionHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContentVersionHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1752,9 +1933,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContentWorkspace</sobject>
-            <describe>/services/data/v26.0/sobjects/ContentWorkspace/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContentWorkspace/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContentWorkspace</sobject>
+            <describe>/services/data/v29.0/sobjects/ContentWorkspace/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContentWorkspace/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1779,9 +1960,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContentWorkspaceDoc</sobject>
-            <describe>/services/data/v26.0/sobjects/ContentWorkspaceDoc/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContentWorkspaceDoc/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContentWorkspaceDoc</sobject>
+            <describe>/services/data/v29.0/sobjects/ContentWorkspaceDoc/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContentWorkspaceDoc/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1806,9 +1987,11 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Contract</sobject>
-            <describe>/services/data/v26.0/sobjects/Contract/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Contract/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Contract</sobject>
+            <describe>/services/data/v29.0/sobjects/Contract/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Contract/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Contract/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Contract/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -1833,9 +2016,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContractContactRole</sobject>
-            <describe>/services/data/v26.0/sobjects/ContractContactRole/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContractContactRole/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContractContactRole</sobject>
+            <describe>/services/data/v29.0/sobjects/ContractContactRole/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContractContactRole/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1860,9 +2043,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContractFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/ContractFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContractFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContractFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/ContractFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContractFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1887,9 +2070,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContractHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/ContractHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContractHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContractHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/ContractHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContractHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1914,9 +2097,36 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ContractStatus</sobject>
-            <describe>/services/data/v26.0/sobjects/ContractStatus/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ContractStatus/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ContractStatus</sobject>
+            <describe>/services/data/v29.0/sobjects/ContractStatus/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ContractStatus/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix>08a</keyPrefix>
+        <label>Cron Job</label>
+        <labelPlural>Cron Job</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>CronJobDetail</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/CronJobDetail</sobject>
+            <describe>/services/data/v29.0/sobjects/CronJobDetail/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CronJobDetail/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1941,36 +2151,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/CronTrigger</sobject>
-            <describe>/services/data/v26.0/sobjects/CronTrigger/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CronTrigger/{ID}</rowTemplate>
-        </urls>
-    </sobjects>
-    <sobjects>
-        <activateable>false</activateable>
-        <createable>true</createable>
-        <custom>false</custom>
-        <customSetting>false</customSetting>
-        <deletable>true</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <keyPrefix>06G</keyPrefix>
-        <label>Custom Console Component</label>
-        <labelPlural>Custom Console Components</labelPlural>
-        <layoutable>false</layoutable>
-        <mergeable>false</mergeable>
-        <name>CustomConsoleComponent</name>
-        <queryable>true</queryable>
-        <replicateable>false</replicateable>
-        <retrieveable>true</retrieveable>
-        <searchable>false</searchable>
-        <triggerable>false</triggerable>
-        <undeletable>false</undeletable>
-        <updateable>true</updateable>
-        <urls>
-            <sobject>/services/data/v26.0/sobjects/CustomConsoleComponent</sobject>
-            <describe>/services/data/v26.0/sobjects/CustomConsoleComponent/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/CustomConsoleComponent/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/CronTrigger</sobject>
+            <describe>/services/data/v29.0/sobjects/CronTrigger/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/CronTrigger/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -1984,7 +2167,7 @@
         <keyPrefix>01Z</keyPrefix>
         <label>Dashboard</label>
         <labelPlural>Dashboards</labelPlural>
-        <layoutable>false</layoutable>
+        <layoutable>true</layoutable>
         <mergeable>false</mergeable>
         <name>Dashboard</name>
         <queryable>true</queryable>
@@ -1995,9 +2178,11 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Dashboard</sobject>
-            <describe>/services/data/v26.0/sobjects/Dashboard/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Dashboard/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Dashboard</sobject>
+            <describe>/services/data/v29.0/sobjects/Dashboard/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Dashboard/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Dashboard/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Dashboard/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -2022,9 +2207,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/DashboardComponent</sobject>
-            <describe>/services/data/v26.0/sobjects/DashboardComponent/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/DashboardComponent/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/DashboardComponent</sobject>
+            <describe>/services/data/v29.0/sobjects/DashboardComponent/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/DashboardComponent/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2049,9 +2234,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/DashboardComponentFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/DashboardComponentFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/DashboardComponentFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/DashboardComponentFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/DashboardComponentFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/DashboardComponentFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2076,9 +2261,36 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/DashboardFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/DashboardFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/DashboardFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/DashboardFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/DashboardFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/DashboardFeed/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix xsi:nil="true"/>
+        <label>Declined Event Relation</label>
+        <labelPlural>Declined Event Relations</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>DeclinedEventRelation</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/DeclinedEventRelation</sobject>
+            <describe>/services/data/v29.0/sobjects/DeclinedEventRelation/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/DeclinedEventRelation/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2103,9 +2315,9 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Document</sobject>
-            <describe>/services/data/v26.0/sobjects/Document/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Document/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Document</sobject>
+            <describe>/services/data/v29.0/sobjects/Document/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Document/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2130,9 +2342,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/DocumentAttachmentMap</sobject>
-            <describe>/services/data/v26.0/sobjects/DocumentAttachmentMap/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/DocumentAttachmentMap/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/DocumentAttachmentMap</sobject>
+            <describe>/services/data/v29.0/sobjects/DocumentAttachmentMap/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/DocumentAttachmentMap/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2157,9 +2369,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Domain</sobject>
-            <describe>/services/data/v26.0/sobjects/Domain/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Domain/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Domain</sobject>
+            <describe>/services/data/v29.0/sobjects/Domain/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Domain/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2184,9 +2396,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/DomainSite</sobject>
-            <describe>/services/data/v26.0/sobjects/DomainSite/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/DomainSite/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/DomainSite</sobject>
+            <describe>/services/data/v29.0/sobjects/DomainSite/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/DomainSite/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2211,9 +2423,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/EmailServicesAddress</sobject>
-            <describe>/services/data/v26.0/sobjects/EmailServicesAddress/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/EmailServicesAddress/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/EmailServicesAddress</sobject>
+            <describe>/services/data/v29.0/sobjects/EmailServicesAddress/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/EmailServicesAddress/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2238,9 +2450,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/EmailServicesFunction</sobject>
-            <describe>/services/data/v26.0/sobjects/EmailServicesFunction/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/EmailServicesFunction/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/EmailServicesFunction</sobject>
+            <describe>/services/data/v29.0/sobjects/EmailServicesFunction/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/EmailServicesFunction/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2265,9 +2477,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/EmailStatus</sobject>
-            <describe>/services/data/v26.0/sobjects/EmailStatus/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/EmailStatus/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/EmailStatus</sobject>
+            <describe>/services/data/v29.0/sobjects/EmailStatus/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/EmailStatus/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2292,9 +2504,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/EmailTemplate</sobject>
-            <describe>/services/data/v26.0/sobjects/EmailTemplate/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/EmailTemplate/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/EmailTemplate</sobject>
+            <describe>/services/data/v29.0/sobjects/EmailTemplate/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/EmailTemplate/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2319,9 +2531,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/EntitySubscription</sobject>
-            <describe>/services/data/v26.0/sobjects/EntitySubscription/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/EntitySubscription/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/EntitySubscription</sobject>
+            <describe>/services/data/v29.0/sobjects/EntitySubscription/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/EntitySubscription/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2346,9 +2558,11 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Event</sobject>
-            <describe>/services/data/v26.0/sobjects/Event/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Event/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Event</sobject>
+            <describe>/services/data/v29.0/sobjects/Event/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Event/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Event/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Event/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -2373,9 +2587,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/EventFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/EventFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/EventFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/EventFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/EventFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/EventFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2400,9 +2614,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/EventRelation</sobject>
-            <describe>/services/data/v26.0/sobjects/EventRelation/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/EventRelation/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/EventRelation</sobject>
+            <describe>/services/data/v29.0/sobjects/EventRelation/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/EventRelation/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2427,9 +2641,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/FeedComment</sobject>
-            <describe>/services/data/v26.0/sobjects/FeedComment/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/FeedComment/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/FeedComment</sobject>
+            <describe>/services/data/v29.0/sobjects/FeedComment/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/FeedComment/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2454,9 +2668,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/FeedItem</sobject>
-            <describe>/services/data/v26.0/sobjects/FeedItem/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/FeedItem/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/FeedItem</sobject>
+            <describe>/services/data/v29.0/sobjects/FeedItem/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/FeedItem/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2481,9 +2695,63 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/FeedLike</sobject>
-            <describe>/services/data/v26.0/sobjects/FeedLike/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/FeedLike/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/FeedLike</sobject>
+            <describe>/services/data/v29.0/sobjects/FeedLike/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/FeedLike/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix>09A</keyPrefix>
+        <label>Feed Poll Choice</label>
+        <labelPlural>Feed Poll Choices</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>FeedPollChoice</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/FeedPollChoice</sobject>
+            <describe>/services/data/v29.0/sobjects/FeedPollChoice/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/FeedPollChoice/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix>09B</keyPrefix>
+        <label>Feed Poll Vote</label>
+        <labelPlural>Feed Poll Votes</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>FeedPollVote</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/FeedPollVote</sobject>
+            <describe>/services/data/v29.0/sobjects/FeedPollVote/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/FeedPollVote/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2508,9 +2776,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/FeedTrackedChange</sobject>
-            <describe>/services/data/v26.0/sobjects/FeedTrackedChange/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/FeedTrackedChange/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/FeedTrackedChange</sobject>
+            <describe>/services/data/v29.0/sobjects/FeedTrackedChange/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/FeedTrackedChange/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2535,9 +2803,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/FieldPermissions</sobject>
-            <describe>/services/data/v26.0/sobjects/FieldPermissions/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/FieldPermissions/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/FieldPermissions</sobject>
+            <describe>/services/data/v29.0/sobjects/FieldPermissions/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/FieldPermissions/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2562,9 +2830,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/FiscalYearSettings</sobject>
-            <describe>/services/data/v26.0/sobjects/FiscalYearSettings/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/FiscalYearSettings/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/FiscalYearSettings</sobject>
+            <describe>/services/data/v29.0/sobjects/FiscalYearSettings/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/FiscalYearSettings/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2589,9 +2857,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Folder</sobject>
-            <describe>/services/data/v26.0/sobjects/Folder/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Folder/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Folder</sobject>
+            <describe>/services/data/v29.0/sobjects/Folder/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Folder/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2616,9 +2884,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ForecastShare</sobject>
-            <describe>/services/data/v26.0/sobjects/ForecastShare/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ForecastShare/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ForecastShare</sobject>
+            <describe>/services/data/v29.0/sobjects/ForecastShare/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ForecastShare/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2643,9 +2911,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Group</sobject>
-            <describe>/services/data/v26.0/sobjects/Group/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Group/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Group</sobject>
+            <describe>/services/data/v29.0/sobjects/Group/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Group/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2670,9 +2938,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/GroupMember</sobject>
-            <describe>/services/data/v26.0/sobjects/GroupMember/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/GroupMember/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/GroupMember</sobject>
+            <describe>/services/data/v29.0/sobjects/GroupMember/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/GroupMember/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2697,9 +2965,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/HashtagDefinition</sobject>
-            <describe>/services/data/v26.0/sobjects/HashtagDefinition/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/HashtagDefinition/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/HashtagDefinition</sobject>
+            <describe>/services/data/v29.0/sobjects/HashtagDefinition/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/HashtagDefinition/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2724,9 +2992,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Holiday</sobject>
-            <describe>/services/data/v26.0/sobjects/Holiday/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Holiday/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Holiday</sobject>
+            <describe>/services/data/v29.0/sobjects/Holiday/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Holiday/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2751,9 +3019,11 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Idea</sobject>
-            <describe>/services/data/v26.0/sobjects/Idea/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Idea/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Idea</sobject>
+            <describe>/services/data/v29.0/sobjects/Idea/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Idea/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Idea/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Idea/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -2778,9 +3048,9 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/IdeaComment</sobject>
-            <describe>/services/data/v26.0/sobjects/IdeaComment/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/IdeaComment/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/IdeaComment</sobject>
+            <describe>/services/data/v29.0/sobjects/IdeaComment/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/IdeaComment/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2805,9 +3075,12 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Lead</sobject>
-            <describe>/services/data/v26.0/sobjects/Lead/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Lead/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Lead</sobject>
+            <quickActions>/services/data/v29.0/sobjects/Lead/quickActions</quickActions>
+            <describe>/services/data/v29.0/sobjects/Lead/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Lead/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Lead/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Lead/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -2832,9 +3105,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/LeadFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/LeadFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/LeadFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/LeadFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/LeadFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/LeadFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2859,9 +3132,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/LeadHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/LeadHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/LeadHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/LeadHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/LeadHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/LeadHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2886,9 +3159,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/LeadShare</sobject>
-            <describe>/services/data/v26.0/sobjects/LeadShare/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/LeadShare/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/LeadShare</sobject>
+            <describe>/services/data/v29.0/sobjects/LeadShare/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/LeadShare/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2913,9 +3186,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/LeadStatus</sobject>
-            <describe>/services/data/v26.0/sobjects/LeadStatus/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/LeadStatus/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/LeadStatus</sobject>
+            <describe>/services/data/v29.0/sobjects/LeadStatus/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/LeadStatus/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2940,9 +3213,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/LoginHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/LoginHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/LoginHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/LoginHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/LoginHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/LoginHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2967,9 +3240,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/LoginIp</sobject>
-            <describe>/services/data/v26.0/sobjects/LoginIp/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/LoginIp/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/LoginIp</sobject>
+            <describe>/services/data/v29.0/sobjects/LoginIp/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/LoginIp/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -2994,9 +3267,9 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/MailmergeTemplate</sobject>
-            <describe>/services/data/v26.0/sobjects/MailmergeTemplate/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/MailmergeTemplate/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/MailmergeTemplate</sobject>
+            <describe>/services/data/v29.0/sobjects/MailmergeTemplate/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/MailmergeTemplate/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3021,36 +3294,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Name</sobject>
-            <describe>/services/data/v26.0/sobjects/Name/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Name/{ID}</rowTemplate>
-        </urls>
-    </sobjects>
-    <sobjects>
-        <activateable>false</activateable>
-        <createable>false</createable>
-        <custom>false</custom>
-        <customSetting>false</customSetting>
-        <deletable>false</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <keyPrefix>0D5</keyPrefix>
-        <label>News Feed</label>
-        <labelPlural>News Feed</labelPlural>
-        <layoutable>false</layoutable>
-        <mergeable>false</mergeable>
-        <name>NewsFeed</name>
-        <queryable>true</queryable>
-        <replicateable>false</replicateable>
-        <retrieveable>true</retrieveable>
-        <searchable>false</searchable>
-        <triggerable>false</triggerable>
-        <undeletable>false</undeletable>
-        <updateable>false</updateable>
-        <urls>
-            <sobject>/services/data/v26.0/sobjects/NewsFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/NewsFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/NewsFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Name</sobject>
+            <describe>/services/data/v29.0/sobjects/Name/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Name/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3075,9 +3321,11 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Note</sobject>
-            <describe>/services/data/v26.0/sobjects/Note/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Note/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Note</sobject>
+            <describe>/services/data/v29.0/sobjects/Note/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Note/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Note/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Note/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -3102,9 +3350,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/NoteAndAttachment</sobject>
-            <describe>/services/data/v26.0/sobjects/NoteAndAttachment/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/NoteAndAttachment/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/NoteAndAttachment</sobject>
+            <describe>/services/data/v29.0/sobjects/NoteAndAttachment/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/NoteAndAttachment/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3129,9 +3377,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ObjectPermissions</sobject>
-            <describe>/services/data/v26.0/sobjects/ObjectPermissions/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ObjectPermissions/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ObjectPermissions</sobject>
+            <describe>/services/data/v29.0/sobjects/ObjectPermissions/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ObjectPermissions/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3156,9 +3404,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OpenActivity</sobject>
-            <describe>/services/data/v26.0/sobjects/OpenActivity/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OpenActivity/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OpenActivity</sobject>
+            <describe>/services/data/v29.0/sobjects/OpenActivity/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OpenActivity/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3183,9 +3431,12 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Opportunity</sobject>
-            <describe>/services/data/v26.0/sobjects/Opportunity/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Opportunity/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Opportunity</sobject>
+            <quickActions>/services/data/v29.0/sobjects/Opportunity/quickActions</quickActions>
+            <describe>/services/data/v29.0/sobjects/Opportunity/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Opportunity/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Opportunity/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Opportunity/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -3210,9 +3461,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OpportunityCompetitor</sobject>
-            <describe>/services/data/v26.0/sobjects/OpportunityCompetitor/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OpportunityCompetitor/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OpportunityCompetitor</sobject>
+            <describe>/services/data/v29.0/sobjects/OpportunityCompetitor/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OpportunityCompetitor/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3237,9 +3488,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OpportunityContactRole</sobject>
-            <describe>/services/data/v26.0/sobjects/OpportunityContactRole/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OpportunityContactRole/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OpportunityContactRole</sobject>
+            <describe>/services/data/v29.0/sobjects/OpportunityContactRole/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OpportunityContactRole/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3264,9 +3515,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OpportunityFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/OpportunityFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OpportunityFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OpportunityFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/OpportunityFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OpportunityFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3291,9 +3542,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OpportunityFieldHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/OpportunityFieldHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OpportunityFieldHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OpportunityFieldHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/OpportunityFieldHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OpportunityFieldHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3318,9 +3569,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OpportunityHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/OpportunityHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OpportunityHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OpportunityHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/OpportunityHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OpportunityHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3345,9 +3596,10 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OpportunityLineItem</sobject>
-            <describe>/services/data/v26.0/sobjects/OpportunityLineItem/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OpportunityLineItem/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OpportunityLineItem</sobject>
+            <describe>/services/data/v29.0/sobjects/OpportunityLineItem/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OpportunityLineItem/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/OpportunityLineItem/describe/layouts</layouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -3372,9 +3624,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OpportunityPartner</sobject>
-            <describe>/services/data/v26.0/sobjects/OpportunityPartner/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OpportunityPartner/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OpportunityPartner</sobject>
+            <describe>/services/data/v29.0/sobjects/OpportunityPartner/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OpportunityPartner/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3399,9 +3651,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OpportunityShare</sobject>
-            <describe>/services/data/v26.0/sobjects/OpportunityShare/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OpportunityShare/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OpportunityShare</sobject>
+            <describe>/services/data/v29.0/sobjects/OpportunityShare/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OpportunityShare/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3426,9 +3678,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OpportunityStage</sobject>
-            <describe>/services/data/v26.0/sobjects/OpportunityStage/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OpportunityStage/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OpportunityStage</sobject>
+            <describe>/services/data/v29.0/sobjects/OpportunityStage/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OpportunityStage/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3453,9 +3705,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/OrgWideEmailAddress</sobject>
-            <describe>/services/data/v26.0/sobjects/OrgWideEmailAddress/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/OrgWideEmailAddress/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/OrgWideEmailAddress</sobject>
+            <describe>/services/data/v29.0/sobjects/OrgWideEmailAddress/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/OrgWideEmailAddress/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3480,9 +3732,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Organization</sobject>
-            <describe>/services/data/v26.0/sobjects/Organization/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Organization/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Organization</sobject>
+            <describe>/services/data/v29.0/sobjects/Organization/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Organization/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3507,9 +3759,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Partner</sobject>
-            <describe>/services/data/v26.0/sobjects/Partner/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Partner/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Partner</sobject>
+            <describe>/services/data/v29.0/sobjects/Partner/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Partner/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3534,9 +3786,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/PartnerRole</sobject>
-            <describe>/services/data/v26.0/sobjects/PartnerRole/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/PartnerRole/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/PartnerRole</sobject>
+            <describe>/services/data/v29.0/sobjects/PartnerRole/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/PartnerRole/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3561,9 +3813,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Period</sobject>
-            <describe>/services/data/v26.0/sobjects/Period/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Period/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Period</sobject>
+            <describe>/services/data/v29.0/sobjects/Period/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Period/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3588,9 +3840,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/PermissionSet</sobject>
-            <describe>/services/data/v26.0/sobjects/PermissionSet/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/PermissionSet/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/PermissionSet</sobject>
+            <describe>/services/data/v29.0/sobjects/PermissionSet/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/PermissionSet/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3615,9 +3867,63 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/PermissionSetAssignment</sobject>
-            <describe>/services/data/v26.0/sobjects/PermissionSetAssignment/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/PermissionSetAssignment/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/PermissionSetAssignment</sobject>
+            <describe>/services/data/v29.0/sobjects/PermissionSetAssignment/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/PermissionSetAssignment/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix>0PL</keyPrefix>
+        <label>Permission Set License</label>
+        <labelPlural>Permission Set Licenses</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>PermissionSetLicense</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/PermissionSetLicense</sobject>
+            <describe>/services/data/v29.0/sobjects/PermissionSetLicense/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/PermissionSetLicense/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>true</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix>2LA</keyPrefix>
+        <label>Permission Set License Assignment</label>
+        <labelPlural>Permission Set License Assignments</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>PermissionSetLicenseAssign</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/PermissionSetLicenseAssign</sobject>
+            <describe>/services/data/v29.0/sobjects/PermissionSetLicenseAssign/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/PermissionSetLicenseAssign/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3642,9 +3948,10 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Pricebook2</sobject>
-            <describe>/services/data/v26.0/sobjects/Pricebook2/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Pricebook2/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Pricebook2</sobject>
+            <describe>/services/data/v29.0/sobjects/Pricebook2/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Pricebook2/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Pricebook2/describe/layouts</layouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -3669,9 +3976,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Pricebook2History</sobject>
-            <describe>/services/data/v26.0/sobjects/Pricebook2History/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Pricebook2History/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Pricebook2History</sobject>
+            <describe>/services/data/v29.0/sobjects/Pricebook2History/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Pricebook2History/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3696,9 +4003,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/PricebookEntry</sobject>
-            <describe>/services/data/v26.0/sobjects/PricebookEntry/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/PricebookEntry/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/PricebookEntry</sobject>
+            <describe>/services/data/v29.0/sobjects/PricebookEntry/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/PricebookEntry/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3723,9 +4030,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ProcessInstance</sobject>
-            <describe>/services/data/v26.0/sobjects/ProcessInstance/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ProcessInstance/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ProcessInstance</sobject>
+            <describe>/services/data/v29.0/sobjects/ProcessInstance/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ProcessInstance/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3750,9 +4057,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ProcessInstanceHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/ProcessInstanceHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ProcessInstanceHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ProcessInstanceHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/ProcessInstanceHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ProcessInstanceHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3777,9 +4084,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ProcessInstanceStep</sobject>
-            <describe>/services/data/v26.0/sobjects/ProcessInstanceStep/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ProcessInstanceStep/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ProcessInstanceStep</sobject>
+            <describe>/services/data/v29.0/sobjects/ProcessInstanceStep/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ProcessInstanceStep/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3804,9 +4111,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ProcessInstanceWorkitem</sobject>
-            <describe>/services/data/v26.0/sobjects/ProcessInstanceWorkitem/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ProcessInstanceWorkitem/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ProcessInstanceWorkitem</sobject>
+            <describe>/services/data/v29.0/sobjects/ProcessInstanceWorkitem/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ProcessInstanceWorkitem/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3831,9 +4138,11 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Product2</sobject>
-            <describe>/services/data/v26.0/sobjects/Product2/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Product2/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Product2</sobject>
+            <describe>/services/data/v29.0/sobjects/Product2/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Product2/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Product2/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Product2/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -3858,9 +4167,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Product2Feed</sobject>
-            <describe>/services/data/v26.0/sobjects/Product2Feed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Product2Feed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Product2Feed</sobject>
+            <describe>/services/data/v29.0/sobjects/Product2Feed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Product2Feed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3885,9 +4194,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Profile</sobject>
-            <describe>/services/data/v26.0/sobjects/Profile/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Profile/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Profile</sobject>
+            <describe>/services/data/v29.0/sobjects/Profile/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Profile/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3912,9 +4221,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/PushTopic</sobject>
-            <describe>/services/data/v26.0/sobjects/PushTopic/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/PushTopic/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/PushTopic</sobject>
+            <describe>/services/data/v29.0/sobjects/PushTopic/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/PushTopic/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3939,9 +4248,36 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/QueueSobject</sobject>
-            <describe>/services/data/v26.0/sobjects/QueueSobject/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/QueueSobject/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/QueueSobject</sobject>
+            <describe>/services/data/v29.0/sobjects/QueueSobject/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/QueueSobject/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix xsi:nil="true"/>
+        <label>Recently Viewed</label>
+        <labelPlural>Recently Viewed</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>RecentlyViewed</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>false</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>true</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/RecentlyViewed</sobject>
+            <describe>/services/data/v29.0/sobjects/RecentlyViewed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/RecentlyViewed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3966,9 +4302,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/RecordType</sobject>
-            <describe>/services/data/v26.0/sobjects/RecordType/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/RecordType/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/RecordType</sobject>
+            <describe>/services/data/v29.0/sobjects/RecordType/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/RecordType/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -3993,9 +4329,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Report</sobject>
-            <describe>/services/data/v26.0/sobjects/Report/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Report/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Report</sobject>
+            <describe>/services/data/v29.0/sobjects/Report/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Report/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4020,9 +4356,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/ReportFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/ReportFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/ReportFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/ReportFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/ReportFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/ReportFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4047,9 +4383,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/SetupEntityAccess</sobject>
-            <describe>/services/data/v26.0/sobjects/SetupEntityAccess/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/SetupEntityAccess/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/SetupEntityAccess</sobject>
+            <describe>/services/data/v29.0/sobjects/SetupEntityAccess/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/SetupEntityAccess/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4074,9 +4410,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Site</sobject>
-            <describe>/services/data/v26.0/sobjects/Site/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Site/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Site</sobject>
+            <describe>/services/data/v29.0/sobjects/Site/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Site/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4101,9 +4437,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/SiteFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/SiteFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/SiteFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/SiteFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/SiteFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/SiteFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4128,9 +4464,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/SiteHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/SiteHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/SiteHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/SiteHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/SiteHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/SiteHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4155,9 +4491,11 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Solution</sobject>
-            <describe>/services/data/v26.0/sobjects/Solution/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Solution/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Solution</sobject>
+            <describe>/services/data/v29.0/sobjects/Solution/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Solution/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Solution/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Solution/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -4182,9 +4520,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/SolutionFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/SolutionFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/SolutionFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/SolutionFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/SolutionFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/SolutionFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4209,9 +4547,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/SolutionHistory</sobject>
-            <describe>/services/data/v26.0/sobjects/SolutionHistory/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/SolutionHistory/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/SolutionHistory</sobject>
+            <describe>/services/data/v29.0/sobjects/SolutionHistory/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/SolutionHistory/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4236,9 +4574,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/SolutionStatus</sobject>
-            <describe>/services/data/v26.0/sobjects/SolutionStatus/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/SolutionStatus/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/SolutionStatus</sobject>
+            <describe>/services/data/v29.0/sobjects/SolutionStatus/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/SolutionStatus/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4263,9 +4601,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/StaticResource</sobject>
-            <describe>/services/data/v26.0/sobjects/StaticResource/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/StaticResource/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/StaticResource</sobject>
+            <describe>/services/data/v29.0/sobjects/StaticResource/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/StaticResource/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4290,9 +4628,12 @@
         <undeletable>true</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Task</sobject>
-            <describe>/services/data/v26.0/sobjects/Task/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Task/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Task</sobject>
+            <quickActions>/services/data/v29.0/sobjects/Task/quickActions</quickActions>
+            <describe>/services/data/v29.0/sobjects/Task/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Task/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/Task/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/Task/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -4317,9 +4658,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/TaskFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/TaskFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/TaskFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/TaskFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/TaskFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/TaskFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4344,9 +4685,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/TaskPriority</sobject>
-            <describe>/services/data/v26.0/sobjects/TaskPriority/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/TaskPriority/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/TaskPriority</sobject>
+            <describe>/services/data/v29.0/sobjects/TaskPriority/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/TaskPriority/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4371,9 +4712,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/TaskStatus</sobject>
-            <describe>/services/data/v26.0/sobjects/TaskStatus/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/TaskStatus/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/TaskStatus</sobject>
+            <describe>/services/data/v29.0/sobjects/TaskStatus/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/TaskStatus/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4398,9 +4739,90 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Topic</sobject>
-            <describe>/services/data/v26.0/sobjects/Topic/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Topic/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Topic</sobject>
+            <describe>/services/data/v29.0/sobjects/Topic/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Topic/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>true</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix>0FT</keyPrefix>
+        <label>Entity</label>
+        <labelPlural>Topic Assignments</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>TopicAssignment</name>
+        <queryable>true</queryable>
+        <replicateable>true</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>true</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/TopicAssignment</sobject>
+            <describe>/services/data/v29.0/sobjects/TopicAssignment/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/TopicAssignment/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix xsi:nil="true"/>
+        <label>Topic Feed</label>
+        <labelPlural>Topic Feed</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>TopicFeed</name>
+        <queryable>true</queryable>
+        <replicateable>true</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/TopicFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/TopicFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/TopicFeed/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix xsi:nil="true"/>
+        <label>Undecided Event Relation</label>
+        <labelPlural>Undecided Event Relations</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>UndecidedEventRelation</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>false</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/UndecidedEventRelation</sobject>
+            <describe>/services/data/v29.0/sobjects/UndecidedEventRelation/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/UndecidedEventRelation/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4414,7 +4836,7 @@
         <keyPrefix>005</keyPrefix>
         <label>User</label>
         <labelPlural>Users</labelPlural>
-        <layoutable>false</layoutable>
+        <layoutable>true</layoutable>
         <mergeable>false</mergeable>
         <name>User</name>
         <queryable>true</queryable>
@@ -4425,10 +4847,13 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/User</sobject>
-            <describe>/services/data/v26.0/sobjects/User/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/User/{ID}</rowTemplate>
-            <passwordUtilities>/services/data/v26.0/sobjects/User/{ID}/password</passwordUtilities>
+            <sobject>/services/data/v29.0/sobjects/User</sobject>
+            <quickActions>/services/data/v29.0/sobjects/User/quickActions</quickActions>
+            <describe>/services/data/v29.0/sobjects/User/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/User/{ID}</rowTemplate>
+            <passwordUtilities>/services/data/v29.0/sobjects/User/{ID}/password</passwordUtilities>
+            <layouts>/services/data/v29.0/sobjects/User/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/User/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -4453,9 +4878,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/UserFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/UserFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/UserFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/UserFeed</sobject>
+            <describe>/services/data/v29.0/sobjects/UserFeed/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/UserFeed/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4480,9 +4905,36 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/UserLicense</sobject>
-            <describe>/services/data/v26.0/sobjects/UserLicense/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/UserLicense/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/UserLicense</sobject>
+            <describe>/services/data/v29.0/sobjects/UserLicense/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/UserLicense/{ID}</rowTemplate>
+        </urls>
+    </sobjects>
+    <sobjects>
+        <activateable>false</activateable>
+        <createable>false</createable>
+        <custom>false</custom>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <keyPrefix>0Yw</keyPrefix>
+        <label>User Login</label>
+        <labelPlural>User Login</labelPlural>
+        <layoutable>false</layoutable>
+        <mergeable>false</mergeable>
+        <name>UserLogin</name>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <searchable>false</searchable>
+        <triggerable>false</triggerable>
+        <undeletable>false</undeletable>
+        <updateable>true</updateable>
+        <urls>
+            <sobject>/services/data/v29.0/sobjects/UserLogin</sobject>
+            <describe>/services/data/v29.0/sobjects/UserLogin/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/UserLogin/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4507,9 +4959,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/UserPreference</sobject>
-            <describe>/services/data/v26.0/sobjects/UserPreference/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/UserPreference/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/UserPreference</sobject>
+            <describe>/services/data/v29.0/sobjects/UserPreference/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/UserPreference/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4519,13 +4971,13 @@
         <customSetting>false</customSetting>
         <deletable>false</deletable>
         <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <keyPrefix>0D5</keyPrefix>
-        <label>User Profile Feed</label>
-        <labelPlural>User Profile Feed</labelPlural>
-        <layoutable>false</layoutable>
+        <feedEnabled>true</feedEnabled>
+        <keyPrefix xsi:nil="true"/>
+        <label>User Profile</label>
+        <labelPlural>User Profiles</labelPlural>
+        <layoutable>true</layoutable>
         <mergeable>false</mergeable>
-        <name>UserProfileFeed</name>
+        <name>UserProfile</name>
         <queryable>true</queryable>
         <replicateable>false</replicateable>
         <retrieveable>true</retrieveable>
@@ -4534,9 +4986,11 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/UserProfileFeed</sobject>
-            <describe>/services/data/v26.0/sobjects/UserProfileFeed/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/UserProfileFeed/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/UserProfile</sobject>
+            <describe>/services/data/v29.0/sobjects/UserProfile/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/UserProfile/{ID}</rowTemplate>
+            <layouts>/services/data/v29.0/sobjects/UserProfile/describe/layouts</layouts>
+            <compactLayouts>/services/data/v29.0/sobjects/UserProfile/describe/compactLayouts</compactLayouts>
         </urls>
     </sobjects>
     <sobjects>
@@ -4561,9 +5015,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/UserRecordAccess</sobject>
-            <describe>/services/data/v26.0/sobjects/UserRecordAccess/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/UserRecordAccess/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/UserRecordAccess</sobject>
+            <describe>/services/data/v29.0/sobjects/UserRecordAccess/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/UserRecordAccess/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4588,9 +5042,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/UserRole</sobject>
-            <describe>/services/data/v26.0/sobjects/UserRole/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/UserRole/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/UserRole</sobject>
+            <describe>/services/data/v29.0/sobjects/UserRole/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/UserRole/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4615,9 +5069,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/UserShare</sobject>
-            <describe>/services/data/v26.0/sobjects/UserShare/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/UserShare/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/UserShare</sobject>
+            <describe>/services/data/v29.0/sobjects/UserShare/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/UserShare/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4642,9 +5096,9 @@
         <undeletable>false</undeletable>
         <updateable>false</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/Vote</sobject>
-            <describe>/services/data/v26.0/sobjects/Vote/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/Vote/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/Vote</sobject>
+            <describe>/services/data/v29.0/sobjects/Vote/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/Vote/{ID}</rowTemplate>
         </urls>
     </sobjects>
     <sobjects>
@@ -4669,9 +5123,9 @@
         <undeletable>false</undeletable>
         <updateable>true</updateable>
         <urls>
-            <sobject>/services/data/v26.0/sobjects/WebLink</sobject>
-            <describe>/services/data/v26.0/sobjects/WebLink/describe</describe>
-            <rowTemplate>/services/data/v26.0/sobjects/WebLink/{ID}</rowTemplate>
+            <sobject>/services/data/v29.0/sobjects/WebLink</sobject>
+            <describe>/services/data/v29.0/sobjects/WebLink/describe</describe>
+            <rowTemplate>/services/data/v29.0/sobjects/WebLink/{ID}</rowTemplate>
         </urls>
     </sobjects>
 </DescribeGlobal>
