@@ -1,6 +1,7 @@
 ﻿<#@ template debug="true" hostSpecific="true" #>
 <#@ output extension=".cs" #>
 <#@ Assembly Name="System.Core.dll" #>
+<#@ Assembly Name="System.Data.Entity.Design.dll" #>
 <#@ Assembly Name="System.Xml.dll" #>
 <#@ Assembly Name="System.Xml.Linq.dll" #>
 <#@ Assembly Name="System.Windows.Forms.dll" #>
@@ -11,11 +12,15 @@
 <#@ import namespace="System.Xml.Linq" #>
 <#@ import namespace="System.Collections" #>
 <#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ import namespace="System.Data.Entity.Design.PluralizationServices" #>
+<#@ import namespace="System.Globalization" #>
+<#@ import namespace="System.Data.Entity.Design.PluralizationServices" #>
+<#@ include file="SalesforceObjects.ttinclude"#>
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 //using Newtonsoft.Json;
 using SalesforceSharp.Attributes;
-
 
 // ReSharper disable PartialTypeWithSinglePart
 // ReSharper disable UnusedMember.Local
@@ -23,31 +28,38 @@ using SalesforceSharp.Attributes;
 namespace SalesforceSharp
 {
 <#
-        var path = Path.Combine(Path.GetDirectoryName(Host.TemplateFile), @"Schema\SObjects.xml");
-        System.Xml.Linq.XDocument xdoc = System.Xml.Linq.XDocument.Load(path);
-        var entities = from c in xdoc.Descendants("sobjects")
-                                   select new {
-                                                Name = c.Element("name").Value,
-                                                SObject = c.Element("urls").Element("sobject").Value,
-                                                Describe = c.Element("urls").Element("describe").Value,
-                                                RowTemplate = c.Element("urls").Element("rowTemplate").Value,
-                                   };
-
-    foreach (var entity in entities)
-        {
+    var path = Path.Combine(Path.GetDirectoryName(Host.TemplateFile), @"Schema\SObjects.xml");
+    SalesforceModel model = SalesforceModel.Create(path);
+    foreach (SalesforceObject entity in model.SalesforceObjects)
+    {
 #>
     /// <summary>
-    /// POCO for <#= entity.Name #>
+    /// POCO for <#= entity.SalesforceName #>
     /// </summary>
     [DebuggerDisplay("Id={Id}")]
     [SalesforceObject(Describe = "<#= entity.Describe #>", SObject = "<#= entity.SObject #>", RowTemplate = "<#= entity.RowTemplate #>")]
     public partial class <#= entity.Name #>
     {
+<#
+        foreach(SalesforceProperty property in entity.Properties)
+        {
+#>
         /// <summary>
-        /// <#= entity.Name #> Id
+        /// <#= property.SalesforceName #> (<#= property.SalesforceType #> type in Salesforce)
         /// </summary>
-        [StringLength(18)]
-        public string Id { get; set; }
+<#
+			if (property.Type == "string" && property.Length!="0")
+            {
+#>
+		[StringLength(<#= property.Length #>)]
+<#
+            }
+#>
+        public <#= property.Type #> <#= property.Name #> { get; set; }
+
+<#
+        }
+#>
     }
 
 <#
