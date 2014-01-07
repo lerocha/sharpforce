@@ -19,19 +19,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// RelationId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelationId { get; set; }
 
         /// <summary>
         /// EventId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string EventId { get; set; }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Response (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Response { get; set; }
 
         /// <summary>
@@ -53,7 +53,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Type (string type in Salesforce)
         /// </summary>
-		[StringLength(50)]
+        [StringLength(50)]
         public string Type { get; set; }
 
     }
@@ -95,7 +95,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -106,55 +106,55 @@ namespace SalesforceSharp
         /// <summary>
         /// MasterRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string MasterRecordId { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// BillingStreet (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string BillingStreet { get; set; }
 
         /// <summary>
         /// BillingCity (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string BillingCity { get; set; }
 
         /// <summary>
         /// BillingState (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string BillingState { get; set; }
 
         /// <summary>
         /// BillingPostalCode (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string BillingPostalCode { get; set; }
 
         /// <summary>
         /// BillingCountry (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string BillingCountry { get; set; }
 
         /// <summary>
@@ -170,31 +170,31 @@ namespace SalesforceSharp
         /// <summary>
         /// ShippingStreet (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ShippingStreet { get; set; }
 
         /// <summary>
         /// ShippingCity (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ShippingCity { get; set; }
 
         /// <summary>
         /// ShippingState (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string ShippingState { get; set; }
 
         /// <summary>
         /// ShippingPostalCode (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string ShippingPostalCode { get; set; }
 
         /// <summary>
         /// ShippingCountry (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string ShippingCountry { get; set; }
 
         /// <summary>
@@ -210,37 +210,37 @@ namespace SalesforceSharp
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Phone { get; set; }
 
         /// <summary>
         /// Fax (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Fax { get; set; }
 
         /// <summary>
         /// AccountNumber (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AccountNumber { get; set; }
 
         /// <summary>
         /// Website (url type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Website { get; set; }
 
         /// <summary>
         /// Sic (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string Sic { get; set; }
 
         /// <summary>
         /// Industry (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Industry { get; set; }
 
         /// <summary>
@@ -256,37 +256,37 @@ namespace SalesforceSharp
         /// <summary>
         /// Ownership (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Ownership { get; set; }
 
         /// <summary>
         /// TickerSymbol (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string TickerSymbol { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
         /// Rating (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Rating { get; set; }
 
         /// <summary>
         /// Site (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Site { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -297,7 +297,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -308,7 +308,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -334,43 +334,43 @@ namespace SalesforceSharp
         /// <summary>
         /// Jigsaw (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string Jigsaw { get; set; }
 
         /// <summary>
         /// JigsawCompanyId (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string JigsawCompanyId { get; set; }
 
         /// <summary>
         /// AccountSource (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AccountSource { get; set; }
 
         /// <summary>
         /// SicDesc (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string SicDesc { get; set; }
 
         /// <summary>
         /// CustomerPriority__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CustomerPriority__c { get; set; }
 
         /// <summary>
         /// SLA__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string SLA__c { get; set; }
 
         /// <summary>
         /// Active__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Active__c { get; set; }
 
         /// <summary>
@@ -381,13 +381,13 @@ namespace SalesforceSharp
         /// <summary>
         /// UpsellOpportunity__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string UpsellOpportunity__c { get; set; }
 
         /// <summary>
         /// SLASerialNumber__c (string type in Salesforce)
         /// </summary>
-		[StringLength(10)]
+        [StringLength(10)]
         public string SLASerialNumber__c { get; set; }
 
         /// <summary>
@@ -407,25 +407,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// ContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContactId { get; set; }
 
         /// <summary>
         /// Role (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Role { get; set; }
 
         /// <summary>
@@ -441,7 +441,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -452,7 +452,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -477,25 +477,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -531,25 +531,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -560,19 +560,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -583,7 +583,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -598,7 +598,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -609,13 +609,13 @@ namespace SalesforceSharp
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -626,19 +626,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -653,31 +653,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// AccountFromId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountFromId { get; set; }
 
         /// <summary>
         /// AccountToId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountToId { get; set; }
 
         /// <summary>
         /// OpportunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// Role (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Role { get; set; }
 
         /// <summary>
@@ -693,7 +693,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -704,7 +704,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -720,7 +720,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ReversePartnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ReversePartnerId { get; set; }
 
     }
@@ -735,49 +735,49 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// UserOrGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// AccountAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AccountAccessLevel { get; set; }
 
         /// <summary>
         /// OpportunityAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string OpportunityAccessLevel { get; set; }
 
         /// <summary>
         /// CaseAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CaseAccessLevel { get; set; }
 
         /// <summary>
         /// ContactAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ContactAccessLevel { get; set; }
 
         /// <summary>
         /// RowCause (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RowCause { get; set; }
 
         /// <summary>
@@ -788,7 +788,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -808,31 +808,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// WhoId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string WhoId { get; set; }
 
         /// <summary>
         /// WhatId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string WhatId { get; set; }
 
         /// <summary>
         /// Subject (combobox type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Subject { get; set; }
 
         /// <summary>
@@ -848,25 +848,25 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
         /// Priority (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Priority { get; set; }
 
         /// <summary>
         /// ActivityType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ActivityType { get; set; }
 
         /// <summary>
@@ -892,13 +892,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Location (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Location { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
@@ -914,7 +914,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -925,7 +925,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -941,19 +941,19 @@ namespace SalesforceSharp
         /// <summary>
         /// CallType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CallType { get; set; }
 
         /// <summary>
         /// CallDisposition (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CallDisposition { get; set; }
 
         /// <summary>
         /// CallObject (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CallObject { get; set; }
 
         /// <summary>
@@ -988,7 +988,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -999,25 +999,25 @@ namespace SalesforceSharp
         /// <summary>
         /// CallCenterId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CallCenterId { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Phone { get; set; }
 
         /// <summary>
@@ -1028,7 +1028,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -1039,7 +1039,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -1059,7 +1059,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
     }
@@ -1074,19 +1074,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
@@ -1097,7 +1097,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -1113,7 +1113,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000000)]
+        [StringLength(1000000)]
         public string Body { get; set; }
 
         /// <summary>
@@ -1129,7 +1129,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -1140,7 +1140,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -1160,19 +1160,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
@@ -1183,31 +1183,31 @@ namespace SalesforceSharp
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string Description { get; set; }
 
         /// <summary>
         /// ControllerType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ControllerType { get; set; }
 
         /// <summary>
         /// ControllerKey (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ControllerKey { get; set; }
 
         /// <summary>
         /// Markup (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1048576)]
+        [StringLength(1048576)]
         public string Markup { get; set; }
 
         /// <summary>
@@ -1218,7 +1218,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -1229,7 +1229,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -1249,13 +1249,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// LogUserId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LogUserId { get; set; }
 
         /// <summary>
@@ -1271,25 +1271,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Request (string type in Salesforce)
         /// </summary>
-		[StringLength(16)]
+        [StringLength(16)]
         public string Request { get; set; }
 
         /// <summary>
         /// Operation (string type in Salesforce)
         /// </summary>
-		[StringLength(128)]
+        [StringLength(128)]
         public string Operation { get; set; }
 
         /// <summary>
         /// Application (string type in Salesforce)
         /// </summary>
-		[StringLength(64)]
+        [StringLength(64)]
         public string Application { get; set; }
 
         /// <summary>
         /// Status (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Status { get; set; }
 
         /// <summary>
@@ -1310,7 +1310,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Location (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Location { get; set; }
 
     }
@@ -1325,19 +1325,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
@@ -1348,25 +1348,25 @@ namespace SalesforceSharp
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string Description { get; set; }
 
         /// <summary>
         /// ControllerType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ControllerType { get; set; }
 
         /// <summary>
         /// ControllerKey (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ControllerKey { get; set; }
 
         /// <summary>
@@ -1382,7 +1382,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Markup (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1048576)]
+        [StringLength(1048576)]
         public string Markup { get; set; }
 
         /// <summary>
@@ -1393,7 +1393,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -1404,7 +1404,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -1424,7 +1424,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -1435,7 +1435,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -1446,25 +1446,25 @@ namespace SalesforceSharp
         /// <summary>
         /// ApexClassId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ApexClassId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
         /// ExtendedStatus (string type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ExtendedStatus { get; set; }
 
         /// <summary>
         /// ParentJobId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentJobId { get; set; }
 
     }
@@ -1479,7 +1479,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -1495,49 +1495,49 @@ namespace SalesforceSharp
         /// <summary>
         /// Outcome (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Outcome { get; set; }
 
         /// <summary>
         /// ApexClassId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ApexClassId { get; set; }
 
         /// <summary>
         /// MethodName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MethodName { get; set; }
 
         /// <summary>
         /// Message (string type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string Message { get; set; }
 
         /// <summary>
         /// StackTrace (string type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string StackTrace { get; set; }
 
         /// <summary>
         /// AsyncApexJobId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AsyncApexJobId { get; set; }
 
         /// <summary>
         /// QueueItemId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string QueueItemId { get; set; }
 
         /// <summary>
         /// ApexLogId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ApexLogId { get; set; }
 
     }
@@ -1552,25 +1552,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// TableEnumOrId (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string TableEnumOrId { get; set; }
 
         /// <summary>
@@ -1621,7 +1621,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -1637,7 +1637,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000000)]
+        [StringLength(1000000)]
         public string Body { get; set; }
 
         /// <summary>
@@ -1653,7 +1653,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -1664,7 +1664,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -1684,7 +1684,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -1700,7 +1700,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -1711,7 +1711,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -1727,55 +1727,55 @@ namespace SalesforceSharp
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Label (string type in Salesforce)
         /// </summary>
-		[StringLength(250)]
+        [StringLength(250)]
         public string Label { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(250)]
+        [StringLength(250)]
         public string Description { get; set; }
 
         /// <summary>
         /// StartUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string StartUrl { get; set; }
 
         /// <summary>
         /// MobileStartUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MobileStartUrl { get; set; }
 
         /// <summary>
         /// LogoUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string LogoUrl { get; set; }
 
         /// <summary>
         /// IconUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string IconUrl { get; set; }
 
         /// <summary>
         /// InfoUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string InfoUrl { get; set; }
 
         /// <summary>
@@ -1786,19 +1786,19 @@ namespace SalesforceSharp
         /// <summary>
         /// MobilePlatform (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MobilePlatform { get; set; }
 
         /// <summary>
         /// MobileMinOsVer (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MobileMinOsVer { get; set; }
 
         /// <summary>
         /// MobileDeviceType (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MobileDeviceType { get; set; }
 
         /// <summary>
@@ -1809,7 +1809,7 @@ namespace SalesforceSharp
         /// <summary>
         /// MobileAppVer (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MobileAppVer { get; set; }
 
         /// <summary>
@@ -1820,25 +1820,25 @@ namespace SalesforceSharp
         /// <summary>
         /// MobileAppInstalledVersion (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MobileAppInstalledVersion { get; set; }
 
         /// <summary>
         /// MobileAppBinaryId (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MobileAppBinaryId { get; set; }
 
         /// <summary>
         /// MobileAppInstallUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MobileAppInstallUrl { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Type { get; set; }
 
     }
@@ -1853,7 +1853,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -1864,13 +1864,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -1881,7 +1881,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -1892,25 +1892,25 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
         /// RequestComment (string type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string RequestComment { get; set; }
 
         /// <summary>
         /// ApproveComment (string type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string ApproveComment { get; set; }
 
         /// <summary>
@@ -1930,25 +1930,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContactId { get; set; }
 
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// Product2Id (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Product2Id { get; set; }
 
         /// <summary>
@@ -1964,7 +1964,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -1975,7 +1975,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -1991,13 +1991,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// SerialNumber (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string SerialNumber { get; set; }
 
         /// <summary>
@@ -2018,7 +2018,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -2034,7 +2034,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
     }
@@ -2049,25 +2049,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -2103,25 +2103,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -2132,19 +2132,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -2155,7 +2155,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -2170,19 +2170,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string Name { get; set; }
 
         /// <summary>
         /// SobjectType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SobjectType { get; set; }
 
         /// <summary>
@@ -2193,7 +2193,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -2204,7 +2204,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -2229,7 +2229,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -2240,25 +2240,25 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// JobType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string JobType { get; set; }
 
         /// <summary>
         /// ApexClassId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ApexClassId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -2284,25 +2284,25 @@ namespace SalesforceSharp
         /// <summary>
         /// MethodName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MethodName { get; set; }
 
         /// <summary>
         /// ExtendedStatus (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ExtendedStatus { get; set; }
 
         /// <summary>
         /// ParentJobId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentJobId { get; set; }
 
         /// <summary>
         /// LastProcessed (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string LastProcessed { get; set; }
 
         /// <summary>
@@ -2322,7 +2322,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -2333,25 +2333,25 @@ namespace SalesforceSharp
         /// <summary>
         /// LinkedEntityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LinkedEntityId { get; set; }
 
         /// <summary>
         /// ContentDocumentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContentDocumentId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -2362,7 +2362,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -2382,7 +2382,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -2393,13 +2393,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
@@ -2410,7 +2410,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -2426,7 +2426,7 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -2437,7 +2437,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -2448,7 +2448,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -2459,7 +2459,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(500)]
+        [StringLength(500)]
         public string Description { get; set; }
 
     }
@@ -2474,7 +2474,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -2485,73 +2485,73 @@ namespace SalesforceSharp
         /// <summary>
         /// ProviderType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ProviderType { get; set; }
 
         /// <summary>
         /// FriendlyName (string type in Salesforce)
         /// </summary>
-		[StringLength(32)]
+        [StringLength(32)]
         public string FriendlyName { get; set; }
 
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(32)]
+        [StringLength(32)]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// RegistrationHandlerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RegistrationHandlerId { get; set; }
 
         /// <summary>
         /// ExecutionUserId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ExecutionUserId { get; set; }
 
         /// <summary>
         /// ConsumerKey (string type in Salesforce)
         /// </summary>
-		[StringLength(256)]
+        [StringLength(256)]
         public string ConsumerKey { get; set; }
 
         /// <summary>
         /// ConsumerSecret (string type in Salesforce)
         /// </summary>
-		[StringLength(100)]
+        [StringLength(100)]
         public string ConsumerSecret { get; set; }
 
         /// <summary>
         /// ErrorUrl (string type in Salesforce)
         /// </summary>
-		[StringLength(500)]
+        [StringLength(500)]
         public string ErrorUrl { get; set; }
 
         /// <summary>
         /// AuthorizeUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string AuthorizeUrl { get; set; }
 
         /// <summary>
         /// TokenUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string TokenUrl { get; set; }
 
         /// <summary>
         /// UserInfoUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string UserInfoUrl { get; set; }
 
         /// <summary>
         /// DefaultScopes (string type in Salesforce)
         /// </summary>
-		[StringLength(256)]
+        [StringLength(256)]
         public string DefaultScopes { get; set; }
 
     }
@@ -2566,13 +2566,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// UsersId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UsersId { get; set; }
 
         /// <summary>
@@ -2593,31 +2593,31 @@ namespace SalesforceSharp
         /// <summary>
         /// UserType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string UserType { get; set; }
 
         /// <summary>
         /// SourceIp (string type in Salesforce)
         /// </summary>
-		[StringLength(39)]
+        [StringLength(39)]
         public string SourceIp { get; set; }
 
         /// <summary>
         /// LoginType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(1)]
+        [StringLength(1)]
         public string LoginType { get; set; }
 
         /// <summary>
         /// SessionType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SessionType { get; set; }
 
         /// <summary>
         /// SessionSecurityLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SessionSecurityLevel { get; set; }
 
     }
@@ -2632,19 +2632,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string DeveloperName { get; set; }
 
         /// <summary>
@@ -2655,19 +2655,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string Description { get; set; }
 
         /// <summary>
         /// Value (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Value { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -2678,7 +2678,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -2689,7 +2689,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -2709,13 +2709,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
@@ -2801,7 +2801,7 @@ namespace SalesforceSharp
         /// <summary>
         /// TimeZoneSidKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string TimeZoneSidKey { get; set; }
 
         /// <summary>
@@ -2817,7 +2817,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -2828,7 +2828,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
     }
@@ -2843,31 +2843,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
         /// TableEnumOrId (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string TableEnumOrId { get; set; }
 
         /// <summary>
@@ -2878,7 +2878,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -2889,7 +2889,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -2914,19 +2914,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// InternalName (string type in Salesforce)
         /// </summary>
-		[StringLength(240)]
+        [StringLength(240)]
         public string InternalName { get; set; }
 
         /// <summary>
@@ -2937,13 +2937,13 @@ namespace SalesforceSharp
         /// <summary>
         /// AdapterUrl (string type in Salesforce)
         /// </summary>
-		[StringLength(2000)]
+        [StringLength(2000)]
         public string AdapterUrl { get; set; }
 
         /// <summary>
         /// CustomSettings (string type in Salesforce)
         /// </summary>
-		[StringLength(3000)]
+        [StringLength(3000)]
         public string CustomSettings { get; set; }
 
         /// <summary>
@@ -2959,7 +2959,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -2970,7 +2970,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
     }
@@ -2985,7 +2985,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -2996,25 +2996,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -3060,7 +3060,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
@@ -3106,7 +3106,7 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -3117,7 +3117,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -3128,7 +3128,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -3154,7 +3154,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CampaignMemberRecordTypeId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CampaignMemberRecordTypeId { get; set; }
 
     }
@@ -3169,25 +3169,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -3223,25 +3223,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -3252,19 +3252,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -3275,7 +3275,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -3290,7 +3290,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -3301,25 +3301,25 @@ namespace SalesforceSharp
         /// <summary>
         /// CampaignId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CampaignId { get; set; }
 
         /// <summary>
         /// LeadId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LeadId { get; set; }
 
         /// <summary>
         /// ContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContactId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -3335,7 +3335,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -3346,7 +3346,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -3371,7 +3371,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -3382,13 +3382,13 @@ namespace SalesforceSharp
         /// <summary>
         /// CampaignId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CampaignId { get; set; }
 
         /// <summary>
         /// Label (string type in Salesforce)
         /// </summary>
-		[StringLength(765)]
+        [StringLength(765)]
         public string Label { get; set; }
 
         /// <summary>
@@ -3414,7 +3414,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -3425,7 +3425,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -3445,31 +3445,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// CampaignId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CampaignId { get; set; }
 
         /// <summary>
         /// UserOrGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// CampaignAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CampaignAccessLevel { get; set; }
 
         /// <summary>
         /// RowCause (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RowCause { get; set; }
 
         /// <summary>
@@ -3480,7 +3480,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -3500,7 +3500,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -3511,97 +3511,97 @@ namespace SalesforceSharp
         /// <summary>
         /// CaseNumber (string type in Salesforce)
         /// </summary>
-		[StringLength(30)]
+        [StringLength(30)]
         public string CaseNumber { get; set; }
 
         /// <summary>
         /// ContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContactId { get; set; }
 
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// AssetId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AssetId { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// SuppliedName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string SuppliedName { get; set; }
 
         /// <summary>
         /// SuppliedEmail (email type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string SuppliedEmail { get; set; }
 
         /// <summary>
         /// SuppliedPhone (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SuppliedPhone { get; set; }
 
         /// <summary>
         /// SuppliedCompany (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string SuppliedCompany { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
         /// Reason (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Reason { get; set; }
 
         /// <summary>
         /// Origin (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Origin { get; set; }
 
         /// <summary>
         /// Subject (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Subject { get; set; }
 
         /// <summary>
         /// Priority (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Priority { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
@@ -3622,7 +3622,7 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -3633,7 +3633,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -3644,7 +3644,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -3665,25 +3665,25 @@ namespace SalesforceSharp
         /// <summary>
         /// EngineeringReqNumber__c (string type in Salesforce)
         /// </summary>
-		[StringLength(12)]
+        [StringLength(12)]
         public string EngineeringReqNumber__c { get; set; }
 
         /// <summary>
         /// SLAViolation__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string SLAViolation__c { get; set; }
 
         /// <summary>
         /// Product__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Product__c { get; set; }
 
         /// <summary>
         /// PotentialLiability__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string PotentialLiability__c { get; set; }
 
     }
@@ -3698,13 +3698,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -3715,13 +3715,13 @@ namespace SalesforceSharp
         /// <summary>
         /// CommentBody (textarea type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string CommentBody { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -3742,7 +3742,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -3762,25 +3762,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// CasesId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CasesId { get; set; }
 
         /// <summary>
         /// ContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContactId { get; set; }
 
         /// <summary>
         /// Role (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Role { get; set; }
 
         /// <summary>
@@ -3791,7 +3791,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -3802,7 +3802,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -3827,25 +3827,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -3881,25 +3881,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -3910,19 +3910,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -3933,7 +3933,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -3948,7 +3948,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -3959,13 +3959,13 @@ namespace SalesforceSharp
         /// <summary>
         /// CaseId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CaseId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -3976,19 +3976,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -4003,31 +4003,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// CaseId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CaseId { get; set; }
 
         /// <summary>
         /// UserOrGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// CaseAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CaseAccessLevel { get; set; }
 
         /// <summary>
         /// RowCause (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RowCause { get; set; }
 
         /// <summary>
@@ -4038,7 +4038,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -4058,25 +4058,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// CaseId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CaseId { get; set; }
 
         /// <summary>
         /// SolutionId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string SolutionId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4106,13 +4106,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -4133,7 +4133,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4144,7 +4144,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -4169,31 +4169,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// MemberId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string MemberId { get; set; }
 
         /// <summary>
         /// TeamTemplateMemberId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string TeamTemplateMemberId { get; set; }
 
         /// <summary>
         /// TeamRoleId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string TeamRoleId { get; set; }
 
         /// <summary>
@@ -4204,7 +4204,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4215,7 +4215,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -4235,19 +4235,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// AccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AccessLevel { get; set; }
 
         /// <summary>
@@ -4263,7 +4263,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4274,7 +4274,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -4294,19 +4294,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(300)]
+        [StringLength(300)]
         public string Description { get; set; }
 
         /// <summary>
@@ -4317,7 +4317,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4328,7 +4328,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -4348,25 +4348,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// TeamTemplateId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string TeamTemplateId { get; set; }
 
         /// <summary>
         /// MemberId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string MemberId { get; set; }
 
         /// <summary>
         /// TeamRoleId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string TeamRoleId { get; set; }
 
         /// <summary>
@@ -4377,7 +4377,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4388,7 +4388,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -4408,19 +4408,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// TeamTemplateId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string TeamTemplateId { get; set; }
 
         /// <summary>
@@ -4431,7 +4431,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4451,19 +4451,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// CategoryNodeId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CategoryNodeId { get; set; }
 
         /// <summary>
         /// RelatedSobjectId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedSobjectId { get; set; }
 
         /// <summary>
@@ -4479,7 +4479,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4490,7 +4490,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -4510,19 +4510,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -4533,7 +4533,7 @@ namespace SalesforceSharp
         /// <summary>
         /// SortStyle (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SortStyle { get; set; }
 
         /// <summary>
@@ -4544,7 +4544,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4555,7 +4555,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -4575,13 +4575,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -4626,25 +4626,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// UsersId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UsersId { get; set; }
 
         /// <summary>
         /// FullUserAgent (string type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string FullUserAgent { get; set; }
 
         /// <summary>
         /// ProxyInfo (string type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string ProxyInfo { get; set; }
 
         /// <summary>
@@ -4669,13 +4669,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Name { get; set; }
 
         /// <summary>
@@ -4686,19 +4686,19 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// CollaborationType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CollaborationType { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string Description { get; set; }
 
         /// <summary>
@@ -4709,7 +4709,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4720,7 +4720,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -4731,13 +4731,13 @@ namespace SalesforceSharp
         /// <summary>
         /// FullPhotoUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string FullPhotoUrl { get; set; }
 
         /// <summary>
         /// SmallPhotoUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string SmallPhotoUrl { get; set; }
 
         /// <summary>
@@ -4748,13 +4748,13 @@ namespace SalesforceSharp
         /// <summary>
         /// InformationTitle (string type in Salesforce)
         /// </summary>
-		[StringLength(30)]
+        [StringLength(30)]
         public string InformationTitle { get; set; }
 
         /// <summary>
         /// InformationBody (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string InformationBody { get; set; }
 
         /// <summary>
@@ -4799,25 +4799,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4853,25 +4853,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -4882,19 +4882,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -4905,7 +4905,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -4920,31 +4920,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// CollaborationGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CollaborationGroupId { get; set; }
 
         /// <summary>
         /// MemberId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string MemberId { get; set; }
 
         /// <summary>
         /// CollaborationRole (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CollaborationRole { get; set; }
 
         /// <summary>
         /// NotificationFrequency (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string NotificationFrequency { get; set; }
 
         /// <summary>
@@ -4955,7 +4955,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -4966,7 +4966,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -4986,31 +4986,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// CollaborationGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CollaborationGroupId { get; set; }
 
         /// <summary>
         /// RequesterId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RequesterId { get; set; }
 
         /// <summary>
         /// ResponseMessage (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ResponseMessage { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -5021,7 +5021,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -5032,7 +5032,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -5052,49 +5052,49 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// SharedEntityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string SharedEntityId { get; set; }
 
         /// <summary>
         /// InviterId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InviterId { get; set; }
 
         /// <summary>
         /// InvitedUserEmail (string type in Salesforce)
         /// </summary>
-		[StringLength(240)]
+        [StringLength(240)]
         public string InvitedUserEmail { get; set; }
 
         /// <summary>
         /// InvitedUserEmailNormalized (email type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string InvitedUserEmailNormalized { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
         /// OptionalMessage (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OptionalMessage { get; set; }
 
         /// <summary>
@@ -5105,7 +5105,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -5116,7 +5116,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -5136,7 +5136,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -5147,19 +5147,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// RecordType (string type in Salesforce)
         /// </summary>
-		[StringLength(30)]
+        [StringLength(30)]
         public string RecordType { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
@@ -5170,7 +5170,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -5181,7 +5181,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
     }
@@ -5196,7 +5196,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -5212,7 +5212,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -5223,19 +5223,19 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string Description { get; set; }
 
         /// <summary>
@@ -5255,7 +5255,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -5266,67 +5266,67 @@ namespace SalesforceSharp
         /// <summary>
         /// MasterRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string MasterRecordId { get; set; }
 
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// LastName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string LastName { get; set; }
 
         /// <summary>
         /// FirstName (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string FirstName { get; set; }
 
         /// <summary>
         /// Salutation (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Salutation { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(121)]
+        [StringLength(121)]
         public string Name { get; set; }
 
         /// <summary>
         /// OtherStreet (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OtherStreet { get; set; }
 
         /// <summary>
         /// OtherCity (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string OtherCity { get; set; }
 
         /// <summary>
         /// OtherState (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string OtherState { get; set; }
 
         /// <summary>
         /// OtherPostalCode (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string OtherPostalCode { get; set; }
 
         /// <summary>
         /// OtherCountry (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string OtherCountry { get; set; }
 
         /// <summary>
@@ -5342,31 +5342,31 @@ namespace SalesforceSharp
         /// <summary>
         /// MailingStreet (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MailingStreet { get; set; }
 
         /// <summary>
         /// MailingCity (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string MailingCity { get; set; }
 
         /// <summary>
         /// MailingState (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string MailingState { get; set; }
 
         /// <summary>
         /// MailingPostalCode (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string MailingPostalCode { get; set; }
 
         /// <summary>
         /// MailingCountry (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string MailingCountry { get; set; }
 
         /// <summary>
@@ -5382,73 +5382,73 @@ namespace SalesforceSharp
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Phone { get; set; }
 
         /// <summary>
         /// Fax (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Fax { get; set; }
 
         /// <summary>
         /// MobilePhone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string MobilePhone { get; set; }
 
         /// <summary>
         /// HomePhone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string HomePhone { get; set; }
 
         /// <summary>
         /// OtherPhone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string OtherPhone { get; set; }
 
         /// <summary>
         /// AssistantPhone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AssistantPhone { get; set; }
 
         /// <summary>
         /// ReportsToId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ReportsToId { get; set; }
 
         /// <summary>
         /// Email (email type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Email { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(128)]
+        [StringLength(128)]
         public string Title { get; set; }
 
         /// <summary>
         /// Department (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Department { get; set; }
 
         /// <summary>
         /// AssistantName (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AssistantName { get; set; }
 
         /// <summary>
         /// LeadSource (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string LeadSource { get; set; }
 
         /// <summary>
@@ -5459,13 +5459,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -5476,7 +5476,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -5487,7 +5487,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -5523,7 +5523,7 @@ namespace SalesforceSharp
         /// <summary>
         /// EmailBouncedReason (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string EmailBouncedReason { get; set; }
 
         /// <summary>
@@ -5539,25 +5539,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Jigsaw (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string Jigsaw { get; set; }
 
         /// <summary>
         /// JigsawContactId (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string JigsawContactId { get; set; }
 
         /// <summary>
         /// Level__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Level__c { get; set; }
 
         /// <summary>
         /// Languages__c (string type in Salesforce)
         /// </summary>
-		[StringLength(100)]
+        [StringLength(100)]
         public string Languages__c { get; set; }
 
     }
@@ -5572,25 +5572,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -5626,25 +5626,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -5655,19 +5655,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -5678,7 +5678,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -5693,7 +5693,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -5704,13 +5704,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContactId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -5721,19 +5721,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -5748,31 +5748,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContactId { get; set; }
 
         /// <summary>
         /// UserOrGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// ContactAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ContactAccessLevel { get; set; }
 
         /// <summary>
         /// RowCause (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RowCause { get; set; }
 
         /// <summary>
@@ -5783,7 +5783,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -5803,13 +5803,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -5820,7 +5820,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -5836,7 +5836,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ArchivedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ArchivedById { get; set; }
 
         /// <summary>
@@ -5852,7 +5852,7 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -5863,25 +5863,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// PublishStatus (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string PublishStatus { get; set; }
 
         /// <summary>
         /// LatestPublishedVersionId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LatestPublishedVersionId { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -5906,25 +5906,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -5960,25 +5960,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -5989,19 +5989,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -6012,7 +6012,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -6027,7 +6027,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -6038,13 +6038,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentDocumentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContentDocumentId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -6055,19 +6055,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -6082,19 +6082,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// LinkedEntityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LinkedEntityId { get; set; }
 
         /// <summary>
         /// ContentDocumentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContentDocumentId { get; set; }
 
         /// <summary>
@@ -6110,7 +6110,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ShareType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ShareType { get; set; }
 
     }
@@ -6125,13 +6125,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ContentDocumentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContentDocumentId { get; set; }
 
         /// <summary>
@@ -6142,37 +6142,37 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentUrl { get; set; }
 
         /// <summary>
         /// VersionNumber (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string VersionNumber { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string Description { get; set; }
 
         /// <summary>
         /// ReasonForChange (string type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ReasonForChange { get; set; }
 
         /// <summary>
         /// PathOnClient (string type in Salesforce)
         /// </summary>
-		[StringLength(500)]
+        [StringLength(500)]
         public string PathOnClient { get; set; }
 
         /// <summary>
@@ -6193,7 +6193,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContentModifiedById { get; set; }
 
         /// <summary>
@@ -6219,13 +6219,13 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -6236,7 +6236,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -6252,19 +6252,19 @@ namespace SalesforceSharp
         /// <summary>
         /// TagCsv (textarea type in Salesforce)
         /// </summary>
-		[StringLength(2000)]
+        [StringLength(2000)]
         public string TagCsv { get; set; }
 
         /// <summary>
         /// FileType (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string FileType { get; set; }
 
         /// <summary>
         /// PublishStatus (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string PublishStatus { get; set; }
 
         /// <summary>
@@ -6280,19 +6280,19 @@ namespace SalesforceSharp
         /// <summary>
         /// FirstPublishLocationId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FirstPublishLocationId { get; set; }
 
         /// <summary>
         /// Origin (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Origin { get; set; }
 
         /// <summary>
         /// Checksum (string type in Salesforce)
         /// </summary>
-		[StringLength(50)]
+        [StringLength(50)]
         public string Checksum { get; set; }
 
     }
@@ -6307,7 +6307,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -6318,13 +6318,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentVersionId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContentVersionId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -6335,19 +6335,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -6362,31 +6362,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(500)]
+        [StringLength(500)]
         public string Description { get; set; }
 
         /// <summary>
         /// TagModel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string TagModel { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -6397,7 +6397,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -6413,7 +6413,7 @@ namespace SalesforceSharp
         /// <summary>
         /// DefaultRecordTypeId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string DefaultRecordTypeId { get; set; }
 
         /// <summary>
@@ -6438,19 +6438,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ContentWorkspaceId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContentWorkspaceId { get; set; }
 
         /// <summary>
         /// ContentDocumentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContentDocumentId { get; set; }
 
         /// <summary>
@@ -6485,19 +6485,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// OwnerExpirationNotice (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string OwnerExpirationNotice { get; set; }
 
         /// <summary>
@@ -6513,31 +6513,31 @@ namespace SalesforceSharp
         /// <summary>
         /// BillingStreet (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string BillingStreet { get; set; }
 
         /// <summary>
         /// BillingCity (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string BillingCity { get; set; }
 
         /// <summary>
         /// BillingState (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string BillingState { get; set; }
 
         /// <summary>
         /// BillingPostalCode (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string BillingPostalCode { get; set; }
 
         /// <summary>
         /// BillingCountry (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string BillingCountry { get; set; }
 
         /// <summary>
@@ -6558,19 +6558,19 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
         /// CompanySignedId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CompanySignedId { get; set; }
 
         /// <summary>
@@ -6581,13 +6581,13 @@ namespace SalesforceSharp
         /// <summary>
         /// CustomerSignedId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CustomerSignedId { get; set; }
 
         /// <summary>
         /// CustomerSignedTitle (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CustomerSignedTitle { get; set; }
 
         /// <summary>
@@ -6598,13 +6598,13 @@ namespace SalesforceSharp
         /// <summary>
         /// SpecialTerms (textarea type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string SpecialTerms { get; set; }
 
         /// <summary>
         /// ActivatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ActivatedById { get; set; }
 
         /// <summary>
@@ -6615,13 +6615,13 @@ namespace SalesforceSharp
         /// <summary>
         /// StatusCode (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string StatusCode { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
@@ -6632,7 +6632,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ContractNumber (string type in Salesforce)
         /// </summary>
-		[StringLength(30)]
+        [StringLength(30)]
         public string ContractNumber { get; set; }
 
         /// <summary>
@@ -6648,7 +6648,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -6659,7 +6659,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -6694,25 +6694,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ContractId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContractId { get; set; }
 
         /// <summary>
         /// ContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContactId { get; set; }
 
         /// <summary>
         /// Role (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Role { get; set; }
 
         /// <summary>
@@ -6728,7 +6728,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -6739,7 +6739,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -6764,25 +6764,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -6818,25 +6818,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -6847,19 +6847,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -6870,7 +6870,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -6885,7 +6885,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -6896,13 +6896,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ContractId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContractId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -6913,19 +6913,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -6940,13 +6940,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -6962,13 +6962,13 @@ namespace SalesforceSharp
         /// <summary>
         /// StatusCode (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string StatusCode { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -6979,7 +6979,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -7004,19 +7004,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// JobType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string JobType { get; set; }
 
     }
@@ -7031,13 +7031,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// CronJobDetailId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CronJobDetailId { get; set; }
 
         /// <summary>
@@ -7053,7 +7053,7 @@ namespace SalesforceSharp
         /// <summary>
         /// State (string type in Salesforce)
         /// </summary>
-		[StringLength(16)]
+        [StringLength(16)]
         public string State { get; set; }
 
         /// <summary>
@@ -7069,31 +7069,31 @@ namespace SalesforceSharp
         /// <summary>
         /// CronExpression (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CronExpression { get; set; }
 
         /// <summary>
         /// TimeZoneSidKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string TimeZoneSidKey { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -7118,7 +7118,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -7129,49 +7129,49 @@ namespace SalesforceSharp
         /// <summary>
         /// FolderId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FolderId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Title { get; set; }
 
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
         /// LeftSize (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string LeftSize { get; set; }
 
         /// <summary>
         /// MiddleSize (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string MiddleSize { get; set; }
 
         /// <summary>
         /// RightSize (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RightSize { get; set; }
 
         /// <summary>
@@ -7182,7 +7182,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -7193,7 +7193,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -7204,7 +7204,7 @@ namespace SalesforceSharp
         /// <summary>
         /// RunningUserId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RunningUserId { get; set; }
 
         /// <summary>
@@ -7235,13 +7235,13 @@ namespace SalesforceSharp
         /// <summary>
         /// BackgroundDirection (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string BackgroundDirection { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
@@ -7266,19 +7266,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// DashboardId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string DashboardId { get; set; }
 
     }
@@ -7293,25 +7293,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -7347,25 +7347,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -7376,19 +7376,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -7399,7 +7399,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -7414,25 +7414,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -7468,25 +7468,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -7497,19 +7497,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -7520,7 +7520,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -7535,19 +7535,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// RelationId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelationId { get; set; }
 
         /// <summary>
         /// EventId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string EventId { get; set; }
 
         /// <summary>
@@ -7558,7 +7558,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Response (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Response { get; set; }
 
         /// <summary>
@@ -7569,7 +7569,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -7580,7 +7580,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -7596,7 +7596,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Type (string type in Salesforce)
         /// </summary>
-		[StringLength(50)]
+        [StringLength(50)]
         public string Type { get; set; }
 
     }
@@ -7611,13 +7611,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// FolderId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FolderId { get; set; }
 
         /// <summary>
@@ -7628,31 +7628,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Type (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
@@ -7673,19 +7673,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Url (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Url { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
         /// Keywords (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Keywords { get; set; }
 
         /// <summary>
@@ -7696,7 +7696,7 @@ namespace SalesforceSharp
         /// <summary>
         /// AuthorId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AuthorId { get; set; }
 
         /// <summary>
@@ -7707,7 +7707,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -7718,7 +7718,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -7753,19 +7753,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// DocumentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string DocumentId { get; set; }
 
         /// <summary>
@@ -7781,7 +7781,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
     }
@@ -7796,19 +7796,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// DomainType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DomainType { get; set; }
 
         /// <summary>
         /// Domain (string type in Salesforce)
         /// </summary>
-		[StringLength(765)]
+        [StringLength(765)]
         public string Domain2 { get; set; }
 
         /// <summary>
@@ -7819,7 +7819,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -7830,7 +7830,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -7850,25 +7850,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// DomainId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string DomainId { get; set; }
 
         /// <summary>
         /// SiteId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string SiteId { get; set; }
 
         /// <summary>
         /// PathPrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string PathPrefix { get; set; }
 
         /// <summary>
@@ -7879,7 +7879,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -7890,7 +7890,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -7910,7 +7910,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -7921,37 +7921,37 @@ namespace SalesforceSharp
         /// <summary>
         /// LocalPart (string type in Salesforce)
         /// </summary>
-		[StringLength(64)]
+        [StringLength(64)]
         public string LocalPart { get; set; }
 
         /// <summary>
         /// EmailDomainName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string EmailDomainName { get; set; }
 
         /// <summary>
         /// AuthorizedSenders (textarea type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string AuthorizedSenders { get; set; }
 
         /// <summary>
         /// RunAsUserId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RunAsUserId { get; set; }
 
         /// <summary>
         /// FunctionId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FunctionId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -7962,7 +7962,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -7987,7 +7987,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -7998,13 +7998,13 @@ namespace SalesforceSharp
         /// <summary>
         /// FunctionName (string type in Salesforce)
         /// </summary>
-		[StringLength(64)]
+        [StringLength(64)]
         public string FunctionName { get; set; }
 
         /// <summary>
         /// AuthorizedSenders (textarea type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string AuthorizedSenders { get; set; }
 
         /// <summary>
@@ -8020,43 +8020,43 @@ namespace SalesforceSharp
         /// <summary>
         /// AttachmentOption (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AttachmentOption { get; set; }
 
         /// <summary>
         /// ApexClassId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ApexClassId { get; set; }
 
         /// <summary>
         /// OverLimitAction (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string OverLimitAction { get; set; }
 
         /// <summary>
         /// FunctionInactiveAction (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string FunctionInactiveAction { get; set; }
 
         /// <summary>
         /// AddressInactiveAction (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AddressInactiveAction { get; set; }
 
         /// <summary>
         /// AuthenticationFailureAction (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AuthenticationFailureAction { get; set; }
 
         /// <summary>
         /// AuthorizationFailureAction (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AuthorizationFailureAction { get; set; }
 
         /// <summary>
@@ -8067,7 +8067,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ErrorRoutingAddress (email type in Salesforce)
         /// </summary>
-		[StringLength(270)]
+        [StringLength(270)]
         public string ErrorRoutingAddress { get; set; }
 
         /// <summary>
@@ -8078,7 +8078,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -8089,7 +8089,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -8114,19 +8114,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// TaskId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string TaskId { get; set; }
 
         /// <summary>
         /// WhoId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string WhoId { get; set; }
 
         /// <summary>
@@ -8137,7 +8137,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -8148,7 +8148,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -8169,7 +8169,7 @@ namespace SalesforceSharp
         /// <summary>
         /// EmailTemplateName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string EmailTemplateName { get; set; }
 
     }
@@ -8184,49 +8184,49 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// FolderId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FolderId { get; set; }
 
         /// <summary>
         /// BrandTemplateId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string BrandTemplateId { get; set; }
 
         /// <summary>
         /// TemplateStyle (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string TemplateStyle { get; set; }
 
         /// <summary>
@@ -8237,37 +8237,37 @@ namespace SalesforceSharp
         /// <summary>
         /// TemplateType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string TemplateType { get; set; }
 
         /// <summary>
         /// Encoding (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Encoding { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string Description { get; set; }
 
         /// <summary>
         /// Subject (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Subject { get; set; }
 
         /// <summary>
         /// HtmlValue (textarea type in Salesforce)
         /// </summary>
-		[StringLength(384000)]
+        [StringLength(384000)]
         public string HtmlValue { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(384000)]
+        [StringLength(384000)]
         public string Body { get; set; }
 
         /// <summary>
@@ -8288,7 +8288,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -8299,7 +8299,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -8315,7 +8315,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Markup (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1048576)]
+        [StringLength(1048576)]
         public string Markup { get; set; }
 
     }
@@ -8330,25 +8330,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// SubscriberId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string SubscriberId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -8373,31 +8373,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// WhoId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string WhoId { get; set; }
 
         /// <summary>
         /// WhatId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string WhatId { get; set; }
 
         /// <summary>
         /// Subject (combobox type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Subject { get; set; }
 
         /// <summary>
         /// Location (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Location { get; set; }
 
         /// <summary>
@@ -8433,19 +8433,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -8456,7 +8456,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ShowAs (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ShowAs { get; set; }
 
         /// <summary>
@@ -8477,7 +8477,7 @@ namespace SalesforceSharp
         /// <summary>
         /// GroupEventType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string GroupEventType { get; set; }
 
         /// <summary>
@@ -8488,7 +8488,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -8499,7 +8499,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -8515,7 +8515,7 @@ namespace SalesforceSharp
         /// <summary>
         /// RecurrenceActivityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RecurrenceActivityId { get; set; }
 
         /// <summary>
@@ -8536,13 +8536,13 @@ namespace SalesforceSharp
         /// <summary>
         /// RecurrenceTimeZoneSidKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceTimeZoneSidKey { get; set; }
 
         /// <summary>
         /// RecurrenceType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceType { get; set; }
 
         /// <summary>
@@ -8563,13 +8563,13 @@ namespace SalesforceSharp
         /// <summary>
         /// RecurrenceInstance (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceInstance { get; set; }
 
         /// <summary>
         /// RecurrenceMonthOfYear (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceMonthOfYear { get; set; }
 
         /// <summary>
@@ -8594,25 +8594,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -8648,25 +8648,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -8677,19 +8677,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -8700,7 +8700,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -8715,25 +8715,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// RelationId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelationId { get; set; }
 
         /// <summary>
         /// EventId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string EventId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -8744,7 +8744,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Response (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Response { get; set; }
 
         /// <summary>
@@ -8755,7 +8755,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -8766,7 +8766,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -8791,25 +8791,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// FeedItemId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FeedItemId { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -8820,7 +8820,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CommentBody (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string CommentBody { get; set; }
 
         /// <summary>
@@ -8831,19 +8831,19 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
         /// <summary>
         /// CommentType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CommentType { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
     }
@@ -8858,25 +8858,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -8912,25 +8912,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -8941,19 +8941,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -8964,7 +8964,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -8979,25 +8979,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// FeedItemId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FeedItemId { get; set; }
 
         /// <summary>
         /// FeedEntityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FeedEntityId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -9013,7 +9013,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -9028,13 +9028,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// FeedItemId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FeedItemId { get; set; }
 
         /// <summary>
@@ -9045,13 +9045,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ChoiceBody (textarea type in Salesforce)
         /// </summary>
-		[StringLength(100)]
+        [StringLength(100)]
         public string ChoiceBody { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -9076,25 +9076,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// FeedItemId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FeedItemId { get; set; }
 
         /// <summary>
         /// ChoiceId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ChoiceId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -9124,31 +9124,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// FeedItemId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FeedItemId { get; set; }
 
         /// <summary>
         /// FieldName (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string FieldName { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -9163,25 +9163,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// SobjectType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SobjectType { get; set; }
 
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Field { get; set; }
 
         /// <summary>
@@ -9211,13 +9211,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// PeriodId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string PeriodId { get; set; }
 
         /// <summary>
@@ -9233,7 +9233,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
@@ -9244,37 +9244,37 @@ namespace SalesforceSharp
         /// <summary>
         /// YearType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string YearType { get; set; }
 
         /// <summary>
         /// QuarterLabelScheme (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string QuarterLabelScheme { get; set; }
 
         /// <summary>
         /// PeriodLabelScheme (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string PeriodLabelScheme { get; set; }
 
         /// <summary>
         /// WeekLabelScheme (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string WeekLabelScheme { get; set; }
 
         /// <summary>
         /// QuarterPrefix (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string QuarterPrefix { get; set; }
 
         /// <summary>
         /// PeriodPrefix (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string PeriodPrefix { get; set; }
 
         /// <summary>
@@ -9285,7 +9285,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
@@ -9305,25 +9305,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Name { get; set; }
 
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// AccessType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AccessType { get; set; }
 
         /// <summary>
@@ -9334,13 +9334,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -9351,7 +9351,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -9362,7 +9362,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -9382,25 +9382,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// UserRoleId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserRoleId { get; set; }
 
         /// <summary>
         /// UserOrGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// AccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AccessLevel { get; set; }
 
         /// <summary>
@@ -9411,7 +9411,7 @@ namespace SalesforceSharp
         /// <summary>
         /// RowCause (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RowCause { get; set; }
 
         /// <summary>
@@ -9422,7 +9422,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
     }
@@ -9437,43 +9437,43 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Name { get; set; }
 
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// RelatedId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// Email (email type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Email { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -9494,7 +9494,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -9505,7 +9505,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -9525,19 +9525,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// GroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string GroupId { get; set; }
 
         /// <summary>
         /// UserOrGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
@@ -9557,19 +9557,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// NameNorm (string type in Salesforce)
         /// </summary>
-		[StringLength(765)]
+        [StringLength(765)]
         public string NameNorm { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(765)]
+        [StringLength(765)]
         public string Name { get; set; }
 
         /// <summary>
@@ -9599,19 +9599,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(100)]
+        [StringLength(100)]
         public string Description { get; set; }
 
         /// <summary>
@@ -9642,7 +9642,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -9653,7 +9653,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -9679,7 +9679,7 @@ namespace SalesforceSharp
         /// <summary>
         /// RecurrenceType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceType { get; set; }
 
         /// <summary>
@@ -9700,13 +9700,13 @@ namespace SalesforceSharp
         /// <summary>
         /// RecurrenceInstance (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceInstance { get; set; }
 
         /// <summary>
         /// RecurrenceMonthOfYear (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceMonthOfYear { get; set; }
 
     }
@@ -9721,7 +9721,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -9732,13 +9732,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// RecordTypeId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RecordTypeId { get; set; }
 
         /// <summary>
@@ -9749,7 +9749,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -9760,7 +9760,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -9781,13 +9781,13 @@ namespace SalesforceSharp
         /// <summary>
         /// CommunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CommunityId { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Body { get; set; }
 
         /// <summary>
@@ -9808,13 +9808,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Categories (multipicklist type in Salesforce)
         /// </summary>
-		[StringLength(4099)]
+        [StringLength(4099)]
         public string Categories { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -9825,13 +9825,13 @@ namespace SalesforceSharp
         /// <summary>
         /// LastCommentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastCommentId { get; set; }
 
         /// <summary>
         /// ParentIdeaId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentIdeaId { get; set; }
 
         /// <summary>
@@ -9847,19 +9847,19 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatorFullPhotoUrl (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CreatorFullPhotoUrl { get; set; }
 
         /// <summary>
         /// CreatorSmallPhotoUrl (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CreatorSmallPhotoUrl { get; set; }
 
         /// <summary>
         /// CreatorName (string type in Salesforce)
         /// </summary>
-		[StringLength(121)]
+        [StringLength(121)]
         public string CreatorName { get; set; }
 
     }
@@ -9874,31 +9874,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// IdeaId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string IdeaId { get; set; }
 
         /// <summary>
         /// CommunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CommunityId { get; set; }
 
         /// <summary>
         /// CommentBody (textarea type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string CommentBody { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -9924,19 +9924,19 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatorFullPhotoUrl (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CreatorFullPhotoUrl { get; set; }
 
         /// <summary>
         /// CreatorSmallPhotoUrl (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CreatorSmallPhotoUrl { get; set; }
 
         /// <summary>
         /// CreatorName (string type in Salesforce)
         /// </summary>
-		[StringLength(121)]
+        [StringLength(121)]
         public string CreatorName { get; set; }
 
         /// <summary>
@@ -9956,7 +9956,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -9967,73 +9967,73 @@ namespace SalesforceSharp
         /// <summary>
         /// MasterRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string MasterRecordId { get; set; }
 
         /// <summary>
         /// LastName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string LastName { get; set; }
 
         /// <summary>
         /// FirstName (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string FirstName { get; set; }
 
         /// <summary>
         /// Salutation (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Salutation { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(121)]
+        [StringLength(121)]
         public string Name { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(128)]
+        [StringLength(128)]
         public string Title { get; set; }
 
         /// <summary>
         /// Company (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Company { get; set; }
 
         /// <summary>
         /// Street (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Street { get; set; }
 
         /// <summary>
         /// City (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string City { get; set; }
 
         /// <summary>
         /// State (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string State { get; set; }
 
         /// <summary>
         /// PostalCode (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string PostalCode { get; set; }
 
         /// <summary>
         /// Country (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Country { get; set; }
 
         /// <summary>
@@ -10049,61 +10049,61 @@ namespace SalesforceSharp
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Phone { get; set; }
 
         /// <summary>
         /// MobilePhone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string MobilePhone { get; set; }
 
         /// <summary>
         /// Fax (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Fax { get; set; }
 
         /// <summary>
         /// Email (email type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Email { get; set; }
 
         /// <summary>
         /// Website (url type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Website { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
         /// LeadSource (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string LeadSource { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
         /// Industry (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Industry { get; set; }
 
         /// <summary>
         /// Rating (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Rating { get; set; }
 
         /// <summary>
@@ -10119,7 +10119,7 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -10135,19 +10135,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ConvertedAccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ConvertedAccountId { get; set; }
 
         /// <summary>
         /// ConvertedContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ConvertedContactId { get; set; }
 
         /// <summary>
         /// ConvertedOpportunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ConvertedOpportunityId { get; set; }
 
         /// <summary>
@@ -10163,7 +10163,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -10174,7 +10174,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -10200,19 +10200,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Jigsaw (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string Jigsaw { get; set; }
 
         /// <summary>
         /// JigsawContactId (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string JigsawContactId { get; set; }
 
         /// <summary>
         /// EmailBouncedReason (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string EmailBouncedReason { get; set; }
 
         /// <summary>
@@ -10223,25 +10223,25 @@ namespace SalesforceSharp
         /// <summary>
         /// SICCode__c (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string SICCode__c { get; set; }
 
         /// <summary>
         /// ProductInterest__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ProductInterest__c { get; set; }
 
         /// <summary>
         /// Primary__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Primary__c { get; set; }
 
         /// <summary>
         /// CurrentGenerators__c (string type in Salesforce)
         /// </summary>
-		[StringLength(100)]
+        [StringLength(100)]
         public string CurrentGenerators__c { get; set; }
 
         /// <summary>
@@ -10261,25 +10261,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -10315,25 +10315,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -10344,19 +10344,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -10367,7 +10367,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -10382,7 +10382,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -10393,13 +10393,13 @@ namespace SalesforceSharp
         /// <summary>
         /// LeadId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LeadId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -10410,19 +10410,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -10437,31 +10437,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// LeadId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LeadId { get; set; }
 
         /// <summary>
         /// UserOrGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// LeadAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string LeadAccessLevel { get; set; }
 
         /// <summary>
         /// RowCause (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RowCause { get; set; }
 
         /// <summary>
@@ -10472,7 +10472,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -10492,13 +10492,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -10519,7 +10519,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -10530,7 +10530,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -10555,13 +10555,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// UserId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserId { get; set; }
 
         /// <summary>
@@ -10572,61 +10572,61 @@ namespace SalesforceSharp
         /// <summary>
         /// LoginType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(1)]
+        [StringLength(1)]
         public string LoginType { get; set; }
 
         /// <summary>
         /// SourceIp (string type in Salesforce)
         /// </summary>
-		[StringLength(39)]
+        [StringLength(39)]
         public string SourceIp { get; set; }
 
         /// <summary>
         /// LoginUrl (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string LoginUrl { get; set; }
 
         /// <summary>
         /// Browser (string type in Salesforce)
         /// </summary>
-		[StringLength(64)]
+        [StringLength(64)]
         public string Browser { get; set; }
 
         /// <summary>
         /// Platform (string type in Salesforce)
         /// </summary>
-		[StringLength(64)]
+        [StringLength(64)]
         public string Platform { get; set; }
 
         /// <summary>
         /// Status (string type in Salesforce)
         /// </summary>
-		[StringLength(128)]
+        [StringLength(128)]
         public string Status { get; set; }
 
         /// <summary>
         /// Application (string type in Salesforce)
         /// </summary>
-		[StringLength(64)]
+        [StringLength(64)]
         public string Application { get; set; }
 
         /// <summary>
         /// ClientVersion (string type in Salesforce)
         /// </summary>
-		[StringLength(64)]
+        [StringLength(64)]
         public string ClientVersion { get; set; }
 
         /// <summary>
         /// ApiType (string type in Salesforce)
         /// </summary>
-		[StringLength(64)]
+        [StringLength(64)]
         public string ApiType { get; set; }
 
         /// <summary>
         /// ApiVersion (string type in Salesforce)
         /// </summary>
-		[StringLength(32)]
+        [StringLength(32)]
         public string ApiVersion { get; set; }
 
     }
@@ -10641,19 +10641,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// UsersId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UsersId { get; set; }
 
         /// <summary>
         /// SourceIp (string type in Salesforce)
         /// </summary>
-		[StringLength(39)]
+        [StringLength(39)]
         public string SourceIp { get; set; }
 
         /// <summary>
@@ -10674,7 +10674,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ChallengeMethod (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ChallengeMethod { get; set; }
 
     }
@@ -10689,7 +10689,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -10700,19 +10700,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
         /// Filename (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Filename { get; set; }
 
         /// <summary>
@@ -10738,7 +10738,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -10749,7 +10749,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -10769,49 +10769,49 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name2 { get; set; }
 
         /// <summary>
         /// LastName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string LastName { get; set; }
 
         /// <summary>
         /// FirstName (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string FirstName { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// Alias (string type in Salesforce)
         /// </summary>
-		[StringLength(8)]
+        [StringLength(8)]
         public string Alias { get; set; }
 
         /// <summary>
         /// UserRoleId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserRoleId { get; set; }
 
         /// <summary>
         /// RecordTypeId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RecordTypeId { get; set; }
 
         /// <summary>
@@ -10822,31 +10822,31 @@ namespace SalesforceSharp
         /// <summary>
         /// ProfileId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ProfileId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Title { get; set; }
 
         /// <summary>
         /// Email (email type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Email { get; set; }
 
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Phone { get; set; }
 
         /// <summary>
         /// Username (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Username { get; set; }
 
         /// <summary>
@@ -10871,7 +10871,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -10882,13 +10882,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Title { get; set; }
 
         /// <summary>
@@ -10899,13 +10899,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Body { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -10916,7 +10916,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -10927,7 +10927,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -10947,7 +10947,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -10963,13 +10963,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Title { get; set; }
 
         /// <summary>
@@ -10980,7 +10980,7 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -10991,7 +10991,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -11002,7 +11002,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -11022,19 +11022,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// SobjectType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SobjectType { get; set; }
 
         /// <summary>
@@ -11075,7 +11075,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -11086,7 +11086,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -11106,31 +11106,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// WhoId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string WhoId { get; set; }
 
         /// <summary>
         /// WhatId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string WhatId { get; set; }
 
         /// <summary>
         /// Subject (combobox type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Subject { get; set; }
 
         /// <summary>
@@ -11146,25 +11146,25 @@ namespace SalesforceSharp
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
         /// Priority (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Priority { get; set; }
 
         /// <summary>
         /// ActivityType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ActivityType { get; set; }
 
         /// <summary>
@@ -11190,13 +11190,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Location (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Location { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
@@ -11212,7 +11212,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -11223,7 +11223,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -11239,19 +11239,19 @@ namespace SalesforceSharp
         /// <summary>
         /// CallType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CallType { get; set; }
 
         /// <summary>
         /// CallDisposition (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CallDisposition { get; set; }
 
         /// <summary>
         /// CallObject (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CallObject { get; set; }
 
         /// <summary>
@@ -11286,7 +11286,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -11297,7 +11297,7 @@ namespace SalesforceSharp
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
@@ -11308,19 +11308,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string Name { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
         /// StageName (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string StageName { get; set; }
 
         /// <summary>
@@ -11351,19 +11351,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// NextStep (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NextStep { get; set; }
 
         /// <summary>
         /// LeadSource (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string LeadSource { get; set; }
 
         /// <summary>
@@ -11379,19 +11379,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ForecastCategory (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ForecastCategory { get; set; }
 
         /// <summary>
         /// ForecastCategoryName (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ForecastCategoryName { get; set; }
 
         /// <summary>
         /// CampaignId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CampaignId { get; set; }
 
         /// <summary>
@@ -11402,13 +11402,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Pricebook2Id (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Pricebook2Id { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -11419,7 +11419,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -11430,7 +11430,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -11456,7 +11456,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Fiscal (string type in Salesforce)
         /// </summary>
-		[StringLength(6)]
+        [StringLength(6)]
         public string Fiscal { get; set; }
 
         /// <summary>
@@ -11472,31 +11472,31 @@ namespace SalesforceSharp
         /// <summary>
         /// DeliveryInstallationStatus__c (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string DeliveryInstallationStatus__c { get; set; }
 
         /// <summary>
         /// TrackingNumber__c (string type in Salesforce)
         /// </summary>
-		[StringLength(12)]
+        [StringLength(12)]
         public string TrackingNumber__c { get; set; }
 
         /// <summary>
         /// OrderNumber__c (string type in Salesforce)
         /// </summary>
-		[StringLength(8)]
+        [StringLength(8)]
         public string OrderNumber__c { get; set; }
 
         /// <summary>
         /// CurrentGenerators__c (string type in Salesforce)
         /// </summary>
-		[StringLength(100)]
+        [StringLength(100)]
         public string CurrentGenerators__c { get; set; }
 
         /// <summary>
         /// MainCompetitors__c (string type in Salesforce)
         /// </summary>
-		[StringLength(100)]
+        [StringLength(100)]
         public string MainCompetitors__c { get; set; }
 
     }
@@ -11511,37 +11511,37 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// OpportunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// CompetitorName (combobox type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CompetitorName { get; set; }
 
         /// <summary>
         /// Strengths (string type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string Strengths { get; set; }
 
         /// <summary>
         /// Weaknesses (string type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string Weaknesses { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -11552,7 +11552,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -11582,25 +11582,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// OpportunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// ContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContactId { get; set; }
 
         /// <summary>
         /// Role (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Role { get; set; }
 
         /// <summary>
@@ -11616,7 +11616,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -11627,7 +11627,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -11652,25 +11652,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -11706,25 +11706,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -11735,19 +11735,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -11758,7 +11758,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -11773,7 +11773,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -11784,13 +11784,13 @@ namespace SalesforceSharp
         /// <summary>
         /// OpportunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -11801,19 +11801,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -11828,19 +11828,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// OpportunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -11851,7 +11851,7 @@ namespace SalesforceSharp
         /// <summary>
         /// StageName (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string StageName { get; set; }
 
         /// <summary>
@@ -11877,7 +11877,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ForecastCategory (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ForecastCategory { get; set; }
 
         /// <summary>
@@ -11902,13 +11902,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// OpportunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OpportunityId { get; set; }
 
         /// <summary>
@@ -11919,7 +11919,7 @@ namespace SalesforceSharp
         /// <summary>
         /// PricebookEntryId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string PricebookEntryId { get; set; }
 
         /// <summary>
@@ -11950,7 +11950,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
@@ -11961,7 +11961,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -11972,7 +11972,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -11997,25 +11997,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// OpportunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// AccountToId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountToId { get; set; }
 
         /// <summary>
         /// Role (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Role { get; set; }
 
         /// <summary>
@@ -12031,7 +12031,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -12042,7 +12042,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -12058,7 +12058,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ReversePartnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ReversePartnerId { get; set; }
 
     }
@@ -12073,31 +12073,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// OpportunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// UserOrGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// OpportunityAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string OpportunityAccessLevel { get; set; }
 
         /// <summary>
         /// RowCause (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RowCause { get; set; }
 
         /// <summary>
@@ -12108,7 +12108,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -12128,13 +12128,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -12160,13 +12160,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ForecastCategory (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ForecastCategory { get; set; }
 
         /// <summary>
         /// ForecastCategoryName (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ForecastCategoryName { get; set; }
 
         /// <summary>
@@ -12177,13 +12177,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -12194,7 +12194,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -12219,13 +12219,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -12241,7 +12241,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -12252,13 +12252,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Address (email type in Salesforce)
         /// </summary>
-		[StringLength(270)]
+        [StringLength(270)]
         public string Address { get; set; }
 
         /// <summary>
         /// DisplayName (string type in Salesforce)
         /// </summary>
-		[StringLength(300)]
+        [StringLength(300)]
         public string DisplayName { get; set; }
 
         /// <summary>
@@ -12278,49 +12278,49 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// Division (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Division { get; set; }
 
         /// <summary>
         /// Street (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Street { get; set; }
 
         /// <summary>
         /// City (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string City { get; set; }
 
         /// <summary>
         /// State (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string State { get; set; }
 
         /// <summary>
         /// PostalCode (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string PostalCode { get; set; }
 
         /// <summary>
         /// Country (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Country { get; set; }
 
         /// <summary>
@@ -12336,31 +12336,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Phone { get; set; }
 
         /// <summary>
         /// Fax (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Fax { get; set; }
 
         /// <summary>
         /// PrimaryContact (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string PrimaryContact { get; set; }
 
         /// <summary>
         /// DefaultLocaleSidKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DefaultLocaleSidKey { get; set; }
 
         /// <summary>
         /// LanguageLocaleKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string LanguageLocaleKey { get; set; }
 
         /// <summary>
@@ -12396,49 +12396,49 @@ namespace SalesforceSharp
         /// <summary>
         /// DefaultAccountAccess (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DefaultAccountAccess { get; set; }
 
         /// <summary>
         /// DefaultContactAccess (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DefaultContactAccess { get; set; }
 
         /// <summary>
         /// DefaultOpportunityAccess (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DefaultOpportunityAccess { get; set; }
 
         /// <summary>
         /// DefaultLeadAccess (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DefaultLeadAccess { get; set; }
 
         /// <summary>
         /// DefaultCaseAccess (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DefaultCaseAccess { get; set; }
 
         /// <summary>
         /// DefaultCalendarAccess (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DefaultCalendarAccess { get; set; }
 
         /// <summary>
         /// DefaultPricebookAccess (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DefaultPricebookAccess { get; set; }
 
         /// <summary>
         /// DefaultCampaignAccess (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DefaultCampaignAccess { get; set; }
 
         /// <summary>
@@ -12449,13 +12449,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ComplianceBccEmail (email type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string ComplianceBccEmail { get; set; }
 
         /// <summary>
         /// UiSkin (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string UiSkin { get; set; }
 
         /// <summary>
@@ -12466,13 +12466,13 @@ namespace SalesforceSharp
         /// <summary>
         /// OrganizationType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string OrganizationType { get; set; }
 
         /// <summary>
         /// WebToCaseDefaultOrigin (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string WebToCaseDefaultOrigin { get; set; }
 
         /// <summary>
@@ -12493,7 +12493,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -12504,7 +12504,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
     }
@@ -12519,31 +12519,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// OpportunityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// AccountFromId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountFromId { get; set; }
 
         /// <summary>
         /// AccountToId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountToId { get; set; }
 
         /// <summary>
         /// Role (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Role { get; set; }
 
         /// <summary>
@@ -12559,7 +12559,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -12570,7 +12570,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -12586,7 +12586,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ReversePartnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ReversePartnerId { get; set; }
 
     }
@@ -12601,13 +12601,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -12618,13 +12618,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ReverseRole (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ReverseRole { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -12635,7 +12635,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -12660,19 +12660,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// FiscalYearSettingsId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string FiscalYearSettingsId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
@@ -12698,13 +12698,13 @@ namespace SalesforceSharp
         /// <summary>
         /// QuarterLabel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string QuarterLabel { get; set; }
 
         /// <summary>
         /// PeriodLabel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string PeriodLabel { get; set; }
 
         /// <summary>
@@ -12724,31 +12724,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// Label (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Label { get; set; }
 
         /// <summary>
         /// UserLicenseId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserLicenseId { get; set; }
 
         /// <summary>
         /// ProfileId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ProfileId { get; set; }
 
         /// <summary>
@@ -13124,7 +13124,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
@@ -13135,7 +13135,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -13146,7 +13146,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -13157,7 +13157,7 @@ namespace SalesforceSharp
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
     }
@@ -13172,19 +13172,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// PermissionSetId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string PermissionSetId { get; set; }
 
         /// <summary>
         /// AssigneeId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AssigneeId { get; set; }
 
         /// <summary>
@@ -13204,7 +13204,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -13215,19 +13215,19 @@ namespace SalesforceSharp
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// Language (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Language { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -13238,7 +13238,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -13249,7 +13249,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -13260,7 +13260,7 @@ namespace SalesforceSharp
         /// <summary>
         /// PermissionSetLicenseKey (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string PermissionSetLicenseKey { get; set; }
 
         /// <summary>
@@ -13271,7 +13271,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Status { get; set; }
 
         /// <summary>
@@ -13661,7 +13661,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -13677,7 +13677,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -13688,7 +13688,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -13699,13 +13699,13 @@ namespace SalesforceSharp
         /// <summary>
         /// PermissionSetLicenseId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string PermissionSetLicenseId { get; set; }
 
         /// <summary>
         /// AssigneeId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AssigneeId { get; set; }
 
     }
@@ -13720,7 +13720,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -13731,7 +13731,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
@@ -13742,7 +13742,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -13753,7 +13753,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -13779,7 +13779,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
@@ -13799,7 +13799,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -13810,13 +13810,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Pricebook2Id (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Pricebook2Id { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -13827,19 +13827,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -13854,25 +13854,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// Pricebook2Id (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Pricebook2Id { get; set; }
 
         /// <summary>
         /// Product2Id (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Product2Id { get; set; }
 
         /// <summary>
@@ -13898,7 +13898,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -13909,7 +13909,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -13920,7 +13920,7 @@ namespace SalesforceSharp
         /// <summary>
         /// ProductCode (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ProductCode { get; set; }
 
         /// <summary>
@@ -13940,19 +13940,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// TargetObjectId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string TargetObjectId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -13968,7 +13968,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -13979,7 +13979,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -13999,7 +13999,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -14010,31 +14010,31 @@ namespace SalesforceSharp
         /// <summary>
         /// ProcessInstanceId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ProcessInstanceId { get; set; }
 
         /// <summary>
         /// TargetObjectId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string TargetObjectId { get; set; }
 
         /// <summary>
         /// StepStatus (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string StepStatus { get; set; }
 
         /// <summary>
         /// OriginalActorId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OriginalActorId { get; set; }
 
         /// <summary>
         /// ActorId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ActorId { get; set; }
 
         /// <summary>
@@ -14045,7 +14045,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Comments (string type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string Comments { get; set; }
 
         /// <summary>
@@ -14061,7 +14061,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -14081,37 +14081,37 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ProcessInstanceId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ProcessInstanceId { get; set; }
 
         /// <summary>
         /// StepStatus (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string StepStatus { get; set; }
 
         /// <summary>
         /// OriginalActorId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OriginalActorId { get; set; }
 
         /// <summary>
         /// ActorId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ActorId { get; set; }
 
         /// <summary>
         /// Comments (string type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string Comments { get; set; }
 
         /// <summary>
@@ -14122,7 +14122,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -14142,25 +14142,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ProcessInstanceId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ProcessInstanceId { get; set; }
 
         /// <summary>
         /// OriginalActorId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OriginalActorId { get; set; }
 
         /// <summary>
         /// ActorId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ActorId { get; set; }
 
         /// <summary>
@@ -14176,7 +14176,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -14196,25 +14196,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// ProductCode (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ProductCode { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(4000)]
+        [StringLength(4000)]
         public string Description { get; set; }
 
         /// <summary>
@@ -14230,7 +14230,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -14241,7 +14241,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -14252,7 +14252,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Family (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Family { get; set; }
 
         /// <summary>
@@ -14272,25 +14272,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -14326,25 +14326,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -14355,19 +14355,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -14378,7 +14378,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -14393,13 +14393,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
@@ -14770,13 +14770,13 @@ namespace SalesforceSharp
         /// <summary>
         /// UserLicenseId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserLicenseId { get; set; }
 
         /// <summary>
         /// UserType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string UserType { get; set; }
 
         /// <summary>
@@ -14787,7 +14787,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -14798,7 +14798,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -14809,7 +14809,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
@@ -14834,19 +14834,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(25)]
+        [StringLength(25)]
         public string Name { get; set; }
 
         /// <summary>
         /// Query (string type in Salesforce)
         /// </summary>
-		[StringLength(1300)]
+        [StringLength(1300)]
         public string Query { get; set; }
 
         /// <summary>
@@ -14862,19 +14862,19 @@ namespace SalesforceSharp
         /// <summary>
         /// NotifyForFields (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string NotifyForFields { get; set; }
 
         /// <summary>
         /// NotifyForOperations (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string NotifyForOperations { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(400)]
+        [StringLength(400)]
         public string Description { get; set; }
 
         /// <summary>
@@ -14910,7 +14910,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -14921,7 +14921,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -14941,25 +14941,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// QueueId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string QueueId { get; set; }
 
         /// <summary>
         /// SobjectType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SobjectType { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -14979,49 +14979,49 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// LastName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string LastName { get; set; }
 
         /// <summary>
         /// FirstName (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string FirstName { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// Alias (string type in Salesforce)
         /// </summary>
-		[StringLength(8)]
+        [StringLength(8)]
         public string Alias { get; set; }
 
         /// <summary>
         /// UserRoleId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserRoleId { get; set; }
 
         /// <summary>
         /// RecordTypeId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RecordTypeId { get; set; }
 
         /// <summary>
@@ -15032,25 +15032,25 @@ namespace SalesforceSharp
         /// <summary>
         /// ProfileId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ProfileId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Title { get; set; }
 
         /// <summary>
         /// Email (email type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Email { get; set; }
 
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Phone { get; set; }
 
         /// <summary>
@@ -15075,43 +15075,43 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
         /// BusinessProcessId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string BusinessProcessId { get; set; }
 
         /// <summary>
         /// SobjectType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SobjectType { get; set; }
 
         /// <summary>
@@ -15122,7 +15122,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -15133,7 +15133,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -15158,13 +15158,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -15175,7 +15175,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -15186,7 +15186,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -15197,25 +15197,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Name { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -15231,7 +15231,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Format (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Format { get; set; }
 
         /// <summary>
@@ -15256,25 +15256,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -15310,25 +15310,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -15339,19 +15339,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -15362,7 +15362,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -15377,25 +15377,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// SetupEntityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string SetupEntityId { get; set; }
 
         /// <summary>
         /// SetupEntityType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SetupEntityType { get; set; }
 
         /// <summary>
@@ -15415,37 +15415,37 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// Subdomain (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Subdomain { get; set; }
 
         /// <summary>
         /// UrlPathPrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string UrlPathPrefix { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
         /// AdminId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AdminId { get; set; }
 
         /// <summary>
@@ -15481,25 +15481,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string Description { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// AnalyticsTrackingCode (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string AnalyticsTrackingCode { get; set; }
 
         /// <summary>
         /// SiteType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string SiteType { get; set; }
 
         /// <summary>
@@ -15535,7 +15535,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -15546,7 +15546,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -15566,25 +15566,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -15620,25 +15620,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -15649,19 +15649,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -15672,7 +15672,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -15687,7 +15687,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -15698,13 +15698,13 @@ namespace SalesforceSharp
         /// <summary>
         /// SiteId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string SiteId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -15715,19 +15715,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -15742,7 +15742,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -15753,13 +15753,13 @@ namespace SalesforceSharp
         /// <summary>
         /// SolutionNumber (string type in Salesforce)
         /// </summary>
-		[StringLength(30)]
+        [StringLength(30)]
         public string SolutionNumber { get; set; }
 
         /// <summary>
         /// SolutionName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string SolutionName { get; set; }
 
         /// <summary>
@@ -15775,7 +15775,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
@@ -15786,13 +15786,13 @@ namespace SalesforceSharp
         /// <summary>
         /// SolutionNote (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string SolutionNote { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -15803,7 +15803,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -15814,7 +15814,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -15854,25 +15854,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -15908,25 +15908,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -15937,19 +15937,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -15960,7 +15960,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -15975,7 +15975,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -15986,13 +15986,13 @@ namespace SalesforceSharp
         /// <summary>
         /// SolutionId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string SolutionId { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16003,19 +16003,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Field (picklist type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Field { get; set; }
 
         /// <summary>
         /// OldValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string OldValue { get; set; }
 
         /// <summary>
         /// NewValue (anyType type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string NewValue { get; set; }
 
     }
@@ -16030,13 +16030,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -16057,7 +16057,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16068,7 +16068,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -16093,25 +16093,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -16127,7 +16127,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Description { get; set; }
 
         /// <summary>
@@ -16138,7 +16138,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16149,7 +16149,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -16160,7 +16160,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CacheControl (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CacheControl { get; set; }
 
     }
@@ -16175,25 +16175,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// WhoId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string WhoId { get; set; }
 
         /// <summary>
         /// WhatId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string WhatId { get; set; }
 
         /// <summary>
         /// Subject (combobox type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Subject { get; set; }
 
         /// <summary>
@@ -16204,25 +16204,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Status { get; set; }
 
         /// <summary>
         /// Priority (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Priority { get; set; }
 
         /// <summary>
         /// OwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(32000)]
+        [StringLength(32000)]
         public string Description { get; set; }
 
         /// <summary>
@@ -16233,7 +16233,7 @@ namespace SalesforceSharp
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
@@ -16249,7 +16249,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16260,7 +16260,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -16281,19 +16281,19 @@ namespace SalesforceSharp
         /// <summary>
         /// CallType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CallType { get; set; }
 
         /// <summary>
         /// CallDisposition (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CallDisposition { get; set; }
 
         /// <summary>
         /// CallObject (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string CallObject { get; set; }
 
         /// <summary>
@@ -16309,7 +16309,7 @@ namespace SalesforceSharp
         /// <summary>
         /// RecurrenceActivityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RecurrenceActivityId { get; set; }
 
         /// <summary>
@@ -16330,13 +16330,13 @@ namespace SalesforceSharp
         /// <summary>
         /// RecurrenceTimeZoneSidKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceTimeZoneSidKey { get; set; }
 
         /// <summary>
         /// RecurrenceType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceType { get; set; }
 
         /// <summary>
@@ -16357,13 +16357,13 @@ namespace SalesforceSharp
         /// <summary>
         /// RecurrenceInstance (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceInstance { get; set; }
 
         /// <summary>
         /// RecurrenceMonthOfYear (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecurrenceMonthOfYear { get; set; }
 
     }
@@ -16378,25 +16378,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16432,25 +16432,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -16461,19 +16461,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -16484,7 +16484,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -16499,13 +16499,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -16526,7 +16526,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16537,7 +16537,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -16562,13 +16562,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -16589,7 +16589,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16600,7 +16600,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -16625,19 +16625,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(99)]
+        [StringLength(99)]
         public string Name { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string Description { get; set; }
 
         /// <summary>
@@ -16648,7 +16648,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16673,19 +16673,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// TopicId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string TopicId { get; set; }
 
         /// <summary>
         /// EntityId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string EntityId { get; set; }
 
         /// <summary>
@@ -16696,7 +16696,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16721,25 +16721,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16775,25 +16775,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -16804,19 +16804,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -16827,7 +16827,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -16842,19 +16842,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// RelationId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelationId { get; set; }
 
         /// <summary>
         /// EventId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string EventId { get; set; }
 
         /// <summary>
@@ -16865,7 +16865,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Response (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Response { get; set; }
 
         /// <summary>
@@ -16876,7 +16876,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -16887,7 +16887,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -16903,7 +16903,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Type (string type in Salesforce)
         /// </summary>
-		[StringLength(50)]
+        [StringLength(50)]
         public string Type { get; set; }
 
     }
@@ -16918,85 +16918,85 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Username (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Username { get; set; }
 
         /// <summary>
         /// LastName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string LastName { get; set; }
 
         /// <summary>
         /// FirstName (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string FirstName { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(121)]
+        [StringLength(121)]
         public string Name { get; set; }
 
         /// <summary>
         /// CompanyName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string CompanyName { get; set; }
 
         /// <summary>
         /// Division (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Division { get; set; }
 
         /// <summary>
         /// Department (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Department { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Title { get; set; }
 
         /// <summary>
         /// Street (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Street { get; set; }
 
         /// <summary>
         /// City (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string City { get; set; }
 
         /// <summary>
         /// State (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string State { get; set; }
 
         /// <summary>
         /// PostalCode (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string PostalCode { get; set; }
 
         /// <summary>
         /// Country (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Country { get; set; }
 
         /// <summary>
@@ -17012,7 +17012,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Email (email type in Salesforce)
         /// </summary>
-		[StringLength(128)]
+        [StringLength(128)]
         public string Email { get; set; }
 
         /// <summary>
@@ -17033,67 +17033,67 @@ namespace SalesforceSharp
         /// <summary>
         /// SenderEmail (email type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string SenderEmail { get; set; }
 
         /// <summary>
         /// SenderName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string SenderName { get; set; }
 
         /// <summary>
         /// Signature (string type in Salesforce)
         /// </summary>
-		[StringLength(1333)]
+        [StringLength(1333)]
         public string Signature { get; set; }
 
         /// <summary>
         /// StayInTouchSubject (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string StayInTouchSubject { get; set; }
 
         /// <summary>
         /// StayInTouchSignature (string type in Salesforce)
         /// </summary>
-		[StringLength(512)]
+        [StringLength(512)]
         public string StayInTouchSignature { get; set; }
 
         /// <summary>
         /// StayInTouchNote (string type in Salesforce)
         /// </summary>
-		[StringLength(512)]
+        [StringLength(512)]
         public string StayInTouchNote { get; set; }
 
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Phone { get; set; }
 
         /// <summary>
         /// Fax (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Fax { get; set; }
 
         /// <summary>
         /// MobilePhone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string MobilePhone { get; set; }
 
         /// <summary>
         /// Alias (string type in Salesforce)
         /// </summary>
-		[StringLength(8)]
+        [StringLength(8)]
         public string Alias { get; set; }
 
         /// <summary>
         /// CommunityNickname (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CommunityNickname { get; set; }
 
         /// <summary>
@@ -17104,19 +17104,19 @@ namespace SalesforceSharp
         /// <summary>
         /// TimeZoneSidKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string TimeZoneSidKey { get; set; }
 
         /// <summary>
         /// UserRoleId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserRoleId { get; set; }
 
         /// <summary>
         /// LocaleSidKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string LocaleSidKey { get; set; }
 
         /// <summary>
@@ -17132,43 +17132,43 @@ namespace SalesforceSharp
         /// <summary>
         /// EmailEncodingKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string EmailEncodingKey { get; set; }
 
         /// <summary>
         /// ProfileId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ProfileId { get; set; }
 
         /// <summary>
         /// UserType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string UserType { get; set; }
 
         /// <summary>
         /// LanguageLocaleKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string LanguageLocaleKey { get; set; }
 
         /// <summary>
         /// EmployeeNumber (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string EmployeeNumber { get; set; }
 
         /// <summary>
         /// DelegatedApproverId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string DelegatedApproverId { get; set; }
 
         /// <summary>
         /// ManagerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ManagerId { get; set; }
 
         /// <summary>
@@ -17189,7 +17189,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -17200,7 +17200,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -17531,61 +17531,61 @@ namespace SalesforceSharp
         /// <summary>
         /// ContactId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ContactId { get; set; }
 
         /// <summary>
         /// AccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string AccountId { get; set; }
 
         /// <summary>
         /// CallCenterId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CallCenterId { get; set; }
 
         /// <summary>
         /// Extension (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Extension { get; set; }
 
         /// <summary>
         /// FederationIdentifier (string type in Salesforce)
         /// </summary>
-		[StringLength(512)]
+        [StringLength(512)]
         public string FederationIdentifier { get; set; }
 
         /// <summary>
         /// AboutMe (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string AboutMe { get; set; }
 
         /// <summary>
         /// FullPhotoUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string FullPhotoUrl { get; set; }
 
         /// <summary>
         /// SmallPhotoUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string SmallPhotoUrl { get; set; }
 
         /// <summary>
         /// DigestFrequency (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DigestFrequency { get; set; }
 
         /// <summary>
         /// DefaultGroupNotificationFrequency (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DefaultGroupNotificationFrequency { get; set; }
 
         /// <summary>
@@ -17610,25 +17610,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -17664,25 +17664,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-		[StringLength(5000)]
+        [StringLength(5000)]
         public string Body { get; set; }
 
         /// <summary>
         /// LinkUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string LinkUrl { get; set; }
 
         /// <summary>
         /// RelatedRecordId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
@@ -17693,19 +17693,19 @@ namespace SalesforceSharp
         /// <summary>
         /// ContentFileName (string type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string ContentFileName { get; set; }
 
         /// <summary>
         /// ContentDescription (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string ContentDescription { get; set; }
 
         /// <summary>
         /// ContentType (string type in Salesforce)
         /// </summary>
-		[StringLength(120)]
+        [StringLength(120)]
         public string ContentType { get; set; }
 
         /// <summary>
@@ -17716,7 +17716,7 @@ namespace SalesforceSharp
         /// <summary>
         /// InsertedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string InsertedById { get; set; }
 
     }
@@ -17731,19 +17731,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// LicenseDefinitionKey (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string LicenseDefinitionKey { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Name { get; set; }
 
         /// <summary>
@@ -17773,13 +17773,13 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// UserId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserId { get; set; }
 
         /// <summary>
@@ -17800,7 +17800,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
     }
@@ -17815,25 +17815,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// UserId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserId { get; set; }
 
         /// <summary>
         /// Preference (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Preference { get; set; }
 
         /// <summary>
         /// Value (string type in Salesforce)
         /// </summary>
-		[StringLength(1333)]
+        [StringLength(1333)]
         public string Value { get; set; }
 
         /// <summary>
@@ -17853,103 +17853,103 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// LastName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string LastName { get; set; }
 
         /// <summary>
         /// FirstName (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string FirstName { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(121)]
+        [StringLength(121)]
         public string Name { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Title { get; set; }
 
         /// <summary>
         /// ManagerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ManagerId { get; set; }
 
         /// <summary>
         /// CompanyName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string CompanyName { get; set; }
 
         /// <summary>
         /// AboutMe (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string AboutMe { get; set; }
 
         /// <summary>
         /// Email (email type in Salesforce)
         /// </summary>
-		[StringLength(128)]
+        [StringLength(128)]
         public string Email { get; set; }
 
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Phone { get; set; }
 
         /// <summary>
         /// MobilePhone (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string MobilePhone { get; set; }
 
         /// <summary>
         /// Fax (phone type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Fax { get; set; }
 
         /// <summary>
         /// Street (textarea type in Salesforce)
         /// </summary>
-		[StringLength(255)]
+        [StringLength(255)]
         public string Street { get; set; }
 
         /// <summary>
         /// City (string type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string City { get; set; }
 
         /// <summary>
         /// State (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string State { get; set; }
 
         /// <summary>
         /// PostalCode (string type in Salesforce)
         /// </summary>
-		[StringLength(20)]
+        [StringLength(20)]
         public string PostalCode { get; set; }
 
         /// <summary>
         /// Country (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Country { get; set; }
 
         /// <summary>
@@ -18220,13 +18220,13 @@ namespace SalesforceSharp
         /// <summary>
         /// FullPhotoUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string FullPhotoUrl { get; set; }
 
         /// <summary>
         /// SmallPhotoUrl (url type in Salesforce)
         /// </summary>
-		[StringLength(1024)]
+        [StringLength(1024)]
         public string SmallPhotoUrl { get; set; }
 
         /// <summary>
@@ -18237,7 +18237,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -18257,19 +18257,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// UserId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserId { get; set; }
 
         /// <summary>
         /// RecordId (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RecordId { get; set; }
 
         /// <summary>
@@ -18300,7 +18300,7 @@ namespace SalesforceSharp
         /// <summary>
         /// MaxAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string MaxAccessLevel { get; set; }
 
     }
@@ -18315,49 +18315,49 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string Name { get; set; }
 
         /// <summary>
         /// ParentRoleId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentRoleId { get; set; }
 
         /// <summary>
         /// RollupDescription (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string RollupDescription { get; set; }
 
         /// <summary>
         /// OpportunityAccessForAccountOwner (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string OpportunityAccessForAccountOwner { get; set; }
 
         /// <summary>
         /// CaseAccessForAccountOwner (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string CaseAccessForAccountOwner { get; set; }
 
         /// <summary>
         /// ContactAccessForAccountOwner (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string ContactAccessForAccountOwner { get; set; }
 
         /// <summary>
         /// ForecastUserId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ForecastUserId { get; set; }
 
         /// <summary>
@@ -18373,7 +18373,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -18384,25 +18384,25 @@ namespace SalesforceSharp
         /// <summary>
         /// DeveloperName (string type in Salesforce)
         /// </summary>
-		[StringLength(80)]
+        [StringLength(80)]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// PortalAccountId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string PortalAccountId { get; set; }
 
         /// <summary>
         /// PortalType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string PortalType { get; set; }
 
         /// <summary>
         /// PortalAccountOwnerId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string PortalAccountOwnerId { get; set; }
 
     }
@@ -18417,31 +18417,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// UserId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserId { get; set; }
 
         /// <summary>
         /// UserOrGroupId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// UserAccessLevel (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string UserAccessLevel { get; set; }
 
         /// <summary>
         /// RowCause (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string RowCause { get; set; }
 
         /// <summary>
@@ -18452,7 +18452,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -18472,7 +18472,7 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
@@ -18483,13 +18483,13 @@ namespace SalesforceSharp
         /// <summary>
         /// ParentId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Type { get; set; }
 
         /// <summary>
@@ -18500,7 +18500,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -18520,19 +18520,19 @@ namespace SalesforceSharp
         /// <summary>
         /// Id (id type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string Id { get; set; }
 
         /// <summary>
         /// PageOrSobjectType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string PageOrSobjectType { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-		[StringLength(240)]
+        [StringLength(240)]
         public string Name { get; set; }
 
         /// <summary>
@@ -18543,25 +18543,25 @@ namespace SalesforceSharp
         /// <summary>
         /// Url (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1048576)]
+        [StringLength(1048576)]
         public string Url { get; set; }
 
         /// <summary>
         /// EncodingKey (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string EncodingKey { get; set; }
 
         /// <summary>
         /// LinkType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string LinkType { get; set; }
 
         /// <summary>
         /// OpenType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string OpenType { get; set; }
 
         /// <summary>
@@ -18607,31 +18607,31 @@ namespace SalesforceSharp
         /// <summary>
         /// Position (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string Position { get; set; }
 
         /// <summary>
         /// ScontrolId (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string ScontrolId { get; set; }
 
         /// <summary>
         /// MasterLabel (string type in Salesforce)
         /// </summary>
-		[StringLength(240)]
+        [StringLength(240)]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-		[StringLength(1000)]
+        [StringLength(1000)]
         public string Description { get; set; }
 
         /// <summary>
         /// DisplayType (picklist type in Salesforce)
         /// </summary>
-		[StringLength(40)]
+        [StringLength(40)]
         public string DisplayType { get; set; }
 
         /// <summary>
@@ -18642,7 +18642,7 @@ namespace SalesforceSharp
         /// <summary>
         /// NamespacePrefix (string type in Salesforce)
         /// </summary>
-		[StringLength(15)]
+        [StringLength(15)]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -18653,7 +18653,7 @@ namespace SalesforceSharp
         /// <summary>
         /// CreatedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -18664,7 +18664,7 @@ namespace SalesforceSharp
         /// <summary>
         /// LastModifiedById (reference type in Salesforce)
         /// </summary>
-		[StringLength(18)]
+        [StringLength(18)]
         public string LastModifiedById { get; set; }
 
         /// <summary>
