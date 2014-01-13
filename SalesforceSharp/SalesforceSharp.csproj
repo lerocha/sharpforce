@@ -40,6 +40,8 @@
     <Compile Include="Attributes\SalesforceObjectAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\GlobalAssemblyInfo.cs" />
+    <Compile Include="Responses\RefreshTokenResponse.cs" />
+    <Compile Include="Responses\SalesforceResponse.cs" />
     <Compile Include="SalesforceObjects.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
