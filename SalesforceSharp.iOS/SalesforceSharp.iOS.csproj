@@ -43,6 +43,7 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Attributes\" />
+    <Folder Include="Responses\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -58,6 +59,12 @@
     </Compile>
     <Compile Include="..\SalesforceSharp\Attributes\SalesforceObjectAttribute.cs">
       <Link>Attributes\SalesforceObjectAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\SalesforceSharp\Responses\RefreshTokenResponse.cs">
+      <Link>Responses\RefreshTokenResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\SalesforceSharp\Responses\SalesforceResponse.cs">
+      <Link>Responses\SalesforceResponse.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
