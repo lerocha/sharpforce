@@ -112,6 +112,7 @@ namespace SalesforceSharp
             if (response.ErrorException != null)
             {
                 Debug.WriteLine(response.ErrorMessage);
+                return new QueryResponse<T>{Error = response.ErrorMessage};
             }
 
             return response.Data;
