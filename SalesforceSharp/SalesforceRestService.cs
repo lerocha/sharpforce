@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using RestSharp;
 using SalesforceSharp.Responses;
 
@@ -19,6 +21,12 @@ namespace SalesforceSharp
         /// <param name="query">SOQL query</param>
         /// <returns></returns>
         QueryResponse<T> Query<T>(string query) where T : new();
+
+        /// <summary>
+        /// Gets available API the versions.
+        /// </summary>
+        /// <returns></returns>
+        List<VersionResponse> GetVersions();
     }
 
     public class SalesforceRestService : ISalesforceRestService
@@ -75,19 +83,8 @@ namespace SalesforceSharp
                 Resource = "/services/data/v20.0/query/?q=" + query,
                 Method = Method.GET
             };
-            request.AddHeader("Authorization", "Bearer " + AccessToken);
 
-            IRestClient client = new RestClient();
-            client.BaseUrl = InstanceUrl;
-            var response = client.Execute(request);
-
-            if (response.ErrorException != null)
-            {
-                Debug.WriteLine(response.ErrorMessage);
-                return null;
-            }
-
-            return response.Content;
+            return ExecuteRequest(request);
         }
 
         /// <summary>
@@ -103,16 +100,55 @@ namespace SalesforceSharp
                 Resource = "/services/data/v20.0/query/?q=" + query,
                 Method = Method.GET
             };
+
+            return ExecuteRequest<QueryResponse<T>>(request);
+        }
+
+        /// <summary>
+        /// Gets available API the versions.
+        /// </summary>
+        /// <returns></returns>
+        public List<VersionResponse> GetVersions()
+        {
+            IRestRequest request = new RestRequest
+            {
+                Resource = "/services/data/",
+                Method = Method.GET
+            };
+            return ExecuteRequest<List<VersionResponse>>(request);
+        }
+
+        private string ExecuteRequest(IRestRequest request)
+        {
+            if (request == null) throw new ArgumentException("request");
+
             request.AddHeader("Authorization", "Bearer " + AccessToken);
 
             IRestClient client = new RestClient();
             client.BaseUrl = InstanceUrl;
-            var response = client.Execute<QueryResponse<T>>(request);
+            var response = client.Execute(request);
 
             if (response.ErrorException != null)
             {
                 Debug.WriteLine(response.ErrorMessage);
-                return new QueryResponse<T>{Error = response.ErrorMessage};
+                throw response.ErrorException;
+            }
+
+            return response.Content;
+        }
+
+        private T ExecuteRequest<T>(IRestRequest request) where T : new()
+        {
+            request.AddHeader("Authorization", "Bearer " + AccessToken);
+
+            IRestClient client = new RestClient();
+            client.BaseUrl = InstanceUrl;
+            var response = client.Execute<T>(request);
+
+            if (response.ErrorException != null)
+            {
+                Debug.WriteLine(response.ErrorMessage);
+                throw response.ErrorException;
             }
 
             return response.Data;

@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 using SalesforceSharp.Responses;
 
@@ -15,7 +16,8 @@ namespace SalesforceSharp.Test
 		{
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
             Assert.NotNull(service.AccessToken);
-		}
+            Console.WriteLine(service.AccessToken);
+        }
 
         [Test]
         public void SalesforceRestServiceQuery()
@@ -23,25 +25,39 @@ namespace SalesforceSharp.Test
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
             string response = service.Query("SELECT name from Account");
             Assert.IsNotEmpty(response);
+            Console.WriteLine(response);
         }
 
         [Test]
         public void SalesforceRestServiceQueryStrongType()
         {
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
-            QueryResponse<Account> response = service.Query<Account>("SELECT name from Account");
+            QueryResponse<Account> response = service.Query<Account>("SELECT id, name from Account");
             Assert.True(response.Done);
             Assert.True(response.TotalSize > 0);
+            foreach (var record in response.Records)
+            {
+                Console.WriteLine(record.Name);
+            }
         }
 
         [Test]
         public void SalesforceRestServiceQueryStrongTypeFail()
         {
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
-            QueryResponse<Account> response = service.Query<Account>("SELECT name from NonExistingTable");
-            Assert.IsNotEmpty(response.Error);
-            Assert.False(response.Done);
-            Assert.True(response.TotalSize == 0);
+            Assert.Throws<InvalidCastException>(() => service.Query<Account>("SELECT name from NonExistingTable"));
+        }
+
+        [Test]
+        public void SalesforceRestServiceGetVersions()
+        {
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+            var response = service.GetVersions();
+            Assert.IsNotEmpty(response);
+            foreach (var version in response)
+            {
+                Console.WriteLine(version.Version);
+            }
         }
     }
 }

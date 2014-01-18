@@ -43,6 +43,7 @@
     <Compile Include="Responses\QueryResponse.cs" />
     <Compile Include="Responses\RefreshTokenResponse.cs" />
     <Compile Include="Responses\SalesforceResponse.cs" />
+    <Compile Include="Responses\VersionResponse.cs" />
     <Compile Include="SalesforceObjects.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
