@@ -1,6 +1,8 @@
-# SalesforceSharp - Salesforce REST API Client for .NET, Mono and Xamarin iOS/Android
+## SalesforceSharp - Salesforce REST API client for .NET, Mono and Xamarin iOS/Android
 
 This project is on early stage with basic functionality at this point.
+
+It implements a simple [Salesforce API REST][1] client using [RestSharp][2] targeting multiple platforms
 
 ### Features
 
@@ -24,3 +26,5 @@ foreach (Account account in response.Records)
 	Console.WriteLine(account.Name);
 }
 ```
+  [1]: http://www.salesforce.com/us/developer/docs/api_rest/Content/resources_list.htm
+  [2]: http://restsharp.org
