@@ -59,6 +59,29 @@ namespace SalesforceSharp.Test
                 Console.WriteLine(version.Version);
             }
         }
+
+        [Test]
+        public void SalesforceRestServiceDescribeJson()
+        {
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+            string response = service.DescribeJson("Account");
+            Assert.IsNotEmpty(response);
+            Console.WriteLine(response);
+        }
+
+        [Test]
+        public void SalesforceRestServiceDescribe()
+        {
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+            DescribeResponse response = service.Describe("Account");
+            Assert.IsNotNull(response);
+            Assert.IsNotNull(response.Fields);
+            Assert.IsNotNull(response.Urls);
+            Console.WriteLine(response.Name);
+            Console.WriteLine(response.Undeletable);
+            Console.WriteLine(response.Fields.Count);
+            Console.WriteLine(response.Urls.Describe);
+        }
     }
 }
 

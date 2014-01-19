@@ -27,6 +27,22 @@ namespace SalesforceSharp
         /// </summary>
         /// <returns></returns>
         List<VersionResponse> GetVersions();
+
+        /// <summary>
+        /// Completely describes the individual metadata at all levels for the specified object. 
+        /// For example, this can be used to retrieve the fields, URLs, and child relationships for the Account object.
+        /// </summary>
+        /// <param name="name">The Salesforce object name.</param>
+        /// <returns></returns>
+        string DescribeJson(string name);
+
+        /// <summary>
+        /// Completely describes the individual metadata at all levels for the specified object. 
+        /// For example, this can be used to retrieve the fields, URLs, and child relationships for the Account object.
+        /// </summary>
+        /// <param name="name">The Salesforce object name.</param>
+        /// <returns></returns>
+        DescribeResponse Describe(string name);
     }
 
     public class SalesforceRestService : ISalesforceRestService
@@ -116,6 +132,40 @@ namespace SalesforceSharp
                 Method = Method.GET
             };
             return ExecuteRequest<List<VersionResponse>>(request);
+        }
+
+        /// <summary>
+        /// Completely describes the individual metadata at all levels for the specified object.
+        /// For example, this can be used to retrieve the fields, URLs, and child relationships for the Account object.
+        /// </summary>
+        /// <param name="name">The Salesforce object name.</param>
+        /// <returns></returns>
+        public string DescribeJson(string name)
+        {
+            IRestRequest request = new RestRequest
+            {
+                Resource = string.Format("/services/data/v20.0/sobjects/{0}/describe/", name),
+                Method = Method.GET
+            };
+
+            return ExecuteRequest(request);
+        }
+
+        /// <summary>
+        /// Completely describes the individual metadata at all levels for the specified object.
+        /// For example, this can be used to retrieve the fields, URLs, and child relationships for the Account object.
+        /// </summary>
+        /// <param name="name">The Salesforce object name.</param>
+        /// <returns></returns>
+        public DescribeResponse Describe(string name)
+        {
+            IRestRequest request = new RestRequest
+            {
+                Resource = string.Format("/services/data/v20.0/sobjects/{0}/describe/", name),
+                Method = Method.GET
+            };
+
+            return ExecuteRequest<DescribeResponse>(request);
         }
 
         private string ExecuteRequest(IRestRequest request)
