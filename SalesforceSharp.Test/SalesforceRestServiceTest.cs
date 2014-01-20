@@ -77,6 +77,7 @@ namespace SalesforceSharp.Test
             Assert.IsNotNull(response);
             Assert.IsNotNull(response.Fields);
             Assert.IsNotNull(response.Urls);
+            Assert.IsNotNull(response.ChildRelationships);
             Console.WriteLine(response.Name);
             Console.WriteLine(response.Undeletable);
             Console.WriteLine(response.Fields.Count);
