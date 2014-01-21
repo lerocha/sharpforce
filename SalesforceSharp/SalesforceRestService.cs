@@ -43,6 +43,13 @@ namespace SalesforceSharp
         /// <param name="name">The Salesforce object name.</param>
         /// <returns></returns>
         DescribeResponse Describe(string name);
+
+        /// <summary>
+        /// Lists the available objects and their metadata for your organization's data. 
+        /// In addition, it provides the organization encoding, as well as maximum batch size permitted in queries
+        /// </summary>
+        /// <returns></returns>
+        DescribeGlobalResponse DescribeGlobal();
     }
 
     public class SalesforceRestService : ISalesforceRestService
@@ -166,6 +173,22 @@ namespace SalesforceSharp
             };
 
             return ExecuteRequest<DescribeResponse>(request);
+        }
+
+        /// <summary>
+        /// Lists the available objects and their metadata for your organization's data.
+        /// In addition, it provides the organization encoding, as well as maximum batch size permitted in queries
+        /// </summary>
+        /// <returns></returns>
+        public DescribeGlobalResponse DescribeGlobal()
+        {
+            IRestRequest request = new RestRequest
+            {
+                Resource = "/services/data/v20.0/sobjects/",
+                Method = Method.GET
+            };
+
+            return ExecuteRequest<DescribeGlobalResponse>(request);
         }
 
         private string ExecuteRequest(IRestRequest request)

@@ -72,6 +72,9 @@
     <Compile Include="..\SalesforceSharp\Responses\QueryResponse.cs">
       <Link>Responses\QueryResponse.cs</Link>
     </Compile>
+    <Compile Include="..\SalesforceSharp\Responses\DescribeGlobalResponse.cs">
+      <Link>Responses\DescribeGlobalResponse.cs</Link>
+    </Compile>
     <Compile Include="..\SalesforceSharp\Responses\DescribeResponse.cs">
       <Link>Responses\DescribeResponse.cs</Link>
     </Compile>

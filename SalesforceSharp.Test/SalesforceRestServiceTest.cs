@@ -7,9 +7,9 @@ namespace SalesforceSharp.Test
 	[TestFixture]
 	public class SalesforceRestServiceTest
 	{
-        const string ConsumerKey = "";
-        const string ConsumerSecret = "";
-        const string RefreshToken = "";
+        const string ConsumerKey = "3MVG9A2kN3Bn17hubsccoNZq7..5T5w645fhE.i_ibZxi.hAgIojqWMBqLOhAqzMecs3PVSWATz4L0zVERcFG";
+        const string ConsumerSecret = "5401869204488850511";
+        const string RefreshToken = "5Aep861z80Xevi74eUrFUzYo5whFaP5RIHvFDsJmhiadlHczYvnO7Zqhfw.ftLFr44nlH3aZVuganCoTK0i4_n9";
 
 		[Test]
         public void SalesforceRestServiceConstructor()
@@ -82,6 +82,20 @@ namespace SalesforceSharp.Test
             Console.WriteLine(response.Undeletable);
             Console.WriteLine(response.Fields.Count);
             Console.WriteLine(response.Urls.Describe);
+        }
+
+        [Test]
+        public void SalesforceRestServiceDescribeGlobal()
+        {
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+            DescribeGlobalResponse response = service.DescribeGlobal();
+            Assert.IsNotNull(response);
+            Assert.NotNull(response.SObjects);
+            Assert.True(response.SObjects.Count > 0);
+            Assert.IsNotNull(response.SObjects[0].Urls);
+            Console.WriteLine(response.Encoding);
+            Console.WriteLine(response.MaxBatchSize);
+            Console.WriteLine(response.SObjects[0].Name);
         }
     }
 }
