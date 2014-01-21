@@ -55,9 +55,11 @@ namespace SalesforceSharp
     public class SalesforceRestService : ISalesforceRestService
     {
         protected const string DefaultBaseUrl = "https://login.salesforce.com";
+        protected const string DefaultVersion = "v28.0";
 
         public string AccessToken { get; private set; }
         public string InstanceUrl { get; private set; }
+        public string Version { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SalesforceRestService" /> class using OAuth Refresh Token.
@@ -65,8 +67,9 @@ namespace SalesforceSharp
         /// <param name="consumerKey">The consumer key.</param>
         /// <param name="consumerSecret">The consumer secret.</param>
         /// <param name="refreshToken">The OAuth refresh token.</param>
-        /// <param name="baseUrl">The base URL.</param>
-        public SalesforceRestService(string consumerKey, string consumerSecret, string refreshToken, string baseUrl = DefaultBaseUrl)
+        /// <param name="version">API version to be used.</param>
+        /// <param name="baseUrl">The Salesforce base URL.</param>
+        public SalesforceRestService(string consumerKey, string consumerSecret, string refreshToken, string version = DefaultVersion, string baseUrl = DefaultBaseUrl)
         {
             // Create the RefreshToken request.
             IRestRequest request = new RestRequest
@@ -92,6 +95,7 @@ namespace SalesforceSharp
 
             AccessToken = response.Data.AccessToken;
             InstanceUrl = response.Data.InstanceUrl;
+            Version = version;
         }
 
         /// <summary>
@@ -103,7 +107,7 @@ namespace SalesforceSharp
         {
             IRestRequest request = new RestRequest
             {
-                Resource = "/services/data/v20.0/query/?q=" + query,
+                Resource = string.Format("/services/data/{0}/query/?q={1}", Version, query),
                 Method = Method.GET
             };
 
@@ -120,7 +124,7 @@ namespace SalesforceSharp
         {
             IRestRequest request = new RestRequest
             {
-                Resource = "/services/data/v20.0/query/?q=" + query,
+                Resource = string.Format("/services/data/{0}/query/?q={1}", Version, query),
                 Method = Method.GET
             };
 
@@ -151,7 +155,7 @@ namespace SalesforceSharp
         {
             IRestRequest request = new RestRequest
             {
-                Resource = string.Format("/services/data/v20.0/sobjects/{0}/describe/", name),
+                Resource = string.Format("/services/data/{0}/sobjects/{1}/describe/", Version, name),
                 Method = Method.GET
             };
 
@@ -168,7 +172,7 @@ namespace SalesforceSharp
         {
             IRestRequest request = new RestRequest
             {
-                Resource = string.Format("/services/data/v20.0/sobjects/{0}/describe/", name),
+                Resource = string.Format("/services/data/{0}/sobjects/{1}/describe/", Version, name),
                 Method = Method.GET
             };
 
@@ -184,7 +188,7 @@ namespace SalesforceSharp
         {
             IRestRequest request = new RestRequest
             {
-                Resource = "/services/data/v20.0/sobjects/",
+                Resource = string.Format("/services/data/{0}/sobjects/", Version),
                 Method = Method.GET
             };
 

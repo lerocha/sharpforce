@@ -7,9 +7,9 @@ namespace SalesforceSharp.Test
 	[TestFixture]
 	public class SalesforceRestServiceTest
 	{
-        const string ConsumerKey = "3MVG9A2kN3Bn17hubsccoNZq7..5T5w645fhE.i_ibZxi.hAgIojqWMBqLOhAqzMecs3PVSWATz4L0zVERcFG";
-        const string ConsumerSecret = "5401869204488850511";
-        const string RefreshToken = "5Aep861z80Xevi74eUrFUzYo5whFaP5RIHvFDsJmhiadlHczYvnO7Zqhfw.ftLFr44nlH3aZVuganCoTK0i4_n9";
+        const string ConsumerKey = "";
+        const string ConsumerSecret = "";
+        const string RefreshToken = "";
 
 		[Test]
         public void SalesforceRestServiceConstructor()
