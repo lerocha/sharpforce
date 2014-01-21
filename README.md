@@ -1,4 +1,4 @@
-## SalesforceSharp - Salesforce REST API client for .NET, Mono and Xamarin iOS/Android
+## SalesforceSharp - Salesforce REST API client for .NET and Xamarin iOS/Android
 
 This project is on early stage with basic functionality at this point.
 
