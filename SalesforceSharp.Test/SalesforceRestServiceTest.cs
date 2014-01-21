@@ -1,4 +1,5 @@
 using System;
+using System.Configuration;
 using NUnit.Framework;
 using SalesforceSharp.Responses;
 
@@ -7,9 +8,9 @@ namespace SalesforceSharp.Test
 	[TestFixture]
 	public class SalesforceRestServiceTest
 	{
-        const string ConsumerKey = "";
-        const string ConsumerSecret = "";
-        const string RefreshToken = "";
+        private string ConsumerKey = ConfigurationManager.AppSettings["ConsumerKey"];
+        private string ConsumerSecret = ConfigurationManager.AppSettings["ConsumerSecret"];
+        private string RefreshToken = ConfigurationManager.AppSettings["RefreshToken"];
 
 		[Test]
         public void SalesforceRestServiceConstructor()
