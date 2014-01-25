@@ -34,7 +34,7 @@ namespace SalesforceSharp
         /// Gets available API the versions.
         /// </summary>
         /// <returns></returns>
-        List<VersionResponse> GetVersions();
+        SalesforceResponse<List<ApiVersion>> GetVersions();
 
         /// <summary>
         /// Completely describes the individual metadata at all levels for the specified object. 
@@ -50,14 +50,14 @@ namespace SalesforceSharp
         /// </summary>
         /// <param name="name">The Salesforce object name.</param>
         /// <returns></returns>
-        DescribeResponse Describe(string name);
+        SalesforceResponse<Describe> Describe(string name);
 
         /// <summary>
         /// Lists the available objects and their metadata for your organization's data. 
         /// In addition, it provides the organization encoding, as well as maximum batch size permitted in queries
         /// </summary>
         /// <returns></returns>
-        DescribeGlobalResponse DescribeGlobal();
+        SalesforceResponse<DescribeGlobal> DescribeGlobal();
     }
 
     public class SalesforceRestService : ISalesforceRestService
@@ -119,8 +119,7 @@ namespace SalesforceSharp
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
                 Method = Method.GET
             };
-            var obj = ExecuteRequest<T>(request);
-            return new SalesforceResponse<T>(obj);
+            return ExecuteRequest<T>(request);
         }
 
         /// <summary>
@@ -153,21 +152,29 @@ namespace SalesforceSharp
                 Method = Method.GET
             };
 
-            return ExecuteRequest<QueryResponse<T>>(request);
+            var response = ExecuteRequest<QueryResponse<T>>(request);
+            if (response.Data == null)
+            {
+                response.Data = new QueryResponse<T>();
+            }
+            response.Data.ErrorCode = response.ErrorCode;
+            response.Data.ErrorMessage = response.ErrorMessage;
+            response.Data.StatusCode = response.StatusCode;
+            return response.Data;
         }
 
         /// <summary>
         /// Gets available API the versions.
         /// </summary>
         /// <returns></returns>
-        public List<VersionResponse> GetVersions()
+        public SalesforceResponse<List<ApiVersion>> GetVersions()
         {
             IRestRequest request = new RestRequest
             {
                 Resource = "/services/data/",
                 Method = Method.GET
             };
-            return ExecuteRequest<List<VersionResponse>>(request);
+            return ExecuteRequest<List<ApiVersion>>(request);
         }
 
         /// <summary>
@@ -193,7 +200,7 @@ namespace SalesforceSharp
         /// </summary>
         /// <param name="name">The Salesforce object name.</param>
         /// <returns></returns>
-        public DescribeResponse Describe(string name)
+        public SalesforceResponse<Describe> Describe(string name)
         {
             IRestRequest request = new RestRequest
             {
@@ -201,7 +208,7 @@ namespace SalesforceSharp
                 Method = Method.GET
             };
 
-            return ExecuteRequest<DescribeResponse>(request);
+            return ExecuteRequest<Describe>(request);
         }
 
         /// <summary>
@@ -209,7 +216,7 @@ namespace SalesforceSharp
         /// In addition, it provides the organization encoding, as well as maximum batch size permitted in queries
         /// </summary>
         /// <returns></returns>
-        public DescribeGlobalResponse DescribeGlobal()
+        public SalesforceResponse<DescribeGlobal> DescribeGlobal()
         {
             IRestRequest request = new RestRequest
             {
@@ -217,7 +224,7 @@ namespace SalesforceSharp
                 Method = Method.GET
             };
 
-            return ExecuteRequest<DescribeGlobalResponse>(request);
+            return ExecuteRequest<DescribeGlobal>(request);
         }
 
         private string ExecuteRequest(IRestRequest request)
@@ -239,7 +246,7 @@ namespace SalesforceSharp
             return response.Content;
         }
 
-        private T ExecuteRequest<T>(IRestRequest request) where T : new()
+        private SalesforceResponse<T> ExecuteRequest<T>(IRestRequest request) where T : new()
         {
             request.AddHeader("Authorization", "Bearer " + AccessToken);
 
@@ -247,13 +254,20 @@ namespace SalesforceSharp
             client.BaseUrl = InstanceUrl;
             var response = client.Execute<T>(request);
 
+            var salesforceResponse = new SalesforceResponse<T>
+            {
+                Data = response.Data,
+                StatusCode = response.StatusCode
+            };
+
             if (response.ErrorException != null)
             {
-                Debug.WriteLine(response.ErrorMessage);
-                throw response.ErrorException;
+                // Sets the error information
+                salesforceResponse.ErrorMessage = response.Content;
             }
 
-            return response.Data;
+            Debug.WriteLine(salesforceResponse);
+            return salesforceResponse;
         }
     }
 }

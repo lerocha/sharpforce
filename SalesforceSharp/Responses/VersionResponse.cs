@@ -3,7 +3,7 @@
 namespace SalesforceSharp.Responses
 {
     [DebuggerDisplay("Version={Version}; Label={Label}")]
-    public class VersionResponse
+    public class ApiVersion
     {
         public string Url { get; set; }
         public string Label { get; set; }

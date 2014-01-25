@@ -1,25 +1,32 @@
 ﻿using System.Diagnostics;
+using System.Net;
 
 namespace SalesforceSharp.Responses
 {
     [DebuggerDisplay("Error={Error}")]
     public class SalesforceResponse
     {
-        public string Error { get; set; }
-        public string ErrorDescription { get; set; }
+        public string ErrorCode { get; set; }
+        public string ErrorMessage { get; set; }
+        public HttpStatusCode StatusCode { get; set; }
     }
 
     public class SalesforceResponse<T> : SalesforceResponse
     {
-        public T Value { get; set; }
+        public T Data { get; set; }
 
         public SalesforceResponse()
         {
         }
 
-        public SalesforceResponse(T value)
+        public SalesforceResponse(T data)
         {
-            Value = value;
+            Data = data;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("StatusCode={0}; ErrorCode={1}; ErrorMessage={2}; Data={3}", StatusCode, ErrorCode, ErrorMessage, Data);
         }
     }
 }

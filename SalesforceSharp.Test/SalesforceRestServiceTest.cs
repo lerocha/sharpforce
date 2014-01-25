@@ -1,5 +1,6 @@
 using System;
 using System.Configuration;
+using System.Net;
 using NUnit.Framework;
 using SalesforceSharp.Responses;
 
@@ -15,27 +16,45 @@ namespace SalesforceSharp.Test
 		[Test]
         public void SalesforceRestServiceConstructor()
 		{
+            // Arrange
+            // Act
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Assert
             Assert.NotNull(service.AccessToken);
+
             Console.WriteLine(service.AccessToken);
         }
 
         [Test]
         public void SalesforceRestServiceQuery()
         {
+            // Arrange
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
             string response = service.Query("SELECT name from Account");
+
+            // Assert
             Assert.IsNotEmpty(response);
+
             Console.WriteLine(response);
         }
 
         [Test]
         public void SalesforceRestServiceQueryStrongType()
         {
+            // Arrange
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
             QueryResponse<Account> response = service.Query<Account>("SELECT id, name from Account");
+
+            // Assert
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
             Assert.True(response.Done);
             Assert.True(response.TotalSize > 0);
+
             foreach (var record in response.Records)
             {
                 Console.WriteLine(record.Name);
@@ -45,17 +64,33 @@ namespace SalesforceSharp.Test
         [Test]
         public void SalesforceRestServiceQueryStrongTypeFail()
         {
+            // Arrange
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
-            Assert.Throws<InvalidCastException>(() => service.Query<Account>("SELECT name from NonExistingTable"));
+
+            // Act
+            QueryResponse<Account> response = service.Query<Account>("SELECT id, name from NonExistingTable");
+
+            // Assert
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+            Assert.False(response.Done);
+            Assert.AreEqual(0, response.TotalSize);
         }
 
         [Test]
         public void SalesforceRestServiceGetVersions()
         {
+            // Arrange
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
             var response = service.GetVersions();
-            Assert.IsNotEmpty(response);
-            foreach (var version in response)
+
+            // Assert
+            Assert.IsNotNull(response);
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+            Assert.IsNotEmpty(response.Data);
+
+            foreach (var version in response.Data)
             {
                 Console.WriteLine(version.Version);
             }
@@ -64,39 +99,74 @@ namespace SalesforceSharp.Test
         [Test]
         public void SalesforceRestServiceDescribeJson()
         {
+            // Arrange
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
             string response = service.DescribeJson("Account");
+
+            // Assert
             Assert.IsNotEmpty(response);
+
             Console.WriteLine(response);
         }
 
         [Test]
         public void SalesforceRestServiceDescribe()
         {
+            // Arrange
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
-            DescribeResponse response = service.Describe("Account");
+
+            // Act
+            var response = service.Describe("Account");
+
+            // Assert
             Assert.IsNotNull(response);
-            Assert.IsNotNull(response.Fields);
-            Assert.IsNotNull(response.Urls);
-            Assert.IsNotNull(response.ChildRelationships);
-            Console.WriteLine(response.Name);
-            Console.WriteLine(response.Undeletable);
-            Console.WriteLine(response.Fields.Count);
-            Console.WriteLine(response.Urls.Describe);
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+            Assert.IsNotNull(response.Data.Fields);
+            Assert.IsNotNull(response.Data.Urls);
+            Assert.IsNotNull(response.Data.ChildRelationships);
+
+            Console.WriteLine(response.Data.Name);
+            Console.WriteLine(response.Data.Undeletable);
+            Console.WriteLine(response.Data.Fields.Count);
+            Console.WriteLine(response.Data.Urls.Describe);
+        }
+
+        [Test]
+        public void SalesforceRestServiceDescribeFails()
+        {
+            // Arrange
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
+            var response = service.Describe("AccountError");
+
+            // Assert
+            Assert.IsNotNull(response);
+            Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
+            Assert.IsNull(response.Data);
         }
 
         [Test]
         public void SalesforceRestServiceDescribeGlobal()
         {
+            // Arrange
             var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
-            DescribeGlobalResponse response = service.DescribeGlobal();
+            
+            // Act
+            var response = service.DescribeGlobal();
+
+            // Assert
             Assert.IsNotNull(response);
-            Assert.NotNull(response.SObjects);
-            Assert.True(response.SObjects.Count > 0);
-            Assert.IsNotNull(response.SObjects[0].Urls);
-            Console.WriteLine(response.Encoding);
-            Console.WriteLine(response.MaxBatchSize);
-            Console.WriteLine(response.SObjects[0].Name);
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+            Assert.NotNull(response.Data.SObjects);
+            Assert.True(response.Data.SObjects.Count > 0);
+            Assert.IsNotNull(response.Data.SObjects[0].Urls);
+
+            Console.WriteLine(response.Data.Encoding);
+            Console.WriteLine(response.Data.MaxBatchSize);
+            Console.WriteLine(response.Data.SObjects[0].Name);
         }
 
 	    [Test]
@@ -110,10 +180,23 @@ namespace SalesforceSharp.Test
 	        
             // Assert
             Assert.NotNull(response);
-            Assert.NotNull(response.Value);
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+            Assert.NotNull(response.Data);
+	    }
 
-            Console.WriteLine(response.Value.Id);
-            Console.WriteLine(response.Value.Name);
+	    [Test]
+	    public void SalesforceRestServiceGetNonExistingObject()
+	    {
+            // Arrange
+	        var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+            
+            // Act
+            SalesforceResponse<Contact> response = service.Get<Contact>("003iiiiiiiiiiiii");
+	        
+            // Assert
+            Assert.NotNull(response);
+            Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
+            Assert.Null(response.Data);
 	    }
     }
 }

@@ -2,10 +2,10 @@
 
 namespace SalesforceSharp.Responses
 {
-    public class DescribeGlobalResponse
+    public class DescribeGlobal
     {
         public string Encoding { get; set; }
-        public List<DescribeResponse> SObjects { get; set; }
+        public List<Describe> SObjects { get; set; }
         public int MaxBatchSize { get; set; }
     }
 }
