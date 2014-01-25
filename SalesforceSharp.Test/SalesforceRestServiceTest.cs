@@ -98,6 +98,23 @@ namespace SalesforceSharp.Test
             Console.WriteLine(response.MaxBatchSize);
             Console.WriteLine(response.SObjects[0].Name);
         }
+
+	    [Test]
+	    public void SalesforceRestServiceGetExistingObject()
+	    {
+            // Arrange
+	        var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+            
+            // Act
+            SalesforceResponse<Contact> response = service.Get<Contact>("003i000000W2RMDAA3");
+	        
+            // Assert
+            Assert.NotNull(response);
+            Assert.NotNull(response.Value);
+
+            Console.WriteLine(response.Value.Id);
+            Console.WriteLine(response.Value.Name);
+	    }
     }
 }
 

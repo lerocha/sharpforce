@@ -8,4 +8,18 @@ namespace SalesforceSharp.Responses
         public string Error { get; set; }
         public string ErrorDescription { get; set; }
     }
+
+    public class SalesforceResponse<T> : SalesforceResponse
+    {
+        public T Value { get; set; }
+
+        public SalesforceResponse()
+        {
+        }
+
+        public SalesforceResponse(T value)
+        {
+            Value = value;
+        }
+    }
 }

@@ -9,6 +9,14 @@ namespace SalesforceSharp
     public interface ISalesforceRestService
     {
         /// <summary>
+        /// Get an Salesforce object.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id">The id of the Salesforce object to be retrieved.</param>
+        /// <returns></returns>
+        SalesforceResponse<T> Get<T>(string id) where T : new();
+
+        /// <summary>
         /// Execute a SOQL Query
         /// </summary>
         /// <param name="query">SOQL query</param>
@@ -96,6 +104,23 @@ namespace SalesforceSharp
             AccessToken = response.Data.AccessToken;
             InstanceUrl = response.Data.InstanceUrl;
             Version = version;
+        }
+
+        /// <summary>
+        /// Get an Salesforce object.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id">The id of the Salesforce object to be retrieved.</param>
+        /// <returns></returns>
+        public SalesforceResponse<T> Get<T>(string id) where T : new()
+        {
+            IRestRequest request = new RestRequest
+            {
+                Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
+                Method = Method.GET
+            };
+            var obj = ExecuteRequest<T>(request);
+            return new SalesforceResponse<T>(obj);
         }
 
         /// <summary>
