@@ -2,7 +2,7 @@
 
 This project is on early stage with basic functionality at this point.
 
-It implements a simple [Salesforce REST API][1] client using [RestSharp][2] targeting multiple platforms.
+It implements a simple client for the [Salesforce REST API][1] using [RestSharp][2] and targeting multiple platforms.
 
 ### Features
 
