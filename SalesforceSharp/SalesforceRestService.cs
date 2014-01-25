@@ -17,6 +17,15 @@ namespace SalesforceSharp
         SalesforceResponse<T> Get<T>(string id) where T : new();
 
         /// <summary>
+        /// Updates an object in Salesforce.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="t">Salesforce object to be updated.</param>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        SalesforceResponse Update<T>(object t, string id);
+
+        /// <summary>
         /// Execute a SOQL Query
         /// </summary>
         /// <param name="query">SOQL query</param>
@@ -63,7 +72,7 @@ namespace SalesforceSharp
     public class SalesforceRestService : ISalesforceRestService
     {
         protected const string DefaultBaseUrl = "https://login.salesforce.com";
-        protected const string DefaultVersion = "v28.0";
+        protected const string DefaultVersion = "v29.0";
 
         public string AccessToken { get; private set; }
         public string InstanceUrl { get; private set; }
@@ -120,6 +129,25 @@ namespace SalesforceSharp
                 Method = Method.GET
             };
             return ExecuteRequest<T>(request);
+        }
+
+        /// <summary>
+        /// Updates an object in Salesforce.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="t">Salesforce object to be updated.</param>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public SalesforceResponse Update<T>(object t, string id)
+        {
+            IRestRequest request = new RestRequest
+            {
+                Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
+                Method = Method.PATCH,
+                RequestFormat = DataFormat.Json
+            };
+            request.AddBody(t);
+            return ExecuteRequest<SalesforceResponse>(request);
         }
 
         /// <summary>

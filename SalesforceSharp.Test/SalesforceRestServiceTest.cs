@@ -13,6 +13,8 @@ namespace SalesforceSharp.Test
         private string ConsumerSecret = ConfigurationManager.AppSettings["ConsumerSecret"];
         private string RefreshToken = ConfigurationManager.AppSettings["RefreshToken"];
 
+	    private const string ContactId = "003i000000W2RMDAA3";
+
 		[Test]
         public void SalesforceRestServiceConstructor()
 		{
@@ -176,7 +178,7 @@ namespace SalesforceSharp.Test
 	        var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
             
             // Act
-            SalesforceResponse<Contact> response = service.Get<Contact>("003i000000W2RMDAA3");
+            SalesforceResponse<Contact> response = service.Get<Contact>(ContactId);
 	        
             // Assert
             Assert.NotNull(response);
@@ -198,6 +200,38 @@ namespace SalesforceSharp.Test
             Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
             Assert.Null(response.Data);
 	    }
+
+        [Test]
+        public void SalesforceRestServiceUpdateExistingObject()
+        {
+            // Arrange
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+            var getResponse = service.Get<Contact>(ContactId);
+            Console.WriteLine("Description=" + getResponse.Data.Description);
+            var contact = new {Description = Guid.NewGuid()};
+            Console.WriteLine("Description=" + contact.Description);
+
+            // Act
+            var response = service.Update<Contact>(contact, getResponse.Data.Id);
+
+            // Assert
+            Assert.NotNull(response);
+            Assert.AreEqual(HttpStatusCode.NoContent, response.StatusCode);
+        }
+
+        [Test]
+        public void SalesforceRestServiceUpdateNonExistingObject()
+        {
+            // Arrange
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
+            var response = service.Update<Contact>(new { Description = Guid.NewGuid() }, "InvalidID");
+
+            // Assert
+            Assert.NotNull(response);
+            Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
+        }
     }
 }
 
