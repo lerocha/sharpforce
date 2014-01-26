@@ -4,7 +4,7 @@ using System.Diagnostics;
 namespace SalesforceSharp.Responses
 {
     [DebuggerDisplay("Name={Name}")]
-    public class Describe
+    public class DescribeResponse : SalesforceResponse
     {
         public string Name { get; set; }
         public List<Field> Fields { get; set; }

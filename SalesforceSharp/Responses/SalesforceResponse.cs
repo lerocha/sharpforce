@@ -4,11 +4,11 @@ using System.Net;
 
 namespace SalesforceSharp.Responses
 {
-    [DebuggerDisplay("Error={Error}")]
+    [DebuggerDisplay("StatusCode={StatusCode}; ErrorCode={ErrorCode}; Message={Message}")]
     public class SalesforceResponse
     {
         public string ErrorCode { get; set; }
-        public string ErrorMessage { get; set; }
+        public string Message { get; set; }
         public HttpStatusCode StatusCode { get; set; }
     }
 
@@ -27,7 +27,7 @@ namespace SalesforceSharp.Responses
 
         public override string ToString()
         {
-            return string.Format("StatusCode={0}; ErrorCode={1}; ErrorMessage={2}; Data={3}", StatusCode, ErrorCode, ErrorMessage, Data);
+            return string.Format("StatusCode={0}; ErrorCode={1}; Message={2}; Data={3}", StatusCode, ErrorCode, Message, Data);
         }
     }
 

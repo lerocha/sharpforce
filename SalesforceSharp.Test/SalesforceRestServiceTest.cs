@@ -24,8 +24,17 @@ namespace SalesforceSharp.Test
 
             // Assert
             Assert.NotNull(service.AccessToken);
+        }
 
-            Console.WriteLine(service.AccessToken);
+        [Test]
+        public void SalesforceRestServiceConstructorFails()
+        {
+            // Arrange
+            // Act
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken + "Wrong");
+
+            // Assert
+            Assert.Null(service.AccessToken);
         }
 
         [Test]
@@ -125,14 +134,14 @@ namespace SalesforceSharp.Test
             // Assert
             Assert.IsNotNull(response);
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-            Assert.IsNotNull(response.Data.Fields);
-            Assert.IsNotNull(response.Data.Urls);
-            Assert.IsNotNull(response.Data.ChildRelationships);
+            Assert.IsNotNull(response.Fields);
+            Assert.IsNotNull(response.Urls);
+            Assert.IsNotNull(response.ChildRelationships);
 
-            Console.WriteLine(response.Data.Name);
-            Console.WriteLine(response.Data.Undeletable);
-            Console.WriteLine(response.Data.Fields.Count);
-            Console.WriteLine(response.Data.Urls.Describe);
+            Console.WriteLine(response.Name);
+            Console.WriteLine(response.Undeletable);
+            Console.WriteLine(response.Fields.Count);
+            Console.WriteLine(response.Urls.Describe);
         }
 
         [Test]
@@ -147,7 +156,6 @@ namespace SalesforceSharp.Test
             // Assert
             Assert.IsNotNull(response);
             Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
-            Assert.IsNull(response.Data);
         }
 
         [Test]
@@ -162,13 +170,13 @@ namespace SalesforceSharp.Test
             // Assert
             Assert.IsNotNull(response);
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-            Assert.NotNull(response.Data.SObjects);
-            Assert.True(response.Data.SObjects.Count > 0);
-            Assert.IsNotNull(response.Data.SObjects[0].Urls);
+            Assert.NotNull(response.SObjects);
+            Assert.True(response.SObjects.Count > 0);
+            Assert.IsNotNull(response.SObjects[0].Urls);
 
-            Console.WriteLine(response.Data.Encoding);
-            Console.WriteLine(response.Data.MaxBatchSize);
-            Console.WriteLine(response.Data.SObjects[0].Name);
+            Console.WriteLine(response.Encoding);
+            Console.WriteLine(response.MaxBatchSize);
+            Console.WriteLine(response.SObjects[0].Name);
         }
 
         [Test]

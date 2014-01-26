@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using RestSharp;
-using SalesforceSharp.Responses;
+﻿using RestSharp.Deserializers;
+﻿using SalesforceSharp.Responses;
 
 namespace SalesforceSharp
 {
@@ -76,14 +77,14 @@ namespace SalesforceSharp
         /// </summary>
         /// <param name="name">The Salesforce object name.</param>
         /// <returns></returns>
-        SalesforceResponse<Describe> Describe(string name);
+        DescribeResponse Describe(string name);
 
         /// <summary>
         /// Lists the available objects and their metadata for your organization's data. 
         /// In addition, it provides the organization encoding, as well as maximum batch size permitted in queries
         /// </summary>
         /// <returns></returns>
-        SalesforceResponse<DescribeGlobal> DescribeGlobal();
+        DescribeGlobalResponse DescribeGlobal();
     }
 
     public class SalesforceRestService : ISalesforceRestService
@@ -123,9 +124,12 @@ namespace SalesforceSharp
 
             if (response.ErrorException != null)
             {
-                Debug.WriteLine(response.ErrorMessage);
+                Debug.WriteLine(string.Format("StatusCode={0}; Message={1}; AccessToken=null", response.StatusCode, response.ErrorMessage));
                 return;
             }
+
+            response.Data.StatusCode = response.StatusCode;
+            Debug.WriteLine(response.Data.ToString());
 
             AccessToken = response.Data.AccessToken;
             InstanceUrl = response.Data.InstanceUrl;
@@ -149,13 +153,6 @@ namespace SalesforceSharp
             };
             request.AddBody(t);
             var response = ExecuteRequest<AddResponse>(request);
-            if (response.Data == null)
-            {
-                response.Data = new AddResponse();
-            }
-            response.Data.ErrorCode = response.ErrorCode;
-            response.Data.ErrorMessage = response.ErrorMessage;
-            response.Data.StatusCode = response.StatusCode;
             return response.Data;
         }
 
@@ -241,13 +238,6 @@ namespace SalesforceSharp
             };
 
             var response = ExecuteRequest<QueryResponse<T>>(request);
-            if (response.Data == null)
-            {
-                response.Data = new QueryResponse<T>();
-            }
-            response.Data.ErrorCode = response.ErrorCode;
-            response.Data.ErrorMessage = response.ErrorMessage;
-            response.Data.StatusCode = response.StatusCode;
             return response.Data;
         }
 
@@ -288,7 +278,7 @@ namespace SalesforceSharp
         /// </summary>
         /// <param name="name">The Salesforce object name.</param>
         /// <returns></returns>
-        public SalesforceResponse<Describe> Describe(string name)
+        public DescribeResponse Describe(string name)
         {
             IRestRequest request = new RestRequest
             {
@@ -296,7 +286,8 @@ namespace SalesforceSharp
                 Method = Method.GET
             };
 
-            return ExecuteRequest<Describe>(request);
+            var response = ExecuteRequest<DescribeResponse>(request);
+            return response.Data;
         }
 
         /// <summary>
@@ -304,7 +295,7 @@ namespace SalesforceSharp
         /// In addition, it provides the organization encoding, as well as maximum batch size permitted in queries
         /// </summary>
         /// <returns></returns>
-        public SalesforceResponse<DescribeGlobal> DescribeGlobal()
+        public DescribeGlobalResponse DescribeGlobal()
         {
             IRestRequest request = new RestRequest
             {
@@ -312,7 +303,8 @@ namespace SalesforceSharp
                 Method = Method.GET
             };
 
-            return ExecuteRequest<DescribeGlobal>(request);
+            var response = ExecuteRequest<DescribeGlobalResponse>(request);
+            return response.Data;
         }
 
         private string ExecuteRequest(IRestRequest request)
@@ -351,7 +343,29 @@ namespace SalesforceSharp
             if (response.ErrorException != null)
             {
                 // Sets the error information
-                salesforceResponse.ErrorMessage = response.Content;
+                var deserializer = new JsonDeserializer();
+                var errors = deserializer.Deserialize<List<SalesforceResponse>>(response);
+                if (errors.Count > 0)
+                {
+                    salesforceResponse.ErrorCode = errors[0].ErrorCode;
+                    salesforceResponse.Message = errors[0].Message;
+                }
+
+                // If data response is a SalesforceResponse type, 
+                // then instantiate it so that we can set HttpStatus and errors info.
+                if (typeof (T).IsSubclassOf(typeof (SalesforceResponse)))
+                {
+                    salesforceResponse.Data = Activator.CreateInstance<T>();
+                }
+            }
+
+            // If data is a SalesforceResponse than set its error and status properties.
+            var data = salesforceResponse.Data as SalesforceResponse;
+            if (salesforceResponse.Data is SalesforceResponse)
+            {
+                data.ErrorCode = salesforceResponse.ErrorCode;
+                data.Message = salesforceResponse.Message;
+                data.StatusCode = salesforceResponse.StatusCode;
             }
 
             Debug.WriteLine(salesforceResponse);
