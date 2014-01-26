@@ -9,6 +9,15 @@ namespace SalesforceSharp
     public interface ISalesforceRestService
     {
         /// <summary>
+        /// Creates an object in Salesforce.
+        /// http://www.salesforce.com/us/developer/docs/api_rest/Content/dome_sobject_create.htm
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="t">Salesforce object to be created.</param>
+        /// <returns></returns>
+        AddResponse Add<T>(object t) where T : new();
+
+        /// <summary>
         /// Get an Salesforce object.
         /// </summary>
         /// <typeparam name="T"></typeparam>
@@ -24,6 +33,14 @@ namespace SalesforceSharp
         /// <param name="id"></param>
         /// <returns></returns>
         SalesforceResponse Update<T>(object t, string id);
+
+        /// <summary>
+        /// Deletes an Salesforce object.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id">The id of the Salesforce object to be deleted.</param>
+        /// <returns></returns>
+        SalesforceResponse Delete<T>(string id) where T : new();
 
         /// <summary>
         /// Execute a SOQL Query
@@ -116,6 +133,33 @@ namespace SalesforceSharp
         }
 
         /// <summary>
+        /// Creates an object in Salesforce.
+        /// http://www.salesforce.com/us/developer/docs/api_rest/Content/dome_sobject_create.htm
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="t">Salesforce object to be created.</param>
+        /// <returns></returns>
+        public AddResponse Add<T>(object t) where T : new()
+        {
+            IRestRequest request = new RestRequest
+            {
+                Resource = string.Format("/services/data/{0}/sobjects/{1}", Version, typeof(T).Name),
+                Method = Method.POST,
+                RequestFormat = DataFormat.Json
+            };
+            request.AddBody(t);
+            var response = ExecuteRequest<AddResponse>(request);
+            if (response.Data == null)
+            {
+                response.Data = new AddResponse();
+            }
+            response.Data.ErrorCode = response.ErrorCode;
+            response.Data.ErrorMessage = response.ErrorMessage;
+            response.Data.StatusCode = response.StatusCode;
+            return response.Data;
+        }
+
+        /// <summary>
         /// Get an Salesforce object.
         /// </summary>
         /// <typeparam name="T"></typeparam>
@@ -147,6 +191,22 @@ namespace SalesforceSharp
                 RequestFormat = DataFormat.Json
             };
             request.AddBody(t);
+            return ExecuteRequest<SalesforceResponse>(request);
+        }
+
+        /// <summary>
+        /// Deletes an Salesforce object.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id">The id of the Salesforce object to be deleted.</param>
+        /// <returns></returns>
+        public SalesforceResponse Delete<T>(string id) where T : new()
+        {
+            IRestRequest request = new RestRequest
+            {
+                Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
+                Method = Method.DELETE
+            };
             return ExecuteRequest<SalesforceResponse>(request);
         }
 

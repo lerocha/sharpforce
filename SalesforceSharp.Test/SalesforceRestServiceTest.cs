@@ -171,7 +171,74 @@ namespace SalesforceSharp.Test
             Console.WriteLine(response.Data.SObjects[0].Name);
         }
 
-	    [Test]
+        [Test]
+        public void SalesforceRestServiceAddAndDelete()
+        {
+            // Arrange
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+            var ticks = DateTime.UtcNow.Ticks;
+            var contact = new
+                          {
+                              LastName = "TestContact",
+                              FirstName = ticks,
+                              Email = "testcontact+" + ticks + "@gmail.com"
+                          };
+
+            // Act
+            var response = service.Add<Contact>(contact);
+
+            // Assert
+            Assert.NotNull(response);
+            Assert.AreEqual(HttpStatusCode.Created, response.StatusCode);
+            Assert.True(response.Success);
+            Assert.NotNull(response.Id);
+
+            // Act
+            var deleteResponse = service.Delete<Contact>(response.Id);
+
+            // Assert
+            Assert.NotNull(deleteResponse);
+            Assert.AreEqual(HttpStatusCode.NoContent, deleteResponse.StatusCode);
+        }
+
+        [Test]
+        public void SalesforceRestServiceAddFails()
+        {
+            // Arrange
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+            var ticks = DateTime.UtcNow.Ticks;
+            var contact = new
+                          {
+                              NonExistingField = "TestContact",
+                              FirstName = ticks,
+                              Email = "testcontact+" + ticks + "@gmail.com"
+                          };
+
+            // Act
+            var response = service.Add<Contact>(contact);
+
+            // Assert
+            Assert.NotNull(response);
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+            Assert.False(response.Success);
+            Assert.Null(response.Id);
+        }
+
+        [Test]
+        public void SalesforceRestServiceDeleteFails()
+        {
+            // Arrange
+            var service = new SalesforceRestService(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
+            var response = service.Delete<Contact>("BadId");
+
+            // Assert
+            Assert.NotNull(response);
+            Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
+        }
+
+        [Test]
 	    public void SalesforceRestServiceGetExistingObject()
 	    {
             // Arrange
