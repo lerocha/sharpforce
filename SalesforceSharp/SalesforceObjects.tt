@@ -17,9 +17,9 @@
 <#@ import namespace="System.Globalization" #>
 <#@ import namespace="System.Data.Entity.Design.PluralizationServices" #>
 <#@ include file="SalesforceObjects.ttinclude"#>
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
-//using Newtonsoft.Json;
 using SalesforceSharp.Attributes;
 
 // ReSharper disable PartialTypeWithSinglePart
@@ -45,13 +45,25 @@ namespace SalesforceSharp
         {
 #>
         /// <summary>
-        /// <#= property.SalesforceName #> (<#= property.SalesforceType #> type in Salesforce)
+        /// <#= property.Label #> (<#= property.SalesforceType #> type in Salesforce)
         /// </summary>
 <#
-			if (property.Type == "string" && property.Length!="0")
+                        if (property.Type == "string" && property.Length!="0")
             {
 #>
-		[StringLength(<#= property.Length #>)]
+        [StringLength(<#= property.Length #>)]
+<#
+            }
+                        if (!property.IsEditable)
+            {
+#>
+        [Editable(<#= property.IsEditable.ToString().ToLower() #>)]
+<#
+            }
+                        if (property.Label!=property.Name)
+            {
+#>
+        [DisplayName("<#= property.Label #>")]
 <#
             }
 #>

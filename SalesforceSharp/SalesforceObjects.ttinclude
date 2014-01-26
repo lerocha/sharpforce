@@ -93,6 +93,7 @@ public class SalesforceProperty
     public string Label { get; set; }
     public string Length { get; set; }
     public bool IsCustom { get; set; }
+    public bool IsEditable { get; set; }
     public bool IsExternalId { get; set; }
     public bool IsUnique { get; set; }
     public bool IsPicklist { get; set; }
@@ -113,6 +114,7 @@ public class SalesforceProperty
         Type = SalesforceModel.GetClrType(SalesforceType);
         Label = x.Element("label") != null ? x.Element("label").Value : string.Empty;
         Length = x.Element("length") != null ? x.Element("length").Value : string.Empty;
+        IsEditable = (x.Element("updateable") != null && x.Element("updateable").Value == "true");
         IsCustom = (x.Element("custom") != null && x.Element("custom").Value == "true");
         IsExternalId = (x.Element("externalId") != null && x.Element("externalId").Value == "true");
         IsUnique = (x.Element("unique") != null && x.Element("unique").Value == "true");
