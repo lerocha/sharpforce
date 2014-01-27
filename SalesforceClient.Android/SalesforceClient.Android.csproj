@@ -54,6 +54,9 @@
     <Compile Include="..\SalesforceClient\SalesforceClient.cs">
       <Link>SalesforceClient.cs</Link>
     </Compile>
+    <Compile Include="..\SalesforceClient\SalesforceException.cs">
+      <Link>SalesforceException.cs</Link>
+    </Compile>
     <Compile Include="..\SalesforceClient\SalesforceObjects.cs">
       <Link>SalesforceObjects.cs</Link>
     </Compile>

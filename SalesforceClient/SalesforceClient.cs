@@ -16,7 +16,7 @@ namespace SalesforceClient
         /// <typeparam name="T"></typeparam>
         /// <param name="t">Salesforce object to be created.</param>
         /// <returns></returns>
-        AddResponse Add<T>(object t) where T : new();
+        string Add<T>(object t) where T : new();
 
         /// <summary>
         /// Get an Salesforce object.
@@ -24,7 +24,7 @@ namespace SalesforceClient
         /// <typeparam name="T"></typeparam>
         /// <param name="id">The id of the Salesforce object to be retrieved.</param>
         /// <returns></returns>
-        SalesforceResponse<T> Get<T>(string id) where T : new();
+        T Get<T>(string id) where T : new();
 
         /// <summary>
         /// Updates an object in Salesforce.
@@ -33,7 +33,7 @@ namespace SalesforceClient
         /// <param name="t">Salesforce object to be updated.</param>
         /// <param name="id"></param>
         /// <returns></returns>
-        SalesforceResponse Update<T>(object t, string id);
+        void Update<T>(object t, string id);
 
         /// <summary>
         /// Deletes an Salesforce object.
@@ -41,20 +41,20 @@ namespace SalesforceClient
         /// <typeparam name="T"></typeparam>
         /// <param name="id">The id of the Salesforce object to be deleted.</param>
         /// <returns></returns>
-        SalesforceResponse Delete<T>(string id) where T : new();
+        void Delete<T>(string id) where T : new();
 
         /// <summary>
         /// Execute a SOQL Query
         /// </summary>
         /// <param name="query">SOQL query</param>
         /// <returns></returns>
-        QueryResponse<T> Query<T>(string query) where T : new();
+        List<T> Query<T>(string query) where T : new();
 
         /// <summary>
         /// Gets available API the versions.
         /// </summary>
         /// <returns></returns>
-        SalesforceResponse<List<ApiVersion>> GetVersions();
+        List<ApiVersion> GetVersions();
 
         /// <summary>
         /// Completely describes the individual metadata at all levels for the specified object. 
@@ -128,7 +128,7 @@ namespace SalesforceClient
         /// <typeparam name="T"></typeparam>
         /// <param name="t">Salesforce object to be created.</param>
         /// <returns></returns>
-        public AddResponse Add<T>(object t) where T : new()
+        public string Add<T>(object t) where T : new()
         {
             IRestRequest request = new RestRequest
             {
@@ -138,7 +138,7 @@ namespace SalesforceClient
             };
             request.AddBody(t);
             var response = ExecuteRequest<AddResponse>(request);
-            return response.Data;
+            return response.Data.Id;
         }
 
         /// <summary>
@@ -147,14 +147,15 @@ namespace SalesforceClient
         /// <typeparam name="T"></typeparam>
         /// <param name="id">The id of the Salesforce object to be retrieved.</param>
         /// <returns></returns>
-        public SalesforceResponse<T> Get<T>(string id) where T : new()
+        public T Get<T>(string id) where T : new()
         {
             IRestRequest request = new RestRequest
             {
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
                 Method = Method.GET
             };
-            return ExecuteRequest<T>(request);
+            var response = ExecuteRequest<T>(request);
+            return response.Data;
         }
 
         /// <summary>
@@ -164,7 +165,7 @@ namespace SalesforceClient
         /// <param name="t">Salesforce object to be updated.</param>
         /// <param name="id"></param>
         /// <returns></returns>
-        public SalesforceResponse Update<T>(object t, string id)
+        public void Update<T>(object t, string id)
         {
             IRestRequest request = new RestRequest
             {
@@ -173,7 +174,7 @@ namespace SalesforceClient
                 RequestFormat = DataFormat.Json
             };
             request.AddBody(t);
-            return ExecuteRequest<SalesforceResponse>(request);
+            ExecuteRequest<SalesforceResponse>(request);
         }
 
         /// <summary>
@@ -182,14 +183,14 @@ namespace SalesforceClient
         /// <typeparam name="T"></typeparam>
         /// <param name="id">The id of the Salesforce object to be deleted.</param>
         /// <returns></returns>
-        public SalesforceResponse Delete<T>(string id) where T : new()
+        public void Delete<T>(string id) where T : new()
         {
             IRestRequest request = new RestRequest
             {
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
                 Method = Method.DELETE
             };
-            return ExecuteRequest<SalesforceResponse>(request);
+            ExecuteRequest<SalesforceResponse>(request);
         }
 
         /// <summary>
@@ -198,7 +199,7 @@ namespace SalesforceClient
         /// <typeparam name="T"></typeparam>
         /// <param name="query">SOQL query</param>
         /// <returns></returns>
-        public QueryResponse<T> Query<T>(string query) where T : new()
+        public List<T> Query<T>(string query) where T : new()
         {
             IRestRequest request = new RestRequest
             {
@@ -207,21 +208,22 @@ namespace SalesforceClient
             };
 
             var response = ExecuteRequest<QueryResponse<T>>(request);
-            return response.Data;
+            return response.Data.Records;
         }
 
         /// <summary>
         /// Gets available API the versions.
         /// </summary>
         /// <returns></returns>
-        public SalesforceResponse<List<ApiVersion>> GetVersions()
+        public List<ApiVersion> GetVersions()
         {
             IRestRequest request = new RestRequest
             {
                 Resource = "/services/data/",
                 Method = Method.GET
             };
-            return ExecuteRequest<List<ApiVersion>>(request);
+            var response = ExecuteRequest<List<ApiVersion>>(request);
+            return response.Data;
         }
 
         /// <summary>
@@ -267,41 +269,31 @@ namespace SalesforceClient
             client.BaseUrl = InstanceUrl;
             var response = client.Execute<T>(request);
 
+            if (response.ErrorException != null)
+            {
+                // Sets the error information
+                string message = response.ErrorMessage;
+                var deserializer = new JsonDeserializer();
+                var errors = deserializer.Deserialize<List<SalesforceResponse>>(response);
+                string errorCode = null;
+
+                if (errors.Count > 0)
+                {
+                    errorCode = errors[0].ErrorCode;
+                    message = errors[0].Message;
+                }
+
+                Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}", response.StatusCode, errorCode, message);
+                throw new SalesforceException(message, response.StatusCode, errorCode, response.ErrorException);
+            }
+
             var salesforceResponse = new SalesforceResponse<T>
             {
                 Data = response.Data,
                 StatusCode = response.StatusCode
             };
 
-            if (response.ErrorException != null)
-            {
-                // Sets the error information
-                var deserializer = new JsonDeserializer();
-                var errors = deserializer.Deserialize<List<SalesforceResponse>>(response);
-                if (errors.Count > 0)
-                {
-                    salesforceResponse.ErrorCode = errors[0].ErrorCode;
-                    salesforceResponse.Message = errors[0].Message;
-                }
-
-                // If data response is a SalesforceResponse type, 
-                // then instantiate it so that we can set HttpStatus and errors info.
-                if (typeof (T).IsSubclassOf(typeof (SalesforceResponse)))
-                {
-                    salesforceResponse.Data = Activator.CreateInstance<T>();
-                }
-            }
-
-            // If data is a SalesforceResponse than set its error and status properties.
-            var data = salesforceResponse.Data as SalesforceResponse;
-            if (salesforceResponse.Data is SalesforceResponse)
-            {
-                data.ErrorCode = salesforceResponse.ErrorCode;
-                data.Message = salesforceResponse.Message;
-                data.StatusCode = salesforceResponse.StatusCode;
-            }
-
-            Debug.WriteLine(salesforceResponse);
+            Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}; Data={3}", response.StatusCode, string.Empty, response.ErrorMessage, response.Data);
             return salesforceResponse;
         }
     }

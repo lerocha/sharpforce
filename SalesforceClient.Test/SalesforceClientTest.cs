@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Net;
 using NUnit.Framework;
@@ -44,16 +45,15 @@ namespace SalesforceClient.Test
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
 
             // Act
-            QueryResponse<Account> response = service.Query<Account>("SELECT id, name from Account");
+            List<Account> accounts = service.Query<Account>("SELECT id, name from Account");
 
             // Assert
-            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-            Assert.True(response.Done);
-            Assert.True(response.TotalSize > 0);
+            Assert.NotNull(accounts);
+            Assert.True(accounts.Count > 0);
 
-            foreach (var record in response.Records)
+            foreach (var account in accounts)
             {
-                Console.WriteLine(record.Name);
+                Console.WriteLine(account.Name);
             }
         }
 
@@ -64,12 +64,9 @@ namespace SalesforceClient.Test
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
 
             // Act
-            QueryResponse<Account> response = service.Query<Account>("SELECT id, name from NonExistingTable");
-
             // Assert
-            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
-            Assert.False(response.Done);
-            Assert.AreEqual(0, response.TotalSize);
+            var exception = Assert.Throws<SalesforceException>(() => service.Query<Account>("SELECT id, name from NonExistingTable"));
+            Assert.AreEqual(HttpStatusCode.BadRequest, exception.StatusCode);
         }
 
         [Test]
@@ -79,14 +76,13 @@ namespace SalesforceClient.Test
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
 
             // Act
-            var response = service.GetVersions();
+            List<ApiVersion> versions = service.GetVersions();
 
             // Assert
-            Assert.IsNotNull(response);
-            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-            Assert.IsNotEmpty(response.Data);
+            Assert.IsNotNull(versions);
+            Assert.True(versions.Count > 0);
 
-            foreach (var version in response.Data)
+            foreach (var version in versions)
             {
                 Console.WriteLine(version.Version);
             }
@@ -103,7 +99,6 @@ namespace SalesforceClient.Test
 
             // Assert
             Assert.IsNotNull(response);
-            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
             Assert.IsNotNull(response.Fields);
             Assert.IsNotNull(response.Urls);
             Assert.IsNotNull(response.ChildRelationships);
@@ -121,11 +116,9 @@ namespace SalesforceClient.Test
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
 
             // Act
-            var response = service.Describe("AccountError");
-
             // Assert
-            Assert.IsNotNull(response);
-            Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
+            var exception = Assert.Throws<SalesforceException>(() => service.Describe("AccountError"));
+            Assert.AreEqual(HttpStatusCode.NotFound, exception.StatusCode);
         }
 
         [Test]
@@ -139,7 +132,6 @@ namespace SalesforceClient.Test
 
             // Assert
             Assert.IsNotNull(response);
-            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
             Assert.NotNull(response.SObjects);
             Assert.True(response.SObjects.Count > 0);
             Assert.IsNotNull(response.SObjects[0].Urls);
@@ -163,20 +155,15 @@ namespace SalesforceClient.Test
                           };
 
             // Act
-            var response = service.Add<Contact>(contact);
+            var id = service.Add<Contact>(contact);
 
             // Assert
-            Assert.NotNull(response);
-            Assert.AreEqual(HttpStatusCode.Created, response.StatusCode);
-            Assert.True(response.Success);
-            Assert.NotNull(response.Id);
+            Assert.NotNull(id);
 
             // Act
-            var deleteResponse = service.Delete<Contact>(response.Id);
+            service.Delete<Contact>(id);
 
             // Assert
-            Assert.NotNull(deleteResponse);
-            Assert.AreEqual(HttpStatusCode.NoContent, deleteResponse.StatusCode);
         }
 
         [Test]
@@ -193,13 +180,9 @@ namespace SalesforceClient.Test
                           };
 
             // Act
-            var response = service.Add<Contact>(contact);
-
             // Assert
-            Assert.NotNull(response);
-            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
-            Assert.False(response.Success);
-            Assert.Null(response.Id);
+            var exception = Assert.Throws<SalesforceException>(() => service.Add<Contact>(contact));
+            Assert.AreEqual(HttpStatusCode.BadRequest, exception.StatusCode);
         }
 
         [Test]
@@ -209,11 +192,9 @@ namespace SalesforceClient.Test
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
 
             // Act
-            var response = service.Delete<Contact>("BadId");
-
             // Assert
-            Assert.NotNull(response);
-            Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
+            var exception = Assert.Throws<SalesforceException>(() => service.Delete<Contact>("BadId"));
+            Assert.AreEqual(HttpStatusCode.NotFound, exception.StatusCode);
         }
 
         [Test]
@@ -223,12 +204,11 @@ namespace SalesforceClient.Test
 	        var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
             
             // Act
-            SalesforceResponse<Contact> response = service.Get<Contact>(ContactId);
+            Contact response = service.Get<Contact>(ContactId);
 	        
             // Assert
             Assert.NotNull(response);
-            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-            Assert.NotNull(response.Data);
+            Assert.AreEqual(ContactId, response.Id);
 	    }
 
 	    [Test]
@@ -238,30 +218,25 @@ namespace SalesforceClient.Test
 	        var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
             
             // Act
-            SalesforceResponse<Contact> response = service.Get<Contact>("003iiiiiiiiiiiii");
-	        
             // Assert
-            Assert.NotNull(response);
-            Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
-            Assert.Null(response.Data);
-	    }
+            var exception = Assert.Throws<SalesforceException>(() => service.Get<Contact>("003iiiiiiiiiiiii"));
+            Assert.AreEqual(HttpStatusCode.NotFound, exception.StatusCode);
+        }
 
         [Test]
         public void SalesforceClientUpdateExistingObject()
         {
             // Arrange
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
-            var getResponse = service.Get<Contact>(ContactId);
-            Console.WriteLine("Description=" + getResponse.Data.Description);
-            var contact = new {Description = Guid.NewGuid()};
-            Console.WriteLine("Description=" + contact.Description);
+            Contact contact = service.Get<Contact>(ContactId);
+            var updateContact = new {Description = Guid.NewGuid().ToString()};
 
             // Act
-            var response = service.Update<Contact>(contact, getResponse.Data.Id);
+            service.Update<Contact>(updateContact, contact.Id);
 
             // Assert
-            Assert.NotNull(response);
-            Assert.AreEqual(HttpStatusCode.NoContent, response.StatusCode);
+            contact = service.Get<Contact>(ContactId); 
+            Assert.AreEqual(updateContact.Description, contact.Description);
         }
 
         [Test]
@@ -271,11 +246,9 @@ namespace SalesforceClient.Test
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
 
             // Act
-            var response = service.Update<Contact>(new { Description = Guid.NewGuid() }, "InvalidID");
-
             // Assert
-            Assert.NotNull(response);
-            Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
+            var exception = Assert.Throws<SalesforceException>(() => service.Update<Contact>(new { Description = Guid.NewGuid() }, "InvalidID"));
+            Assert.AreEqual(HttpStatusCode.NotFound, exception.StatusCode);
         }
     }
 }

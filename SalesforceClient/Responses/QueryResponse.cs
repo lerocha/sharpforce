@@ -4,7 +4,7 @@ using System.Diagnostics;
 namespace SalesforceClient.Responses
 {
     [DebuggerDisplay("Done={Done}; TotalSize={TotalSize}")]
-    public class QueryResponse<T> : SalesforceResponse
+    public class QueryResponse<T>
     {
         public int TotalSize { get; set; }
         public bool Done { get; set; }

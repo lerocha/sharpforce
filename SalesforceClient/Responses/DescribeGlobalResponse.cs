@@ -2,7 +2,7 @@
 
 namespace SalesforceClient.Responses
 {
-    public class DescribeGlobalResponse : SalesforceResponse
+    public class DescribeGlobalResponse
     {
         public string Encoding { get; set; }
         public List<DescribeResponse> SObjects { get; set; }
