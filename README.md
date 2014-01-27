@@ -1,4 +1,4 @@
-## SalesforceSharp - Salesforce REST API client for .NET and Xamarin iOS/Android
+## SalesforceClient - Salesforce REST API client for .NET and Xamarin iOS/Android
 
 This project is on early stage with basic functionality at this point.
 
@@ -12,7 +12,7 @@ It implements a simple client for the [Salesforce REST API][1] using [RestSharp]
 
 ```csharp
 // Instantiate the client using a RefreshToken
-var service = new SalesforceRestService("ConsumerKey", "ConsumerSecret", "RefreshToken");
+var service = new SalesforceClient("ConsumerKey", "ConsumerSecret", "RefreshToken");
 
 // Execute SOQL query and get a JSON response
 string jsonResponse = service.Query("SELECT id, name from Account");
