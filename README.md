@@ -7,7 +7,7 @@ It implements a simple client for the [Salesforce REST API][1] using [RestSharp]
 ### Features
 
 * Supports .NET, Xamarin iOS, Xamarin Android
-* Supported Salesforce APIs: Versions, Query
+* Supported Salesforce APIs: Versions, Query, CRUD
 * Auto-generated C# classes (POCOs) for Salesforce objects
 
 ```csharp
@@ -29,7 +29,6 @@ var newContact = new
 	FirstName = "John",
 	LastName = "Smith"
 };
-
 var id = service.Add<Contact>(newContact);
 
 // Read a record
@@ -49,13 +48,15 @@ try
 }
 catch (SalesforceException e)
 {
-	Console.WriteLine("ErrorCode={0}; StatusCode={1}; Message={2}", e.ErrorCode, e.StatusCode, e.Message);
+	Console.WriteLine("ErrorCode={0}; StatusCode={1}; Message={2}", 
+					   e.ErrorCode, e.StatusCode, e.Message);
 	// Output:
 	// ErrorCode=INVALID_FIELD_FOR_INSERT_UPDATE; 
 	// StatusCode=BadRequest; 
-	// Message=Unable to create/update fields: Name. Please check the security settings of this field and verify that it is read/write for your profile or permission set.
+	// Message=Unable to create/update fields: Name. Please check the security settings of this field
+	//         and verify that it is read/write for your profile or permission set.
 	
-	// TODO: handle exception
+	// TODO: handle the exception
 }
 ```
   [1]: http://www.salesforce.com/us/developer/docs/api_rest/Content/resources_list.htm
