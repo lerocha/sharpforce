@@ -14,10 +14,7 @@ It implements a simple client for the [Salesforce REST API][1] using [RestSharp]
 // Instantiate the client using a RefreshToken
 var service = new SalesforceClient("ConsumerKey", "ConsumerSecret", "RefreshToken");
 
-// Execute SOQL query and get a JSON response
-string jsonResponse = service.Query("SELECT id, name from Account");
-
-// Execute SOQL query and get a strong type response
+// Execute SOQL query
 QueryResponse<Account> response = service.Query<Account>("SELECT id, name from Account");
 
 // Iterate through the records returned.

@@ -38,21 +38,6 @@ namespace SalesforceClient.Test
         }
 
         [Test]
-        public void SalesforceClientQuery()
-        {
-            // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
-
-            // Act
-            string response = service.Query("SELECT name from Account");
-
-            // Assert
-            Assert.IsNotEmpty(response);
-
-            Console.WriteLine(response);
-        }
-
-        [Test]
         public void SalesforceClientQueryStrongType()
         {
             // Arrange
@@ -105,21 +90,6 @@ namespace SalesforceClient.Test
             {
                 Console.WriteLine(version.Version);
             }
-        }
-
-        [Test]
-        public void SalesforceClientDescribeJson()
-        {
-            // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
-
-            // Act
-            string response = service.DescribeJson("Account");
-
-            // Assert
-            Assert.IsNotEmpty(response);
-
-            Console.WriteLine(response);
         }
 
         [Test]

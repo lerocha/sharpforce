@@ -48,13 +48,6 @@ namespace SalesforceClient
         /// </summary>
         /// <param name="query">SOQL query</param>
         /// <returns></returns>
-        string Query(string query);
-
-        /// <summary>
-        /// Execute a SOQL Query
-        /// </summary>
-        /// <param name="query">SOQL query</param>
-        /// <returns></returns>
         QueryResponse<T> Query<T>(string query) where T : new();
 
         /// <summary>
@@ -62,14 +55,6 @@ namespace SalesforceClient
         /// </summary>
         /// <returns></returns>
         SalesforceResponse<List<ApiVersion>> GetVersions();
-
-        /// <summary>
-        /// Completely describes the individual metadata at all levels for the specified object. 
-        /// For example, this can be used to retrieve the fields, URLs, and child relationships for the Account object.
-        /// </summary>
-        /// <param name="name">The Salesforce object name.</param>
-        /// <returns></returns>
-        string DescribeJson(string name);
 
         /// <summary>
         /// Completely describes the individual metadata at all levels for the specified object. 
@@ -124,7 +109,7 @@ namespace SalesforceClient
 
             if (response.ErrorException != null)
             {
-                Debug.WriteLine(string.Format("StatusCode={0}; Message={1}; AccessToken=null", response.StatusCode, response.ErrorMessage));
+                Debug.WriteLine("StatusCode={0}; Message={1}; AccessToken=null", response.StatusCode, response.ErrorMessage);
                 return;
             }
 
@@ -210,22 +195,6 @@ namespace SalesforceClient
         /// <summary>
         /// Execute a SOQL Query
         /// </summary>
-        /// <param name="query">SOQL query</param>
-        /// <returns></returns>
-        public string Query(string query)
-        {
-            IRestRequest request = new RestRequest
-            {
-                Resource = string.Format("/services/data/{0}/query/?q={1}", Version, query),
-                Method = Method.GET
-            };
-
-            return ExecuteRequest(request);
-        }
-
-        /// <summary>
-        /// Execute a SOQL Query
-        /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="query">SOQL query</param>
         /// <returns></returns>
@@ -261,23 +230,6 @@ namespace SalesforceClient
         /// </summary>
         /// <param name="name">The Salesforce object name.</param>
         /// <returns></returns>
-        public string DescribeJson(string name)
-        {
-            IRestRequest request = new RestRequest
-            {
-                Resource = string.Format("/services/data/{0}/sobjects/{1}/describe/", Version, name),
-                Method = Method.GET
-            };
-
-            return ExecuteRequest(request);
-        }
-
-        /// <summary>
-        /// Completely describes the individual metadata at all levels for the specified object.
-        /// For example, this can be used to retrieve the fields, URLs, and child relationships for the Account object.
-        /// </summary>
-        /// <param name="name">The Salesforce object name.</param>
-        /// <returns></returns>
         public DescribeResponse Describe(string name)
         {
             IRestRequest request = new RestRequest
@@ -305,25 +257,6 @@ namespace SalesforceClient
 
             var response = ExecuteRequest<DescribeGlobalResponse>(request);
             return response.Data;
-        }
-
-        private string ExecuteRequest(IRestRequest request)
-        {
-            if (request == null) throw new ArgumentException("request");
-
-            request.AddHeader("Authorization", "Bearer " + AccessToken);
-
-            IRestClient client = new RestClient();
-            client.BaseUrl = InstanceUrl;
-            var response = client.Execute(request);
-
-            if (response.ErrorException != null)
-            {
-                Debug.WriteLine(response.ErrorMessage);
-                throw response.ErrorException;
-            }
-
-            return response.Content;
         }
 
         private SalesforceResponse<T> ExecuteRequest<T>(IRestRequest request) where T : new()
