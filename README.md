@@ -1,4 +1,4 @@
-## SalesforceClient - Salesforce REST API client for .NET and Xamarin iOS/Android
+## Sharpforce - Salesforce REST API client for .NET and Xamarin iOS/Android
 
 This project is on early stage with basic functionality at this point.
 
