@@ -63,7 +63,7 @@ namespace Sharpforce
                         if (property.Label!=property.Name)
             {
 #>
-        [DisplayName("<#= property.Label #>")]
+        [Display(Name = "<#= property.Label #>")]
 <#
             }
 #>

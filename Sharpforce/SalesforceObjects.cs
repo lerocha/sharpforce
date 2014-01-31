@@ -23,7 +23,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Event Relation ID")]
+        [Display(Name = "Event Relation ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Relation ID")]
+        [Display(Name = "Relation ID")]
         public string RelationId { get; set; }
 
         /// <summary>
@@ -39,14 +39,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Event ID")]
+        [Display(Name = "Event ID")]
         public string EventId { get; set; }
 
         /// <summary>
         /// Response Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Response Date")]
+        [Display(Name = "Response Date")]
         public string RespondedDate { get; set; }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -68,14 +68,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -83,21 +83,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -121,14 +121,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -136,143 +136,143 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Master Record ID")]
+        [Display(Name = "Master Record ID")]
         public string MasterRecordId { get; set; }
 
         /// <summary>
         /// Account Name (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Account Name")]
+        [Display(Name = "Account Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Account Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Account Type")]
+        [Display(Name = "Account Type")]
         public string Type { get; set; }
 
         /// <summary>
         /// Parent Account ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Parent Account ID")]
+        [Display(Name = "Parent Account ID")]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Billing Street (textarea type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Billing Street")]
+        [Display(Name = "Billing Street")]
         public string BillingStreet { get; set; }
 
         /// <summary>
         /// Billing City (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Billing City")]
+        [Display(Name = "Billing City")]
         public string BillingCity { get; set; }
 
         /// <summary>
         /// Billing State/Province (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Billing State/Province")]
+        [Display(Name = "Billing State/Province")]
         public string BillingState { get; set; }
 
         /// <summary>
         /// Billing Zip/Postal Code (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Billing Zip/Postal Code")]
+        [Display(Name = "Billing Zip/Postal Code")]
         public string BillingPostalCode { get; set; }
 
         /// <summary>
         /// Billing Country (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Billing Country")]
+        [Display(Name = "Billing Country")]
         public string BillingCountry { get; set; }
 
         /// <summary>
         /// Billing Latitude (double type in Salesforce)
         /// </summary>
-        [DisplayName("Billing Latitude")]
+        [Display(Name = "Billing Latitude")]
         public string BillingLatitude { get; set; }
 
         /// <summary>
         /// Billing Longitude (double type in Salesforce)
         /// </summary>
-        [DisplayName("Billing Longitude")]
+        [Display(Name = "Billing Longitude")]
         public string BillingLongitude { get; set; }
 
         /// <summary>
         /// Shipping Street (textarea type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Shipping Street")]
+        [Display(Name = "Shipping Street")]
         public string ShippingStreet { get; set; }
 
         /// <summary>
         /// Shipping City (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Shipping City")]
+        [Display(Name = "Shipping City")]
         public string ShippingCity { get; set; }
 
         /// <summary>
         /// Shipping State/Province (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Shipping State/Province")]
+        [Display(Name = "Shipping State/Province")]
         public string ShippingState { get; set; }
 
         /// <summary>
         /// Shipping Zip/Postal Code (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Shipping Zip/Postal Code")]
+        [Display(Name = "Shipping Zip/Postal Code")]
         public string ShippingPostalCode { get; set; }
 
         /// <summary>
         /// Shipping Country (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Shipping Country")]
+        [Display(Name = "Shipping Country")]
         public string ShippingCountry { get; set; }
 
         /// <summary>
         /// Shipping Latitude (double type in Salesforce)
         /// </summary>
-        [DisplayName("Shipping Latitude")]
+        [Display(Name = "Shipping Latitude")]
         public string ShippingLatitude { get; set; }
 
         /// <summary>
         /// Shipping Longitude (double type in Salesforce)
         /// </summary>
-        [DisplayName("Shipping Longitude")]
+        [Display(Name = "Shipping Longitude")]
         public string ShippingLongitude { get; set; }
 
         /// <summary>
         /// Account Phone (phone type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Account Phone")]
+        [Display(Name = "Account Phone")]
         public string Phone { get; set; }
 
         /// <summary>
         /// Account Fax (phone type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Account Fax")]
+        [Display(Name = "Account Fax")]
         public string Fax { get; set; }
 
         /// <summary>
         /// Account Number (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Account Number")]
+        [Display(Name = "Account Number")]
         public string AccountNumber { get; set; }
 
         /// <summary>
@@ -285,7 +285,7 @@ namespace Sharpforce
         /// SIC Code (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("SIC Code")]
+        [Display(Name = "SIC Code")]
         public string Sic { get; set; }
 
         /// <summary>
@@ -297,13 +297,13 @@ namespace Sharpforce
         /// <summary>
         /// Annual Revenue (currency type in Salesforce)
         /// </summary>
-        [DisplayName("Annual Revenue")]
+        [Display(Name = "Annual Revenue")]
         public string AnnualRevenue { get; set; }
 
         /// <summary>
         /// Employees (int type in Salesforce)
         /// </summary>
-        [DisplayName("Employees")]
+        [Display(Name = "Employees")]
         public string NumberOfEmployees { get; set; }
 
         /// <summary>
@@ -316,42 +316,42 @@ namespace Sharpforce
         /// Ticker Symbol (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Ticker Symbol")]
+        [Display(Name = "Ticker Symbol")]
         public string TickerSymbol { get; set; }
 
         /// <summary>
         /// Account Description (textarea type in Salesforce)
         /// </summary>
         [StringLength(32000)]
-        [DisplayName("Account Description")]
+        [Display(Name = "Account Description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Account Rating (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Account Rating")]
+        [Display(Name = "Account Rating")]
         public string Rating { get; set; }
 
         /// <summary>
         /// Account Site (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Account Site")]
+        [Display(Name = "Account Site")]
         public string Site { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -359,14 +359,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -374,42 +374,42 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Activity")]
+        [Display(Name = "Last Activity")]
         public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Data.com Key (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Data.com Key")]
+        [Display(Name = "Data.com Key")]
         public string Jigsaw { get; set; }
 
         /// <summary>
@@ -417,68 +417,68 @@ namespace Sharpforce
         /// </summary>
         [StringLength(20)]
         [Editable(false)]
-        [DisplayName("Jigsaw Company ID")]
+        [Display(Name = "Jigsaw Company ID")]
         public string JigsawCompanyId { get; set; }
 
         /// <summary>
         /// Account Source (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Account Source")]
+        [Display(Name = "Account Source")]
         public string AccountSource { get; set; }
 
         /// <summary>
         /// SIC Description (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("SIC Description")]
+        [Display(Name = "SIC Description")]
         public string SicDesc { get; set; }
 
         /// <summary>
         /// Customer Priority (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Customer Priority")]
+        [Display(Name = "Customer Priority")]
         public string CustomerPriority__c { get; set; }
 
         /// <summary>
         /// SLA (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("SLA")]
+        [Display(Name = "SLA")]
         public string SLA__c { get; set; }
 
         /// <summary>
         /// Active (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public string Active__c { get; set; }
 
         /// <summary>
         /// Number of Locations (double type in Salesforce)
         /// </summary>
-        [DisplayName("Number of Locations")]
+        [Display(Name = "Number of Locations")]
         public string NumberofLocations__c { get; set; }
 
         /// <summary>
         /// Upsell Opportunity (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Upsell Opportunity")]
+        [Display(Name = "Upsell Opportunity")]
         public string UpsellOpportunity__c { get; set; }
 
         /// <summary>
         /// SLA Serial Number (string type in Salesforce)
         /// </summary>
         [StringLength(10)]
-        [DisplayName("SLA Serial Number")]
+        [Display(Name = "SLA Serial Number")]
         public string SLASerialNumber__c { get; set; }
 
         /// <summary>
         /// SLA Expiration Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("SLA Expiration Date")]
+        [Display(Name = "SLA Expiration Date")]
         public string SLAExpirationDate__c { get; set; }
 
     }
@@ -495,7 +495,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact Role ID")]
+        [Display(Name = "Contact Role ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -503,14 +503,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string ContactId { get; set; }
 
         /// <summary>
@@ -522,14 +522,14 @@ namespace Sharpforce
         /// <summary>
         /// Primary (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Primary")]
+        [Display(Name = "Primary")]
         public bool? IsPrimary { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -537,14 +537,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -552,21 +552,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -583,7 +583,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -591,7 +591,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -599,7 +599,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -607,49 +607,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -671,7 +671,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -679,14 +679,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -694,7 +694,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -702,7 +702,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -710,14 +710,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -725,7 +725,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -742,14 +742,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account History ID")]
+        [Display(Name = "Account History ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -757,7 +757,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
@@ -765,14 +765,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -780,7 +780,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -788,7 +788,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -796,7 +796,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -813,7 +813,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account Partner ID")]
+        [Display(Name = "Account Partner ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -821,7 +821,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountFromId { get; set; }
 
         /// <summary>
@@ -829,7 +829,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountToId { get; set; }
 
         /// <summary>
@@ -837,7 +837,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity ID")]
+        [Display(Name = "Opportunity ID")]
         public string OpportunityId { get; set; }
 
         /// <summary>
@@ -851,14 +851,14 @@ namespace Sharpforce
         /// Primary (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Primary")]
+        [Display(Name = "Primary")]
         public bool? IsPrimary { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -866,14 +866,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -881,21 +881,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -903,7 +903,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Reverse Partner ID")]
+        [Display(Name = "Reverse Partner ID")]
         public string ReversePartnerId { get; set; }
 
     }
@@ -920,7 +920,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account Share ID")]
+        [Display(Name = "Account Share ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -928,7 +928,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
@@ -936,7 +936,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User/Group ID")]
+        [Display(Name = "User/Group ID")]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
@@ -944,7 +944,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Account Access")]
+        [Display(Name = "Account Access")]
         public string AccountAccessLevel { get; set; }
 
         /// <summary>
@@ -952,7 +952,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Opportunity Access")]
+        [Display(Name = "Opportunity Access")]
         public string OpportunityAccessLevel { get; set; }
 
         /// <summary>
@@ -960,7 +960,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Case Access")]
+        [Display(Name = "Case Access")]
         public string CaseAccessLevel { get; set; }
 
         /// <summary>
@@ -968,7 +968,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Contact Access")]
+        [Display(Name = "Contact Access")]
         public string ContactAccessLevel { get; set; }
 
         /// <summary>
@@ -976,14 +976,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Row Cause")]
+        [Display(Name = "Row Cause")]
         public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -991,14 +991,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -1015,7 +1015,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Activity ID")]
+        [Display(Name = "Activity ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -1023,7 +1023,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
@@ -1031,7 +1031,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact/Lead ID")]
+        [Display(Name = "Contact/Lead ID")]
         public string WhoId { get; set; }
 
         /// <summary>
@@ -1039,7 +1039,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity/Account ID")]
+        [Display(Name = "Opportunity/Account ID")]
         public string WhatId { get; set; }
 
         /// <summary>
@@ -1053,14 +1053,14 @@ namespace Sharpforce
         /// Task (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Task")]
+        [Display(Name = "Task")]
         public bool? IsTask { get; set; }
 
         /// <summary>
         /// Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Date")]
+        [Display(Name = "Date")]
         public string ActivityDate { get; set; }
 
         /// <summary>
@@ -1068,7 +1068,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Assigned To ID")]
+        [Display(Name = "Assigned To ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -1090,35 +1090,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Type")]
+        [Display(Name = "Type")]
         public string ActivityType { get; set; }
 
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Closed")]
+        [Display(Name = "Closed")]
         public bool? IsClosed { get; set; }
 
         /// <summary>
         /// All Day Event (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("All Day Event")]
+        [Display(Name = "All Day Event")]
         public bool? IsAllDayEvent { get; set; }
 
         /// <summary>
         /// Public (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Public")]
+        [Display(Name = "Public")]
         public bool? IsVisibleInSelfService { get; set; }
 
         /// <summary>
         /// Duration (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Duration")]
+        [Display(Name = "Duration")]
         public string DurationInMinutes { get; set; }
 
         /// <summary>
@@ -1133,21 +1133,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(32000)]
         [Editable(false)]
-        [DisplayName("Comments")]
+        [Display(Name = "Comments")]
         public string Description { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -1155,14 +1155,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -1170,21 +1170,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Call Duration (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Call Duration")]
+        [Display(Name = "Call Duration")]
         public string CallDurationInSeconds { get; set; }
 
         /// <summary>
@@ -1192,7 +1192,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Call Type")]
+        [Display(Name = "Call Type")]
         public string CallType { get; set; }
 
         /// <summary>
@@ -1200,7 +1200,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Call Result")]
+        [Display(Name = "Call Result")]
         public string CallDisposition { get; set; }
 
         /// <summary>
@@ -1208,35 +1208,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Call Object Identifier")]
+        [Display(Name = "Call Object Identifier")]
         public string CallObject { get; set; }
 
         /// <summary>
         /// Reminder Date/Time (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Reminder Date/Time")]
+        [Display(Name = "Reminder Date/Time")]
         public string ReminderDateTime { get; set; }
 
         /// <summary>
         /// Reminder Set (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Reminder Set")]
+        [Display(Name = "Reminder Set")]
         public bool? IsReminderSet { get; set; }
 
         /// <summary>
         /// End (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("End")]
+        [Display(Name = "End")]
         public string EndDateTime { get; set; }
 
         /// <summary>
         /// Start (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Start")]
+        [Display(Name = "Start")]
         public string StartDateTime { get; set; }
 
     }
@@ -1253,21 +1253,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Additional Directory Number ID")]
+        [Display(Name = "Additional Directory Number ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Call Center ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Call Center ID")]
+        [Display(Name = "Call Center ID")]
         public string CallCenterId { get; set; }
 
         /// <summary>
@@ -1292,7 +1292,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -1300,14 +1300,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -1315,14 +1315,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -1339,7 +1339,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Aggregate Result ID")]
+        [Display(Name = "Aggregate Result ID")]
         public string Id { get; set; }
 
     }
@@ -1356,7 +1356,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Class ID")]
+        [Display(Name = "Class ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -1364,7 +1364,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -1376,7 +1376,7 @@ namespace Sharpforce
         /// <summary>
         /// Api Version (double type in Salesforce)
         /// </summary>
-        [DisplayName("Api Version")]
+        [Display(Name = "Api Version")]
         public string ApiVersion { get; set; }
 
         /// <summary>
@@ -1388,13 +1388,13 @@ namespace Sharpforce
         /// <summary>
         /// Is Valid (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Is Valid")]
+        [Display(Name = "Is Valid")]
         public bool? IsValid { get; set; }
 
         /// <summary>
         /// Body CRC (double type in Salesforce)
         /// </summary>
-        [DisplayName("Body CRC")]
+        [Display(Name = "Body CRC")]
         public string BodyCrc { get; set; }
 
         /// <summary>
@@ -1406,14 +1406,14 @@ namespace Sharpforce
         /// <summary>
         /// Size Without Comments (int type in Salesforce)
         /// </summary>
-        [DisplayName("Size Without Comments")]
+        [Display(Name = "Size Without Comments")]
         public string LengthWithoutComments { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -1421,14 +1421,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -1436,14 +1436,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -1460,7 +1460,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Component ID")]
+        [Display(Name = "Component ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -1468,7 +1468,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -1480,14 +1480,14 @@ namespace Sharpforce
         /// <summary>
         /// Api Version (double type in Salesforce)
         /// </summary>
-        [DisplayName("Api Version")]
+        [Display(Name = "Api Version")]
         public string ApiVersion { get; set; }
 
         /// <summary>
         /// Label (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Label")]
+        [Display(Name = "Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -1500,14 +1500,14 @@ namespace Sharpforce
         /// Controller Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Controller Type")]
+        [Display(Name = "Controller Type")]
         public string ControllerType { get; set; }
 
         /// <summary>
         /// Controller Key (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Controller Key")]
+        [Display(Name = "Controller Key")]
         public string ControllerKey { get; set; }
 
         /// <summary>
@@ -1520,7 +1520,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -1528,14 +1528,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -1543,14 +1543,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -1567,7 +1567,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Log ID")]
+        [Display(Name = "Log ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -1575,21 +1575,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Log User ID")]
+        [Display(Name = "Log User ID")]
         public string LogUserId { get; set; }
 
         /// <summary>
         /// Log Size (bytes) (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Log Size (bytes)")]
+        [Display(Name = "Log Size (bytes)")]
         public string LogLength { get; set; }
 
         /// <summary>
         /// Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Date")]
+        [Display(Name = "Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -1597,7 +1597,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(16)]
         [Editable(false)]
-        [DisplayName("Request Type")]
+        [Display(Name = "Request Type")]
         public string Request { get; set; }
 
         /// <summary>
@@ -1625,21 +1625,21 @@ namespace Sharpforce
         /// Duration (ms) (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Duration (ms)")]
+        [Display(Name = "Duration (ms)")]
         public string DurationMilliseconds { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Start Time (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Start Time")]
+        [Display(Name = "Start Time")]
         public string StartTime { get; set; }
 
         /// <summary>
@@ -1663,7 +1663,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Page ID")]
+        [Display(Name = "Page ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -1671,7 +1671,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -1683,14 +1683,14 @@ namespace Sharpforce
         /// <summary>
         /// Api Version (double type in Salesforce)
         /// </summary>
-        [DisplayName("Api Version")]
+        [Display(Name = "Api Version")]
         public string ApiVersion { get; set; }
 
         /// <summary>
         /// Label (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Label")]
+        [Display(Name = "Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -1703,26 +1703,26 @@ namespace Sharpforce
         /// Controller Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Controller Type")]
+        [Display(Name = "Controller Type")]
         public string ControllerType { get; set; }
 
         /// <summary>
         /// Controller Key (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Controller Key")]
+        [Display(Name = "Controller Key")]
         public string ControllerKey { get; set; }
 
         /// <summary>
         /// Available for Salesforce mobile apps (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Available for Salesforce mobile apps")]
+        [Display(Name = "Available for Salesforce mobile apps")]
         public bool? IsAvailableInTouch { get; set; }
 
         /// <summary>
         /// Require CSRF protection on GET requests (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Require CSRF protection on GET requests")]
+        [Display(Name = "Require CSRF protection on GET requests")]
         public bool? IsConfirmationTokenRequired { get; set; }
 
         /// <summary>
@@ -1735,7 +1735,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -1743,14 +1743,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -1758,14 +1758,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -1782,14 +1782,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Apex Test Queue Item ID")]
+        [Display(Name = "Apex Test Queue Item ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -1797,14 +1797,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -1812,7 +1812,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Class ID")]
+        [Display(Name = "Class ID")]
         public string ApexClassId { get; set; }
 
         /// <summary>
@@ -1826,7 +1826,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Status Detail")]
+        [Display(Name = "Status Detail")]
         public string ExtendedStatus { get; set; }
 
         /// <summary>
@@ -1834,7 +1834,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Apex Job ID")]
+        [Display(Name = "Apex Job ID")]
         public string ParentJobId { get; set; }
 
     }
@@ -1851,21 +1851,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Apex Test Result ID")]
+        [Display(Name = "Apex Test Result ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Time Started (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Time Started")]
+        [Display(Name = "Time Started")]
         public string TestTimestamp { get; set; }
 
         /// <summary>
@@ -1873,7 +1873,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Pass/Fail")]
+        [Display(Name = "Pass/Fail")]
         public string Outcome { get; set; }
 
         /// <summary>
@@ -1881,7 +1881,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Class ID")]
+        [Display(Name = "Class ID")]
         public string ApexClassId { get; set; }
 
         /// <summary>
@@ -1889,7 +1889,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Method Name")]
+        [Display(Name = "Method Name")]
         public string MethodName { get; set; }
 
         /// <summary>
@@ -1897,7 +1897,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(4000)]
         [Editable(false)]
-        [DisplayName("Error Message")]
+        [Display(Name = "Error Message")]
         public string Message { get; set; }
 
         /// <summary>
@@ -1905,7 +1905,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(4000)]
         [Editable(false)]
-        [DisplayName("Stack Trace")]
+        [Display(Name = "Stack Trace")]
         public string StackTrace { get; set; }
 
         /// <summary>
@@ -1913,7 +1913,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Apex Job ID")]
+        [Display(Name = "Apex Job ID")]
         public string AsyncApexJobId { get; set; }
 
         /// <summary>
@@ -1921,7 +1921,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Apex Test Queue Item ID")]
+        [Display(Name = "Apex Test Queue Item ID")]
         public string QueueItemId { get; set; }
 
         /// <summary>
@@ -1929,7 +1929,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Log ID")]
+        [Display(Name = "Log ID")]
         public string ApexLogId { get; set; }
 
     }
@@ -1946,7 +1946,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Trigger ID")]
+        [Display(Name = "Trigger ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -1954,7 +1954,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -1967,61 +1967,61 @@ namespace Sharpforce
         /// Custom Object Definition ID (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Custom Object Definition ID")]
+        [Display(Name = "Custom Object Definition ID")]
         public string TableEnumOrId { get; set; }
 
         /// <summary>
         /// BeforeInsert (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("BeforeInsert")]
+        [Display(Name = "BeforeInsert")]
         public bool? UsageBeforeInsert { get; set; }
 
         /// <summary>
         /// AfterInsert (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("AfterInsert")]
+        [Display(Name = "AfterInsert")]
         public bool? UsageAfterInsert { get; set; }
 
         /// <summary>
         /// BeforeUpdate (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("BeforeUpdate")]
+        [Display(Name = "BeforeUpdate")]
         public bool? UsageBeforeUpdate { get; set; }
 
         /// <summary>
         /// AfterUpdate (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("AfterUpdate")]
+        [Display(Name = "AfterUpdate")]
         public bool? UsageAfterUpdate { get; set; }
 
         /// <summary>
         /// BeforeDelete (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("BeforeDelete")]
+        [Display(Name = "BeforeDelete")]
         public bool? UsageBeforeDelete { get; set; }
 
         /// <summary>
         /// AfterDelete (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("AfterDelete")]
+        [Display(Name = "AfterDelete")]
         public bool? UsageAfterDelete { get; set; }
 
         /// <summary>
         /// IsBulk (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("IsBulk")]
+        [Display(Name = "IsBulk")]
         public bool? UsageIsBulk { get; set; }
 
         /// <summary>
         /// AfterUndelete (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("AfterUndelete")]
+        [Display(Name = "AfterUndelete")]
         public bool? UsageAfterUndelete { get; set; }
 
         /// <summary>
         /// Api Version (double type in Salesforce)
         /// </summary>
-        [DisplayName("Api Version")]
+        [Display(Name = "Api Version")]
         public string ApiVersion { get; set; }
 
         /// <summary>
@@ -2033,13 +2033,13 @@ namespace Sharpforce
         /// <summary>
         /// Is Valid (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Is Valid")]
+        [Display(Name = "Is Valid")]
         public bool? IsValid { get; set; }
 
         /// <summary>
         /// Body CRC (double type in Salesforce)
         /// </summary>
-        [DisplayName("Body CRC")]
+        [Display(Name = "Body CRC")]
         public string BodyCrc { get; set; }
 
         /// <summary>
@@ -2051,14 +2051,14 @@ namespace Sharpforce
         /// <summary>
         /// Size Without Comments (int type in Salesforce)
         /// </summary>
-        [DisplayName("Size Without Comments")]
+        [Display(Name = "Size Without Comments")]
         public string LengthWithoutComments { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -2066,14 +2066,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -2081,14 +2081,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -2105,21 +2105,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("AppMenuItem ID")]
+        [Display(Name = "AppMenuItem ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -2127,14 +2127,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -2142,21 +2142,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
@@ -2164,7 +2164,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Developer Name")]
+        [Display(Name = "Developer Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -2172,7 +2172,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -2194,7 +2194,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Start Url")]
+        [Display(Name = "Start Url")]
         public string StartUrl { get; set; }
 
         /// <summary>
@@ -2202,7 +2202,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Mobile Start Url")]
+        [Display(Name = "Mobile Start Url")]
         public string MobileStartUrl { get; set; }
 
         /// <summary>
@@ -2210,7 +2210,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Logo Image URL")]
+        [Display(Name = "Logo Image URL")]
         public string LogoUrl { get; set; }
 
         /// <summary>
@@ -2218,7 +2218,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Icon Url")]
+        [Display(Name = "Icon Url")]
         public string IconUrl { get; set; }
 
         /// <summary>
@@ -2226,7 +2226,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Info URL")]
+        [Display(Name = "Info URL")]
         public string InfoUrl { get; set; }
 
         /// <summary>
@@ -2240,7 +2240,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Mobile device OS platform")]
+        [Display(Name = "Mobile device OS platform")]
         public string MobilePlatform { get; set; }
 
         /// <summary>
@@ -2248,7 +2248,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Minimum required mobile device OS version")]
+        [Display(Name = "Minimum required mobile device OS version")]
         public string MobileMinOsVer { get; set; }
 
         /// <summary>
@@ -2256,14 +2256,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Type of mobile device")]
+        [Display(Name = "Type of mobile device")]
         public string MobileDeviceType { get; set; }
 
         /// <summary>
         /// App requires a registered mobile device (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("App requires a registered mobile device")]
+        [Display(Name = "App requires a registered mobile device")]
         public bool? IsRegisteredDeviceOnly { get; set; }
 
         /// <summary>
@@ -2271,14 +2271,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Version of the mobile app")]
+        [Display(Name = "Version of the mobile app")]
         public string MobileAppVer { get; set; }
 
         /// <summary>
         /// Date the mobile app was most recently installed (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Date the mobile app was most recently installed")]
+        [Display(Name = "Date the mobile app was most recently installed")]
         public string MobileAppInstalledDate { get; set; }
 
         /// <summary>
@@ -2286,7 +2286,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Most recently installed version of the mobile app")]
+        [Display(Name = "Most recently installed version of the mobile app")]
         public string MobileAppInstalledVersion { get; set; }
 
         /// <summary>
@@ -2294,7 +2294,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("ID for the related mobile app binary")]
+        [Display(Name = "ID for the related mobile app binary")]
         public string MobileAppBinaryId { get; set; }
 
         /// <summary>
@@ -2302,7 +2302,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("URL to install the mobile app")]
+        [Display(Name = "URL to install the mobile app")]
         public string MobileAppInstallUrl { get; set; }
 
         /// <summary>
@@ -2310,7 +2310,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("App Type")]
+        [Display(Name = "App Type")]
         public string Type { get; set; }
 
     }
@@ -2327,14 +2327,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Approval ID")]
+        [Display(Name = "Approval ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -2342,21 +2342,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -2364,14 +2364,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -2379,7 +2379,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -2392,21 +2392,21 @@ namespace Sharpforce
         /// Request Comment (string type in Salesforce)
         /// </summary>
         [StringLength(4000)]
-        [DisplayName("Request Comment")]
+        [Display(Name = "Request Comment")]
         public string RequestComment { get; set; }
 
         /// <summary>
         /// Approve/Reject Comment (string type in Salesforce)
         /// </summary>
         [StringLength(4000)]
-        [DisplayName("Approve/Reject Comment")]
+        [Display(Name = "Approve/Reject Comment")]
         public string ApproveComment { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -2423,41 +2423,41 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Asset ID")]
+        [Display(Name = "Asset ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string ContactId { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// Product ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Product ID")]
+        [Display(Name = "Product ID")]
         public string Product2Id { get; set; }
 
         /// <summary>
         /// Competitor Asset (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Competitor Asset")]
+        [Display(Name = "Competitor Asset")]
         public bool? IsCompetitorProduct { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -2465,14 +2465,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -2480,53 +2480,53 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Asset Name (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Asset Name")]
+        [Display(Name = "Asset Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Serial Number (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Serial Number")]
+        [Display(Name = "Serial Number")]
         public string SerialNumber { get; set; }
 
         /// <summary>
         /// Install Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Install Date")]
+        [Display(Name = "Install Date")]
         public string InstallDate { get; set; }
 
         /// <summary>
         /// Purchase Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Purchase Date")]
+        [Display(Name = "Purchase Date")]
         public string PurchaseDate { get; set; }
 
         /// <summary>
         /// Usage End Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Usage End Date")]
+        [Display(Name = "Usage End Date")]
         public string UsageEndDate { get; set; }
 
         /// <summary>
@@ -2565,7 +2565,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -2573,7 +2573,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -2581,7 +2581,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -2589,49 +2589,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -2653,7 +2653,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -2661,14 +2661,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -2676,7 +2676,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -2684,7 +2684,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -2692,14 +2692,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -2707,7 +2707,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -2724,7 +2724,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Rule ID")]
+        [Display(Name = "Rule ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -2739,7 +2739,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("SObject Type")]
+        [Display(Name = "SObject Type")]
         public string SobjectType { get; set; }
 
         /// <summary>
@@ -2753,14 +2753,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -2768,21 +2768,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -2799,14 +2799,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Apex Job ID")]
+        [Display(Name = "Apex Job ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -2814,7 +2814,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
@@ -2822,7 +2822,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Job Type")]
+        [Display(Name = "Job Type")]
         public string JobType { get; set; }
 
         /// <summary>
@@ -2830,7 +2830,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Class ID")]
+        [Display(Name = "Class ID")]
         public string ApexClassId { get; set; }
 
         /// <summary>
@@ -2844,28 +2844,28 @@ namespace Sharpforce
         /// Batches Processed (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Batches Processed")]
+        [Display(Name = "Batches Processed")]
         public string JobItemsProcessed { get; set; }
 
         /// <summary>
         /// Total Batches (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Total Batches")]
+        [Display(Name = "Total Batches")]
         public string TotalJobItems { get; set; }
 
         /// <summary>
         /// Failures (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Failures")]
+        [Display(Name = "Failures")]
         public string NumberOfErrors { get; set; }
 
         /// <summary>
         /// Completion Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Completion Date")]
+        [Display(Name = "Completion Date")]
         public string CompletedDate { get; set; }
 
         /// <summary>
@@ -2873,7 +2873,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Apex Method")]
+        [Display(Name = "Apex Method")]
         public string MethodName { get; set; }
 
         /// <summary>
@@ -2881,7 +2881,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Status Detail")]
+        [Display(Name = "Status Detail")]
         public string ExtendedStatus { get; set; }
 
         /// <summary>
@@ -2889,7 +2889,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Apex Job ID")]
+        [Display(Name = "Apex Job ID")]
         public string ParentJobId { get; set; }
 
         /// <summary>
@@ -2897,14 +2897,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Last ID processed and committed")]
+        [Display(Name = "Last ID processed and committed")]
         public string LastProcessed { get; set; }
 
         /// <summary>
         /// Offset of last ID processed and committed (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Offset of last ID processed and committed")]
+        [Display(Name = "Offset of last ID processed and committed")]
         public string LastProcessedOffset { get; set; }
 
     }
@@ -2921,14 +2921,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Content Document Link Id")]
+        [Display(Name = "Content Document Link Id")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -2936,7 +2936,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string LinkedEntityId { get; set; }
 
         /// <summary>
@@ -2944,7 +2944,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ContentDocument ID")]
+        [Display(Name = "ContentDocument ID")]
         public string ContentDocumentId { get; set; }
 
         /// <summary>
@@ -2959,14 +2959,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created")]
+        [Display(Name = "Created")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -2974,14 +2974,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Content Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Modified Date")]
+        [Display(Name = "Content Modified Date")]
         public string LastModifiedDate { get; set; }
 
     }
@@ -2998,14 +2998,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Attachment ID")]
+        [Display(Name = "Attachment ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -3013,34 +3013,34 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
         /// File Name (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("File Name")]
+        [Display(Name = "File Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Private (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Private")]
+        [Display(Name = "Private")]
         public bool? IsPrivate { get; set; }
 
         /// <summary>
         /// Content Type (string type in Salesforce)
         /// </summary>
         [StringLength(120)]
-        [DisplayName("Content Type")]
+        [Display(Name = "Content Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Body Length (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Body Length")]
+        [Display(Name = "Body Length")]
         public string BodyLength { get; set; }
 
         /// <summary>
@@ -3052,14 +3052,14 @@ namespace Sharpforce
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -3067,14 +3067,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -3082,14 +3082,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -3112,56 +3112,56 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Auth. Provider ID")]
+        [Display(Name = "Auth. Provider ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Provider Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Provider Type")]
+        [Display(Name = "Provider Type")]
         public string ProviderType { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
         [StringLength(32)]
-        [DisplayName("Name")]
+        [Display(Name = "Name")]
         public string FriendlyName { get; set; }
 
         /// <summary>
         /// URL Suffix (string type in Salesforce)
         /// </summary>
         [StringLength(32)]
-        [DisplayName("URL Suffix")]
+        [Display(Name = "URL Suffix")]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// Class ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Class ID")]
+        [Display(Name = "Class ID")]
         public string RegistrationHandlerId { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string ExecutionUserId { get; set; }
 
         /// <summary>
         /// Consumer Key (string type in Salesforce)
         /// </summary>
         [StringLength(256)]
-        [DisplayName("Consumer Key")]
+        [Display(Name = "Consumer Key")]
         public string ConsumerKey { get; set; }
 
         /// <summary>
@@ -3169,42 +3169,42 @@ namespace Sharpforce
         /// </summary>
         [StringLength(100)]
         [Editable(false)]
-        [DisplayName("Consumer Secret")]
+        [Display(Name = "Consumer Secret")]
         public string ConsumerSecret { get; set; }
 
         /// <summary>
         /// Custom Error URL (string type in Salesforce)
         /// </summary>
         [StringLength(500)]
-        [DisplayName("Custom Error URL")]
+        [Display(Name = "Custom Error URL")]
         public string ErrorUrl { get; set; }
 
         /// <summary>
         /// Authorize Endpoint URL (url type in Salesforce)
         /// </summary>
         [StringLength(1024)]
-        [DisplayName("Authorize Endpoint URL")]
+        [Display(Name = "Authorize Endpoint URL")]
         public string AuthorizeUrl { get; set; }
 
         /// <summary>
         /// Token Endpoint URL (url type in Salesforce)
         /// </summary>
         [StringLength(1024)]
-        [DisplayName("Token Endpoint URL")]
+        [Display(Name = "Token Endpoint URL")]
         public string TokenUrl { get; set; }
 
         /// <summary>
         /// User Info Endpoint URL (url type in Salesforce)
         /// </summary>
         [StringLength(1024)]
-        [DisplayName("User Info Endpoint URL")]
+        [Display(Name = "User Info Endpoint URL")]
         public string UserInfoUrl { get; set; }
 
         /// <summary>
         /// Default Scopes (string type in Salesforce)
         /// </summary>
         [StringLength(256)]
-        [DisplayName("Default Scopes")]
+        [Display(Name = "Default Scopes")]
         public string DefaultScopes { get; set; }
 
     }
@@ -3221,7 +3221,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Auth Session ID")]
+        [Display(Name = "Auth Session ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -3229,28 +3229,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string UsersId { get; set; }
 
         /// <summary>
         /// Created (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created")]
+        [Display(Name = "Created")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Updated (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Updated")]
+        [Display(Name = "Updated")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Valid For (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Valid For")]
+        [Display(Name = "Valid For")]
         public string NumSecondsValid { get; set; }
 
         /// <summary>
@@ -3258,7 +3258,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("User Type")]
+        [Display(Name = "User Type")]
         public string UserType { get; set; }
 
         /// <summary>
@@ -3266,7 +3266,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(39)]
         [Editable(false)]
-        [DisplayName("Source IP")]
+        [Display(Name = "Source IP")]
         public string SourceIp { get; set; }
 
         /// <summary>
@@ -3274,7 +3274,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1)]
         [Editable(false)]
-        [DisplayName("Login")]
+        [Display(Name = "Login")]
         public string LoginType { get; set; }
 
         /// <summary>
@@ -3282,7 +3282,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Session Type")]
+        [Display(Name = "Session Type")]
         public string SessionType { get; set; }
 
         /// <summary>
@@ -3290,7 +3290,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Session Security Level")]
+        [Display(Name = "Session Security Level")]
         public string SessionSecurityLevel { get; set; }
 
     }
@@ -3307,27 +3307,27 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Letterhead ID")]
+        [Display(Name = "Letterhead ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Brand Template Name (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Brand Template Name")]
+        [Display(Name = "Brand Template Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Letterhead Unique Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Letterhead Unique Name")]
+        [Display(Name = "Letterhead Unique Name")]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
@@ -3347,14 +3347,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -3362,14 +3362,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -3377,14 +3377,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -3401,131 +3401,131 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Business Hours ID")]
+        [Display(Name = "Business Hours ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Business Hours Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Business Hours Name")]
+        [Display(Name = "Business Hours Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
         /// Default Business Hours (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Default Business Hours")]
+        [Display(Name = "Default Business Hours")]
         public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Sunday Start (time type in Salesforce)
         /// </summary>
-        [DisplayName("Sunday Start")]
+        [Display(Name = "Sunday Start")]
         public string SundayStartTime { get; set; }
 
         /// <summary>
         /// Sunday End (time type in Salesforce)
         /// </summary>
-        [DisplayName("Sunday End")]
+        [Display(Name = "Sunday End")]
         public string SundayEndTime { get; set; }
 
         /// <summary>
         /// Monday Start (time type in Salesforce)
         /// </summary>
-        [DisplayName("Monday Start")]
+        [Display(Name = "Monday Start")]
         public string MondayStartTime { get; set; }
 
         /// <summary>
         /// Monday End (time type in Salesforce)
         /// </summary>
-        [DisplayName("Monday End")]
+        [Display(Name = "Monday End")]
         public string MondayEndTime { get; set; }
 
         /// <summary>
         /// Tuesday Start (time type in Salesforce)
         /// </summary>
-        [DisplayName("Tuesday Start")]
+        [Display(Name = "Tuesday Start")]
         public string TuesdayStartTime { get; set; }
 
         /// <summary>
         /// Tuesday End (time type in Salesforce)
         /// </summary>
-        [DisplayName("Tuesday End")]
+        [Display(Name = "Tuesday End")]
         public string TuesdayEndTime { get; set; }
 
         /// <summary>
         /// Wednesday Start (time type in Salesforce)
         /// </summary>
-        [DisplayName("Wednesday Start")]
+        [Display(Name = "Wednesday Start")]
         public string WednesdayStartTime { get; set; }
 
         /// <summary>
         /// Wednesday End (time type in Salesforce)
         /// </summary>
-        [DisplayName("Wednesday End")]
+        [Display(Name = "Wednesday End")]
         public string WednesdayEndTime { get; set; }
 
         /// <summary>
         /// Thursday Start (time type in Salesforce)
         /// </summary>
-        [DisplayName("Thursday Start")]
+        [Display(Name = "Thursday Start")]
         public string ThursdayStartTime { get; set; }
 
         /// <summary>
         /// Thursday End (time type in Salesforce)
         /// </summary>
-        [DisplayName("Thursday End")]
+        [Display(Name = "Thursday End")]
         public string ThursdayEndTime { get; set; }
 
         /// <summary>
         /// Friday Start (time type in Salesforce)
         /// </summary>
-        [DisplayName("Friday Start")]
+        [Display(Name = "Friday Start")]
         public string FridayStartTime { get; set; }
 
         /// <summary>
         /// Friday End (time type in Salesforce)
         /// </summary>
-        [DisplayName("Friday End")]
+        [Display(Name = "Friday End")]
         public string FridayEndTime { get; set; }
 
         /// <summary>
         /// Saturday Start (time type in Salesforce)
         /// </summary>
-        [DisplayName("Saturday Start")]
+        [Display(Name = "Saturday Start")]
         public string SaturdayStartTime { get; set; }
 
         /// <summary>
         /// Saturday End (time type in Salesforce)
         /// </summary>
-        [DisplayName("Saturday End")]
+        [Display(Name = "Saturday End")]
         public string SaturdayEndTime { get; set; }
 
         /// <summary>
         /// Time Zone (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Time Zone")]
+        [Display(Name = "Time Zone")]
         public string TimeZoneSidKey { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -3533,14 +3533,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -3548,7 +3548,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
     }
@@ -3565,7 +3565,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Business Process ID")]
+        [Display(Name = "Business Process ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -3579,7 +3579,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -3593,13 +3593,13 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Entity Enumeration Or ID")]
+        [Display(Name = "Entity Enumeration Or ID")]
         public string TableEnumOrId { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
@@ -3607,14 +3607,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -3622,21 +3622,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -3653,7 +3653,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Call Center ID")]
+        [Display(Name = "Call Center ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -3668,7 +3668,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(240)]
         [Editable(false)]
-        [DisplayName("Internal Name")]
+        [Display(Name = "Internal Name")]
         public string InternalName { get; set; }
 
         /// <summary>
@@ -3682,7 +3682,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(2000)]
         [Editable(false)]
-        [DisplayName("CTI Adapter URL")]
+        [Display(Name = "CTI Adapter URL")]
         public string AdapterUrl { get; set; }
 
         /// <summary>
@@ -3690,21 +3690,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(3000)]
         [Editable(false)]
-        [DisplayName("Custom Settings")]
+        [Display(Name = "Custom Settings")]
         public string CustomSettings { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -3712,14 +3712,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -3727,7 +3727,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
     }
@@ -3744,14 +3744,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Campaign ID")]
+        [Display(Name = "Campaign ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -3764,7 +3764,7 @@ namespace Sharpforce
         /// Parent Campaign ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Parent Campaign ID")]
+        [Display(Name = "Parent Campaign ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -3782,49 +3782,49 @@ namespace Sharpforce
         /// <summary>
         /// Start Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Start Date")]
+        [Display(Name = "Start Date")]
         public string StartDate { get; set; }
 
         /// <summary>
         /// End Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("End Date")]
+        [Display(Name = "End Date")]
         public string EndDate { get; set; }
 
         /// <summary>
         /// Expected Revenue (currency type in Salesforce)
         /// </summary>
-        [DisplayName("Expected Revenue")]
+        [Display(Name = "Expected Revenue")]
         public string ExpectedRevenue { get; set; }
 
         /// <summary>
         /// Budgeted Cost (currency type in Salesforce)
         /// </summary>
-        [DisplayName("Budgeted Cost")]
+        [Display(Name = "Budgeted Cost")]
         public string BudgetedCost { get; set; }
 
         /// <summary>
         /// Actual Cost (currency type in Salesforce)
         /// </summary>
-        [DisplayName("Actual Cost")]
+        [Display(Name = "Actual Cost")]
         public string ActualCost { get; set; }
 
         /// <summary>
         /// Expected Response (%) (percent type in Salesforce)
         /// </summary>
-        [DisplayName("Expected Response (%)")]
+        [Display(Name = "Expected Response (%)")]
         public string ExpectedResponse { get; set; }
 
         /// <summary>
         /// Num Sent (double type in Salesforce)
         /// </summary>
-        [DisplayName("Num Sent")]
+        [Display(Name = "Num Sent")]
         public string NumberSent { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
@@ -3837,70 +3837,70 @@ namespace Sharpforce
         /// Total Leads (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Total Leads")]
+        [Display(Name = "Total Leads")]
         public string NumberOfLeads { get; set; }
 
         /// <summary>
         /// Converted Leads (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Converted Leads")]
+        [Display(Name = "Converted Leads")]
         public string NumberOfConvertedLeads { get; set; }
 
         /// <summary>
         /// Total Contacts (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Total Contacts")]
+        [Display(Name = "Total Contacts")]
         public string NumberOfContacts { get; set; }
 
         /// <summary>
         /// Total Responses (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Total Responses")]
+        [Display(Name = "Total Responses")]
         public string NumberOfResponses { get; set; }
 
         /// <summary>
         /// Num Total Opportunities (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Num Total Opportunities")]
+        [Display(Name = "Num Total Opportunities")]
         public string NumberOfOpportunities { get; set; }
 
         /// <summary>
         /// Num Won Opportunities (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Num Won Opportunities")]
+        [Display(Name = "Num Won Opportunities")]
         public string NumberOfWonOpportunities { get; set; }
 
         /// <summary>
         /// Total Value Opportunities (currency type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Total Value Opportunities")]
+        [Display(Name = "Total Value Opportunities")]
         public string AmountAllOpportunities { get; set; }
 
         /// <summary>
         /// Total Value Won Opportunities (currency type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Total Value Won Opportunities")]
+        [Display(Name = "Total Value Won Opportunities")]
         public string AmountWonOpportunities { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -3908,14 +3908,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -3923,42 +3923,42 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Activity")]
+        [Display(Name = "Last Activity")]
         public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Record Type ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Record Type ID")]
+        [Display(Name = "Record Type ID")]
         public string CampaignMemberRecordTypeId { get; set; }
 
     }
@@ -3975,7 +3975,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -3983,7 +3983,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -3991,7 +3991,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -3999,49 +3999,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -4063,7 +4063,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -4071,14 +4071,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -4086,7 +4086,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -4094,7 +4094,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -4102,14 +4102,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -4117,7 +4117,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -4134,14 +4134,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Campaign Member ID")]
+        [Display(Name = "Campaign Member ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -4149,7 +4149,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Campaign ID")]
+        [Display(Name = "Campaign ID")]
         public string CampaignId { get; set; }
 
         /// <summary>
@@ -4157,7 +4157,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Lead ID")]
+        [Display(Name = "Lead ID")]
         public string LeadId { get; set; }
 
         /// <summary>
@@ -4165,7 +4165,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string ContactId { get; set; }
 
         /// <summary>
@@ -4178,14 +4178,14 @@ namespace Sharpforce
         /// Responded (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Responded")]
+        [Display(Name = "Responded")]
         public bool? HasResponded { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -4193,14 +4193,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -4208,21 +4208,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// First Responded Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("First Responded Date")]
+        [Display(Name = "First Responded Date")]
         public string FirstRespondedDate { get; set; }
 
     }
@@ -4239,14 +4239,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Campaign Member Status ID")]
+        [Display(Name = "Campaign Member Status ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -4254,7 +4254,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Campaign ID")]
+        [Display(Name = "Campaign ID")]
         public string CampaignId { get; set; }
 
         /// <summary>
@@ -4267,26 +4267,26 @@ namespace Sharpforce
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Is Default")]
+        [Display(Name = "Is Default")]
         public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Responded (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Responded")]
+        [Display(Name = "Responded")]
         public bool? HasResponded { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -4294,14 +4294,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -4309,14 +4309,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -4333,7 +4333,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Campaign Share ID")]
+        [Display(Name = "Campaign Share ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -4341,7 +4341,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Campaign ID")]
+        [Display(Name = "Campaign ID")]
         public string CampaignId { get; set; }
 
         /// <summary>
@@ -4349,7 +4349,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User/Group ID")]
+        [Display(Name = "User/Group ID")]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
@@ -4357,7 +4357,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Campaign Access")]
+        [Display(Name = "Campaign Access")]
         public string CampaignAccessLevel { get; set; }
 
         /// <summary>
@@ -4365,14 +4365,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Row Cause")]
+        [Display(Name = "Row Cause")]
         public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -4380,14 +4380,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -4404,14 +4404,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case ID")]
+        [Display(Name = "Case ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -4419,70 +4419,70 @@ namespace Sharpforce
         /// </summary>
         [StringLength(30)]
         [Editable(false)]
-        [DisplayName("Case Number")]
+        [Display(Name = "Case Number")]
         public string CaseNumber { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string ContactId { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// Asset ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Asset ID")]
+        [Display(Name = "Asset ID")]
         public string AssetId { get; set; }
 
         /// <summary>
         /// Parent Case ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Parent Case ID")]
+        [Display(Name = "Parent Case ID")]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Name")]
+        [Display(Name = "Name")]
         public string SuppliedName { get; set; }
 
         /// <summary>
         /// Email Address (email type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Email Address")]
+        [Display(Name = "Email Address")]
         public string SuppliedEmail { get; set; }
 
         /// <summary>
         /// Phone (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Phone")]
+        [Display(Name = "Phone")]
         public string SuppliedPhone { get; set; }
 
         /// <summary>
         /// Company (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Company")]
+        [Display(Name = "Company")]
         public string SuppliedCompany { get; set; }
 
         /// <summary>
         /// Case Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Case Type")]
+        [Display(Name = "Case Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -4495,14 +4495,14 @@ namespace Sharpforce
         /// Case Reason (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Case Reason")]
+        [Display(Name = "Case Reason")]
         public string Reason { get; set; }
 
         /// <summary>
         /// Case Origin (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Case Origin")]
+        [Display(Name = "Case Origin")]
         public string Origin { get; set; }
 
         /// <summary>
@@ -4527,34 +4527,34 @@ namespace Sharpforce
         /// Closed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Closed")]
+        [Display(Name = "Closed")]
         public bool? IsClosed { get; set; }
 
         /// <summary>
         /// Closed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Closed Date")]
+        [Display(Name = "Closed Date")]
         public string ClosedDate { get; set; }
 
         /// <summary>
         /// Escalated (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Escalated")]
+        [Display(Name = "Escalated")]
         public bool? IsEscalated { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -4562,14 +4562,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -4577,56 +4577,56 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Engineering Req Number (string type in Salesforce)
         /// </summary>
         [StringLength(12)]
-        [DisplayName("Engineering Req Number")]
+        [Display(Name = "Engineering Req Number")]
         public string EngineeringReqNumber__c { get; set; }
 
         /// <summary>
         /// SLA Violation (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("SLA Violation")]
+        [Display(Name = "SLA Violation")]
         public string SLAViolation__c { get; set; }
 
         /// <summary>
         /// Product (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Product")]
+        [Display(Name = "Product")]
         public string Product__c { get; set; }
 
         /// <summary>
         /// Potential Liability (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Potential Liability")]
+        [Display(Name = "Potential Liability")]
         public string PotentialLiability__c { get; set; }
 
     }
@@ -4643,7 +4643,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case Comment ID")]
+        [Display(Name = "Case Comment ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -4651,20 +4651,20 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Published (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Published")]
+        [Display(Name = "Published")]
         public bool? IsPublished { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
         [StringLength(4000)]
-        [DisplayName("Body")]
+        [Display(Name = "Body")]
         public string CommentBody { get; set; }
 
         /// <summary>
@@ -4672,28 +4672,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -4701,14 +4701,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -4725,7 +4725,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact Role ID")]
+        [Display(Name = "Contact Role ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -4733,14 +4733,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case ID")]
+        [Display(Name = "Case ID")]
         public string CasesId { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string ContactId { get; set; }
 
         /// <summary>
@@ -4753,7 +4753,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -4761,14 +4761,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -4776,21 +4776,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -4807,7 +4807,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -4815,7 +4815,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -4823,7 +4823,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -4831,49 +4831,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -4895,7 +4895,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -4903,14 +4903,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -4918,7 +4918,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -4926,7 +4926,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -4934,14 +4934,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -4949,7 +4949,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -4966,14 +4966,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case History ID")]
+        [Display(Name = "Case History ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -4981,7 +4981,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case ID")]
+        [Display(Name = "Case ID")]
         public string CaseId { get; set; }
 
         /// <summary>
@@ -4989,14 +4989,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -5004,7 +5004,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -5012,7 +5012,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -5020,7 +5020,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -5037,7 +5037,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case Share ID")]
+        [Display(Name = "Case Share ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5045,7 +5045,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case ID")]
+        [Display(Name = "Case ID")]
         public string CaseId { get; set; }
 
         /// <summary>
@@ -5053,7 +5053,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User/Group ID")]
+        [Display(Name = "User/Group ID")]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
@@ -5061,7 +5061,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Case Access")]
+        [Display(Name = "Case Access")]
         public string CaseAccessLevel { get; set; }
 
         /// <summary>
@@ -5069,14 +5069,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Row Cause")]
+        [Display(Name = "Row Cause")]
         public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -5084,14 +5084,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -5108,7 +5108,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case Solution ID")]
+        [Display(Name = "Case Solution ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5116,7 +5116,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case ID")]
+        [Display(Name = "Case ID")]
         public string CaseId { get; set; }
 
         /// <summary>
@@ -5124,7 +5124,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Solution ID")]
+        [Display(Name = "Solution ID")]
         public string SolutionId { get; set; }
 
         /// <summary>
@@ -5132,28 +5132,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -5170,7 +5170,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case Status Value ID")]
+        [Display(Name = "Case Status Value ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5178,28 +5178,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Master Label")]
+        [Display(Name = "Master Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Default")]
+        [Display(Name = "Is Default")]
         public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Is Closed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Closed")]
+        [Display(Name = "Is Closed")]
         public bool? IsClosed { get; set; }
 
         /// <summary>
@@ -5207,14 +5207,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -5222,21 +5222,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -5253,7 +5253,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Team Member Id")]
+        [Display(Name = "Team Member Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5261,7 +5261,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case ID")]
+        [Display(Name = "Case ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -5269,7 +5269,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Member ID")]
+        [Display(Name = "Member ID")]
         public string MemberId { get; set; }
 
         /// <summary>
@@ -5277,21 +5277,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Team Template Member ID")]
+        [Display(Name = "Team Template Member ID")]
         public string TeamTemplateMemberId { get; set; }
 
         /// <summary>
         /// Team Role ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Team Role ID")]
+        [Display(Name = "Team Role ID")]
         public string TeamRoleId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -5299,14 +5299,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -5314,14 +5314,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -5338,7 +5338,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Team Role Id")]
+        [Display(Name = "Team Role Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5351,20 +5351,20 @@ namespace Sharpforce
         /// Access Level (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Access Level")]
+        [Display(Name = "Access Level")]
         public string AccessLevel { get; set; }
 
         /// <summary>
         /// Visible in Customer Portal (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Visible in Customer Portal")]
+        [Display(Name = "Visible in Customer Portal")]
         public bool? PreferencesVisibleInCSP { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -5372,14 +5372,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -5387,14 +5387,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -5411,7 +5411,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Team Template Id")]
+        [Display(Name = "Team Template Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5430,7 +5430,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -5438,14 +5438,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -5453,14 +5453,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -5477,7 +5477,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Team Template Member Id")]
+        [Display(Name = "Team Template Member Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5485,7 +5485,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Team Template ID")]
+        [Display(Name = "Team Template ID")]
         public string TeamTemplateId { get; set; }
 
         /// <summary>
@@ -5493,21 +5493,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Member ID")]
+        [Display(Name = "Member ID")]
         public string MemberId { get; set; }
 
         /// <summary>
         /// Team Role ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Team Role ID")]
+        [Display(Name = "Team Role ID")]
         public string TeamRoleId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -5515,14 +5515,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -5530,14 +5530,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -5554,7 +5554,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Predefined Team Record Id")]
+        [Display(Name = "Predefined Team Record Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5562,7 +5562,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Case ID")]
+        [Display(Name = "Case ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -5570,14 +5570,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Team Template ID")]
+        [Display(Name = "Team Template ID")]
         public string TeamTemplateId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -5585,14 +5585,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -5609,35 +5609,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Category Data ID")]
+        [Display(Name = "Category Data ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Category Node ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Category Node ID")]
+        [Display(Name = "Category Node ID")]
         public string CategoryNodeId { get; set; }
 
         /// <summary>
         /// SObject ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("SObject ID")]
+        [Display(Name = "SObject ID")]
         public string RelatedSobjectId { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -5645,14 +5645,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -5660,14 +5660,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -5684,41 +5684,41 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Category Node ID")]
+        [Display(Name = "Category Node ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Parent Category Node ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Parent Category Node ID")]
+        [Display(Name = "Parent Category Node ID")]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Name")]
+        [Display(Name = "Name")]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
         /// Subcategory Sort Style (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Subcategory Sort Style")]
+        [Display(Name = "Subcategory Sort Style")]
         public string SortStyle { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -5726,14 +5726,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -5741,14 +5741,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -5765,7 +5765,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Chatter Activity ID")]
+        [Display(Name = "Chatter Activity ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5773,49 +5773,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Post Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Post Count")]
+        [Display(Name = "Post Count")]
         public string PostCount { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Comment Received Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Received Count")]
+        [Display(Name = "Comment Received Count")]
         public string CommentReceivedCount { get; set; }
 
         /// <summary>
         /// Like Received Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Received Count")]
+        [Display(Name = "Like Received Count")]
         public string LikeReceivedCount { get; set; }
 
         /// <summary>
         /// Influence Raw Rank (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Influence Raw Rank")]
+        [Display(Name = "Influence Raw Rank")]
         public string InfluenceRawRank { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -5832,7 +5832,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Client Browser ID")]
+        [Display(Name = "Client Browser ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5840,7 +5840,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string UsersId { get; set; }
 
         /// <summary>
@@ -5848,7 +5848,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1024)]
         [Editable(false)]
-        [DisplayName("Full User Agent")]
+        [Display(Name = "Full User Agent")]
         public string FullUserAgent { get; set; }
 
         /// <summary>
@@ -5856,21 +5856,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1024)]
         [Editable(false)]
-        [DisplayName("Proxy Info")]
+        [Display(Name = "Proxy Info")]
         public string ProxyInfo { get; set; }
 
         /// <summary>
         /// Last Update (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Update")]
+        [Display(Name = "Last Update")]
         public string LastUpdate { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
     }
@@ -5887,7 +5887,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Chatter Group Id")]
+        [Display(Name = "Chatter Group Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -5900,21 +5900,21 @@ namespace Sharpforce
         /// Member Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Member Count")]
+        [Display(Name = "Member Count")]
         public string MemberCount { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Access Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Access Type")]
+        [Display(Name = "Access Type")]
         public string CollaborationType { get; set; }
 
         /// <summary>
@@ -5927,7 +5927,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -5935,14 +5935,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -5950,14 +5950,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -5965,7 +5965,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1024)]
         [Editable(false)]
-        [DisplayName("Url for full-sized Photo")]
+        [Display(Name = "Url for full-sized Photo")]
         public string FullPhotoUrl { get; set; }
 
         /// <summary>
@@ -5973,67 +5973,67 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1024)]
         [Editable(false)]
-        [DisplayName("Url for Thumbnail sized Photo")]
+        [Display(Name = "Url for Thumbnail sized Photo")]
         public string SmallPhotoUrl { get; set; }
 
         /// <summary>
         /// Last Feed Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Feed Modified Date")]
+        [Display(Name = "Last Feed Modified Date")]
         public string LastFeedModifiedDate { get; set; }
 
         /// <summary>
         /// Information Title (string type in Salesforce)
         /// </summary>
         [StringLength(30)]
-        [DisplayName("Information Title")]
+        [Display(Name = "Information Title")]
         public string InformationTitle { get; set; }
 
         /// <summary>
         /// Information (textarea type in Salesforce)
         /// </summary>
         [StringLength(1000)]
-        [DisplayName("Information")]
+        [Display(Name = "Information")]
         public string InformationBody { get; set; }
 
         /// <summary>
         /// Has Private Fields Access (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Has Private Fields Access")]
+        [Display(Name = "Has Private Fields Access")]
         public bool? HasPrivateFieldsAccess { get; set; }
 
         /// <summary>
         /// Allow Customers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Allow Customers")]
+        [Display(Name = "Allow Customers")]
         public bool? CanHaveGuests { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Is Archived (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Is Archived")]
+        [Display(Name = "Is Archived")]
         public bool? IsArchived { get; set; }
 
         /// <summary>
         /// Is Auto Archive Disabled (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Is Auto Archive Disabled")]
+        [Display(Name = "Is Auto Archive Disabled")]
         public bool? IsAutoArchiveDisabled { get; set; }
 
     }
@@ -6050,7 +6050,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -6058,7 +6058,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -6066,7 +6066,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -6074,49 +6074,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -6138,7 +6138,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -6146,14 +6146,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -6161,7 +6161,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -6169,7 +6169,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -6177,14 +6177,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -6192,7 +6192,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -6209,7 +6209,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Chatter Group Member Id")]
+        [Display(Name = "Chatter Group Member Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -6217,7 +6217,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("CollaborationGroup ID")]
+        [Display(Name = "CollaborationGroup ID")]
         public string CollaborationGroupId { get; set; }
 
         /// <summary>
@@ -6225,28 +6225,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Member ID")]
+        [Display(Name = "Member ID")]
         public string MemberId { get; set; }
 
         /// <summary>
         /// Chatter Role (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Chatter Role")]
+        [Display(Name = "Chatter Role")]
         public string CollaborationRole { get; set; }
 
         /// <summary>
         /// Notification Frequency (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Notification Frequency")]
+        [Display(Name = "Notification Frequency")]
         public string NotificationFrequency { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -6254,14 +6254,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -6269,14 +6269,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -6293,7 +6293,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Chatter Group Member Request Id")]
+        [Display(Name = "Chatter Group Member Request Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -6301,7 +6301,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("CollaborationGroup ID")]
+        [Display(Name = "CollaborationGroup ID")]
         public string CollaborationGroupId { get; set; }
 
         /// <summary>
@@ -6309,14 +6309,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string RequesterId { get; set; }
 
         /// <summary>
         /// Response Message (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Response Message")]
+        [Display(Name = "Response Message")]
         public string ResponseMessage { get; set; }
 
         /// <summary>
@@ -6329,7 +6329,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -6337,14 +6337,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -6352,14 +6352,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -6376,7 +6376,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Chatter Invitation Id")]
+        [Display(Name = "Chatter Invitation Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -6384,7 +6384,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -6392,7 +6392,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Shared Entity ID")]
+        [Display(Name = "Shared Entity ID")]
         public string SharedEntityId { get; set; }
 
         /// <summary>
@@ -6400,7 +6400,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Inviter User ID")]
+        [Display(Name = "Inviter User ID")]
         public string InviterId { get; set; }
 
         /// <summary>
@@ -6408,7 +6408,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(240)]
         [Editable(false)]
-        [DisplayName("Invited Email")]
+        [Display(Name = "Invited Email")]
         public string InvitedUserEmail { get; set; }
 
         /// <summary>
@@ -6416,7 +6416,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Invited Email (Normalized)")]
+        [Display(Name = "Invited Email (Normalized)")]
         public string InvitedUserEmailNormalized { get; set; }
 
         /// <summary>
@@ -6424,7 +6424,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Invitation Status")]
+        [Display(Name = "Invitation Status")]
         public string Status { get; set; }
 
         /// <summary>
@@ -6432,14 +6432,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Optional Message")]
+        [Display(Name = "Optional Message")]
         public string OptionalMessage { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -6447,14 +6447,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Modified Date")]
+        [Display(Name = "Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -6462,14 +6462,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -6486,14 +6486,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Combined Attachment Id")]
+        [Display(Name = "Combined Attachment Id")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -6501,7 +6501,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -6509,7 +6509,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(30)]
         [Editable(false)]
-        [DisplayName("Type")]
+        [Display(Name = "Type")]
         public string RecordType { get; set; }
 
         /// <summary>
@@ -6523,7 +6523,7 @@ namespace Sharpforce
         /// Created (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created")]
+        [Display(Name = "Created")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -6531,14 +6531,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Content Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Modified Date")]
+        [Display(Name = "Content Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -6546,7 +6546,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
     }
@@ -6563,21 +6563,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Zone ID")]
+        [Display(Name = "Zone ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -6585,14 +6585,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -6600,7 +6600,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -6621,7 +6621,7 @@ namespace Sharpforce
         /// Active (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
     }
@@ -6638,14 +6638,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -6653,28 +6653,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Master Record ID")]
+        [Display(Name = "Master Record ID")]
         public string MasterRecordId { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// Last Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Last Name")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         /// <summary>
         /// First Name (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         /// <summary>
@@ -6688,150 +6688,150 @@ namespace Sharpforce
         /// </summary>
         [StringLength(121)]
         [Editable(false)]
-        [DisplayName("Full Name")]
+        [Display(Name = "Full Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Other Street (textarea type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Other Street")]
+        [Display(Name = "Other Street")]
         public string OtherStreet { get; set; }
 
         /// <summary>
         /// Other City (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Other City")]
+        [Display(Name = "Other City")]
         public string OtherCity { get; set; }
 
         /// <summary>
         /// Other State/Province (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Other State/Province")]
+        [Display(Name = "Other State/Province")]
         public string OtherState { get; set; }
 
         /// <summary>
         /// Other Zip/Postal Code (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Other Zip/Postal Code")]
+        [Display(Name = "Other Zip/Postal Code")]
         public string OtherPostalCode { get; set; }
 
         /// <summary>
         /// Other Country (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Other Country")]
+        [Display(Name = "Other Country")]
         public string OtherCountry { get; set; }
 
         /// <summary>
         /// Other Latitude (double type in Salesforce)
         /// </summary>
-        [DisplayName("Other Latitude")]
+        [Display(Name = "Other Latitude")]
         public string OtherLatitude { get; set; }
 
         /// <summary>
         /// Other Longitude (double type in Salesforce)
         /// </summary>
-        [DisplayName("Other Longitude")]
+        [Display(Name = "Other Longitude")]
         public string OtherLongitude { get; set; }
 
         /// <summary>
         /// Mailing Street (textarea type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Mailing Street")]
+        [Display(Name = "Mailing Street")]
         public string MailingStreet { get; set; }
 
         /// <summary>
         /// Mailing City (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Mailing City")]
+        [Display(Name = "Mailing City")]
         public string MailingCity { get; set; }
 
         /// <summary>
         /// Mailing State/Province (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Mailing State/Province")]
+        [Display(Name = "Mailing State/Province")]
         public string MailingState { get; set; }
 
         /// <summary>
         /// Mailing Zip/Postal Code (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Mailing Zip/Postal Code")]
+        [Display(Name = "Mailing Zip/Postal Code")]
         public string MailingPostalCode { get; set; }
 
         /// <summary>
         /// Mailing Country (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Mailing Country")]
+        [Display(Name = "Mailing Country")]
         public string MailingCountry { get; set; }
 
         /// <summary>
         /// Mailing Latitude (double type in Salesforce)
         /// </summary>
-        [DisplayName("Mailing Latitude")]
+        [Display(Name = "Mailing Latitude")]
         public string MailingLatitude { get; set; }
 
         /// <summary>
         /// Mailing Longitude (double type in Salesforce)
         /// </summary>
-        [DisplayName("Mailing Longitude")]
+        [Display(Name = "Mailing Longitude")]
         public string MailingLongitude { get; set; }
 
         /// <summary>
         /// Business Phone (phone type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Business Phone")]
+        [Display(Name = "Business Phone")]
         public string Phone { get; set; }
 
         /// <summary>
         /// Business Fax (phone type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Business Fax")]
+        [Display(Name = "Business Fax")]
         public string Fax { get; set; }
 
         /// <summary>
         /// Mobile Phone (phone type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Mobile Phone")]
+        [Display(Name = "Mobile Phone")]
         public string MobilePhone { get; set; }
 
         /// <summary>
         /// Home Phone (phone type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Home Phone")]
+        [Display(Name = "Home Phone")]
         public string HomePhone { get; set; }
 
         /// <summary>
         /// Other Phone (phone type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Other Phone")]
+        [Display(Name = "Other Phone")]
         public string OtherPhone { get; set; }
 
         /// <summary>
         /// Asst. Phone (phone type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Asst. Phone")]
+        [Display(Name = "Asst. Phone")]
         public string AssistantPhone { get; set; }
 
         /// <summary>
         /// Reports To ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Reports To ID")]
+        [Display(Name = "Reports To ID")]
         public string ReportsToId { get; set; }
 
         /// <summary>
@@ -6856,14 +6856,14 @@ namespace Sharpforce
         /// Assistant's Name (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Assistant's Name")]
+        [Display(Name = "Assistant's Name")]
         public string AssistantName { get; set; }
 
         /// <summary>
         /// Lead Source (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Lead Source")]
+        [Display(Name = "Lead Source")]
         public string LeadSource { get; set; }
 
         /// <summary>
@@ -6875,21 +6875,21 @@ namespace Sharpforce
         /// Contact Description (textarea type in Salesforce)
         /// </summary>
         [StringLength(32000)]
-        [DisplayName("Contact Description")]
+        [Display(Name = "Contact Description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -6897,14 +6897,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -6912,76 +6912,76 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Activity")]
+        [Display(Name = "Last Activity")]
         public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Last Stay-in-Touch Request Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Stay-in-Touch Request Date")]
+        [Display(Name = "Last Stay-in-Touch Request Date")]
         public string LastCURequestDate { get; set; }
 
         /// <summary>
         /// Last Stay-in-Touch Save Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Stay-in-Touch Save Date")]
+        [Display(Name = "Last Stay-in-Touch Save Date")]
         public string LastCUUpdateDate { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Email Bounced Reason (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Email Bounced Reason")]
+        [Display(Name = "Email Bounced Reason")]
         public string EmailBouncedReason { get; set; }
 
         /// <summary>
         /// Email Bounced Date (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Email Bounced Date")]
+        [Display(Name = "Email Bounced Date")]
         public string EmailBouncedDate { get; set; }
 
         /// <summary>
         /// Is Email Bounced (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Email Bounced")]
+        [Display(Name = "Is Email Bounced")]
         public bool? IsEmailBounced { get; set; }
 
         /// <summary>
         /// Data.com Key (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Data.com Key")]
+        [Display(Name = "Data.com Key")]
         public string Jigsaw { get; set; }
 
         /// <summary>
@@ -6989,21 +6989,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(20)]
         [Editable(false)]
-        [DisplayName("Jigsaw Contact ID")]
+        [Display(Name = "Jigsaw Contact ID")]
         public string JigsawContactId { get; set; }
 
         /// <summary>
         /// Level (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Level")]
+        [Display(Name = "Level")]
         public string Level__c { get; set; }
 
         /// <summary>
         /// Languages (string type in Salesforce)
         /// </summary>
         [StringLength(100)]
-        [DisplayName("Languages")]
+        [Display(Name = "Languages")]
         public string Languages__c { get; set; }
 
     }
@@ -7020,7 +7020,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -7028,7 +7028,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -7036,7 +7036,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -7044,49 +7044,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -7108,7 +7108,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -7116,14 +7116,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -7131,7 +7131,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -7139,7 +7139,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -7147,14 +7147,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -7162,7 +7162,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -7179,14 +7179,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact History ID")]
+        [Display(Name = "Contact History ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -7194,7 +7194,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string ContactId { get; set; }
 
         /// <summary>
@@ -7202,14 +7202,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -7217,7 +7217,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -7225,7 +7225,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -7233,7 +7233,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -7250,7 +7250,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact Share ID")]
+        [Display(Name = "Contact Share ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -7258,7 +7258,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string ContactId { get; set; }
 
         /// <summary>
@@ -7266,7 +7266,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User/Group ID")]
+        [Display(Name = "User/Group ID")]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
@@ -7274,7 +7274,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Contact Access")]
+        [Display(Name = "Contact Access")]
         public string ContactAccessLevel { get; set; }
 
         /// <summary>
@@ -7282,14 +7282,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Row Cause")]
+        [Display(Name = "Row Cause")]
         public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -7297,14 +7297,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -7321,7 +7321,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ContentDocument ID")]
+        [Display(Name = "ContentDocument ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -7329,14 +7329,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -7344,20 +7344,20 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Is Archived (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Is Archived")]
+        [Display(Name = "Is Archived")]
         public bool? IsArchived { get; set; }
 
         /// <summary>
@@ -7365,35 +7365,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string ArchivedById { get; set; }
 
         /// <summary>
         /// Archived Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Archived Date")]
+        [Display(Name = "Archived Date")]
         public string ArchivedDate { get; set; }
 
         /// <summary>
         /// Is Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Deleted")]
+        [Display(Name = "Is Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -7408,7 +7408,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Publish Status")]
+        [Display(Name = "Publish Status")]
         public string PublishStatus { get; set; }
 
         /// <summary>
@@ -7416,28 +7416,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Latest Published Version ID")]
+        [Display(Name = "Latest Published Version ID")]
         public string LatestPublishedVersionId { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
     }
@@ -7454,7 +7454,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -7462,7 +7462,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -7470,7 +7470,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -7478,49 +7478,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -7542,7 +7542,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -7550,14 +7550,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -7565,7 +7565,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -7573,7 +7573,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -7581,14 +7581,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -7596,7 +7596,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -7613,14 +7613,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Content Document ID")]
+        [Display(Name = "Content Document ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -7628,7 +7628,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ContentDocument ID")]
+        [Display(Name = "ContentDocument ID")]
         public string ContentDocumentId { get; set; }
 
         /// <summary>
@@ -7636,14 +7636,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -7651,7 +7651,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -7659,7 +7659,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -7667,7 +7667,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -7684,7 +7684,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ContentDocumentLink ID")]
+        [Display(Name = "ContentDocumentLink ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -7692,7 +7692,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Linked Entity ID")]
+        [Display(Name = "Linked Entity ID")]
         public string LinkedEntityId { get; set; }
 
         /// <summary>
@@ -7700,28 +7700,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ContentDocument ID")]
+        [Display(Name = "ContentDocument ID")]
         public string ContentDocumentId { get; set; }
 
         /// <summary>
         /// Is Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Deleted")]
+        [Display(Name = "Is Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Share Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Share Type")]
+        [Display(Name = "Share Type")]
         public string ShareType { get; set; }
 
     }
@@ -7738,7 +7738,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ContentVersion ID")]
+        [Display(Name = "ContentVersion ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -7746,21 +7746,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ContentDocument ID")]
+        [Display(Name = "ContentDocument ID")]
         public string ContentDocumentId { get; set; }
 
         /// <summary>
         /// Is Latest (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Latest")]
+        [Display(Name = "Is Latest")]
         public bool? IsLatest { get; set; }
 
         /// <summary>
         /// Content URL (url type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Content URL")]
+        [Display(Name = "Content URL")]
         public string ContentUrl { get; set; }
 
         /// <summary>
@@ -7768,7 +7768,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(20)]
         [Editable(false)]
-        [DisplayName("Version Number")]
+        [Display(Name = "Version Number")]
         public string VersionNumber { get; set; }
 
         /// <summary>
@@ -7788,7 +7788,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Reason For Change")]
+        [Display(Name = "Reason For Change")]
         public string ReasonForChange { get; set; }
 
         /// <summary>
@@ -7796,28 +7796,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(500)]
         [Editable(false)]
-        [DisplayName("Path On Client")]
+        [Display(Name = "Path On Client")]
         public string PathOnClient { get; set; }
 
         /// <summary>
         /// Rating Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Rating Count")]
+        [Display(Name = "Rating Count")]
         public string RatingCount { get; set; }
 
         /// <summary>
         /// Is Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Deleted")]
+        [Display(Name = "Is Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Content Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Modified Date")]
+        [Display(Name = "Content Modified Date")]
         public string ContentModifiedDate { get; set; }
 
         /// <summary>
@@ -7825,42 +7825,42 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string ContentModifiedById { get; set; }
 
         /// <summary>
         /// Positive Rating Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Positive Rating Count")]
+        [Display(Name = "Positive Rating Count")]
         public string PositiveRatingCount { get; set; }
 
         /// <summary>
         /// Negative Rating Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Negative Rating Count")]
+        [Display(Name = "Negative Rating Count")]
         public string NegativeRatingCount { get; set; }
 
         /// <summary>
         /// Featured Content Boost (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Featured Content Boost")]
+        [Display(Name = "Featured Content Boost")]
         public string FeaturedContentBoost { get; set; }
 
         /// <summary>
         /// Featured Content Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Featured Content Date")]
+        [Display(Name = "Featured Content Date")]
         public string FeaturedContentDate { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -7868,14 +7868,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -7883,28 +7883,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Tags (textarea type in Salesforce)
         /// </summary>
         [StringLength(2000)]
-        [DisplayName("Tags")]
+        [Display(Name = "Tags")]
         public string TagCsv { get; set; }
 
         /// <summary>
@@ -7912,7 +7912,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(20)]
         [Editable(false)]
-        [DisplayName("File Type")]
+        [Display(Name = "File Type")]
         public string FileType { get; set; }
 
         /// <summary>
@@ -7920,21 +7920,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Publish Status")]
+        [Display(Name = "Publish Status")]
         public string PublishStatus { get; set; }
 
         /// <summary>
         /// Version Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Version Data")]
+        [Display(Name = "Version Data")]
         public string VersionData { get; set; }
 
         /// <summary>
         /// Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Size")]
+        [Display(Name = "Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -7942,7 +7942,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("First Publish Location ID")]
+        [Display(Name = "First Publish Location ID")]
         public string FirstPublishLocationId { get; set; }
 
         /// <summary>
@@ -7950,7 +7950,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Content Origin")]
+        [Display(Name = "Content Origin")]
         public string Origin { get; set; }
 
         /// <summary>
@@ -7974,14 +7974,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Content Version ID")]
+        [Display(Name = "Content Version ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -7989,7 +7989,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ContentVersion ID")]
+        [Display(Name = "ContentVersion ID")]
         public string ContentVersionId { get; set; }
 
         /// <summary>
@@ -7997,14 +7997,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -8012,7 +8012,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -8020,7 +8020,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -8028,7 +8028,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -8045,7 +8045,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Library ID")]
+        [Display(Name = "Library ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -8067,7 +8067,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Tag Model")]
+        [Display(Name = "Tag Model")]
         public string TagModel { get; set; }
 
         /// <summary>
@@ -8075,14 +8075,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -8090,21 +8090,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -8112,21 +8112,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Record Type ID")]
+        [Display(Name = "Record Type ID")]
         public string DefaultRecordTypeId { get; set; }
 
         /// <summary>
         /// Restrict Content Types (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Restrict Content Types")]
+        [Display(Name = "Restrict Content Types")]
         public bool? IsRestrictContentTypes { get; set; }
 
         /// <summary>
         /// Restrict Linked Content Types (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Restrict Linked Content Types")]
+        [Display(Name = "Restrict Linked Content Types")]
         public bool? IsRestrictLinkedContentTypes { get; set; }
 
     }
@@ -8143,7 +8143,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Library Document ID")]
+        [Display(Name = "Library Document ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -8151,7 +8151,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Library ID")]
+        [Display(Name = "Library ID")]
         public string ContentWorkspaceId { get; set; }
 
         /// <summary>
@@ -8159,35 +8159,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ContentDocument ID")]
+        [Display(Name = "ContentDocument ID")]
         public string ContentDocumentId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Is Owning Library (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Owning Library")]
+        [Display(Name = "Is Owning Library")]
         public bool? IsOwner { get; set; }
 
         /// <summary>
         /// Is Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Deleted")]
+        [Display(Name = "Is Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -8204,94 +8204,94 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contract ID")]
+        [Display(Name = "Contract ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// Owner Expiration Notice (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Owner Expiration Notice")]
+        [Display(Name = "Owner Expiration Notice")]
         public string OwnerExpirationNotice { get; set; }
 
         /// <summary>
         /// Contract Start Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Contract Start Date")]
+        [Display(Name = "Contract Start Date")]
         public string StartDate { get; set; }
 
         /// <summary>
         /// Contract End Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Contract End Date")]
+        [Display(Name = "Contract End Date")]
         public string EndDate { get; set; }
 
         /// <summary>
         /// Billing Street (textarea type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Billing Street")]
+        [Display(Name = "Billing Street")]
         public string BillingStreet { get; set; }
 
         /// <summary>
         /// Billing City (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Billing City")]
+        [Display(Name = "Billing City")]
         public string BillingCity { get; set; }
 
         /// <summary>
         /// Billing State/Province (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Billing State/Province")]
+        [Display(Name = "Billing State/Province")]
         public string BillingState { get; set; }
 
         /// <summary>
         /// Billing Zip/Postal Code (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Billing Zip/Postal Code")]
+        [Display(Name = "Billing Zip/Postal Code")]
         public string BillingPostalCode { get; set; }
 
         /// <summary>
         /// Billing Country (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Billing Country")]
+        [Display(Name = "Billing Country")]
         public string BillingCountry { get; set; }
 
         /// <summary>
         /// Billing Latitude (double type in Salesforce)
         /// </summary>
-        [DisplayName("Billing Latitude")]
+        [Display(Name = "Billing Latitude")]
         public string BillingLatitude { get; set; }
 
         /// <summary>
         /// Billing Longitude (double type in Salesforce)
         /// </summary>
-        [DisplayName("Billing Longitude")]
+        [Display(Name = "Billing Longitude")]
         public string BillingLongitude { get; set; }
 
         /// <summary>
         /// Contract Term (int type in Salesforce)
         /// </summary>
-        [DisplayName("Contract Term")]
+        [Display(Name = "Contract Term")]
         public string ContractTerm { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -8304,53 +8304,53 @@ namespace Sharpforce
         /// Company Signed By ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Company Signed By ID")]
+        [Display(Name = "Company Signed By ID")]
         public string CompanySignedId { get; set; }
 
         /// <summary>
         /// Company Signed Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Company Signed Date")]
+        [Display(Name = "Company Signed Date")]
         public string CompanySignedDate { get; set; }
 
         /// <summary>
         /// Customer Signed By ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Customer Signed By ID")]
+        [Display(Name = "Customer Signed By ID")]
         public string CustomerSignedId { get; set; }
 
         /// <summary>
         /// Customer Signed Title (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Customer Signed Title")]
+        [Display(Name = "Customer Signed Title")]
         public string CustomerSignedTitle { get; set; }
 
         /// <summary>
         /// Customer Signed Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Customer Signed Date")]
+        [Display(Name = "Customer Signed Date")]
         public string CustomerSignedDate { get; set; }
 
         /// <summary>
         /// Special Terms (textarea type in Salesforce)
         /// </summary>
         [StringLength(4000)]
-        [DisplayName("Special Terms")]
+        [Display(Name = "Special Terms")]
         public string SpecialTerms { get; set; }
 
         /// <summary>
         /// Activated By ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Activated By ID")]
+        [Display(Name = "Activated By ID")]
         public string ActivatedById { get; set; }
 
         /// <summary>
         /// Activated Date (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Activated Date")]
+        [Display(Name = "Activated Date")]
         public string ActivatedDate { get; set; }
 
         /// <summary>
@@ -8358,7 +8358,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Status Category")]
+        [Display(Name = "Status Category")]
         public string StatusCode { get; set; }
 
         /// <summary>
@@ -8371,7 +8371,7 @@ namespace Sharpforce
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -8379,21 +8379,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(30)]
         [Editable(false)]
-        [DisplayName("Contract Number")]
+        [Display(Name = "Contract Number")]
         public string ContractNumber { get; set; }
 
         /// <summary>
         /// Last Approved Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Approved Date")]
+        [Display(Name = "Last Approved Date")]
         public string LastApprovedDate { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -8401,14 +8401,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -8416,35 +8416,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Activity")]
+        [Display(Name = "Last Activity")]
         public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
     }
@@ -8461,7 +8461,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact Role ID")]
+        [Display(Name = "Contact Role ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -8469,14 +8469,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contract ID")]
+        [Display(Name = "Contract ID")]
         public string ContractId { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string ContactId { get; set; }
 
         /// <summary>
@@ -8488,14 +8488,14 @@ namespace Sharpforce
         /// <summary>
         /// Primary (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Primary")]
+        [Display(Name = "Primary")]
         public bool? IsPrimary { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -8503,14 +8503,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -8518,21 +8518,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -8549,7 +8549,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -8557,7 +8557,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -8565,7 +8565,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -8573,49 +8573,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -8637,7 +8637,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -8645,14 +8645,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -8660,7 +8660,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -8668,7 +8668,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -8676,14 +8676,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -8691,7 +8691,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -8708,14 +8708,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contract History ID")]
+        [Display(Name = "Contract History ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -8723,7 +8723,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contract ID")]
+        [Display(Name = "Contract ID")]
         public string ContractId { get; set; }
 
         /// <summary>
@@ -8731,14 +8731,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -8746,7 +8746,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -8754,7 +8754,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -8762,7 +8762,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -8779,7 +8779,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contract Status Value ID")]
+        [Display(Name = "Contract Status Value ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -8787,21 +8787,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Master Label")]
+        [Display(Name = "Master Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Default")]
+        [Display(Name = "Is Default")]
         public bool? IsDefault { get; set; }
 
         /// <summary>
@@ -8809,7 +8809,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Status Code")]
+        [Display(Name = "Status Code")]
         public string StatusCode { get; set; }
 
         /// <summary>
@@ -8817,14 +8817,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -8832,21 +8832,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -8863,7 +8863,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Job ID")]
+        [Display(Name = "Job ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -8871,7 +8871,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Job Name")]
+        [Display(Name = "Job Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -8879,7 +8879,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Type")]
+        [Display(Name = "Type")]
         public string JobType { get; set; }
 
     }
@@ -8896,7 +8896,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Scheduled Job ID")]
+        [Display(Name = "Scheduled Job ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -8904,21 +8904,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Job ID")]
+        [Display(Name = "Job ID")]
         public string CronJobDetailId { get; set; }
 
         /// <summary>
         /// Next Run Time (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Next Run Time")]
+        [Display(Name = "Next Run Time")]
         public string NextFireTime { get; set; }
 
         /// <summary>
         /// Previous Run Time (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Previous Run Time")]
+        [Display(Name = "Previous Run Time")]
         public string PreviousFireTime { get; set; }
 
         /// <summary>
@@ -8926,21 +8926,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(16)]
         [Editable(false)]
-        [DisplayName("Job State")]
+        [Display(Name = "Job State")]
         public string State { get; set; }
 
         /// <summary>
         /// Start Time (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Start Time")]
+        [Display(Name = "Start Time")]
         public string StartTime { get; set; }
 
         /// <summary>
         /// End Time (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("End Time")]
+        [Display(Name = "End Time")]
         public string EndTime { get; set; }
 
         /// <summary>
@@ -8948,7 +8948,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Cron Expression")]
+        [Display(Name = "Cron Expression")]
         public string CronExpression { get; set; }
 
         /// <summary>
@@ -8956,7 +8956,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Java Time Zone Id")]
+        [Display(Name = "Java Time Zone Id")]
         public string TimeZoneSidKey { get; set; }
 
         /// <summary>
@@ -8964,7 +8964,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -8972,7 +8972,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
@@ -8980,21 +8980,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Job Fired Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Job Fired Count")]
+        [Display(Name = "Job Fired Count")]
         public string TimesTriggered { get; set; }
 
     }
@@ -9011,14 +9011,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Dashboard ID")]
+        [Display(Name = "Dashboard ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -9026,7 +9026,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Folder ID")]
+        [Display(Name = "Folder ID")]
         public string FolderId { get; set; }
 
         /// <summary>
@@ -9041,7 +9041,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Dashboard Unique Name")]
+        [Display(Name = "Dashboard Unique Name")]
         public string DeveloperName { get; set; }
 
         /// <summary>
@@ -9049,7 +9049,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -9064,7 +9064,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Left Size")]
+        [Display(Name = "Left Size")]
         public string LeftSize { get; set; }
 
         /// <summary>
@@ -9072,7 +9072,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Middle Size")]
+        [Display(Name = "Middle Size")]
         public string MiddleSize { get; set; }
 
         /// <summary>
@@ -9080,14 +9080,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Right Size")]
+        [Display(Name = "Right Size")]
         public string RightSize { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -9095,14 +9095,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -9110,14 +9110,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -9125,42 +9125,42 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Running User ID")]
+        [Display(Name = "Running User ID")]
         public string RunningUserId { get; set; }
 
         /// <summary>
         /// Title Color (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Title Color")]
+        [Display(Name = "Title Color")]
         public string TitleColor { get; set; }
 
         /// <summary>
         /// Title Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Title Size")]
+        [Display(Name = "Title Size")]
         public string TitleSize { get; set; }
 
         /// <summary>
         /// Text Color (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Text Color")]
+        [Display(Name = "Text Color")]
         public string TextColor { get; set; }
 
         /// <summary>
         /// Starting Color (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Starting Color")]
+        [Display(Name = "Starting Color")]
         public string BackgroundStart { get; set; }
 
         /// <summary>
         /// Ending Color (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Ending Color")]
+        [Display(Name = "Ending Color")]
         public string BackgroundEnd { get; set; }
 
         /// <summary>
@@ -9168,7 +9168,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Background Fade Direction")]
+        [Display(Name = "Background Fade Direction")]
         public string BackgroundDirection { get; set; }
 
         /// <summary>
@@ -9176,21 +9176,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Dashboard Running User")]
+        [Display(Name = "Dashboard Running User")]
         public string Type { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
     }
@@ -9207,7 +9207,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Dashboard Component ID")]
+        [Display(Name = "Dashboard Component ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -9215,7 +9215,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Dashboard Component Name")]
+        [Display(Name = "Dashboard Component Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -9223,7 +9223,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Dashboard ID")]
+        [Display(Name = "Dashboard ID")]
         public string DashboardId { get; set; }
 
     }
@@ -9240,7 +9240,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -9248,7 +9248,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -9256,7 +9256,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -9264,49 +9264,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -9328,7 +9328,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -9336,14 +9336,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -9351,7 +9351,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -9359,7 +9359,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -9367,14 +9367,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -9382,7 +9382,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -9399,7 +9399,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -9407,7 +9407,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -9415,7 +9415,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -9423,49 +9423,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -9487,7 +9487,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -9495,14 +9495,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -9510,7 +9510,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -9518,7 +9518,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -9526,14 +9526,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -9541,7 +9541,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -9558,7 +9558,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Event Relation ID")]
+        [Display(Name = "Event Relation ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -9566,7 +9566,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Relation ID")]
+        [Display(Name = "Relation ID")]
         public string RelationId { get; set; }
 
         /// <summary>
@@ -9574,14 +9574,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Event ID")]
+        [Display(Name = "Event ID")]
         public string EventId { get; set; }
 
         /// <summary>
         /// Response Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Response Date")]
+        [Display(Name = "Response Date")]
         public string RespondedDate { get; set; }
 
         /// <summary>
@@ -9595,7 +9595,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -9603,14 +9603,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -9618,21 +9618,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -9656,35 +9656,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Document ID")]
+        [Display(Name = "Document ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Folder ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Folder ID")]
+        [Display(Name = "Folder ID")]
         public string FolderId { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Document Name (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Document Name")]
+        [Display(Name = "Document Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Document Unique Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Document Unique Name")]
+        [Display(Name = "Document Unique Name")]
         public string DeveloperName { get; set; }
 
         /// <summary>
@@ -9692,34 +9692,34 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// MIME Type (string type in Salesforce)
         /// </summary>
         [StringLength(120)]
-        [DisplayName("MIME Type")]
+        [Display(Name = "MIME Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// File Extension (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("File Extension")]
+        [Display(Name = "File Extension")]
         public string Type { get; set; }
 
         /// <summary>
         /// Externally Available (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Externally Available")]
+        [Display(Name = "Externally Available")]
         public bool? IsPublic { get; set; }
 
         /// <summary>
         /// Body Length (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Body Length")]
+        [Display(Name = "Body Length")]
         public string BodyLength { get; set; }
 
         /// <summary>
@@ -9748,21 +9748,21 @@ namespace Sharpforce
         /// <summary>
         /// Internal Use Only (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Internal Use Only")]
+        [Display(Name = "Internal Use Only")]
         public bool? IsInternalUseOnly { get; set; }
 
         /// <summary>
         /// Author ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Author ID")]
+        [Display(Name = "Author ID")]
         public string AuthorId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -9770,14 +9770,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -9785,35 +9785,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Document Content Searchable (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Document Content Searchable")]
+        [Display(Name = "Document Content Searchable")]
         public bool? IsBodySearchable { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
     }
@@ -9830,34 +9830,34 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Document Entity Map Id")]
+        [Display(Name = "Document Entity Map Id")]
         public string Id { get; set; }
 
         /// <summary>
         /// Entity ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Entity ID")]
+        [Display(Name = "Entity ID")]
         public string ParentId { get; set; }
 
         /// <summary>
         /// Document ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Document ID")]
+        [Display(Name = "Document ID")]
         public string DocumentId { get; set; }
 
         /// <summary>
         /// Attachment Sequence (int type in Salesforce)
         /// </summary>
-        [DisplayName("Attachment Sequence")]
+        [Display(Name = "Attachment Sequence")]
         public string DocumentSequence { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -9865,7 +9865,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
     }
@@ -9882,7 +9882,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Domain ID")]
+        [Display(Name = "Domain ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -9890,7 +9890,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Domain Type")]
+        [Display(Name = "Domain Type")]
         public string DomainType { get; set; }
 
         /// <summary>
@@ -9898,14 +9898,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(765)]
         [Editable(false)]
-        [DisplayName("Domain Name")]
+        [Display(Name = "Domain Name")]
         public string Domain2 { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -9913,14 +9913,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -9928,14 +9928,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -9952,7 +9952,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Custom URL ID")]
+        [Display(Name = "Custom URL ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -9960,7 +9960,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Domain ID")]
+        [Display(Name = "Domain ID")]
         public string DomainId { get; set; }
 
         /// <summary>
@@ -9968,7 +9968,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Site ID")]
+        [Display(Name = "Site ID")]
         public string SiteId { get; set; }
 
         /// <summary>
@@ -9976,14 +9976,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Path")]
+        [Display(Name = "Path")]
         public string PathPrefix { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -9991,14 +9991,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -10006,14 +10006,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -10030,20 +10030,20 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Address ID")]
+        [Display(Name = "Address ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
         /// Email address (string type in Salesforce)
         /// </summary>
         [StringLength(64)]
-        [DisplayName("Email address")]
+        [Display(Name = "Email address")]
         public string LocalPart { get; set; }
 
         /// <summary>
@@ -10051,28 +10051,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Email address domain")]
+        [Display(Name = "Email address domain")]
         public string EmailDomainName { get; set; }
 
         /// <summary>
         /// Accept Email From (textarea type in Salesforce)
         /// </summary>
         [StringLength(4000)]
-        [DisplayName("Accept Email From")]
+        [Display(Name = "Accept Email From")]
         public string AuthorizedSenders { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string RunAsUserId { get; set; }
 
         /// <summary>
         /// Service ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Service ID")]
+        [Display(Name = "Service ID")]
         public string FunctionId { get; set; }
 
         /// <summary>
@@ -10080,14 +10080,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -10095,21 +10095,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -10126,107 +10126,107 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Service ID")]
+        [Display(Name = "Service ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
         /// Email Service Name (string type in Salesforce)
         /// </summary>
         [StringLength(64)]
-        [DisplayName("Email Service Name")]
+        [Display(Name = "Email Service Name")]
         public string FunctionName { get; set; }
 
         /// <summary>
         /// Accept Email From (textarea type in Salesforce)
         /// </summary>
         [StringLength(4000)]
-        [DisplayName("Accept Email From")]
+        [Display(Name = "Accept Email From")]
         public string AuthorizedSenders { get; set; }
 
         /// <summary>
         /// Advanced Email Security Settings (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Advanced Email Security Settings")]
+        [Display(Name = "Advanced Email Security Settings")]
         public bool? IsAuthenticationRequired { get; set; }
 
         /// <summary>
         /// TLS Required (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("TLS Required")]
+        [Display(Name = "TLS Required")]
         public bool? IsTlsRequired { get; set; }
 
         /// <summary>
         /// Accept Attachments (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Accept Attachments")]
+        [Display(Name = "Accept Attachments")]
         public string AttachmentOption { get; set; }
 
         /// <summary>
         /// Class ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Class ID")]
+        [Display(Name = "Class ID")]
         public string ApexClassId { get; set; }
 
         /// <summary>
         /// Over Email Rate Limit Action (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Over Email Rate Limit Action")]
+        [Display(Name = "Over Email Rate Limit Action")]
         public string OverLimitAction { get; set; }
 
         /// <summary>
         /// Deactivated Email Service Action (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Deactivated Email Service Action")]
+        [Display(Name = "Deactivated Email Service Action")]
         public string FunctionInactiveAction { get; set; }
 
         /// <summary>
         /// Deactivated Email Address Action (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Deactivated Email Address Action")]
+        [Display(Name = "Deactivated Email Address Action")]
         public string AddressInactiveAction { get; set; }
 
         /// <summary>
         /// Unauthenticated Sender Action (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Unauthenticated Sender Action")]
+        [Display(Name = "Unauthenticated Sender Action")]
         public string AuthenticationFailureAction { get; set; }
 
         /// <summary>
         /// Unauthorized Sender Action (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Unauthorized Sender Action")]
+        [Display(Name = "Unauthorized Sender Action")]
         public string AuthorizationFailureAction { get; set; }
 
         /// <summary>
         /// Enable Error Routing (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Enable Error Routing")]
+        [Display(Name = "Enable Error Routing")]
         public bool? IsErrorRoutingEnabled { get; set; }
 
         /// <summary>
         /// Route Error Emails to This Email Address (email type in Salesforce)
         /// </summary>
         [StringLength(270)]
-        [DisplayName("Route Error Emails to This Email Address")]
+        [Display(Name = "Route Error Emails to This Email Address")]
         public string ErrorRoutingAddress { get; set; }
 
         /// <summary>
         /// Convert Text Attachments to Binary Attachments (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Convert Text Attachments to Binary Attachments")]
+        [Display(Name = "Convert Text Attachments to Binary Attachments")]
         public bool? IsTextAttachmentsAsBinary { get; set; }
 
         /// <summary>
@@ -10234,14 +10234,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -10249,21 +10249,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -10280,7 +10280,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Email Status ID")]
+        [Display(Name = "Email Status ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -10288,7 +10288,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Activity ID")]
+        [Display(Name = "Activity ID")]
         public string TaskId { get; set; }
 
         /// <summary>
@@ -10296,14 +10296,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact/Lead ID")]
+        [Display(Name = "Contact/Lead ID")]
         public string WhoId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -10311,14 +10311,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -10326,28 +10326,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// # Times Opened (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("# Times Opened")]
+        [Display(Name = "# Times Opened")]
         public string TimesOpened { get; set; }
 
         /// <summary>
         /// Date Opened (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Date Opened")]
+        [Display(Name = "Date Opened")]
         public string FirstOpenDate { get; set; }
 
         /// <summary>
         /// Last Opened (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Opened")]
+        [Display(Name = "Last Opened")]
         public string LastOpenDate { get; set; }
 
         /// <summary>
@@ -10355,7 +10355,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Email Template Name")]
+        [Display(Name = "Email Template Name")]
         public string EmailTemplateName { get; set; }
 
     }
@@ -10372,21 +10372,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Email Template ID")]
+        [Display(Name = "Email Template ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Email Template Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Email Template Name")]
+        [Display(Name = "Email Template Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Template Unique Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Template Unique Name")]
+        [Display(Name = "Template Unique Name")]
         public string DeveloperName { get; set; }
 
         /// <summary>
@@ -10394,21 +10394,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Folder ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Folder ID")]
+        [Display(Name = "Folder ID")]
         public string FolderId { get; set; }
 
         /// <summary>
@@ -10416,7 +10416,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Letterhead ID")]
+        [Display(Name = "Letterhead ID")]
         public string BrandTemplateId { get; set; }
 
         /// <summary>
@@ -10424,13 +10424,13 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Style")]
+        [Display(Name = "Style")]
         public string TemplateStyle { get; set; }
 
         /// <summary>
         /// Available For Use (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Available For Use")]
+        [Display(Name = "Available For Use")]
         public bool? IsActive { get; set; }
 
         /// <summary>
@@ -10438,7 +10438,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Template Type")]
+        [Display(Name = "Template Type")]
         public string TemplateType { get; set; }
 
         /// <summary>
@@ -10463,35 +10463,35 @@ namespace Sharpforce
         /// HTML Value (textarea type in Salesforce)
         /// </summary>
         [StringLength(384000)]
-        [DisplayName("HTML Value")]
+        [Display(Name = "HTML Value")]
         public string HtmlValue { get; set; }
 
         /// <summary>
         /// Email Body (textarea type in Salesforce)
         /// </summary>
         [StringLength(384000)]
-        [DisplayName("Email Body")]
+        [Display(Name = "Email Body")]
         public string Body { get; set; }
 
         /// <summary>
         /// Times Used (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Times Used")]
+        [Display(Name = "Times Used")]
         public string TimesUsed { get; set; }
 
         /// <summary>
         /// Last Used Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Used Date")]
+        [Display(Name = "Last Used Date")]
         public string LastUsedDate { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -10499,14 +10499,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -10514,20 +10514,20 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// API Version (double type in Salesforce)
         /// </summary>
-        [DisplayName("API Version")]
+        [Display(Name = "API Version")]
         public string ApiVersion { get; set; }
 
         /// <summary>
@@ -10550,7 +10550,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Entity Subscription ID")]
+        [Display(Name = "Entity Subscription ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -10558,7 +10558,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -10566,7 +10566,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Subscriber ID")]
+        [Display(Name = "Subscriber ID")]
         public string SubscriberId { get; set; }
 
         /// <summary>
@@ -10574,21 +10574,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -10605,21 +10605,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Activity ID")]
+        [Display(Name = "Activity ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Contact/Lead ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Contact/Lead ID")]
+        [Display(Name = "Contact/Lead ID")]
         public string WhoId { get; set; }
 
         /// <summary>
         /// Opportunity/Account ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Opportunity/Account ID")]
+        [Display(Name = "Opportunity/Account ID")]
         public string WhatId { get; set; }
 
         /// <summary>
@@ -10637,37 +10637,37 @@ namespace Sharpforce
         /// <summary>
         /// All Day Event (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("All Day Event")]
+        [Display(Name = "All Day Event")]
         public bool? IsAllDayEvent { get; set; }
 
         /// <summary>
         /// Due Date Time (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Due Date Time")]
+        [Display(Name = "Due Date Time")]
         public string ActivityDateTime { get; set; }
 
         /// <summary>
         /// Due Date Only (date type in Salesforce)
         /// </summary>
-        [DisplayName("Due Date Only")]
+        [Display(Name = "Due Date Only")]
         public string ActivityDate { get; set; }
 
         /// <summary>
         /// Duration (int type in Salesforce)
         /// </summary>
-        [DisplayName("Duration")]
+        [Display(Name = "Duration")]
         public string DurationInMinutes { get; set; }
 
         /// <summary>
         /// Start Date Time (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Start Date Time")]
+        [Display(Name = "Start Date Time")]
         public string StartDateTime { get; set; }
 
         /// <summary>
         /// End Date Time (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("End Date Time")]
+        [Display(Name = "End Date Time")]
         public string EndDateTime { get; set; }
 
         /// <summary>
@@ -10681,48 +10681,48 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// Assigned To ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Assigned To ID")]
+        [Display(Name = "Assigned To ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Private (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Private")]
+        [Display(Name = "Private")]
         public bool? IsPrivate { get; set; }
 
         /// <summary>
         /// Show Time As (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Show Time As")]
+        [Display(Name = "Show Time As")]
         public string ShowAs { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Is Child (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Child")]
+        [Display(Name = "Is Child")]
         public bool? IsChild { get; set; }
 
         /// <summary>
         /// Is Group Event (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Group Event")]
+        [Display(Name = "Is Group Event")]
         public bool? IsGroupEvent { get; set; }
 
         /// <summary>
@@ -10730,14 +10730,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Group Event Type")]
+        [Display(Name = "Group Event Type")]
         public string GroupEventType { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -10745,14 +10745,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -10760,21 +10760,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Archived (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Archived")]
+        [Display(Name = "Archived")]
         public bool? IsArchived { get; set; }
 
         /// <summary>
@@ -10782,84 +10782,84 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Recurrence Activity ID")]
+        [Display(Name = "Recurrence Activity ID")]
         public string RecurrenceActivityId { get; set; }
 
         /// <summary>
         /// Create Recurring Series of Events (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Create Recurring Series of Events")]
+        [Display(Name = "Create Recurring Series of Events")]
         public bool? IsRecurrence { get; set; }
 
         /// <summary>
         /// Start Date (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Start Date")]
+        [Display(Name = "Start Date")]
         public string RecurrenceStartDateTime { get; set; }
 
         /// <summary>
         /// End Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("End Date")]
+        [Display(Name = "End Date")]
         public string RecurrenceEndDateOnly { get; set; }
 
         /// <summary>
         /// Recurrence Time Zone (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Time Zone")]
+        [Display(Name = "Recurrence Time Zone")]
         public string RecurrenceTimeZoneSidKey { get; set; }
 
         /// <summary>
         /// Recurrence Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Type")]
+        [Display(Name = "Recurrence Type")]
         public string RecurrenceType { get; set; }
 
         /// <summary>
         /// Recurrence Interval (int type in Salesforce)
         /// </summary>
-        [DisplayName("Recurrence Interval")]
+        [Display(Name = "Recurrence Interval")]
         public string RecurrenceInterval { get; set; }
 
         /// <summary>
         /// Recurrence Day of Week Mask (int type in Salesforce)
         /// </summary>
-        [DisplayName("Recurrence Day of Week Mask")]
+        [Display(Name = "Recurrence Day of Week Mask")]
         public string RecurrenceDayOfWeekMask { get; set; }
 
         /// <summary>
         /// Recurrence Day of Month (int type in Salesforce)
         /// </summary>
-        [DisplayName("Recurrence Day of Month")]
+        [Display(Name = "Recurrence Day of Month")]
         public string RecurrenceDayOfMonth { get; set; }
 
         /// <summary>
         /// Recurrence Instance (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Instance")]
+        [Display(Name = "Recurrence Instance")]
         public string RecurrenceInstance { get; set; }
 
         /// <summary>
         /// Recurrence Month of Year (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Month of Year")]
+        [Display(Name = "Recurrence Month of Year")]
         public string RecurrenceMonthOfYear { get; set; }
 
         /// <summary>
         /// Reminder Date/Time (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Reminder Date/Time")]
+        [Display(Name = "Reminder Date/Time")]
         public string ReminderDateTime { get; set; }
 
         /// <summary>
         /// Reminder Set (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Reminder Set")]
+        [Display(Name = "Reminder Set")]
         public bool? IsReminderSet { get; set; }
 
     }
@@ -10876,7 +10876,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -10884,7 +10884,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -10892,7 +10892,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -10900,49 +10900,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -10964,7 +10964,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -10972,14 +10972,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -10987,7 +10987,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -10995,7 +10995,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -11003,14 +11003,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -11018,7 +11018,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -11035,7 +11035,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Event Relation ID")]
+        [Display(Name = "Event Relation ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11043,7 +11043,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Relation ID")]
+        [Display(Name = "Relation ID")]
         public string RelationId { get; set; }
 
         /// <summary>
@@ -11051,7 +11051,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Event ID")]
+        [Display(Name = "Event ID")]
         public string EventId { get; set; }
 
         /// <summary>
@@ -11063,7 +11063,7 @@ namespace Sharpforce
         /// <summary>
         /// Response Date (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Response Date")]
+        [Display(Name = "Response Date")]
         public string RespondedDate { get; set; }
 
         /// <summary>
@@ -11076,7 +11076,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -11084,14 +11084,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -11099,21 +11099,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -11130,7 +11130,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Comment ID")]
+        [Display(Name = "Feed Comment ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11138,7 +11138,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string FeedItemId { get; set; }
 
         /// <summary>
@@ -11146,7 +11146,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -11154,14 +11154,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -11169,14 +11169,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(5000)]
         [Editable(false)]
-        [DisplayName("Comment Body")]
+        [Display(Name = "Comment Body")]
         public string CommentBody { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -11184,7 +11184,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
         /// <summary>
@@ -11192,7 +11192,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Comment Type")]
+        [Display(Name = "Comment Type")]
         public string CommentType { get; set; }
 
         /// <summary>
@@ -11200,7 +11200,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
     }
@@ -11217,7 +11217,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11225,7 +11225,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -11233,7 +11233,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -11241,49 +11241,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -11305,7 +11305,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -11313,14 +11313,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -11328,7 +11328,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -11336,7 +11336,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -11344,14 +11344,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -11359,7 +11359,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -11376,7 +11376,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Like ID")]
+        [Display(Name = "Feed Like ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11384,7 +11384,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string FeedItemId { get; set; }
 
         /// <summary>
@@ -11392,7 +11392,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string FeedEntityId { get; set; }
 
         /// <summary>
@@ -11400,21 +11400,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -11422,7 +11422,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -11439,7 +11439,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Poll Choice ID")]
+        [Display(Name = "Feed Poll Choice ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11447,7 +11447,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string FeedItemId { get; set; }
 
         /// <summary>
@@ -11468,21 +11468,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -11499,7 +11499,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Poll Vote ID")]
+        [Display(Name = "Feed Poll Vote ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11507,7 +11507,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string FeedItemId { get; set; }
 
         /// <summary>
@@ -11515,7 +11515,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Poll Choice ID")]
+        [Display(Name = "Feed Poll Choice ID")]
         public string ChoiceId { get; set; }
 
         /// <summary>
@@ -11523,28 +11523,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -11561,7 +11561,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Tracked Change ID")]
+        [Display(Name = "Feed Tracked Change ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11569,7 +11569,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string FeedItemId { get; set; }
 
         /// <summary>
@@ -11577,7 +11577,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Field")]
+        [Display(Name = "Field")]
         public string FieldName { get; set; }
 
         /// <summary>
@@ -11585,7 +11585,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -11593,7 +11593,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -11610,7 +11610,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Field Permissions ID")]
+        [Display(Name = "Field Permissions ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11618,7 +11618,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -11626,7 +11626,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Sobject Type Name")]
+        [Display(Name = "Sobject Type Name")]
         public string SobjectType { get; set; }
 
         /// <summary>
@@ -11634,26 +11634,26 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Field Name")]
+        [Display(Name = "Field Name")]
         public string Field { get; set; }
 
         /// <summary>
         /// Edit Field (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Field")]
+        [Display(Name = "Edit Field")]
         public bool? PermissionsEdit { get; set; }
 
         /// <summary>
         /// Read Field (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Read Field")]
+        [Display(Name = "Read Field")]
         public bool? PermissionsRead { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -11670,7 +11670,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Fiscal Year Settings ID")]
+        [Display(Name = "Fiscal Year Settings ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11678,21 +11678,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Period ID")]
+        [Display(Name = "Period ID")]
         public string PeriodId { get; set; }
 
         /// <summary>
         /// Start Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Start Date")]
+        [Display(Name = "Start Date")]
         public string StartDate { get; set; }
 
         /// <summary>
         /// End Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("End Date")]
+        [Display(Name = "End Date")]
         public string EndDate { get; set; }
 
         /// <summary>
@@ -11706,7 +11706,7 @@ namespace Sharpforce
         /// Is Standard Year (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Standard Year")]
+        [Display(Name = "Is Standard Year")]
         public bool? IsStandardYear { get; set; }
 
         /// <summary>
@@ -11714,7 +11714,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Year Type")]
+        [Display(Name = "Year Type")]
         public string YearType { get; set; }
 
         /// <summary>
@@ -11722,7 +11722,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Quarter Name Scheme")]
+        [Display(Name = "Quarter Name Scheme")]
         public string QuarterLabelScheme { get; set; }
 
         /// <summary>
@@ -11730,7 +11730,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Period Name Scheme")]
+        [Display(Name = "Period Name Scheme")]
         public string PeriodLabelScheme { get; set; }
 
         /// <summary>
@@ -11738,7 +11738,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Week Name Scheme")]
+        [Display(Name = "Week Name Scheme")]
         public string WeekLabelScheme { get; set; }
 
         /// <summary>
@@ -11746,7 +11746,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Quarter Prefix")]
+        [Display(Name = "Quarter Prefix")]
         public string QuarterPrefix { get; set; }
 
         /// <summary>
@@ -11754,14 +11754,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Period Prefix")]
+        [Display(Name = "Period Prefix")]
         public string PeriodPrefix { get; set; }
 
         /// <summary>
         /// Week Start Day (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Week Start Day")]
+        [Display(Name = "Week Start Day")]
         public string WeekStartDay { get; set; }
 
         /// <summary>
@@ -11775,7 +11775,7 @@ namespace Sharpforce
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -11792,7 +11792,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Folder ID")]
+        [Display(Name = "Folder ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11805,20 +11805,20 @@ namespace Sharpforce
         /// Folder Unique Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Folder Unique Name")]
+        [Display(Name = "Folder Unique Name")]
         public string DeveloperName { get; set; }
 
         /// <summary>
         /// Access Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Access Type")]
+        [Display(Name = "Access Type")]
         public string AccessType { get; set; }
 
         /// <summary>
         /// Read Only (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Read Only")]
+        [Display(Name = "Read Only")]
         public bool? IsReadonly { get; set; }
 
         /// <summary>
@@ -11833,14 +11833,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -11848,14 +11848,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -11863,14 +11863,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -11887,7 +11887,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Forecast Share ID")]
+        [Display(Name = "Forecast Share ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11895,7 +11895,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User Role ID")]
+        [Display(Name = "User Role ID")]
         public string UserRoleId { get; set; }
 
         /// <summary>
@@ -11903,7 +11903,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User/Group ID")]
+        [Display(Name = "User/Group ID")]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
@@ -11911,14 +11911,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Forecast Access")]
+        [Display(Name = "Forecast Access")]
         public string AccessLevel { get; set; }
 
         /// <summary>
         /// Submit Allowed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Submit Allowed")]
+        [Display(Name = "Submit Allowed")]
         public bool? CanSubmit { get; set; }
 
         /// <summary>
@@ -11926,14 +11926,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Row Cause")]
+        [Display(Name = "Row Cause")]
         public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -11941,7 +11941,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
     }
@@ -11958,7 +11958,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Group ID")]
+        [Display(Name = "Group ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -11971,7 +11971,7 @@ namespace Sharpforce
         /// Developer Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Developer Name")]
+        [Display(Name = "Developer Name")]
         public string DeveloperName { get; set; }
 
         /// <summary>
@@ -11979,7 +11979,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related ID")]
+        [Display(Name = "Related ID")]
         public string RelatedId { get; set; }
 
         /// <summary>
@@ -12000,26 +12000,26 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Send Email to Members (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Send Email to Members")]
+        [Display(Name = "Send Email to Members")]
         public bool? DoesSendEmailToMembers { get; set; }
 
         /// <summary>
         /// Include Bosses (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Include Bosses")]
+        [Display(Name = "Include Bosses")]
         public bool? DoesIncludeBosses { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -12027,14 +12027,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -12042,14 +12042,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -12066,7 +12066,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Group Member ID")]
+        [Display(Name = "Group Member ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -12074,7 +12074,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Group ID")]
+        [Display(Name = "Group ID")]
         public string GroupId { get; set; }
 
         /// <summary>
@@ -12082,14 +12082,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User/Group ID")]
+        [Display(Name = "User/Group ID")]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -12106,7 +12106,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Hashtag Definition ID")]
+        [Display(Name = "Hashtag Definition ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -12114,7 +12114,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(765)]
         [Editable(false)]
-        [DisplayName("Normalized Hashtag Text")]
+        [Display(Name = "Normalized Hashtag Text")]
         public string NameNorm { get; set; }
 
         /// <summary>
@@ -12122,28 +12122,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(765)]
         [Editable(false)]
-        [DisplayName("Hashtag Text")]
+        [Display(Name = "Hashtag Text")]
         public string Name { get; set; }
 
         /// <summary>
         /// Hashtag Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Hashtag Count")]
+        [Display(Name = "Hashtag Count")]
         public string HashtagCount { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -12160,14 +12160,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Holiday ID")]
+        [Display(Name = "Holiday ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Holiday Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Holiday Name")]
+        [Display(Name = "Holiday Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -12179,32 +12179,32 @@ namespace Sharpforce
         /// <summary>
         /// All Day (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("All Day")]
+        [Display(Name = "All Day")]
         public bool? IsAllDay { get; set; }
 
         /// <summary>
         /// Holiday Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Holiday Date")]
+        [Display(Name = "Holiday Date")]
         public string ActivityDate { get; set; }
 
         /// <summary>
         /// Start Time In Minutes From Midnight (int type in Salesforce)
         /// </summary>
-        [DisplayName("Start Time In Minutes From Midnight")]
+        [Display(Name = "Start Time In Minutes From Midnight")]
         public string StartTimeInMinutes { get; set; }
 
         /// <summary>
         /// End Time In Minutes From Midnight (int type in Salesforce)
         /// </summary>
-        [DisplayName("End Time In Minutes From Midnight")]
+        [Display(Name = "End Time In Minutes From Midnight")]
         public string EndTimeInMinutes { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -12212,14 +12212,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -12227,71 +12227,71 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Recurring Holiday (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Recurring Holiday")]
+        [Display(Name = "Recurring Holiday")]
         public bool? IsRecurrence { get; set; }
 
         /// <summary>
         /// Start Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Start Date")]
+        [Display(Name = "Start Date")]
         public string RecurrenceStartDate { get; set; }
 
         /// <summary>
         /// End Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("End Date")]
+        [Display(Name = "End Date")]
         public string RecurrenceEndDateOnly { get; set; }
 
         /// <summary>
         /// Recurrence Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Type")]
+        [Display(Name = "Recurrence Type")]
         public string RecurrenceType { get; set; }
 
         /// <summary>
         /// Recurrence Interval (int type in Salesforce)
         /// </summary>
-        [DisplayName("Recurrence Interval")]
+        [Display(Name = "Recurrence Interval")]
         public string RecurrenceInterval { get; set; }
 
         /// <summary>
         /// Recurrence Day of Week Mask (int type in Salesforce)
         /// </summary>
-        [DisplayName("Recurrence Day of Week Mask")]
+        [Display(Name = "Recurrence Day of Week Mask")]
         public string RecurrenceDayOfWeekMask { get; set; }
 
         /// <summary>
         /// Recurrence Day of Month (int type in Salesforce)
         /// </summary>
-        [DisplayName("Recurrence Day of Month")]
+        [Display(Name = "Recurrence Day of Month")]
         public string RecurrenceDayOfMonth { get; set; }
 
         /// <summary>
         /// Recurrence Instance (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Instance")]
+        [Display(Name = "Recurrence Instance")]
         public string RecurrenceInstance { get; set; }
 
         /// <summary>
         /// Recurrence Month of Year (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Month of Year")]
+        [Display(Name = "Recurrence Month of Year")]
         public string RecurrenceMonthOfYear { get; set; }
 
     }
@@ -12308,14 +12308,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Idea ID")]
+        [Display(Name = "Idea ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -12329,14 +12329,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Record Type ID")]
+        [Display(Name = "Record Type ID")]
         public string RecordTypeId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -12344,14 +12344,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -12359,28 +12359,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
         /// <summary>
@@ -12388,35 +12388,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Zone ID")]
+        [Display(Name = "Zone ID")]
         public string CommunityId { get; set; }
 
         /// <summary>
         /// Idea Body (textarea type in Salesforce)
         /// </summary>
         [StringLength(32000)]
-        [DisplayName("Idea Body")]
+        [Display(Name = "Idea Body")]
         public string Body { get; set; }
 
         /// <summary>
         /// Number of Comments (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Number of Comments")]
+        [Display(Name = "Number of Comments")]
         public string NumComments { get; set; }
 
         /// <summary>
         /// Vote Score (double type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Vote Score")]
+        [Display(Name = "Vote Score")]
         public string VoteScore { get; set; }
 
         /// <summary>
         /// Vote Total (double type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Vote Total")]
+        [Display(Name = "Vote Total")]
         public string VoteTotal { get; set; }
 
         /// <summary>
@@ -12435,7 +12435,7 @@ namespace Sharpforce
         /// Last Idea Comment Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Idea Comment Date")]
+        [Display(Name = "Last Idea Comment Date")]
         public string LastCommentDate { get; set; }
 
         /// <summary>
@@ -12443,7 +12443,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Idea Comment ID")]
+        [Display(Name = "Idea Comment ID")]
         public string LastCommentId { get; set; }
 
         /// <summary>
@@ -12451,7 +12451,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Idea ID")]
+        [Display(Name = "Idea ID")]
         public string ParentIdeaId { get; set; }
 
         /// <summary>
@@ -12464,7 +12464,7 @@ namespace Sharpforce
         /// Is Merged (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Merged")]
+        [Display(Name = "Is Merged")]
         public bool? IsMerged { get; set; }
 
         /// <summary>
@@ -12472,7 +12472,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Url of Creator's Profile Photo")]
+        [Display(Name = "Url of Creator's Profile Photo")]
         public string CreatorFullPhotoUrl { get; set; }
 
         /// <summary>
@@ -12480,7 +12480,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Url of Creator's Thumbnail Photo")]
+        [Display(Name = "Url of Creator's Thumbnail Photo")]
         public string CreatorSmallPhotoUrl { get; set; }
 
         /// <summary>
@@ -12488,7 +12488,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(121)]
         [Editable(false)]
-        [DisplayName("Name of Creator")]
+        [Display(Name = "Name of Creator")]
         public string CreatorName { get; set; }
 
     }
@@ -12505,7 +12505,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Idea Comment ID")]
+        [Display(Name = "Idea Comment ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -12513,7 +12513,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Idea ID")]
+        [Display(Name = "Idea ID")]
         public string IdeaId { get; set; }
 
         /// <summary>
@@ -12521,14 +12521,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Zone ID")]
+        [Display(Name = "Zone ID")]
         public string CommunityId { get; set; }
 
         /// <summary>
         /// Comment Body (textarea type in Salesforce)
         /// </summary>
         [StringLength(4000)]
-        [DisplayName("Comment Body")]
+        [Display(Name = "Comment Body")]
         public string CommentBody { get; set; }
 
         /// <summary>
@@ -12536,28 +12536,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -12571,7 +12571,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Url of Creator's Profile Photo")]
+        [Display(Name = "Url of Creator's Profile Photo")]
         public string CreatorFullPhotoUrl { get; set; }
 
         /// <summary>
@@ -12579,7 +12579,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Url of Creator's Thumbnail Photo")]
+        [Display(Name = "Url of Creator's Thumbnail Photo")]
         public string CreatorSmallPhotoUrl { get; set; }
 
         /// <summary>
@@ -12587,14 +12587,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(121)]
         [Editable(false)]
-        [DisplayName("Name of Creator")]
+        [Display(Name = "Name of Creator")]
         public string CreatorName { get; set; }
 
         /// <summary>
         /// Up Votes (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Up Votes")]
+        [Display(Name = "Up Votes")]
         public string UpVotes { get; set; }
 
     }
@@ -12611,14 +12611,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Lead ID")]
+        [Display(Name = "Lead ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -12626,21 +12626,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Master Record ID")]
+        [Display(Name = "Master Record ID")]
         public string MasterRecordId { get; set; }
 
         /// <summary>
         /// Last Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Last Name")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         /// <summary>
         /// First Name (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         /// <summary>
@@ -12654,7 +12654,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(121)]
         [Editable(false)]
-        [DisplayName("Full Name")]
+        [Display(Name = "Full Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -12685,14 +12685,14 @@ namespace Sharpforce
         /// State/Province (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("State/Province")]
+        [Display(Name = "State/Province")]
         public string State { get; set; }
 
         /// <summary>
         /// Zip/Postal Code (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Zip/Postal Code")]
+        [Display(Name = "Zip/Postal Code")]
         public string PostalCode { get; set; }
 
         /// <summary>
@@ -12721,7 +12721,7 @@ namespace Sharpforce
         /// Mobile Phone (phone type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Mobile Phone")]
+        [Display(Name = "Mobile Phone")]
         public string MobilePhone { get; set; }
 
         /// <summary>
@@ -12752,7 +12752,7 @@ namespace Sharpforce
         /// Lead Source (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Lead Source")]
+        [Display(Name = "Lead Source")]
         public string LeadSource { get; set; }
 
         /// <summary>
@@ -12776,34 +12776,34 @@ namespace Sharpforce
         /// <summary>
         /// Annual Revenue (currency type in Salesforce)
         /// </summary>
-        [DisplayName("Annual Revenue")]
+        [Display(Name = "Annual Revenue")]
         public string AnnualRevenue { get; set; }
 
         /// <summary>
         /// Employees (int type in Salesforce)
         /// </summary>
-        [DisplayName("Employees")]
+        [Display(Name = "Employees")]
         public string NumberOfEmployees { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Converted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Converted")]
+        [Display(Name = "Converted")]
         public bool? IsConverted { get; set; }
 
         /// <summary>
         /// Converted Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Converted Date")]
+        [Display(Name = "Converted Date")]
         public string ConvertedDate { get; set; }
 
         /// <summary>
@@ -12811,7 +12811,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Converted Account ID")]
+        [Display(Name = "Converted Account ID")]
         public string ConvertedAccountId { get; set; }
 
         /// <summary>
@@ -12819,7 +12819,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Converted Contact ID")]
+        [Display(Name = "Converted Contact ID")]
         public string ConvertedContactId { get; set; }
 
         /// <summary>
@@ -12827,20 +12827,20 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Converted Opportunity ID")]
+        [Display(Name = "Converted Opportunity ID")]
         public string ConvertedOpportunityId { get; set; }
 
         /// <summary>
         /// Unread By Owner (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Unread By Owner")]
+        [Display(Name = "Unread By Owner")]
         public bool? IsUnreadByOwner { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -12848,14 +12848,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -12863,42 +12863,42 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Activity")]
+        [Display(Name = "Last Activity")]
         public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Data.com Key (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Data.com Key")]
+        [Display(Name = "Data.com Key")]
         public string Jigsaw { get; set; }
 
         /// <summary>
@@ -12906,54 +12906,54 @@ namespace Sharpforce
         /// </summary>
         [StringLength(20)]
         [Editable(false)]
-        [DisplayName("Jigsaw Contact ID")]
+        [Display(Name = "Jigsaw Contact ID")]
         public string JigsawContactId { get; set; }
 
         /// <summary>
         /// Email Bounced Reason (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Email Bounced Reason")]
+        [Display(Name = "Email Bounced Reason")]
         public string EmailBouncedReason { get; set; }
 
         /// <summary>
         /// Email Bounced Date (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Email Bounced Date")]
+        [Display(Name = "Email Bounced Date")]
         public string EmailBouncedDate { get; set; }
 
         /// <summary>
         /// SIC Code (string type in Salesforce)
         /// </summary>
         [StringLength(15)]
-        [DisplayName("SIC Code")]
+        [Display(Name = "SIC Code")]
         public string SICCode__c { get; set; }
 
         /// <summary>
         /// Product Interest (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Product Interest")]
+        [Display(Name = "Product Interest")]
         public string ProductInterest__c { get; set; }
 
         /// <summary>
         /// Primary (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Primary")]
+        [Display(Name = "Primary")]
         public string Primary__c { get; set; }
 
         /// <summary>
         /// Current Generator(s) (string type in Salesforce)
         /// </summary>
         [StringLength(100)]
-        [DisplayName("Current Generator(s)")]
+        [Display(Name = "Current Generator(s)")]
         public string CurrentGenerators__c { get; set; }
 
         /// <summary>
         /// Number of Locations (double type in Salesforce)
         /// </summary>
-        [DisplayName("Number of Locations")]
+        [Display(Name = "Number of Locations")]
         public string NumberofLocations__c { get; set; }
 
     }
@@ -12970,7 +12970,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -12978,7 +12978,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -12986,7 +12986,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -12994,49 +12994,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -13058,7 +13058,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -13066,14 +13066,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -13081,7 +13081,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -13089,7 +13089,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -13097,14 +13097,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -13112,7 +13112,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -13129,14 +13129,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Lead History ID")]
+        [Display(Name = "Lead History ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -13144,7 +13144,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Lead ID")]
+        [Display(Name = "Lead ID")]
         public string LeadId { get; set; }
 
         /// <summary>
@@ -13152,14 +13152,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -13167,7 +13167,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -13175,7 +13175,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -13183,7 +13183,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -13200,7 +13200,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Lead Share ID")]
+        [Display(Name = "Lead Share ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -13208,7 +13208,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Lead ID")]
+        [Display(Name = "Lead ID")]
         public string LeadId { get; set; }
 
         /// <summary>
@@ -13216,7 +13216,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User/Group ID")]
+        [Display(Name = "User/Group ID")]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
@@ -13224,7 +13224,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Lead Access")]
+        [Display(Name = "Lead Access")]
         public string LeadAccessLevel { get; set; }
 
         /// <summary>
@@ -13232,14 +13232,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Row Cause")]
+        [Display(Name = "Row Cause")]
         public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -13247,14 +13247,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -13271,7 +13271,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Lead Status Value ID")]
+        [Display(Name = "Lead Status Value ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -13279,28 +13279,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Master Label")]
+        [Display(Name = "Master Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Default")]
+        [Display(Name = "Is Default")]
         public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Is Converted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Converted")]
+        [Display(Name = "Is Converted")]
         public bool? IsConverted { get; set; }
 
         /// <summary>
@@ -13308,14 +13308,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -13323,21 +13323,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -13354,7 +13354,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Login History Id")]
+        [Display(Name = "Login History Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -13362,14 +13362,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string UserId { get; set; }
 
         /// <summary>
         /// Login Time (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Login Time")]
+        [Display(Name = "Login Time")]
         public string LoginTime { get; set; }
 
         /// <summary>
@@ -13377,7 +13377,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1)]
         [Editable(false)]
-        [DisplayName("Login Type")]
+        [Display(Name = "Login Type")]
         public string LoginType { get; set; }
 
         /// <summary>
@@ -13385,7 +13385,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(39)]
         [Editable(false)]
-        [DisplayName("Source IP")]
+        [Display(Name = "Source IP")]
         public string SourceIp { get; set; }
 
         /// <summary>
@@ -13393,7 +13393,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Login URL")]
+        [Display(Name = "Login URL")]
         public string LoginUrl { get; set; }
 
         /// <summary>
@@ -13429,7 +13429,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(64)]
         [Editable(false)]
-        [DisplayName("Client Version")]
+        [Display(Name = "Client Version")]
         public string ClientVersion { get; set; }
 
         /// <summary>
@@ -13437,7 +13437,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(64)]
         [Editable(false)]
-        [DisplayName("API Type")]
+        [Display(Name = "API Type")]
         public string ApiType { get; set; }
 
         /// <summary>
@@ -13445,7 +13445,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(32)]
         [Editable(false)]
-        [DisplayName("API Version")]
+        [Display(Name = "API Version")]
         public string ApiVersion { get; set; }
 
     }
@@ -13462,7 +13462,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Login IP ID")]
+        [Display(Name = "Login IP ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -13470,7 +13470,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string UsersId { get; set; }
 
         /// <summary>
@@ -13478,14 +13478,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(39)]
         [Editable(false)]
-        [DisplayName("Source IP")]
+        [Display(Name = "Source IP")]
         public string SourceIp { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -13498,7 +13498,7 @@ namespace Sharpforce
         /// Challenge SentDate (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Challenge SentDate")]
+        [Display(Name = "Challenge SentDate")]
         public string ChallengeSentDate { get; set; }
 
         /// <summary>
@@ -13506,7 +13506,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Challenge Method")]
+        [Display(Name = "Challenge Method")]
         public string ChallengeMethod { get; set; }
 
     }
@@ -13523,14 +13523,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Mail Merge Template ID")]
+        [Display(Name = "Mail Merge Template ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -13550,14 +13550,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("File")]
+        [Display(Name = "File")]
         public string Filename { get; set; }
 
         /// <summary>
         /// Body Length (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Body Length")]
+        [Display(Name = "Body Length")]
         public string BodyLength { get; set; }
 
         /// <summary>
@@ -13570,14 +13570,14 @@ namespace Sharpforce
         /// Last Used Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Used Date")]
+        [Display(Name = "Last Used Date")]
         public string LastUsedDate { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -13585,14 +13585,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -13600,14 +13600,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -13624,7 +13624,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ID")]
+        [Display(Name = "ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -13632,7 +13632,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Name")]
+        [Display(Name = "Name")]
         public string Name2 { get; set; }
 
         /// <summary>
@@ -13640,7 +13640,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Last Name")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         /// <summary>
@@ -13648,7 +13648,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         /// <summary>
@@ -13670,7 +13670,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Role ID")]
+        [Display(Name = "Role ID")]
         public string UserRoleId { get; set; }
 
         /// <summary>
@@ -13678,14 +13678,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Record Type ID")]
+        [Display(Name = "Record Type ID")]
         public string RecordTypeId { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
@@ -13693,7 +13693,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Profile ID")]
+        [Display(Name = "Profile ID")]
         public string ProfileId { get; set; }
 
         /// <summary>
@@ -13708,7 +13708,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("E-mail")]
+        [Display(Name = "E-mail")]
         public string Email { get; set; }
 
         /// <summary>
@@ -13729,14 +13729,14 @@ namespace Sharpforce
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
     }
@@ -13753,14 +13753,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Note Id")]
+        [Display(Name = "Note Id")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -13768,7 +13768,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -13780,7 +13780,7 @@ namespace Sharpforce
         /// <summary>
         /// Private (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Private")]
+        [Display(Name = "Private")]
         public bool? IsPrivate { get; set; }
 
         /// <summary>
@@ -13793,14 +13793,14 @@ namespace Sharpforce
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -13808,14 +13808,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -13823,14 +13823,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -13847,21 +13847,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Note or Attachment Id")]
+        [Display(Name = "Note or Attachment Id")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Is Note (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Note")]
+        [Display(Name = "Is Note")]
         public bool? IsNote { get; set; }
 
         /// <summary>
@@ -13869,7 +13869,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -13883,7 +13883,7 @@ namespace Sharpforce
         /// Private (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Private")]
+        [Display(Name = "Private")]
         public bool? IsPrivate { get; set; }
 
         /// <summary>
@@ -13891,14 +13891,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -13906,14 +13906,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -13921,14 +13921,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -13945,7 +13945,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("ObjectPermissions ID")]
+        [Display(Name = "ObjectPermissions ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -13953,7 +13953,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -13961,50 +13961,50 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Sobject Type Name")]
+        [Display(Name = "Sobject Type Name")]
         public string SobjectType { get; set; }
 
         /// <summary>
         /// Create Records (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Create Records")]
+        [Display(Name = "Create Records")]
         public bool? PermissionsCreate { get; set; }
 
         /// <summary>
         /// Read Records (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Read Records")]
+        [Display(Name = "Read Records")]
         public bool? PermissionsRead { get; set; }
 
         /// <summary>
         /// Edit Records (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Records")]
+        [Display(Name = "Edit Records")]
         public bool? PermissionsEdit { get; set; }
 
         /// <summary>
         /// Delete Records (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Delete Records")]
+        [Display(Name = "Delete Records")]
         public bool? PermissionsDelete { get; set; }
 
         /// <summary>
         /// Read All Records (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Read All Records")]
+        [Display(Name = "Read All Records")]
         public bool? PermissionsViewAllRecords { get; set; }
 
         /// <summary>
         /// Edit All Records (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit All Records")]
+        [Display(Name = "Edit All Records")]
         public bool? PermissionsModifyAllRecords { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -14012,14 +14012,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -14027,14 +14027,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -14051,7 +14051,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Activity ID")]
+        [Display(Name = "Activity ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -14059,7 +14059,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
@@ -14067,7 +14067,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact/Lead ID")]
+        [Display(Name = "Contact/Lead ID")]
         public string WhoId { get; set; }
 
         /// <summary>
@@ -14075,7 +14075,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity/Account ID")]
+        [Display(Name = "Opportunity/Account ID")]
         public string WhatId { get; set; }
 
         /// <summary>
@@ -14089,14 +14089,14 @@ namespace Sharpforce
         /// Task (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Task")]
+        [Display(Name = "Task")]
         public bool? IsTask { get; set; }
 
         /// <summary>
         /// Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Date")]
+        [Display(Name = "Date")]
         public string ActivityDate { get; set; }
 
         /// <summary>
@@ -14104,7 +14104,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Assigned To ID")]
+        [Display(Name = "Assigned To ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -14126,35 +14126,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Type")]
+        [Display(Name = "Type")]
         public string ActivityType { get; set; }
 
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Closed")]
+        [Display(Name = "Closed")]
         public bool? IsClosed { get; set; }
 
         /// <summary>
         /// All Day Event (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("All Day Event")]
+        [Display(Name = "All Day Event")]
         public bool? IsAllDayEvent { get; set; }
 
         /// <summary>
         /// Public (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Public")]
+        [Display(Name = "Public")]
         public bool? IsVisibleInSelfService { get; set; }
 
         /// <summary>
         /// Duration (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Duration")]
+        [Display(Name = "Duration")]
         public string DurationInMinutes { get; set; }
 
         /// <summary>
@@ -14169,21 +14169,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(32000)]
         [Editable(false)]
-        [DisplayName("Comments")]
+        [Display(Name = "Comments")]
         public string Description { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -14191,14 +14191,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -14206,21 +14206,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Call Duration (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Call Duration")]
+        [Display(Name = "Call Duration")]
         public string CallDurationInSeconds { get; set; }
 
         /// <summary>
@@ -14228,7 +14228,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Call Type")]
+        [Display(Name = "Call Type")]
         public string CallType { get; set; }
 
         /// <summary>
@@ -14236,7 +14236,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Call Result")]
+        [Display(Name = "Call Result")]
         public string CallDisposition { get; set; }
 
         /// <summary>
@@ -14244,35 +14244,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Call Object Identifier")]
+        [Display(Name = "Call Object Identifier")]
         public string CallObject { get; set; }
 
         /// <summary>
         /// Reminder Date/Time (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Reminder Date/Time")]
+        [Display(Name = "Reminder Date/Time")]
         public string ReminderDateTime { get; set; }
 
         /// <summary>
         /// Reminder Set (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Reminder Set")]
+        [Display(Name = "Reminder Set")]
         public bool? IsReminderSet { get; set; }
 
         /// <summary>
         /// End (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("End")]
+        [Display(Name = "End")]
         public string EndDateTime { get; set; }
 
         /// <summary>
         /// Start (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Start")]
+        [Display(Name = "Start")]
         public string StartDateTime { get; set; }
 
     }
@@ -14289,27 +14289,27 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity ID")]
+        [Display(Name = "Opportunity ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// Private (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Private")]
+        [Display(Name = "Private")]
         public bool? IsPrivate { get; set; }
 
         /// <summary>
@@ -14328,7 +14328,7 @@ namespace Sharpforce
         /// Stage (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Stage")]
+        [Display(Name = "Stage")]
         public string StageName { get; set; }
 
         /// <summary>
@@ -14339,61 +14339,61 @@ namespace Sharpforce
         /// <summary>
         /// Probability (%) (percent type in Salesforce)
         /// </summary>
-        [DisplayName("Probability (%)")]
+        [Display(Name = "Probability (%)")]
         public string Probability { get; set; }
 
         /// <summary>
         /// Expected Amount (currency type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Expected Amount")]
+        [Display(Name = "Expected Amount")]
         public string ExpectedRevenue { get; set; }
 
         /// <summary>
         /// Quantity (double type in Salesforce)
         /// </summary>
-        [DisplayName("Quantity")]
+        [Display(Name = "Quantity")]
         public string TotalOpportunityQuantity { get; set; }
 
         /// <summary>
         /// Close Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Close Date")]
+        [Display(Name = "Close Date")]
         public string CloseDate { get; set; }
 
         /// <summary>
         /// Opportunity Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Opportunity Type")]
+        [Display(Name = "Opportunity Type")]
         public string Type { get; set; }
 
         /// <summary>
         /// Next Step (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Next Step")]
+        [Display(Name = "Next Step")]
         public string NextStep { get; set; }
 
         /// <summary>
         /// Lead Source (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Lead Source")]
+        [Display(Name = "Lead Source")]
         public string LeadSource { get; set; }
 
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Closed")]
+        [Display(Name = "Closed")]
         public bool? IsClosed { get; set; }
 
         /// <summary>
         /// Won (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Won")]
+        [Display(Name = "Won")]
         public bool? IsWon { get; set; }
 
         /// <summary>
@@ -14401,49 +14401,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Forecast Category")]
+        [Display(Name = "Forecast Category")]
         public string ForecastCategory { get; set; }
 
         /// <summary>
         /// Forecast Category (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Forecast Category")]
+        [Display(Name = "Forecast Category")]
         public string ForecastCategoryName { get; set; }
 
         /// <summary>
         /// Campaign ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Campaign ID")]
+        [Display(Name = "Campaign ID")]
         public string CampaignId { get; set; }
 
         /// <summary>
         /// Has Line Item (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Has Line Item")]
+        [Display(Name = "Has Line Item")]
         public bool? HasOpportunityLineItem { get; set; }
 
         /// <summary>
         /// Price Book ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Price Book ID")]
+        [Display(Name = "Price Book ID")]
         public string Pricebook2Id { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -14451,14 +14451,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -14466,35 +14466,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Activity")]
+        [Display(Name = "Last Activity")]
         public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Fiscal Quarter (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Fiscal Quarter")]
+        [Display(Name = "Fiscal Quarter")]
         public string FiscalQuarter { get; set; }
 
         /// <summary>
         /// Fiscal Year (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Fiscal Year")]
+        [Display(Name = "Fiscal Year")]
         public string FiscalYear { get; set; }
 
         /// <summary>
@@ -14502,56 +14502,56 @@ namespace Sharpforce
         /// </summary>
         [StringLength(6)]
         [Editable(false)]
-        [DisplayName("Fiscal Period")]
+        [Display(Name = "Fiscal Period")]
         public string Fiscal { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Delivery/Installation Status (picklist type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Delivery/Installation Status")]
+        [Display(Name = "Delivery/Installation Status")]
         public string DeliveryInstallationStatus__c { get; set; }
 
         /// <summary>
         /// Tracking Number (string type in Salesforce)
         /// </summary>
         [StringLength(12)]
-        [DisplayName("Tracking Number")]
+        [Display(Name = "Tracking Number")]
         public string TrackingNumber__c { get; set; }
 
         /// <summary>
         /// Order Number (string type in Salesforce)
         /// </summary>
         [StringLength(8)]
-        [DisplayName("Order Number")]
+        [Display(Name = "Order Number")]
         public string OrderNumber__c { get; set; }
 
         /// <summary>
         /// Current Generator(s) (string type in Salesforce)
         /// </summary>
         [StringLength(100)]
-        [DisplayName("Current Generator(s)")]
+        [Display(Name = "Current Generator(s)")]
         public string CurrentGenerators__c { get; set; }
 
         /// <summary>
         /// Main Competitor(s) (string type in Salesforce)
         /// </summary>
         [StringLength(100)]
-        [DisplayName("Main Competitor(s)")]
+        [Display(Name = "Main Competitor(s)")]
         public string MainCompetitors__c { get; set; }
 
     }
@@ -14568,7 +14568,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity: Competitor ID")]
+        [Display(Name = "Opportunity: Competitor ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -14576,14 +14576,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity ID")]
+        [Display(Name = "Opportunity ID")]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// Competitor Name (combobox type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Competitor Name")]
+        [Display(Name = "Competitor Name")]
         public string CompetitorName { get; set; }
 
         /// <summary>
@@ -14603,14 +14603,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -14618,28 +14618,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -14656,7 +14656,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact Role ID")]
+        [Display(Name = "Contact Role ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -14664,14 +14664,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity ID")]
+        [Display(Name = "Opportunity ID")]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string ContactId { get; set; }
 
         /// <summary>
@@ -14683,14 +14683,14 @@ namespace Sharpforce
         /// <summary>
         /// Primary (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Primary")]
+        [Display(Name = "Primary")]
         public bool? IsPrimary { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -14698,14 +14698,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -14713,21 +14713,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -14744,7 +14744,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -14752,7 +14752,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -14760,7 +14760,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -14768,49 +14768,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -14832,7 +14832,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -14840,14 +14840,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -14855,7 +14855,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -14863,7 +14863,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -14871,14 +14871,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -14886,7 +14886,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -14903,14 +14903,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity History ID")]
+        [Display(Name = "Opportunity History ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -14918,7 +14918,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity ID")]
+        [Display(Name = "Opportunity ID")]
         public string OpportunityId { get; set; }
 
         /// <summary>
@@ -14926,14 +14926,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -14941,7 +14941,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -14949,7 +14949,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -14957,7 +14957,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -14974,7 +14974,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity History ID")]
+        [Display(Name = "Opportunity History ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -14982,7 +14982,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity ID")]
+        [Display(Name = "Opportunity ID")]
         public string OpportunityId { get; set; }
 
         /// <summary>
@@ -14990,14 +14990,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -15005,7 +15005,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Stage Name")]
+        [Display(Name = "Stage Name")]
         public string StageName { get; set; }
 
         /// <summary>
@@ -15018,14 +15018,14 @@ namespace Sharpforce
         /// Expected Revenue (currency type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Expected Revenue")]
+        [Display(Name = "Expected Revenue")]
         public string ExpectedRevenue { get; set; }
 
         /// <summary>
         /// Close Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Close Date")]
+        [Display(Name = "Close Date")]
         public string CloseDate { get; set; }
 
         /// <summary>
@@ -15039,21 +15039,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("To ForecastCategory")]
+        [Display(Name = "To ForecastCategory")]
         public string ForecastCategory { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -15070,7 +15070,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Line Item ID")]
+        [Display(Name = "Line Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -15078,14 +15078,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity ID")]
+        [Display(Name = "Opportunity ID")]
         public string OpportunityId { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
@@ -15093,7 +15093,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Price Book Entry ID")]
+        [Display(Name = "Price Book Entry ID")]
         public string PricebookEntryId { get; set; }
 
         /// <summary>
@@ -15104,40 +15104,40 @@ namespace Sharpforce
         /// <summary>
         /// Total Price (currency type in Salesforce)
         /// </summary>
-        [DisplayName("Total Price")]
+        [Display(Name = "Total Price")]
         public string TotalPrice { get; set; }
 
         /// <summary>
         /// Sales Price (currency type in Salesforce)
         /// </summary>
-        [DisplayName("Sales Price")]
+        [Display(Name = "Sales Price")]
         public string UnitPrice { get; set; }
 
         /// <summary>
         /// List Price (currency type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("List Price")]
+        [Display(Name = "List Price")]
         public string ListPrice { get; set; }
 
         /// <summary>
         /// Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Date")]
+        [Display(Name = "Date")]
         public string ServiceDate { get; set; }
 
         /// <summary>
         /// Line Description (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Line Description")]
+        [Display(Name = "Line Description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -15145,14 +15145,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -15160,21 +15160,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -15191,7 +15191,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity Partner ID")]
+        [Display(Name = "Opportunity Partner ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -15199,7 +15199,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity ID")]
+        [Display(Name = "Opportunity ID")]
         public string OpportunityId { get; set; }
 
         /// <summary>
@@ -15207,7 +15207,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountToId { get; set; }
 
         /// <summary>
@@ -15221,14 +15221,14 @@ namespace Sharpforce
         /// Primary (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Primary")]
+        [Display(Name = "Primary")]
         public bool? IsPrimary { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -15236,14 +15236,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -15251,21 +15251,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -15273,7 +15273,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Reverse Partner ID")]
+        [Display(Name = "Reverse Partner ID")]
         public string ReversePartnerId { get; set; }
 
     }
@@ -15290,7 +15290,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity Share ID")]
+        [Display(Name = "Opportunity Share ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -15298,7 +15298,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity ID")]
+        [Display(Name = "Opportunity ID")]
         public string OpportunityId { get; set; }
 
         /// <summary>
@@ -15306,7 +15306,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User/Group ID")]
+        [Display(Name = "User/Group ID")]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
@@ -15314,7 +15314,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Opportunity Access")]
+        [Display(Name = "Opportunity Access")]
         public string OpportunityAccessLevel { get; set; }
 
         /// <summary>
@@ -15322,14 +15322,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Row Cause")]
+        [Display(Name = "Row Cause")]
         public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -15337,14 +15337,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -15361,7 +15361,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity Stage ID")]
+        [Display(Name = "Opportunity Stage ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -15369,35 +15369,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Master Label")]
+        [Display(Name = "Master Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Is Active (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Active")]
+        [Display(Name = "Is Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Closed")]
+        [Display(Name = "Closed")]
         public bool? IsClosed { get; set; }
 
         /// <summary>
         /// Won (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Won")]
+        [Display(Name = "Won")]
         public bool? IsWon { get; set; }
 
         /// <summary>
@@ -15405,7 +15405,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Forecast Category")]
+        [Display(Name = "Forecast Category")]
         public string ForecastCategory { get; set; }
 
         /// <summary>
@@ -15413,14 +15413,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Forecast Category Name")]
+        [Display(Name = "Forecast Category Name")]
         public string ForecastCategoryName { get; set; }
 
         /// <summary>
         /// Probability (%) (percent type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Probability (%)")]
+        [Display(Name = "Probability (%)")]
         public string DefaultProbability { get; set; }
 
         /// <summary>
@@ -15435,14 +15435,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -15450,21 +15450,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -15481,7 +15481,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Organization-wide From Email Address ID")]
+        [Display(Name = "Organization-wide From Email Address ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -15489,21 +15489,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -15511,34 +15511,34 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Email Address (email type in Salesforce)
         /// </summary>
         [StringLength(270)]
-        [DisplayName("Email Address")]
+        [Display(Name = "Email Address")]
         public string Address { get; set; }
 
         /// <summary>
         /// Display Name (string type in Salesforce)
         /// </summary>
         [StringLength(300)]
-        [DisplayName("Display Name")]
+        [Display(Name = "Display Name")]
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Allow All Profiles (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Allow All Profiles")]
+        [Display(Name = "Allow All Profiles")]
         public bool? IsAllowAllProfiles { get; set; }
 
     }
@@ -15555,7 +15555,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Organization ID")]
+        [Display(Name = "Organization ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -15586,14 +15586,14 @@ namespace Sharpforce
         /// State/Province (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("State/Province")]
+        [Display(Name = "State/Province")]
         public string State { get; set; }
 
         /// <summary>
         /// Zip/Postal Code (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Zip/Postal Code")]
+        [Display(Name = "Zip/Postal Code")]
         public string PostalCode { get; set; }
 
         /// <summary>
@@ -15629,59 +15629,59 @@ namespace Sharpforce
         /// Primary Contact (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Primary Contact")]
+        [Display(Name = "Primary Contact")]
         public string PrimaryContact { get; set; }
 
         /// <summary>
         /// Locale (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Locale")]
+        [Display(Name = "Locale")]
         public string DefaultLocaleSidKey { get; set; }
 
         /// <summary>
         /// Language (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Language")]
+        [Display(Name = "Language")]
         public string LanguageLocaleKey { get; set; }
 
         /// <summary>
         /// Info Emails (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Info Emails")]
+        [Display(Name = "Info Emails")]
         public bool? ReceivesInfoEmails { get; set; }
 
         /// <summary>
         /// Info Emails Admin (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Info Emails Admin")]
+        [Display(Name = "Info Emails Admin")]
         public bool? ReceivesAdminInfoEmails { get; set; }
 
         /// <summary>
         /// RequireOpportunityProducts (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("RequireOpportunityProducts")]
+        [Display(Name = "RequireOpportunityProducts")]
         public bool? PreferencesRequireOpportunityProducts { get; set; }
 
         /// <summary>
         /// S1BrowserEnabled (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("S1BrowserEnabled")]
+        [Display(Name = "S1BrowserEnabled")]
         public bool? PreferencesS1BrowserEnabled { get; set; }
 
         /// <summary>
         /// Fiscal Year Starts In (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Fiscal Year Starts In")]
+        [Display(Name = "Fiscal Year Starts In")]
         public string FiscalYearStartMonth { get; set; }
 
         /// <summary>
         /// Fiscal Year Name by Start (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Fiscal Year Name by Start")]
+        [Display(Name = "Fiscal Year Name by Start")]
         public bool? UsesStartDateAsFiscalYearName { get; set; }
 
         /// <summary>
@@ -15689,7 +15689,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Default Account Access")]
+        [Display(Name = "Default Account Access")]
         public string DefaultAccountAccess { get; set; }
 
         /// <summary>
@@ -15697,7 +15697,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Default Contact Access")]
+        [Display(Name = "Default Contact Access")]
         public string DefaultContactAccess { get; set; }
 
         /// <summary>
@@ -15705,7 +15705,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Default Opportunity Access")]
+        [Display(Name = "Default Opportunity Access")]
         public string DefaultOpportunityAccess { get; set; }
 
         /// <summary>
@@ -15713,7 +15713,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Default Lead Access")]
+        [Display(Name = "Default Lead Access")]
         public string DefaultLeadAccess { get; set; }
 
         /// <summary>
@@ -15721,7 +15721,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Default Case Access")]
+        [Display(Name = "Default Case Access")]
         public string DefaultCaseAccess { get; set; }
 
         /// <summary>
@@ -15729,7 +15729,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Default Calendar Access")]
+        [Display(Name = "Default Calendar Access")]
         public string DefaultCalendarAccess { get; set; }
 
         /// <summary>
@@ -15737,7 +15737,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Default Price Book Access")]
+        [Display(Name = "Default Price Book Access")]
         public string DefaultPricebookAccess { get; set; }
 
         /// <summary>
@@ -15745,14 +15745,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Default Campaign Access")]
+        [Display(Name = "Default Campaign Access")]
         public string DefaultCampaignAccess { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -15760,21 +15760,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Compliance BCC Email")]
+        [Display(Name = "Compliance BCC Email")]
         public string ComplianceBccEmail { get; set; }
 
         /// <summary>
         /// UI Skin (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("UI Skin")]
+        [Display(Name = "UI Skin")]
         public string UiSkin { get; set; }
 
         /// <summary>
         /// Trial Expiration Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Trial Expiration Date")]
+        [Display(Name = "Trial Expiration Date")]
         public string TrialExpirationDate { get; set; }
 
         /// <summary>
@@ -15782,35 +15782,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Edition")]
+        [Display(Name = "Edition")]
         public string OrganizationType { get; set; }
 
         /// <summary>
         /// Web to Cases Default Origin (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Web to Cases Default Origin")]
+        [Display(Name = "Web to Cases Default Origin")]
         public string WebToCaseDefaultOrigin { get; set; }
 
         /// <summary>
         /// Monthly Page Views Used (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Monthly Page Views Used")]
+        [Display(Name = "Monthly Page Views Used")]
         public string MonthlyPageViewsUsed { get; set; }
 
         /// <summary>
         /// Monthly Page Views Allowed (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Monthly Page Views Allowed")]
+        [Display(Name = "Monthly Page Views Allowed")]
         public string MonthlyPageViewsEntitlement { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -15818,14 +15818,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -15833,7 +15833,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
     }
@@ -15850,7 +15850,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Partner ID")]
+        [Display(Name = "Partner ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -15858,7 +15858,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Opportunity ID")]
+        [Display(Name = "Opportunity ID")]
         public string OpportunityId { get; set; }
 
         /// <summary>
@@ -15866,7 +15866,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account From ID")]
+        [Display(Name = "Account From ID")]
         public string AccountFromId { get; set; }
 
         /// <summary>
@@ -15874,7 +15874,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account To ID")]
+        [Display(Name = "Account To ID")]
         public string AccountToId { get; set; }
 
         /// <summary>
@@ -15888,14 +15888,14 @@ namespace Sharpforce
         /// Primary (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Primary")]
+        [Display(Name = "Primary")]
         public bool? IsPrimary { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -15903,14 +15903,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -15918,21 +15918,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -15940,7 +15940,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Reverse Partner ID")]
+        [Display(Name = "Reverse Partner ID")]
         public string ReversePartnerId { get; set; }
 
     }
@@ -15957,7 +15957,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Partner Role Value ID")]
+        [Display(Name = "Partner Role Value ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -15965,14 +15965,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Master Label")]
+        [Display(Name = "Master Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
@@ -15980,7 +15980,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Reverse Role")]
+        [Display(Name = "Reverse Role")]
         public string ReverseRole { get; set; }
 
         /// <summary>
@@ -15988,14 +15988,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -16003,21 +16003,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -16034,7 +16034,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Period ID")]
+        [Display(Name = "Period ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -16042,7 +16042,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Fiscal Year Settings ID")]
+        [Display(Name = "Fiscal Year Settings ID")]
         public string FiscalYearSettingsId { get; set; }
 
         /// <summary>
@@ -16056,28 +16056,28 @@ namespace Sharpforce
         /// Start Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Start Date")]
+        [Display(Name = "Start Date")]
         public string StartDate { get; set; }
 
         /// <summary>
         /// End Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("End Date")]
+        [Display(Name = "End Date")]
         public string EndDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Is Forecast Period (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Forecast Period")]
+        [Display(Name = "Is Forecast Period")]
         public bool? IsForecastPeriod { get; set; }
 
         /// <summary>
@@ -16085,7 +16085,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Quarter Name")]
+        [Display(Name = "Quarter Name")]
         public string QuarterLabel { get; set; }
 
         /// <summary>
@@ -16093,7 +16093,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Period Name")]
+        [Display(Name = "Period Name")]
         public string PeriodLabel { get; set; }
 
         /// <summary>
@@ -16116,21 +16116,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("PermissionSet ID")]
+        [Display(Name = "PermissionSet ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Permission Set Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Permission Set Name")]
+        [Display(Name = "Permission Set Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Permission Set Label (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Permission Set Label")]
+        [Display(Name = "Permission Set Label")]
         public string Label { get; set; }
 
         /// <summary>
@@ -16138,7 +16138,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User License ID")]
+        [Display(Name = "User License ID")]
         public string UserLicenseId { get; set; }
 
         /// <summary>
@@ -16146,452 +16146,452 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Profile ID")]
+        [Display(Name = "Profile ID")]
         public string ProfileId { get; set; }
 
         /// <summary>
         /// Is Owned By Profile (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Owned By Profile")]
+        [Display(Name = "Is Owned By Profile")]
         public bool? IsOwnedByProfile { get; set; }
 
         /// <summary>
         /// Edit Tasks (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Tasks")]
+        [Display(Name = "Edit Tasks")]
         public bool? PermissionsEditTask { get; set; }
 
         /// <summary>
         /// Edit Events (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Events")]
+        [Display(Name = "Edit Events")]
         public bool? PermissionsEditEvent { get; set; }
 
         /// <summary>
         /// Manage Users (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Users")]
+        [Display(Name = "Manage Users")]
         public bool? PermissionsManageUsers { get; set; }
 
         /// <summary>
         /// Modify All Data (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Modify All Data")]
+        [Display(Name = "Modify All Data")]
         public bool? PermissionsModifyAllData { get; set; }
 
         /// <summary>
         /// Manage Cases (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Cases")]
+        [Display(Name = "Manage Cases")]
         public bool? PermissionsManageCases { get; set; }
 
         /// <summary>
         /// Mass Edits from Lists (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Mass Edits from Lists")]
+        [Display(Name = "Mass Edits from Lists")]
         public bool? PermissionsMassInlineEdit { get; set; }
 
         /// <summary>
         /// Manage Articles (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Articles")]
+        [Display(Name = "Manage Articles")]
         public bool? PermissionsEditKnowledge { get; set; }
 
         /// <summary>
         /// Manage Salesforce Knowledge (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Salesforce Knowledge")]
+        [Display(Name = "Manage Salesforce Knowledge")]
         public bool? PermissionsManageKnowledge { get; set; }
 
         /// <summary>
         /// Manage Published Solutions (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Published Solutions")]
+        [Display(Name = "Manage Published Solutions")]
         public bool? PermissionsManageSolutions { get; set; }
 
         /// <summary>
         /// Customize Application (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Customize Application")]
+        [Display(Name = "Customize Application")]
         public bool? PermissionsCustomizeApplication { get; set; }
 
         /// <summary>
         /// Edit Read Only Fields (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Read Only Fields")]
+        [Display(Name = "Edit Read Only Fields")]
         public bool? PermissionsEditReadonlyFields { get; set; }
 
         /// <summary>
         /// Run Reports (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Run Reports")]
+        [Display(Name = "Run Reports")]
         public bool? PermissionsRunReports { get; set; }
 
         /// <summary>
         /// View Setup and Configuration (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("View Setup and Configuration")]
+        [Display(Name = "View Setup and Configuration")]
         public bool? PermissionsViewSetup { get; set; }
 
         /// <summary>
         /// Transfer Record (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Transfer Record")]
+        [Display(Name = "Transfer Record")]
         public bool? PermissionsTransferAnyEntity { get; set; }
 
         /// <summary>
         /// Report Builder (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Report Builder")]
+        [Display(Name = "Report Builder")]
         public bool? PermissionsNewReportBuilder { get; set; }
 
         /// <summary>
         /// Import Leads (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Import Leads")]
+        [Display(Name = "Import Leads")]
         public bool? PermissionsImportLeads { get; set; }
 
         /// <summary>
         /// Manage Leads (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Leads")]
+        [Display(Name = "Manage Leads")]
         public bool? PermissionsManageLeads { get; set; }
 
         /// <summary>
         /// Transfer Leads (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Transfer Leads")]
+        [Display(Name = "Transfer Leads")]
         public bool? PermissionsTransferAnyLead { get; set; }
 
         /// <summary>
         /// View All Data (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("View All Data")]
+        [Display(Name = "View All Data")]
         public bool? PermissionsViewAllData { get; set; }
 
         /// <summary>
         /// Manage Public Documents (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Public Documents")]
+        [Display(Name = "Manage Public Documents")]
         public bool? PermissionsEditPublicDocuments { get; set; }
 
         /// <summary>
         /// Send Stay-in-Touch Requests (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Send Stay-in-Touch Requests")]
+        [Display(Name = "Send Stay-in-Touch Requests")]
         public bool? PermissionsSendSitRequests { get; set; }
 
         /// <summary>
         /// Manage Connected Apps (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Connected Apps")]
+        [Display(Name = "Manage Connected Apps")]
         public bool? PermissionsManageRemoteAccess { get; set; }
 
         /// <summary>
         /// Drag-and-Drop Dashboard Builder (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Drag-and-Drop Dashboard Builder")]
+        [Display(Name = "Drag-and-Drop Dashboard Builder")]
         public bool? PermissionsCanUseNewDashboardBuilder { get; set; }
 
         /// <summary>
         /// Manage Categories (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Categories")]
+        [Display(Name = "Manage Categories")]
         public bool? PermissionsManageCategories { get; set; }
 
         /// <summary>
         /// Convert Leads (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Convert Leads")]
+        [Display(Name = "Convert Leads")]
         public bool? PermissionsConvertLeads { get; set; }
 
         /// <summary>
         /// Password Never Expires (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Password Never Expires")]
+        [Display(Name = "Password Never Expires")]
         public bool? PermissionsPasswordNeverExpires { get; set; }
 
         /// <summary>
         /// Use Team Reassignment Wizards (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Use Team Reassignment Wizards")]
+        [Display(Name = "Use Team Reassignment Wizards")]
         public bool? PermissionsUseTeamReassignWizards { get; set; }
 
         /// <summary>
         /// Download AppExchange Packages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Download AppExchange Packages")]
+        [Display(Name = "Download AppExchange Packages")]
         public bool? PermissionsInstallPackaging { get; set; }
 
         /// <summary>
         /// Upload AppExchange Packages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Upload AppExchange Packages")]
+        [Display(Name = "Upload AppExchange Packages")]
         public bool? PermissionsPublishPackaging { get; set; }
 
         /// <summary>
         /// Edit Opportunity Product Sales Price (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Opportunity Product Sales Price")]
+        [Display(Name = "Edit Opportunity Product Sales Price")]
         public bool? PermissionsEditOppLineItemUnitPrice { get; set; }
 
         /// <summary>
         /// Create AppExchange Packages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Create AppExchange Packages")]
+        [Display(Name = "Create AppExchange Packages")]
         public bool? PermissionsCreatePackaging { get; set; }
 
         /// <summary>
         /// Bulk API Hard Delete (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Bulk API Hard Delete")]
+        [Display(Name = "Bulk API Hard Delete")]
         public bool? PermissionsBulkApiHardDelete { get; set; }
 
         /// <summary>
         /// Import Solutions (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Import Solutions")]
+        [Display(Name = "Import Solutions")]
         public bool? PermissionsSolutionImport { get; set; }
 
         /// <summary>
         /// Manage Call Centers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Call Centers")]
+        [Display(Name = "Manage Call Centers")]
         public bool? PermissionsManageCallCenters { get; set; }
 
         /// <summary>
         /// Manage Synonyms (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Synonyms")]
+        [Display(Name = "Manage Synonyms")]
         public bool? PermissionsManageSynonyms { get; set; }
 
         /// <summary>
         /// Manage Email Client Configurations (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Email Client Configurations")]
+        [Display(Name = "Manage Email Client Configurations")]
         public bool? PermissionsManageEmailClientConfig { get; set; }
 
         /// <summary>
         /// Send Outbound Messages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Send Outbound Messages")]
+        [Display(Name = "Send Outbound Messages")]
         public bool? PermissionsEnableNotifications { get; set; }
 
         /// <summary>
         /// Manage Data Integrations (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Data Integrations")]
+        [Display(Name = "Manage Data Integrations")]
         public bool? PermissionsManageDataIntegrations { get; set; }
 
         /// <summary>
         /// Deliver Uploaded Files and Personal Content (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Deliver Uploaded Files and Personal Content")]
+        [Display(Name = "Deliver Uploaded Files and Personal Content")]
         public bool? PermissionsDistributeFromPersWksp { get; set; }
 
         /// <summary>
         /// View Data Categories (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("View Data Categories")]
+        [Display(Name = "View Data Categories")]
         public bool? PermissionsViewDataCategories { get; set; }
 
         /// <summary>
         /// Manage Data Categories (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Data Categories")]
+        [Display(Name = "Manage Data Categories")]
         public bool? PermissionsManageDataCategories { get; set; }
 
         /// <summary>
         /// Author Apex (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Author Apex")]
+        [Display(Name = "Author Apex")]
         public bool? PermissionsAuthorApex { get; set; }
 
         /// <summary>
         /// Manage Mobile Configurations (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Mobile Configurations")]
+        [Display(Name = "Manage Mobile Configurations")]
         public bool? PermissionsManageMobile { get; set; }
 
         /// <summary>
         /// API Enabled (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("API Enabled")]
+        [Display(Name = "API Enabled")]
         public bool? PermissionsApiEnabled { get; set; }
 
         /// <summary>
         /// Manage Custom Report Types (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Custom Report Types")]
+        [Display(Name = "Manage Custom Report Types")]
         public bool? PermissionsManageCustomReportTypes { get; set; }
 
         /// <summary>
         /// Edit Case Comments (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Case Comments")]
+        [Display(Name = "Edit Case Comments")]
         public bool? PermissionsEditCaseComments { get; set; }
 
         /// <summary>
         /// Transfer Cases (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Transfer Cases")]
+        [Display(Name = "Transfer Cases")]
         public bool? PermissionsTransferAnyCase { get; set; }
 
         /// <summary>
         /// Manage Analytic Snapshots (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Analytic Snapshots")]
+        [Display(Name = "Manage Analytic Snapshots")]
         public bool? PermissionsManageAnalyticSnapshots { get; set; }
 
         /// <summary>
         /// Schedule Reports (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Schedule Reports")]
+        [Display(Name = "Schedule Reports")]
         public bool? PermissionsScheduleReports { get; set; }
 
         /// <summary>
         /// Manage Business Hours Holidays (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Business Hours Holidays")]
+        [Display(Name = "Manage Business Hours Holidays")]
         public bool? PermissionsManageBusinessHourHolidays { get; set; }
 
         /// <summary>
         /// Manage Dynamic Dashboards (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Dynamic Dashboards")]
+        [Display(Name = "Manage Dynamic Dashboards")]
         public bool? PermissionsManageDynamicDashboards { get; set; }
 
         /// <summary>
         /// Show Custom Sidebar On All Pages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Show Custom Sidebar On All Pages")]
+        [Display(Name = "Show Custom Sidebar On All Pages")]
         public bool? PermissionsCustomSidebarOnAllPages { get; set; }
 
         /// <summary>
         /// Manage Force.com Flow (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Force.com Flow")]
+        [Display(Name = "Manage Force.com Flow")]
         public bool? PermissionsManageInteraction { get; set; }
 
         /// <summary>
         /// View My Team's Dashboards (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("View My Team's Dashboards")]
+        [Display(Name = "View My Team's Dashboards")]
         public bool? PermissionsViewMyTeamsDashboards { get; set; }
 
         /// <summary>
         /// Reset User Passwords and Unlock Users (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Reset User Passwords and Unlock Users")]
+        [Display(Name = "Reset User Passwords and Unlock Users")]
         public bool? PermissionsResetPasswords { get; set; }
 
         /// <summary>
         /// Require Force.com Flow User Feature License (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Require Force.com Flow User Feature License")]
+        [Display(Name = "Require Force.com Flow User Feature License")]
         public bool? PermissionsFlowUFLRequired { get; set; }
 
         /// <summary>
         /// Insert System Field Values for Chatter Feeds (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Insert System Field Values for Chatter Feeds")]
+        [Display(Name = "Insert System Field Values for Chatter Feeds")]
         public bool? PermissionsCanInsertFeedSystemFields { get; set; }
 
         /// <summary>
         /// Manage Knowledge Article Import/Export (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Knowledge Article Import/Export")]
+        [Display(Name = "Manage Knowledge Article Import/Export")]
         public bool? PermissionsManageKnowledgeImportExport { get; set; }
 
         /// <summary>
         /// Manage Email Templates (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Email Templates")]
+        [Display(Name = "Manage Email Templates")]
         public bool? PermissionsEmailTemplateManagement { get; set; }
 
         /// <summary>
         /// Email Administration (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Email Administration")]
+        [Display(Name = "Email Administration")]
         public bool? PermissionsEmailAdministration { get; set; }
 
         /// <summary>
         /// Manage Chatter Messages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Chatter Messages")]
+        [Display(Name = "Manage Chatter Messages")]
         public bool? PermissionsManageChatterMessages { get; set; }
 
         /// <summary>
         /// Create and Share Links to Chatter Files (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Create and Share Links to Chatter Files")]
+        [Display(Name = "Create and Share Links to Chatter Files")]
         public bool? PermissionsChatterFileLink { get; set; }
 
         /// <summary>
         /// Use Case Feed (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Use Case Feed")]
+        [Display(Name = "Use Case Feed")]
         public bool? PermissionsViewCaseInteraction { get; set; }
 
         /// <summary>
         /// Manage Auth. Providers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Auth. Providers")]
+        [Display(Name = "Manage Auth. Providers")]
         public bool? PermissionsManageAuthProviders { get; set; }
 
         /// <summary>
         /// Run Flows (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Run Flows")]
+        [Display(Name = "Run Flows")]
         public bool? PermissionsRunFlow { get; set; }
 
         /// <summary>
         /// View All Users (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("View All Users")]
+        [Display(Name = "View All Users")]
         public bool? PermissionsViewAllUsers { get; set; }
 
         /// <summary>
         /// Knowledge One (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Knowledge One")]
+        [Display(Name = "Knowledge One")]
         public bool? PermissionsAllowUniversalSearch { get; set; }
 
         /// <summary>
         /// Connect Organization to Environment Hub (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Connect Organization to Environment Hub")]
+        [Display(Name = "Connect Organization to Environment Hub")]
         public bool? PermissionsConnectOrgToEnvironmentHub { get; set; }
 
         /// <summary>
         /// Enable Work.com Calibration (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Enable Work.com Calibration")]
+        [Display(Name = "Enable Work.com Calibration")]
         public bool? PermissionsWorkCalibrationUser { get; set; }
 
         /// <summary>
         /// Enable Work.com (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Enable Work.com")]
+        [Display(Name = "Enable Work.com")]
         public bool? PermissionsWorkDotComUserPerm { get; set; }
 
         /// <summary>
         /// Sales Console (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Sales Console")]
+        [Display(Name = "Sales Console")]
         public bool? PermissionsSalesConsole { get; set; }
 
         /// <summary>
         /// Use Identity Connect (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Use Identity Connect")]
+        [Display(Name = "Use Identity Connect")]
         public bool? PermissionsIdentityConnect { get; set; }
 
         /// <summary>
         /// Allow View Knowledge (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Allow View Knowledge")]
+        [Display(Name = "Allow View Knowledge")]
         public bool? PermissionsAllowViewKnowledge { get; set; }
 
         /// <summary>
@@ -16604,7 +16604,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -16612,14 +16612,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -16627,14 +16627,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -16642,7 +16642,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
     }
@@ -16659,7 +16659,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("PermissionSetAssignment ID")]
+        [Display(Name = "PermissionSetAssignment ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -16667,7 +16667,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("PermissionSet ID")]
+        [Display(Name = "PermissionSet ID")]
         public string PermissionSetId { get; set; }
 
         /// <summary>
@@ -16675,14 +16675,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Assignee ID")]
+        [Display(Name = "Assignee ID")]
         public string AssigneeId { get; set; }
 
         /// <summary>
         /// Date Assigned (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Date Assigned")]
+        [Display(Name = "Date Assigned")]
         public string SystemModstamp { get; set; }
 
     }
@@ -16699,14 +16699,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Permission Set License ID")]
+        [Display(Name = "Permission Set License ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -16714,7 +16714,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Developer Name")]
+        [Display(Name = "Developer Name")]
         public string DeveloperName { get; set; }
 
         /// <summary>
@@ -16722,7 +16722,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Master Language")]
+        [Display(Name = "Master Language")]
         public string Language { get; set; }
 
         /// <summary>
@@ -16730,14 +16730,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Permission Set License Label")]
+        [Display(Name = "Permission Set License Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -16745,14 +16745,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -16760,14 +16760,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -16775,14 +16775,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Permission Set License Key")]
+        [Display(Name = "Permission Set License Key")]
         public string PermissionSetLicenseKey { get; set; }
 
         /// <summary>
         /// Total Licenses (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Total Licenses")]
+        [Display(Name = "Total Licenses")]
         public string TotalLicenses { get; set; }
 
         /// <summary>
@@ -16796,525 +16796,525 @@ namespace Sharpforce
         /// Expiration Date (date type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Expiration Date")]
+        [Display(Name = "Expiration Date")]
         public string ExpirationDate { get; set; }
 
         /// <summary>
         /// Edit Tasks (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Edit Tasks")]
+        [Display(Name = "Edit Tasks")]
         public bool? MaximumPermissionsEditTask { get; set; }
 
         /// <summary>
         /// Edit Events (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Edit Events")]
+        [Display(Name = "Edit Events")]
         public bool? MaximumPermissionsEditEvent { get; set; }
 
         /// <summary>
         /// Manage Users (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Users")]
+        [Display(Name = "Manage Users")]
         public bool? MaximumPermissionsManageUsers { get; set; }
 
         /// <summary>
         /// Modify All Data (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Modify All Data")]
+        [Display(Name = "Modify All Data")]
         public bool? MaximumPermissionsModifyAllData { get; set; }
 
         /// <summary>
         /// Manage Cases (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Cases")]
+        [Display(Name = "Manage Cases")]
         public bool? MaximumPermissionsManageCases { get; set; }
 
         /// <summary>
         /// Mass Edits from Lists (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Mass Edits from Lists")]
+        [Display(Name = "Mass Edits from Lists")]
         public bool? MaximumPermissionsMassInlineEdit { get; set; }
 
         /// <summary>
         /// Manage Articles (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Articles")]
+        [Display(Name = "Manage Articles")]
         public bool? MaximumPermissionsEditKnowledge { get; set; }
 
         /// <summary>
         /// Manage Salesforce Knowledge (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Salesforce Knowledge")]
+        [Display(Name = "Manage Salesforce Knowledge")]
         public bool? MaximumPermissionsManageKnowledge { get; set; }
 
         /// <summary>
         /// Manage Published Solutions (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Published Solutions")]
+        [Display(Name = "Manage Published Solutions")]
         public bool? MaximumPermissionsManageSolutions { get; set; }
 
         /// <summary>
         /// Customize Application (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Customize Application")]
+        [Display(Name = "Customize Application")]
         public bool? MaximumPermissionsCustomizeApplication { get; set; }
 
         /// <summary>
         /// Edit Read Only Fields (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Edit Read Only Fields")]
+        [Display(Name = "Edit Read Only Fields")]
         public bool? MaximumPermissionsEditReadonlyFields { get; set; }
 
         /// <summary>
         /// Run Reports (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Run Reports")]
+        [Display(Name = "Run Reports")]
         public bool? MaximumPermissionsRunReports { get; set; }
 
         /// <summary>
         /// View Setup and Configuration (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("View Setup and Configuration")]
+        [Display(Name = "View Setup and Configuration")]
         public bool? MaximumPermissionsViewSetup { get; set; }
 
         /// <summary>
         /// Transfer Record (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Transfer Record")]
+        [Display(Name = "Transfer Record")]
         public bool? MaximumPermissionsTransferAnyEntity { get; set; }
 
         /// <summary>
         /// Report Builder (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Report Builder")]
+        [Display(Name = "Report Builder")]
         public bool? MaximumPermissionsNewReportBuilder { get; set; }
 
         /// <summary>
         /// Import Leads (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Import Leads")]
+        [Display(Name = "Import Leads")]
         public bool? MaximumPermissionsImportLeads { get; set; }
 
         /// <summary>
         /// Manage Leads (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Leads")]
+        [Display(Name = "Manage Leads")]
         public bool? MaximumPermissionsManageLeads { get; set; }
 
         /// <summary>
         /// Transfer Leads (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Transfer Leads")]
+        [Display(Name = "Transfer Leads")]
         public bool? MaximumPermissionsTransferAnyLead { get; set; }
 
         /// <summary>
         /// View All Data (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("View All Data")]
+        [Display(Name = "View All Data")]
         public bool? MaximumPermissionsViewAllData { get; set; }
 
         /// <summary>
         /// Manage Public Documents (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Public Documents")]
+        [Display(Name = "Manage Public Documents")]
         public bool? MaximumPermissionsEditPublicDocuments { get; set; }
 
         /// <summary>
         /// Send Stay-in-Touch Requests (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Send Stay-in-Touch Requests")]
+        [Display(Name = "Send Stay-in-Touch Requests")]
         public bool? MaximumPermissionsSendSitRequests { get; set; }
 
         /// <summary>
         /// Manage Connected Apps (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Connected Apps")]
+        [Display(Name = "Manage Connected Apps")]
         public bool? MaximumPermissionsManageRemoteAccess { get; set; }
 
         /// <summary>
         /// Drag-and-Drop Dashboard Builder (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Drag-and-Drop Dashboard Builder")]
+        [Display(Name = "Drag-and-Drop Dashboard Builder")]
         public bool? MaximumPermissionsCanUseNewDashboardBuilder { get; set; }
 
         /// <summary>
         /// Manage Categories (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Categories")]
+        [Display(Name = "Manage Categories")]
         public bool? MaximumPermissionsManageCategories { get; set; }
 
         /// <summary>
         /// Convert Leads (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Convert Leads")]
+        [Display(Name = "Convert Leads")]
         public bool? MaximumPermissionsConvertLeads { get; set; }
 
         /// <summary>
         /// Password Never Expires (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Password Never Expires")]
+        [Display(Name = "Password Never Expires")]
         public bool? MaximumPermissionsPasswordNeverExpires { get; set; }
 
         /// <summary>
         /// Use Team Reassignment Wizards (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Use Team Reassignment Wizards")]
+        [Display(Name = "Use Team Reassignment Wizards")]
         public bool? MaximumPermissionsUseTeamReassignWizards { get; set; }
 
         /// <summary>
         /// Download AppExchange Packages (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Download AppExchange Packages")]
+        [Display(Name = "Download AppExchange Packages")]
         public bool? MaximumPermissionsInstallPackaging { get; set; }
 
         /// <summary>
         /// Upload AppExchange Packages (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Upload AppExchange Packages")]
+        [Display(Name = "Upload AppExchange Packages")]
         public bool? MaximumPermissionsPublishPackaging { get; set; }
 
         /// <summary>
         /// Edit Opportunity Product Sales Price (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Edit Opportunity Product Sales Price")]
+        [Display(Name = "Edit Opportunity Product Sales Price")]
         public bool? MaximumPermissionsEditOppLineItemUnitPrice { get; set; }
 
         /// <summary>
         /// Create AppExchange Packages (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Create AppExchange Packages")]
+        [Display(Name = "Create AppExchange Packages")]
         public bool? MaximumPermissionsCreatePackaging { get; set; }
 
         /// <summary>
         /// Bulk API Hard Delete (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Bulk API Hard Delete")]
+        [Display(Name = "Bulk API Hard Delete")]
         public bool? MaximumPermissionsBulkApiHardDelete { get; set; }
 
         /// <summary>
         /// Import Solutions (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Import Solutions")]
+        [Display(Name = "Import Solutions")]
         public bool? MaximumPermissionsSolutionImport { get; set; }
 
         /// <summary>
         /// Manage Call Centers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Call Centers")]
+        [Display(Name = "Manage Call Centers")]
         public bool? MaximumPermissionsManageCallCenters { get; set; }
 
         /// <summary>
         /// Manage Synonyms (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Synonyms")]
+        [Display(Name = "Manage Synonyms")]
         public bool? MaximumPermissionsManageSynonyms { get; set; }
 
         /// <summary>
         /// Manage Email Client Configurations (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Email Client Configurations")]
+        [Display(Name = "Manage Email Client Configurations")]
         public bool? MaximumPermissionsManageEmailClientConfig { get; set; }
 
         /// <summary>
         /// Send Outbound Messages (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Send Outbound Messages")]
+        [Display(Name = "Send Outbound Messages")]
         public bool? MaximumPermissionsEnableNotifications { get; set; }
 
         /// <summary>
         /// Manage Data Integrations (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Data Integrations")]
+        [Display(Name = "Manage Data Integrations")]
         public bool? MaximumPermissionsManageDataIntegrations { get; set; }
 
         /// <summary>
         /// Deliver Uploaded Files and Personal Content (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deliver Uploaded Files and Personal Content")]
+        [Display(Name = "Deliver Uploaded Files and Personal Content")]
         public bool? MaximumPermissionsDistributeFromPersWksp { get; set; }
 
         /// <summary>
         /// View Data Categories (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("View Data Categories")]
+        [Display(Name = "View Data Categories")]
         public bool? MaximumPermissionsViewDataCategories { get; set; }
 
         /// <summary>
         /// Manage Data Categories (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Data Categories")]
+        [Display(Name = "Manage Data Categories")]
         public bool? MaximumPermissionsManageDataCategories { get; set; }
 
         /// <summary>
         /// Author Apex (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Author Apex")]
+        [Display(Name = "Author Apex")]
         public bool? MaximumPermissionsAuthorApex { get; set; }
 
         /// <summary>
         /// Manage Mobile Configurations (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Mobile Configurations")]
+        [Display(Name = "Manage Mobile Configurations")]
         public bool? MaximumPermissionsManageMobile { get; set; }
 
         /// <summary>
         /// API Enabled (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("API Enabled")]
+        [Display(Name = "API Enabled")]
         public bool? MaximumPermissionsApiEnabled { get; set; }
 
         /// <summary>
         /// Manage Custom Report Types (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Custom Report Types")]
+        [Display(Name = "Manage Custom Report Types")]
         public bool? MaximumPermissionsManageCustomReportTypes { get; set; }
 
         /// <summary>
         /// Edit Case Comments (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Edit Case Comments")]
+        [Display(Name = "Edit Case Comments")]
         public bool? MaximumPermissionsEditCaseComments { get; set; }
 
         /// <summary>
         /// Transfer Cases (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Transfer Cases")]
+        [Display(Name = "Transfer Cases")]
         public bool? MaximumPermissionsTransferAnyCase { get; set; }
 
         /// <summary>
         /// Manage Analytic Snapshots (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Analytic Snapshots")]
+        [Display(Name = "Manage Analytic Snapshots")]
         public bool? MaximumPermissionsManageAnalyticSnapshots { get; set; }
 
         /// <summary>
         /// Schedule Reports (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Schedule Reports")]
+        [Display(Name = "Schedule Reports")]
         public bool? MaximumPermissionsScheduleReports { get; set; }
 
         /// <summary>
         /// Manage Business Hours Holidays (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Business Hours Holidays")]
+        [Display(Name = "Manage Business Hours Holidays")]
         public bool? MaximumPermissionsManageBusinessHourHolidays { get; set; }
 
         /// <summary>
         /// Manage Dynamic Dashboards (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Dynamic Dashboards")]
+        [Display(Name = "Manage Dynamic Dashboards")]
         public bool? MaximumPermissionsManageDynamicDashboards { get; set; }
 
         /// <summary>
         /// Show Custom Sidebar On All Pages (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Show Custom Sidebar On All Pages")]
+        [Display(Name = "Show Custom Sidebar On All Pages")]
         public bool? MaximumPermissionsCustomSidebarOnAllPages { get; set; }
 
         /// <summary>
         /// Manage Force.com Flow (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Force.com Flow")]
+        [Display(Name = "Manage Force.com Flow")]
         public bool? MaximumPermissionsManageInteraction { get; set; }
 
         /// <summary>
         /// View My Team's Dashboards (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("View My Team's Dashboards")]
+        [Display(Name = "View My Team's Dashboards")]
         public bool? MaximumPermissionsViewMyTeamsDashboards { get; set; }
 
         /// <summary>
         /// Reset User Passwords and Unlock Users (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Reset User Passwords and Unlock Users")]
+        [Display(Name = "Reset User Passwords and Unlock Users")]
         public bool? MaximumPermissionsResetPasswords { get; set; }
 
         /// <summary>
         /// Require Force.com Flow User Feature License (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Require Force.com Flow User Feature License")]
+        [Display(Name = "Require Force.com Flow User Feature License")]
         public bool? MaximumPermissionsFlowUFLRequired { get; set; }
 
         /// <summary>
         /// Insert System Field Values for Chatter Feeds (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Insert System Field Values for Chatter Feeds")]
+        [Display(Name = "Insert System Field Values for Chatter Feeds")]
         public bool? MaximumPermissionsCanInsertFeedSystemFields { get; set; }
 
         /// <summary>
         /// Manage Knowledge Article Import/Export (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Knowledge Article Import/Export")]
+        [Display(Name = "Manage Knowledge Article Import/Export")]
         public bool? MaximumPermissionsManageKnowledgeImportExport { get; set; }
 
         /// <summary>
         /// Manage Email Templates (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Email Templates")]
+        [Display(Name = "Manage Email Templates")]
         public bool? MaximumPermissionsEmailTemplateManagement { get; set; }
 
         /// <summary>
         /// Email Administration (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Email Administration")]
+        [Display(Name = "Email Administration")]
         public bool? MaximumPermissionsEmailAdministration { get; set; }
 
         /// <summary>
         /// Manage Chatter Messages (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Chatter Messages")]
+        [Display(Name = "Manage Chatter Messages")]
         public bool? MaximumPermissionsManageChatterMessages { get; set; }
 
         /// <summary>
         /// Create and Share Links to Chatter Files (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Create and Share Links to Chatter Files")]
+        [Display(Name = "Create and Share Links to Chatter Files")]
         public bool? MaximumPermissionsChatterFileLink { get; set; }
 
         /// <summary>
         /// Use Case Feed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Use Case Feed")]
+        [Display(Name = "Use Case Feed")]
         public bool? MaximumPermissionsViewCaseInteraction { get; set; }
 
         /// <summary>
         /// Manage Auth. Providers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Manage Auth. Providers")]
+        [Display(Name = "Manage Auth. Providers")]
         public bool? MaximumPermissionsManageAuthProviders { get; set; }
 
         /// <summary>
         /// Run Flows (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Run Flows")]
+        [Display(Name = "Run Flows")]
         public bool? MaximumPermissionsRunFlow { get; set; }
 
         /// <summary>
         /// View All Users (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("View All Users")]
+        [Display(Name = "View All Users")]
         public bool? MaximumPermissionsViewAllUsers { get; set; }
 
         /// <summary>
         /// Knowledge One (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Knowledge One")]
+        [Display(Name = "Knowledge One")]
         public bool? MaximumPermissionsAllowUniversalSearch { get; set; }
 
         /// <summary>
         /// Connect Organization to Environment Hub (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Connect Organization to Environment Hub")]
+        [Display(Name = "Connect Organization to Environment Hub")]
         public bool? MaximumPermissionsConnectOrgToEnvironmentHub { get; set; }
 
         /// <summary>
         /// Enable Work.com Calibration (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Enable Work.com Calibration")]
+        [Display(Name = "Enable Work.com Calibration")]
         public bool? MaximumPermissionsWorkCalibrationUser { get; set; }
 
         /// <summary>
         /// Enable Work.com (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Enable Work.com")]
+        [Display(Name = "Enable Work.com")]
         public bool? MaximumPermissionsWorkDotComUserPerm { get; set; }
 
         /// <summary>
         /// Sales Console (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sales Console")]
+        [Display(Name = "Sales Console")]
         public bool? MaximumPermissionsSalesConsole { get; set; }
 
         /// <summary>
         /// Use Identity Connect (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Use Identity Connect")]
+        [Display(Name = "Use Identity Connect")]
         public bool? MaximumPermissionsIdentityConnect { get; set; }
 
         /// <summary>
         /// Allow View Knowledge (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Allow View Knowledge")]
+        [Display(Name = "Allow View Knowledge")]
         public bool? MaximumPermissionsAllowViewKnowledge { get; set; }
 
         /// <summary>
         /// Used Licenses (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Used Licenses")]
+        [Display(Name = "Used Licenses")]
         public string UsedLicenses { get; set; }
 
     }
@@ -17331,21 +17331,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Permission Set License Assignment ID")]
+        [Display(Name = "Permission Set License Assignment ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -17353,14 +17353,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -17368,14 +17368,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Date Assigned (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Date Assigned")]
+        [Display(Name = "Date Assigned")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -17383,7 +17383,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Permission Set License ID")]
+        [Display(Name = "Permission Set License ID")]
         public string PermissionSetLicenseId { get; set; }
 
         /// <summary>
@@ -17391,7 +17391,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string AssigneeId { get; set; }
 
     }
@@ -17408,28 +17408,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Price Book ID")]
+        [Display(Name = "Price Book ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Price Book Name (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Price Book Name")]
+        [Display(Name = "Price Book Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -17437,14 +17437,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -17452,34 +17452,34 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
@@ -17492,7 +17492,7 @@ namespace Sharpforce
         /// Is Standard Price Book (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Standard Price Book")]
+        [Display(Name = "Is Standard Price Book")]
         public bool? IsStandard { get; set; }
 
     }
@@ -17509,14 +17509,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Price Book History ID")]
+        [Display(Name = "Price Book History ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -17524,7 +17524,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Price Book ID")]
+        [Display(Name = "Price Book ID")]
         public string Pricebook2Id { get; set; }
 
         /// <summary>
@@ -17532,14 +17532,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -17547,7 +17547,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -17555,7 +17555,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -17563,7 +17563,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -17580,7 +17580,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Price Book Entry ID")]
+        [Display(Name = "Price Book Entry ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -17588,7 +17588,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Product Name")]
+        [Display(Name = "Product Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -17596,7 +17596,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Price Book ID")]
+        [Display(Name = "Price Book ID")]
         public string Pricebook2Id { get; set; }
 
         /// <summary>
@@ -17604,32 +17604,32 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Product ID")]
+        [Display(Name = "Product ID")]
         public string Product2Id { get; set; }
 
         /// <summary>
         /// List Price (currency type in Salesforce)
         /// </summary>
-        [DisplayName("List Price")]
+        [Display(Name = "List Price")]
         public string UnitPrice { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
         /// Use Standard Price (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Use Standard Price")]
+        [Display(Name = "Use Standard Price")]
         public bool? UseStandardPrice { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -17637,14 +17637,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -17652,14 +17652,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -17667,14 +17667,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Product Code")]
+        [Display(Name = "Product Code")]
         public string ProductCode { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -17691,7 +17691,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Process Instance ID")]
+        [Display(Name = "Process Instance ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -17699,7 +17699,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Target Object ID")]
+        [Display(Name = "Target Object ID")]
         public string TargetObjectId { get; set; }
 
         /// <summary>
@@ -17713,14 +17713,14 @@ namespace Sharpforce
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -17728,14 +17728,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -17743,14 +17743,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -17767,14 +17767,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Process Instance History ID")]
+        [Display(Name = "Process Instance History ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Is Pending (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Pending")]
+        [Display(Name = "Is Pending")]
         public bool? IsPending { get; set; }
 
         /// <summary>
@@ -17782,7 +17782,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Process Instance ID")]
+        [Display(Name = "Process Instance ID")]
         public string ProcessInstanceId { get; set; }
 
         /// <summary>
@@ -17790,7 +17790,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Target Object ID")]
+        [Display(Name = "Target Object ID")]
         public string TargetObjectId { get; set; }
 
         /// <summary>
@@ -17798,7 +17798,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Status")]
+        [Display(Name = "Status")]
         public string StepStatus { get; set; }
 
         /// <summary>
@@ -17806,7 +17806,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Original Actor ID")]
+        [Display(Name = "Original Actor ID")]
         public string OriginalActorId { get; set; }
 
         /// <summary>
@@ -17814,7 +17814,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Actor ID")]
+        [Display(Name = "Actor ID")]
         public string ActorId { get; set; }
 
         /// <summary>
@@ -17834,14 +17834,14 @@ namespace Sharpforce
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -17849,14 +17849,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -17873,7 +17873,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Process Instance Step ID")]
+        [Display(Name = "Process Instance Step ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -17881,7 +17881,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Process Instance ID")]
+        [Display(Name = "Process Instance ID")]
         public string ProcessInstanceId { get; set; }
 
         /// <summary>
@@ -17889,7 +17889,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Step Status")]
+        [Display(Name = "Step Status")]
         public string StepStatus { get; set; }
 
         /// <summary>
@@ -17897,7 +17897,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Original Actor ID")]
+        [Display(Name = "Original Actor ID")]
         public string OriginalActorId { get; set; }
 
         /// <summary>
@@ -17905,7 +17905,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Actor ID")]
+        [Display(Name = "Actor ID")]
         public string ActorId { get; set; }
 
         /// <summary>
@@ -17919,7 +17919,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -17927,14 +17927,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -17951,42 +17951,42 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Process Instance Workitem ID")]
+        [Display(Name = "Process Instance Workitem ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Process Instance ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Process Instance ID")]
+        [Display(Name = "Process Instance ID")]
         public string ProcessInstanceId { get; set; }
 
         /// <summary>
         /// Original Actor ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Original Actor ID")]
+        [Display(Name = "Original Actor ID")]
         public string OriginalActorId { get; set; }
 
         /// <summary>
         /// Actor ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Actor ID")]
+        [Display(Name = "Actor ID")]
         public string ActorId { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -17994,14 +17994,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -18018,41 +18018,41 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Product ID")]
+        [Display(Name = "Product ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Product Name (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Product Name")]
+        [Display(Name = "Product Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Product Code (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Product Code")]
+        [Display(Name = "Product Code")]
         public string ProductCode { get; set; }
 
         /// <summary>
         /// Product Description (textarea type in Salesforce)
         /// </summary>
         [StringLength(4000)]
-        [DisplayName("Product Description")]
+        [Display(Name = "Product Description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -18060,14 +18060,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -18075,28 +18075,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Product Family (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Product Family")]
+        [Display(Name = "Product Family")]
         public string Family { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
     }
@@ -18113,7 +18113,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -18121,7 +18121,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -18129,7 +18129,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -18137,49 +18137,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -18201,7 +18201,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -18209,14 +18209,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -18224,7 +18224,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -18232,7 +18232,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -18240,14 +18240,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -18255,7 +18255,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -18272,7 +18272,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Profile ID")]
+        [Display(Name = "Profile ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -18284,439 +18284,439 @@ namespace Sharpforce
         /// <summary>
         /// Edit Tasks (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Tasks")]
+        [Display(Name = "Edit Tasks")]
         public bool? PermissionsEditTask { get; set; }
 
         /// <summary>
         /// Edit Events (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Events")]
+        [Display(Name = "Edit Events")]
         public bool? PermissionsEditEvent { get; set; }
 
         /// <summary>
         /// Manage Users (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Users")]
+        [Display(Name = "Manage Users")]
         public bool? PermissionsManageUsers { get; set; }
 
         /// <summary>
         /// Modify All Data (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Modify All Data")]
+        [Display(Name = "Modify All Data")]
         public bool? PermissionsModifyAllData { get; set; }
 
         /// <summary>
         /// Manage Cases (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Cases")]
+        [Display(Name = "Manage Cases")]
         public bool? PermissionsManageCases { get; set; }
 
         /// <summary>
         /// Mass Edits from Lists (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Mass Edits from Lists")]
+        [Display(Name = "Mass Edits from Lists")]
         public bool? PermissionsMassInlineEdit { get; set; }
 
         /// <summary>
         /// Manage Articles (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Articles")]
+        [Display(Name = "Manage Articles")]
         public bool? PermissionsEditKnowledge { get; set; }
 
         /// <summary>
         /// Manage Salesforce Knowledge (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Salesforce Knowledge")]
+        [Display(Name = "Manage Salesforce Knowledge")]
         public bool? PermissionsManageKnowledge { get; set; }
 
         /// <summary>
         /// Manage Published Solutions (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Published Solutions")]
+        [Display(Name = "Manage Published Solutions")]
         public bool? PermissionsManageSolutions { get; set; }
 
         /// <summary>
         /// Customize Application (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Customize Application")]
+        [Display(Name = "Customize Application")]
         public bool? PermissionsCustomizeApplication { get; set; }
 
         /// <summary>
         /// Edit Read Only Fields (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Read Only Fields")]
+        [Display(Name = "Edit Read Only Fields")]
         public bool? PermissionsEditReadonlyFields { get; set; }
 
         /// <summary>
         /// Run Reports (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Run Reports")]
+        [Display(Name = "Run Reports")]
         public bool? PermissionsRunReports { get; set; }
 
         /// <summary>
         /// View Setup and Configuration (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("View Setup and Configuration")]
+        [Display(Name = "View Setup and Configuration")]
         public bool? PermissionsViewSetup { get; set; }
 
         /// <summary>
         /// Transfer Record (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Transfer Record")]
+        [Display(Name = "Transfer Record")]
         public bool? PermissionsTransferAnyEntity { get; set; }
 
         /// <summary>
         /// Report Builder (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Report Builder")]
+        [Display(Name = "Report Builder")]
         public bool? PermissionsNewReportBuilder { get; set; }
 
         /// <summary>
         /// Import Leads (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Import Leads")]
+        [Display(Name = "Import Leads")]
         public bool? PermissionsImportLeads { get; set; }
 
         /// <summary>
         /// Manage Leads (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Leads")]
+        [Display(Name = "Manage Leads")]
         public bool? PermissionsManageLeads { get; set; }
 
         /// <summary>
         /// Transfer Leads (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Transfer Leads")]
+        [Display(Name = "Transfer Leads")]
         public bool? PermissionsTransferAnyLead { get; set; }
 
         /// <summary>
         /// View All Data (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("View All Data")]
+        [Display(Name = "View All Data")]
         public bool? PermissionsViewAllData { get; set; }
 
         /// <summary>
         /// Manage Public Documents (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Public Documents")]
+        [Display(Name = "Manage Public Documents")]
         public bool? PermissionsEditPublicDocuments { get; set; }
 
         /// <summary>
         /// Send Stay-in-Touch Requests (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Send Stay-in-Touch Requests")]
+        [Display(Name = "Send Stay-in-Touch Requests")]
         public bool? PermissionsSendSitRequests { get; set; }
 
         /// <summary>
         /// Manage Connected Apps (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Connected Apps")]
+        [Display(Name = "Manage Connected Apps")]
         public bool? PermissionsManageRemoteAccess { get; set; }
 
         /// <summary>
         /// Drag-and-Drop Dashboard Builder (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Drag-and-Drop Dashboard Builder")]
+        [Display(Name = "Drag-and-Drop Dashboard Builder")]
         public bool? PermissionsCanUseNewDashboardBuilder { get; set; }
 
         /// <summary>
         /// Manage Categories (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Categories")]
+        [Display(Name = "Manage Categories")]
         public bool? PermissionsManageCategories { get; set; }
 
         /// <summary>
         /// Convert Leads (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Convert Leads")]
+        [Display(Name = "Convert Leads")]
         public bool? PermissionsConvertLeads { get; set; }
 
         /// <summary>
         /// Password Never Expires (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Password Never Expires")]
+        [Display(Name = "Password Never Expires")]
         public bool? PermissionsPasswordNeverExpires { get; set; }
 
         /// <summary>
         /// Use Team Reassignment Wizards (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Use Team Reassignment Wizards")]
+        [Display(Name = "Use Team Reassignment Wizards")]
         public bool? PermissionsUseTeamReassignWizards { get; set; }
 
         /// <summary>
         /// Download AppExchange Packages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Download AppExchange Packages")]
+        [Display(Name = "Download AppExchange Packages")]
         public bool? PermissionsInstallMultiforce { get; set; }
 
         /// <summary>
         /// Upload AppExchange Packages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Upload AppExchange Packages")]
+        [Display(Name = "Upload AppExchange Packages")]
         public bool? PermissionsPublishMultiforce { get; set; }
 
         /// <summary>
         /// Edit Opportunity Product Sales Price (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Opportunity Product Sales Price")]
+        [Display(Name = "Edit Opportunity Product Sales Price")]
         public bool? PermissionsEditOppLineItemUnitPrice { get; set; }
 
         /// <summary>
         /// Create AppExchange Packages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Create AppExchange Packages")]
+        [Display(Name = "Create AppExchange Packages")]
         public bool? PermissionsCreateMultiforce { get; set; }
 
         /// <summary>
         /// Bulk API Hard Delete (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Bulk API Hard Delete")]
+        [Display(Name = "Bulk API Hard Delete")]
         public bool? PermissionsBulkApiHardDelete { get; set; }
 
         /// <summary>
         /// Import Solutions (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Import Solutions")]
+        [Display(Name = "Import Solutions")]
         public bool? PermissionsSolutionImport { get; set; }
 
         /// <summary>
         /// Manage Call Centers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Call Centers")]
+        [Display(Name = "Manage Call Centers")]
         public bool? PermissionsManageCallCenters { get; set; }
 
         /// <summary>
         /// Manage Synonyms (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Synonyms")]
+        [Display(Name = "Manage Synonyms")]
         public bool? PermissionsManageSynonyms { get; set; }
 
         /// <summary>
         /// Manage Email Client Configurations (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Email Client Configurations")]
+        [Display(Name = "Manage Email Client Configurations")]
         public bool? PermissionsManageEmailClientConfig { get; set; }
 
         /// <summary>
         /// Send Outbound Messages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Send Outbound Messages")]
+        [Display(Name = "Send Outbound Messages")]
         public bool? PermissionsEnableNotifications { get; set; }
 
         /// <summary>
         /// Manage Data Integrations (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Data Integrations")]
+        [Display(Name = "Manage Data Integrations")]
         public bool? PermissionsManageDataIntegrations { get; set; }
 
         /// <summary>
         /// Deliver Uploaded Files and Personal Content (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Deliver Uploaded Files and Personal Content")]
+        [Display(Name = "Deliver Uploaded Files and Personal Content")]
         public bool? PermissionsDistributeFromPersWksp { get; set; }
 
         /// <summary>
         /// View Data Categories (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("View Data Categories")]
+        [Display(Name = "View Data Categories")]
         public bool? PermissionsViewDataCategories { get; set; }
 
         /// <summary>
         /// Manage Data Categories (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Data Categories")]
+        [Display(Name = "Manage Data Categories")]
         public bool? PermissionsManageDataCategories { get; set; }
 
         /// <summary>
         /// Author Apex (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Author Apex")]
+        [Display(Name = "Author Apex")]
         public bool? PermissionsAuthorApex { get; set; }
 
         /// <summary>
         /// Manage Mobile Configurations (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Mobile Configurations")]
+        [Display(Name = "Manage Mobile Configurations")]
         public bool? PermissionsManageMobile { get; set; }
 
         /// <summary>
         /// API Enabled (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("API Enabled")]
+        [Display(Name = "API Enabled")]
         public bool? PermissionsApiEnabled { get; set; }
 
         /// <summary>
         /// Manage Custom Report Types (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Custom Report Types")]
+        [Display(Name = "Manage Custom Report Types")]
         public bool? PermissionsManageCustomReportTypes { get; set; }
 
         /// <summary>
         /// Edit Case Comments (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Edit Case Comments")]
+        [Display(Name = "Edit Case Comments")]
         public bool? PermissionsEditCaseComments { get; set; }
 
         /// <summary>
         /// Transfer Cases (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Transfer Cases")]
+        [Display(Name = "Transfer Cases")]
         public bool? PermissionsTransferAnyCase { get; set; }
 
         /// <summary>
         /// Manage Analytic Snapshots (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Analytic Snapshots")]
+        [Display(Name = "Manage Analytic Snapshots")]
         public bool? PermissionsManageAnalyticSnapshots { get; set; }
 
         /// <summary>
         /// Schedule Reports (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Schedule Reports")]
+        [Display(Name = "Schedule Reports")]
         public bool? PermissionsScheduleReports { get; set; }
 
         /// <summary>
         /// Manage Business Hours Holidays (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Business Hours Holidays")]
+        [Display(Name = "Manage Business Hours Holidays")]
         public bool? PermissionsManageBusinessHourHolidays { get; set; }
 
         /// <summary>
         /// Manage Dynamic Dashboards (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Dynamic Dashboards")]
+        [Display(Name = "Manage Dynamic Dashboards")]
         public bool? PermissionsManageDynamicDashboards { get; set; }
 
         /// <summary>
         /// Show Custom Sidebar On All Pages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Show Custom Sidebar On All Pages")]
+        [Display(Name = "Show Custom Sidebar On All Pages")]
         public bool? PermissionsCustomSidebarOnAllPages { get; set; }
 
         /// <summary>
         /// Manage Force.com Flow (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Force.com Flow")]
+        [Display(Name = "Manage Force.com Flow")]
         public bool? PermissionsManageInteraction { get; set; }
 
         /// <summary>
         /// View My Team's Dashboards (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("View My Team's Dashboards")]
+        [Display(Name = "View My Team's Dashboards")]
         public bool? PermissionsViewMyTeamsDashboards { get; set; }
 
         /// <summary>
         /// Reset User Passwords and Unlock Users (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Reset User Passwords and Unlock Users")]
+        [Display(Name = "Reset User Passwords and Unlock Users")]
         public bool? PermissionsResetPasswords { get; set; }
 
         /// <summary>
         /// Require Force.com Flow User Feature License (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Require Force.com Flow User Feature License")]
+        [Display(Name = "Require Force.com Flow User Feature License")]
         public bool? PermissionsFlowUFLRequired { get; set; }
 
         /// <summary>
         /// Insert System Field Values for Chatter Feeds (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Insert System Field Values for Chatter Feeds")]
+        [Display(Name = "Insert System Field Values for Chatter Feeds")]
         public bool? PermissionsCanInsertFeedSystemFields { get; set; }
 
         /// <summary>
         /// Manage Knowledge Article Import/Export (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Knowledge Article Import/Export")]
+        [Display(Name = "Manage Knowledge Article Import/Export")]
         public bool? PermissionsManageKnowledgeImportExport { get; set; }
 
         /// <summary>
         /// Manage Email Templates (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Email Templates")]
+        [Display(Name = "Manage Email Templates")]
         public bool? PermissionsEmailTemplateManagement { get; set; }
 
         /// <summary>
         /// Email Administration (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Email Administration")]
+        [Display(Name = "Email Administration")]
         public bool? PermissionsEmailAdministration { get; set; }
 
         /// <summary>
         /// Manage Chatter Messages (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Chatter Messages")]
+        [Display(Name = "Manage Chatter Messages")]
         public bool? PermissionsManageChatterMessages { get; set; }
 
         /// <summary>
         /// Create and Share Links to Chatter Files (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Create and Share Links to Chatter Files")]
+        [Display(Name = "Create and Share Links to Chatter Files")]
         public bool? PermissionsChatterFileLink { get; set; }
 
         /// <summary>
         /// Use Case Feed (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Use Case Feed")]
+        [Display(Name = "Use Case Feed")]
         public bool? PermissionsViewCaseInteraction { get; set; }
 
         /// <summary>
         /// Manage Auth. Providers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Manage Auth. Providers")]
+        [Display(Name = "Manage Auth. Providers")]
         public bool? PermissionsManageAuthProviders { get; set; }
 
         /// <summary>
         /// Run Flows (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Run Flows")]
+        [Display(Name = "Run Flows")]
         public bool? PermissionsRunFlow { get; set; }
 
         /// <summary>
         /// View All Users (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("View All Users")]
+        [Display(Name = "View All Users")]
         public bool? PermissionsViewAllUsers { get; set; }
 
         /// <summary>
         /// Knowledge One (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Knowledge One")]
+        [Display(Name = "Knowledge One")]
         public bool? PermissionsAllowUniversalSearch { get; set; }
 
         /// <summary>
         /// Connect Organization to Environment Hub (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Connect Organization to Environment Hub")]
+        [Display(Name = "Connect Organization to Environment Hub")]
         public bool? PermissionsConnectOrgToEnvironmentHub { get; set; }
 
         /// <summary>
         /// Enable Work.com Calibration (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Enable Work.com Calibration")]
+        [Display(Name = "Enable Work.com Calibration")]
         public bool? PermissionsWorkCalibrationUser { get; set; }
 
         /// <summary>
         /// Enable Work.com (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Enable Work.com")]
+        [Display(Name = "Enable Work.com")]
         public bool? PermissionsWorkDotComUserPerm { get; set; }
 
         /// <summary>
         /// Sales Console (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Sales Console")]
+        [Display(Name = "Sales Console")]
         public bool? PermissionsSalesConsole { get; set; }
 
         /// <summary>
         /// Use Identity Connect (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Use Identity Connect")]
+        [Display(Name = "Use Identity Connect")]
         public bool? PermissionsIdentityConnect { get; set; }
 
         /// <summary>
         /// Allow View Knowledge (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Allow View Knowledge")]
+        [Display(Name = "Allow View Knowledge")]
         public bool? PermissionsAllowViewKnowledge { get; set; }
 
         /// <summary>
@@ -18724,7 +18724,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User License ID")]
+        [Display(Name = "User License ID")]
         public string UserLicenseId { get; set; }
 
         /// <summary>
@@ -18732,14 +18732,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("User Type")]
+        [Display(Name = "User Type")]
         public string UserType { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -18747,14 +18747,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -18762,14 +18762,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -18782,14 +18782,14 @@ namespace Sharpforce
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
     }
@@ -18806,40 +18806,40 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Push Topic ID")]
+        [Display(Name = "Push Topic ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Topic Name (string type in Salesforce)
         /// </summary>
         [StringLength(25)]
-        [DisplayName("Topic Name")]
+        [Display(Name = "Topic Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// SOQL Query (string type in Salesforce)
         /// </summary>
         [StringLength(1300)]
-        [DisplayName("SOQL Query")]
+        [Display(Name = "SOQL Query")]
         public string Query { get; set; }
 
         /// <summary>
         /// API Version (double type in Salesforce)
         /// </summary>
-        [DisplayName("API Version")]
+        [Display(Name = "API Version")]
         public string ApiVersion { get; set; }
 
         /// <summary>
         /// Is Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Is Active")]
+        [Display(Name = "Is Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
         /// Notify For Fields (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Notify For Fields")]
+        [Display(Name = "Notify For Fields")]
         public string NotifyForFields { get; set; }
 
         /// <summary>
@@ -18847,7 +18847,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Notify For Operations")]
+        [Display(Name = "Notify For Operations")]
         public string NotifyForOperations { get; set; }
 
         /// <summary>
@@ -18859,39 +18859,39 @@ namespace Sharpforce
         /// <summary>
         /// Create (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Create")]
+        [Display(Name = "Create")]
         public bool? NotifyForOperationCreate { get; set; }
 
         /// <summary>
         /// Update (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Update")]
+        [Display(Name = "Update")]
         public bool? NotifyForOperationUpdate { get; set; }
 
         /// <summary>
         /// Delete (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Delete")]
+        [Display(Name = "Delete")]
         public bool? NotifyForOperationDelete { get; set; }
 
         /// <summary>
         /// Undelete (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Undelete")]
+        [Display(Name = "Undelete")]
         public bool? NotifyForOperationUndelete { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -18899,14 +18899,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -18914,14 +18914,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -18938,7 +18938,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Queue Sobject ID")]
+        [Display(Name = "Queue Sobject ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -18946,7 +18946,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Group ID")]
+        [Display(Name = "Group ID")]
         public string QueueId { get; set; }
 
         /// <summary>
@@ -18954,7 +18954,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Sobject Type")]
+        [Display(Name = "Sobject Type")]
         public string SobjectType { get; set; }
 
         /// <summary>
@@ -18962,14 +18962,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -18986,7 +18986,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Recently Viewed ID")]
+        [Display(Name = "Recently Viewed ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -19001,7 +19001,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Last Name")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         /// <summary>
@@ -19009,7 +19009,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         /// <summary>
@@ -19031,7 +19031,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Role ID")]
+        [Display(Name = "Role ID")]
         public string UserRoleId { get; set; }
 
         /// <summary>
@@ -19039,14 +19039,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Record Type ID")]
+        [Display(Name = "Record Type ID")]
         public string RecordTypeId { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
@@ -19054,7 +19054,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Profile ID")]
+        [Display(Name = "Profile ID")]
         public string ProfileId { get; set; }
 
         /// <summary>
@@ -19069,7 +19069,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("E-mail")]
+        [Display(Name = "E-mail")]
         public string Email { get; set; }
 
         /// <summary>
@@ -19082,13 +19082,13 @@ namespace Sharpforce
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
     }
@@ -19105,7 +19105,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Record Type ID")]
+        [Display(Name = "Record Type ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -19118,7 +19118,7 @@ namespace Sharpforce
         /// Record Type Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Record Type Name")]
+        [Display(Name = "Record Type Name")]
         public string DeveloperName { get; set; }
 
         /// <summary>
@@ -19126,7 +19126,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -19139,7 +19139,7 @@ namespace Sharpforce
         /// Business Process ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Business Process ID")]
+        [Display(Name = "Business Process ID")]
         public string BusinessProcessId { get; set; }
 
         /// <summary>
@@ -19147,13 +19147,13 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Sobject Type Name")]
+        [Display(Name = "Sobject Type Name")]
         public string SobjectType { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
@@ -19161,14 +19161,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -19176,21 +19176,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -19207,7 +19207,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Report ID")]
+        [Display(Name = "Report ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -19215,14 +19215,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -19230,14 +19230,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -19245,14 +19245,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -19260,7 +19260,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Report Name")]
+        [Display(Name = "Report Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -19275,7 +19275,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Report Unique Name")]
+        [Display(Name = "Report Unique Name")]
         public string DeveloperName { get; set; }
 
         /// <summary>
@@ -19283,21 +19283,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Last Run (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Run")]
+        [Display(Name = "Last Run")]
         public string LastRunDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
@@ -19311,14 +19311,14 @@ namespace Sharpforce
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
     }
@@ -19335,7 +19335,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -19343,7 +19343,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -19351,7 +19351,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -19359,49 +19359,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -19423,7 +19423,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -19431,14 +19431,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -19446,7 +19446,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -19454,7 +19454,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -19462,14 +19462,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -19477,7 +19477,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -19494,7 +19494,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("SetupEntityAccess ID")]
+        [Display(Name = "SetupEntityAccess ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -19502,7 +19502,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -19510,7 +19510,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Setup Entity ID")]
+        [Display(Name = "Setup Entity ID")]
         public string SetupEntityId { get; set; }
 
         /// <summary>
@@ -19518,14 +19518,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Setup Entity Type")]
+        [Display(Name = "Setup Entity Type")]
         public string SetupEntityType { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -19542,7 +19542,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Site ID")]
+        [Display(Name = "Site ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -19550,7 +19550,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Site Name")]
+        [Display(Name = "Site Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -19558,7 +19558,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Site Subdomain Prefix")]
+        [Display(Name = "Site Subdomain Prefix")]
         public string Subdomain { get; set; }
 
         /// <summary>
@@ -19566,7 +19566,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Default Web Address")]
+        [Display(Name = "Default Web Address")]
         public string UrlPathPrefix { get; set; }
 
         /// <summary>
@@ -19574,7 +19574,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Site Status")]
+        [Display(Name = "Site Status")]
         public string Status { get; set; }
 
         /// <summary>
@@ -19582,49 +19582,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string AdminId { get; set; }
 
         /// <summary>
         /// Enable Feeds (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Enable Feeds")]
+        [Display(Name = "Enable Feeds")]
         public bool? OptionsEnableFeeds { get; set; }
 
         /// <summary>
         /// Enable Standard Home Page (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Enable Standard Home Page")]
+        [Display(Name = "Enable Standard Home Page")]
         public bool? OptionsAllowHomePage { get; set; }
 
         /// <summary>
         /// Enable Standard Ideas Pages (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Enable Standard Ideas Pages")]
+        [Display(Name = "Enable Standard Ideas Pages")]
         public bool? OptionsAllowStandardIdeasPages { get; set; }
 
         /// <summary>
         /// Enable Standard Lookup Pages (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Enable Standard Lookup Pages")]
+        [Display(Name = "Enable Standard Lookup Pages")]
         public bool? OptionsAllowStandardSearch { get; set; }
 
         /// <summary>
         /// Enable Standard Search Pages (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Enable Standard Search Pages")]
+        [Display(Name = "Enable Standard Search Pages")]
         public bool? OptionsAllowStandardLookups { get; set; }
 
         /// <summary>
         /// Enable Standard Answers Pages (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Enable Standard Answers Pages")]
+        [Display(Name = "Enable Standard Answers Pages")]
         public bool? OptionsAllowStandardAnswersPages { get; set; }
 
         /// <summary>
@@ -19632,7 +19632,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Site Description")]
+        [Display(Name = "Site Description")]
         public string Description { get; set; }
 
         /// <summary>
@@ -19640,7 +19640,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Site Label")]
+        [Display(Name = "Site Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -19648,7 +19648,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Analytics Tracking Code")]
+        [Display(Name = "Analytics Tracking Code")]
         public string AnalyticsTrackingCode { get; set; }
 
         /// <summary>
@@ -19656,49 +19656,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Site Type")]
+        [Display(Name = "Site Type")]
         public string SiteType { get; set; }
 
         /// <summary>
         /// Daily Bandwidth Limit (MB) (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Daily Bandwidth Limit (MB)")]
+        [Display(Name = "Daily Bandwidth Limit (MB)")]
         public string DailyBandwidthLimit { get; set; }
 
         /// <summary>
         /// Daily Bandwidth Used (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Daily Bandwidth Used")]
+        [Display(Name = "Daily Bandwidth Used")]
         public string DailyBandwidthUsed { get; set; }
 
         /// <summary>
         /// Daily Request Time Limit (min) (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Daily Request Time Limit (min)")]
+        [Display(Name = "Daily Request Time Limit (min)")]
         public string DailyRequestTimeLimit { get; set; }
 
         /// <summary>
         /// Daily Request Time Used (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Daily Request Time Used")]
+        [Display(Name = "Daily Request Time Used")]
         public string DailyRequestTimeUsed { get; set; }
 
         /// <summary>
         /// Monthly Page Views Allowed (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Monthly Page Views Allowed")]
+        [Display(Name = "Monthly Page Views Allowed")]
         public string MonthlyPageViewsEntitlement { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -19706,14 +19706,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -19721,14 +19721,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -19745,7 +19745,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -19753,7 +19753,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -19761,7 +19761,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -19769,49 +19769,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -19833,7 +19833,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -19841,14 +19841,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -19856,7 +19856,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -19864,7 +19864,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -19872,14 +19872,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -19887,7 +19887,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -19904,14 +19904,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Custom Site ID")]
+        [Display(Name = "Custom Site ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -19919,7 +19919,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Site ID")]
+        [Display(Name = "Site ID")]
         public string SiteId { get; set; }
 
         /// <summary>
@@ -19927,14 +19927,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -19942,7 +19942,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -19950,7 +19950,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -19958,7 +19958,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -19975,14 +19975,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Solution ID")]
+        [Display(Name = "Solution ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -19990,26 +19990,26 @@ namespace Sharpforce
         /// </summary>
         [StringLength(30)]
         [Editable(false)]
-        [DisplayName("Solution Number")]
+        [Display(Name = "Solution Number")]
         public string SolutionNumber { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Title")]
+        [Display(Name = "Title")]
         public string SolutionName { get; set; }
 
         /// <summary>
         /// Visible in Self-Service Portal (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Visible in Self-Service Portal")]
+        [Display(Name = "Visible in Self-Service Portal")]
         public bool? IsPublished { get; set; }
 
         /// <summary>
         /// Visible in Public Knowledge Base (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Visible in Public Knowledge Base")]
+        [Display(Name = "Visible in Public Knowledge Base")]
         public bool? IsPublishedInPublicKb { get; set; }
 
         /// <summary>
@@ -20022,28 +20022,28 @@ namespace Sharpforce
         /// Reviewed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Reviewed")]
+        [Display(Name = "Reviewed")]
         public bool? IsReviewed { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
         [StringLength(32000)]
-        [DisplayName("Description")]
+        [Display(Name = "Description")]
         public string SolutionNote { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Owner ID")]
+        [Display(Name = "Owner ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -20051,14 +20051,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -20066,42 +20066,42 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Num Related Cases (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Num Related Cases")]
+        [Display(Name = "Num Related Cases")]
         public string TimesUsed { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Is Html (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Html")]
+        [Display(Name = "Is Html")]
         public bool? IsHtml { get; set; }
 
     }
@@ -20118,7 +20118,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -20126,7 +20126,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -20134,7 +20134,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -20142,49 +20142,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -20206,7 +20206,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -20214,14 +20214,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -20229,7 +20229,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -20237,7 +20237,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -20245,14 +20245,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -20260,7 +20260,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -20277,14 +20277,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Solution History ID")]
+        [Display(Name = "Solution History ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -20292,7 +20292,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Solution ID")]
+        [Display(Name = "Solution ID")]
         public string SolutionId { get; set; }
 
         /// <summary>
@@ -20300,14 +20300,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -20315,7 +20315,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Changed Field")]
+        [Display(Name = "Changed Field")]
         public string Field { get; set; }
 
         /// <summary>
@@ -20323,7 +20323,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Old Value")]
+        [Display(Name = "Old Value")]
         public string OldValue { get; set; }
 
         /// <summary>
@@ -20331,7 +20331,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("New Value")]
+        [Display(Name = "New Value")]
         public string NewValue { get; set; }
 
     }
@@ -20348,7 +20348,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Solution Status Value ID")]
+        [Display(Name = "Solution Status Value ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -20356,28 +20356,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Master Label")]
+        [Display(Name = "Master Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Default")]
+        [Display(Name = "Is Default")]
         public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Is Reviewed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Reviewed")]
+        [Display(Name = "Is Reviewed")]
         public bool? IsReviewed { get; set; }
 
         /// <summary>
@@ -20385,14 +20385,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -20400,21 +20400,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -20431,7 +20431,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Static Resource ID")]
+        [Display(Name = "Static Resource ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -20439,7 +20439,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
@@ -20452,14 +20452,14 @@ namespace Sharpforce
         /// MIME Type (string type in Salesforce)
         /// </summary>
         [StringLength(120)]
-        [DisplayName("MIME Type")]
+        [Display(Name = "MIME Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Size")]
+        [Display(Name = "Size")]
         public string BodyLength { get; set; }
 
         /// <summary>
@@ -20477,7 +20477,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -20485,14 +20485,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -20500,21 +20500,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Cache Control (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Cache Control")]
+        [Display(Name = "Cache Control")]
         public string CacheControl { get; set; }
 
     }
@@ -20531,21 +20531,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Activity ID")]
+        [Display(Name = "Activity ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Contact/Lead ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Contact/Lead ID")]
+        [Display(Name = "Contact/Lead ID")]
         public string WhoId { get; set; }
 
         /// <summary>
         /// Opportunity/Account ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Opportunity/Account ID")]
+        [Display(Name = "Opportunity/Account ID")]
         public string WhatId { get; set; }
 
         /// <summary>
@@ -20557,7 +20557,7 @@ namespace Sharpforce
         /// <summary>
         /// Due Date Only (date type in Salesforce)
         /// </summary>
-        [DisplayName("Due Date Only")]
+        [Display(Name = "Due Date Only")]
         public string ActivityDate { get; set; }
 
         /// <summary>
@@ -20576,7 +20576,7 @@ namespace Sharpforce
         /// Assigned To ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Assigned To ID")]
+        [Display(Name = "Assigned To ID")]
         public string OwnerId { get; set; }
 
         /// <summary>
@@ -20589,7 +20589,7 @@ namespace Sharpforce
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -20597,21 +20597,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Closed")]
+        [Display(Name = "Closed")]
         public bool? IsClosed { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -20619,14 +20619,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -20634,60 +20634,60 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Archived (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Archived")]
+        [Display(Name = "Archived")]
         public bool? IsArchived { get; set; }
 
         /// <summary>
         /// Call Duration (int type in Salesforce)
         /// </summary>
-        [DisplayName("Call Duration")]
+        [Display(Name = "Call Duration")]
         public string CallDurationInSeconds { get; set; }
 
         /// <summary>
         /// Call Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Call Type")]
+        [Display(Name = "Call Type")]
         public string CallType { get; set; }
 
         /// <summary>
         /// Call Result (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Call Result")]
+        [Display(Name = "Call Result")]
         public string CallDisposition { get; set; }
 
         /// <summary>
         /// Call Object Identifier (string type in Salesforce)
         /// </summary>
         [StringLength(255)]
-        [DisplayName("Call Object Identifier")]
+        [Display(Name = "Call Object Identifier")]
         public string CallObject { get; set; }
 
         /// <summary>
         /// Reminder Date/Time (datetime type in Salesforce)
         /// </summary>
-        [DisplayName("Reminder Date/Time")]
+        [Display(Name = "Reminder Date/Time")]
         public string ReminderDateTime { get; set; }
 
         /// <summary>
         /// Reminder Set (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Reminder Set")]
+        [Display(Name = "Reminder Set")]
         public bool? IsReminderSet { get; set; }
 
         /// <summary>
@@ -20695,72 +20695,72 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Recurrence Activity ID")]
+        [Display(Name = "Recurrence Activity ID")]
         public string RecurrenceActivityId { get; set; }
 
         /// <summary>
         /// Create Recurring Series of Tasks (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Create Recurring Series of Tasks")]
+        [Display(Name = "Create Recurring Series of Tasks")]
         public bool? IsRecurrence { get; set; }
 
         /// <summary>
         /// Start Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("Start Date")]
+        [Display(Name = "Start Date")]
         public string RecurrenceStartDateOnly { get; set; }
 
         /// <summary>
         /// End Date (date type in Salesforce)
         /// </summary>
-        [DisplayName("End Date")]
+        [Display(Name = "End Date")]
         public string RecurrenceEndDateOnly { get; set; }
 
         /// <summary>
         /// Recurrence Time Zone (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Time Zone")]
+        [Display(Name = "Recurrence Time Zone")]
         public string RecurrenceTimeZoneSidKey { get; set; }
 
         /// <summary>
         /// Recurrence Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Type")]
+        [Display(Name = "Recurrence Type")]
         public string RecurrenceType { get; set; }
 
         /// <summary>
         /// Recurrence Interval (int type in Salesforce)
         /// </summary>
-        [DisplayName("Recurrence Interval")]
+        [Display(Name = "Recurrence Interval")]
         public string RecurrenceInterval { get; set; }
 
         /// <summary>
         /// Recurrence Day of Week Mask (int type in Salesforce)
         /// </summary>
-        [DisplayName("Recurrence Day of Week Mask")]
+        [Display(Name = "Recurrence Day of Week Mask")]
         public string RecurrenceDayOfWeekMask { get; set; }
 
         /// <summary>
         /// Recurrence Day of Month (int type in Salesforce)
         /// </summary>
-        [DisplayName("Recurrence Day of Month")]
+        [Display(Name = "Recurrence Day of Month")]
         public string RecurrenceDayOfMonth { get; set; }
 
         /// <summary>
         /// Recurrence Instance (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Instance")]
+        [Display(Name = "Recurrence Instance")]
         public string RecurrenceInstance { get; set; }
 
         /// <summary>
         /// Recurrence Month of Year (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Recurrence Month of Year")]
+        [Display(Name = "Recurrence Month of Year")]
         public string RecurrenceMonthOfYear { get; set; }
 
     }
@@ -20777,7 +20777,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -20785,7 +20785,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -20793,7 +20793,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -20801,49 +20801,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -20865,7 +20865,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -20873,14 +20873,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -20888,7 +20888,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -20896,7 +20896,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -20904,14 +20904,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -20919,7 +20919,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -20936,7 +20936,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Task Priority Value ID")]
+        [Display(Name = "Task Priority Value ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -20944,28 +20944,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Master Label")]
+        [Display(Name = "Master Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Default")]
+        [Display(Name = "Is Default")]
         public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Is High Priority (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is High Priority")]
+        [Display(Name = "Is High Priority")]
         public bool? IsHighPriority { get; set; }
 
         /// <summary>
@@ -20973,14 +20973,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -20988,21 +20988,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -21019,7 +21019,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Task Status Value ID")]
+        [Display(Name = "Task Status Value ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -21027,28 +21027,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Master Label")]
+        [Display(Name = "Master Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sort Order")]
+        [Display(Name = "Sort Order")]
         public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Default")]
+        [Display(Name = "Is Default")]
         public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Is Closed (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Is Closed")]
+        [Display(Name = "Is Closed")]
         public bool? IsClosed { get; set; }
 
         /// <summary>
@@ -21056,14 +21056,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -21071,21 +21071,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -21102,7 +21102,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Topic ID")]
+        [Display(Name = "Topic ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -21121,7 +21121,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -21129,21 +21129,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Talking About (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Talking About")]
+        [Display(Name = "Talking About")]
         public string TalkingAbout { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -21160,7 +21160,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Topic Assignment Id")]
+        [Display(Name = "Topic Assignment Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -21168,7 +21168,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Topic ID")]
+        [Display(Name = "Topic ID")]
         public string TopicId { get; set; }
 
         /// <summary>
@@ -21176,14 +21176,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Entity ID")]
+        [Display(Name = "Entity ID")]
         public string EntityId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -21191,21 +21191,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -21222,7 +21222,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -21230,7 +21230,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -21238,7 +21238,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -21246,49 +21246,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -21310,7 +21310,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -21318,14 +21318,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -21333,7 +21333,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -21341,7 +21341,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -21349,14 +21349,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -21364,7 +21364,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -21381,7 +21381,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Event Relation ID")]
+        [Display(Name = "Event Relation ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -21389,7 +21389,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Relation ID")]
+        [Display(Name = "Relation ID")]
         public string RelationId { get; set; }
 
         /// <summary>
@@ -21397,14 +21397,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Event ID")]
+        [Display(Name = "Event ID")]
         public string EventId { get; set; }
 
         /// <summary>
         /// Response Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Response Date")]
+        [Display(Name = "Response Date")]
         public string RespondedDate { get; set; }
 
         /// <summary>
@@ -21418,7 +21418,7 @@ namespace Sharpforce
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -21426,14 +21426,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -21441,21 +21441,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -21479,7 +21479,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -21492,14 +21492,14 @@ namespace Sharpforce
         /// Last Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Last Name")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         /// <summary>
         /// First Name (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         /// <summary>
@@ -21507,14 +21507,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(121)]
         [Editable(false)]
-        [DisplayName("Full Name")]
+        [Display(Name = "Full Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Company Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Company Name")]
+        [Display(Name = "Company Name")]
         public string CompanyName { get; set; }
 
         /// <summary>
@@ -21551,14 +21551,14 @@ namespace Sharpforce
         /// State/Province (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("State/Province")]
+        [Display(Name = "State/Province")]
         public string State { get; set; }
 
         /// <summary>
         /// Zip/Postal Code (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Zip/Postal Code")]
+        [Display(Name = "Zip/Postal Code")]
         public string PostalCode { get; set; }
 
         /// <summary>
@@ -21581,67 +21581,67 @@ namespace Sharpforce
         /// E-mail (email type in Salesforce)
         /// </summary>
         [StringLength(128)]
-        [DisplayName("E-mail")]
+        [Display(Name = "E-mail")]
         public string Email { get; set; }
 
         /// <summary>
         /// AutoBcc (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("AutoBcc")]
+        [Display(Name = "AutoBcc")]
         public bool? EmailPreferencesAutoBcc { get; set; }
 
         /// <summary>
         /// AutoBccStayInTouch (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("AutoBccStayInTouch")]
+        [Display(Name = "AutoBccStayInTouch")]
         public bool? EmailPreferencesAutoBccStayInTouch { get; set; }
 
         /// <summary>
         /// StayInTouchReminder (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("StayInTouchReminder")]
+        [Display(Name = "StayInTouchReminder")]
         public bool? EmailPreferencesStayInTouchReminder { get; set; }
 
         /// <summary>
         /// Email Sender Address (email type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Email Sender Address")]
+        [Display(Name = "Email Sender Address")]
         public string SenderEmail { get; set; }
 
         /// <summary>
         /// Email Sender Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Email Sender Name")]
+        [Display(Name = "Email Sender Name")]
         public string SenderName { get; set; }
 
         /// <summary>
         /// Email Signature (string type in Salesforce)
         /// </summary>
         [StringLength(1333)]
-        [DisplayName("Email Signature")]
+        [Display(Name = "Email Signature")]
         public string Signature { get; set; }
 
         /// <summary>
         /// Stay-in-Touch Email Subject (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Stay-in-Touch Email Subject")]
+        [Display(Name = "Stay-in-Touch Email Subject")]
         public string StayInTouchSubject { get; set; }
 
         /// <summary>
         /// Stay-in-Touch Email Signature (string type in Salesforce)
         /// </summary>
         [StringLength(512)]
-        [DisplayName("Stay-in-Touch Email Signature")]
+        [Display(Name = "Stay-in-Touch Email Signature")]
         public string StayInTouchSignature { get; set; }
 
         /// <summary>
         /// Stay-in-Touch Email Note (string type in Salesforce)
         /// </summary>
         [StringLength(512)]
-        [DisplayName("Stay-in-Touch Email Note")]
+        [Display(Name = "Stay-in-Touch Email Note")]
         public string StayInTouchNote { get; set; }
 
         /// <summary>
@@ -21660,7 +21660,7 @@ namespace Sharpforce
         /// Cell (phone type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Cell")]
+        [Display(Name = "Cell")]
         public string MobilePhone { get; set; }
 
         /// <summary>
@@ -21673,60 +21673,60 @@ namespace Sharpforce
         /// Nickname (string type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Nickname")]
+        [Display(Name = "Nickname")]
         public string CommunityNickname { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
         /// Time Zone (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Time Zone")]
+        [Display(Name = "Time Zone")]
         public string TimeZoneSidKey { get; set; }
 
         /// <summary>
         /// Role ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Role ID")]
+        [Display(Name = "Role ID")]
         public string UserRoleId { get; set; }
 
         /// <summary>
         /// Locale (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Locale")]
+        [Display(Name = "Locale")]
         public string LocaleSidKey { get; set; }
 
         /// <summary>
         /// Info Emails (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Info Emails")]
+        [Display(Name = "Info Emails")]
         public bool? ReceivesInfoEmails { get; set; }
 
         /// <summary>
         /// Admin Info Emails (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Admin Info Emails")]
+        [Display(Name = "Admin Info Emails")]
         public bool? ReceivesAdminInfoEmails { get; set; }
 
         /// <summary>
         /// Email Encoding (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Email Encoding")]
+        [Display(Name = "Email Encoding")]
         public string EmailEncodingKey { get; set; }
 
         /// <summary>
         /// Profile ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Profile ID")]
+        [Display(Name = "Profile ID")]
         public string ProfileId { get; set; }
 
         /// <summary>
@@ -21734,56 +21734,56 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("User Type")]
+        [Display(Name = "User Type")]
         public string UserType { get; set; }
 
         /// <summary>
         /// Language (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Language")]
+        [Display(Name = "Language")]
         public string LanguageLocaleKey { get; set; }
 
         /// <summary>
         /// Employee Number (string type in Salesforce)
         /// </summary>
         [StringLength(20)]
-        [DisplayName("Employee Number")]
+        [Display(Name = "Employee Number")]
         public string EmployeeNumber { get; set; }
 
         /// <summary>
         /// Delegated Approver ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Delegated Approver ID")]
+        [Display(Name = "Delegated Approver ID")]
         public string DelegatedApproverId { get; set; }
 
         /// <summary>
         /// Manager ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Manager ID")]
+        [Display(Name = "Manager ID")]
         public string ManagerId { get; set; }
 
         /// <summary>
         /// Last Login (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Login")]
+        [Display(Name = "Last Login")]
         public string LastLoginDate { get; set; }
 
         /// <summary>
         /// Last Password Change or Reset (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Password Change or Reset")]
+        [Display(Name = "Last Password Change or Reset")]
         public string LastPasswordChangeDate { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -21791,14 +21791,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -21806,400 +21806,400 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Offline Edition Trial Expiration Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Offline Edition Trial Expiration Date")]
+        [Display(Name = "Offline Edition Trial Expiration Date")]
         public string OfflineTrialExpirationDate { get; set; }
 
         /// <summary>
         /// Sales Anywhere Trial Expiration Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Sales Anywhere Trial Expiration Date")]
+        [Display(Name = "Sales Anywhere Trial Expiration Date")]
         public string OfflinePdaTrialExpirationDate { get; set; }
 
         /// <summary>
         /// Marketing User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Marketing User")]
+        [Display(Name = "Marketing User")]
         public bool? UserPermissionsMarketingUser { get; set; }
 
         /// <summary>
         /// Offline User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Offline User")]
+        [Display(Name = "Offline User")]
         public bool? UserPermissionsOfflineUser { get; set; }
 
         /// <summary>
         /// Auto-login To Call Center (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Auto-login To Call Center")]
+        [Display(Name = "Auto-login To Call Center")]
         public bool? UserPermissionsCallCenterAutoLogin { get; set; }
 
         /// <summary>
         /// Apex Mobile User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Apex Mobile User")]
+        [Display(Name = "Apex Mobile User")]
         public bool? UserPermissionsMobileUser { get; set; }
 
         /// <summary>
         /// Salesforce CRM Content User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Salesforce CRM Content User")]
+        [Display(Name = "Salesforce CRM Content User")]
         public bool? UserPermissionsSFContentUser { get; set; }
 
         /// <summary>
         /// Knowledge User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Knowledge User")]
+        [Display(Name = "Knowledge User")]
         public bool? UserPermissionsKnowledgeUser { get; set; }
 
         /// <summary>
         /// Force.com Flow User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Force.com Flow User")]
+        [Display(Name = "Force.com Flow User")]
         public bool? UserPermissionsInteractionUser { get; set; }
 
         /// <summary>
         /// Service Cloud User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Service Cloud User")]
+        [Display(Name = "Service Cloud User")]
         public bool? UserPermissionsSupportUser { get; set; }
 
         /// <summary>
         /// Site.com Contributor User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Site.com Contributor User")]
+        [Display(Name = "Site.com Contributor User")]
         public bool? UserPermissionsSiteforceContributorUser { get; set; }
 
         /// <summary>
         /// Site.com Publisher User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Site.com Publisher User")]
+        [Display(Name = "Site.com Publisher User")]
         public bool? UserPermissionsSiteforcePublisherUser { get; set; }
 
         /// <summary>
         /// Chatter Answers User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Chatter Answers User")]
+        [Display(Name = "Chatter Answers User")]
         public bool? UserPermissionsChatterAnswersUser { get; set; }
 
         /// <summary>
         /// Work.com User (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Work.com User")]
+        [Display(Name = "Work.com User")]
         public bool? UserPermissionsWorkDotComUserFeature { get; set; }
 
         /// <summary>
         /// Allow Forecasting (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Allow Forecasting")]
+        [Display(Name = "Allow Forecasting")]
         public bool? ForecastEnabled { get; set; }
 
         /// <summary>
         /// ActivityRemindersPopup (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ActivityRemindersPopup")]
+        [Display(Name = "ActivityRemindersPopup")]
         public bool? UserPreferencesActivityRemindersPopup { get; set; }
 
         /// <summary>
         /// EventRemindersCheckboxDefault (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("EventRemindersCheckboxDefault")]
+        [Display(Name = "EventRemindersCheckboxDefault")]
         public bool? UserPreferencesEventRemindersCheckboxDefault { get; set; }
 
         /// <summary>
         /// TaskRemindersCheckboxDefault (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("TaskRemindersCheckboxDefault")]
+        [Display(Name = "TaskRemindersCheckboxDefault")]
         public bool? UserPreferencesTaskRemindersCheckboxDefault { get; set; }
 
         /// <summary>
         /// ReminderSoundOff (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ReminderSoundOff")]
+        [Display(Name = "ReminderSoundOff")]
         public bool? UserPreferencesReminderSoundOff { get; set; }
 
         /// <summary>
         /// DisableAllFeedsEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableAllFeedsEmail")]
+        [Display(Name = "DisableAllFeedsEmail")]
         public bool? UserPreferencesDisableAllFeedsEmail { get; set; }
 
         /// <summary>
         /// DisableFollowersEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableFollowersEmail")]
+        [Display(Name = "DisableFollowersEmail")]
         public bool? UserPreferencesDisableFollowersEmail { get; set; }
 
         /// <summary>
         /// DisableProfilePostEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableProfilePostEmail")]
+        [Display(Name = "DisableProfilePostEmail")]
         public bool? UserPreferencesDisableProfilePostEmail { get; set; }
 
         /// <summary>
         /// DisableChangeCommentEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableChangeCommentEmail")]
+        [Display(Name = "DisableChangeCommentEmail")]
         public bool? UserPreferencesDisableChangeCommentEmail { get; set; }
 
         /// <summary>
         /// DisableLaterCommentEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableLaterCommentEmail")]
+        [Display(Name = "DisableLaterCommentEmail")]
         public bool? UserPreferencesDisableLaterCommentEmail { get; set; }
 
         /// <summary>
         /// DisProfPostCommentEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisProfPostCommentEmail")]
+        [Display(Name = "DisProfPostCommentEmail")]
         public bool? UserPreferencesDisProfPostCommentEmail { get; set; }
 
         /// <summary>
         /// ContentNoEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ContentNoEmail")]
+        [Display(Name = "ContentNoEmail")]
         public bool? UserPreferencesContentNoEmail { get; set; }
 
         /// <summary>
         /// ContentEmailAsAndWhen (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ContentEmailAsAndWhen")]
+        [Display(Name = "ContentEmailAsAndWhen")]
         public bool? UserPreferencesContentEmailAsAndWhen { get; set; }
 
         /// <summary>
         /// ApexPagesDeveloperMode (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ApexPagesDeveloperMode")]
+        [Display(Name = "ApexPagesDeveloperMode")]
         public bool? UserPreferencesApexPagesDeveloperMode { get; set; }
 
         /// <summary>
         /// HideCSNGetChatterMobileTask (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("HideCSNGetChatterMobileTask")]
+        [Display(Name = "HideCSNGetChatterMobileTask")]
         public bool? UserPreferencesHideCSNGetChatterMobileTask { get; set; }
 
         /// <summary>
         /// DisableMentionsPostEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableMentionsPostEmail")]
+        [Display(Name = "DisableMentionsPostEmail")]
         public bool? UserPreferencesDisableMentionsPostEmail { get; set; }
 
         /// <summary>
         /// DisMentionsCommentEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisMentionsCommentEmail")]
+        [Display(Name = "DisMentionsCommentEmail")]
         public bool? UserPreferencesDisMentionsCommentEmail { get; set; }
 
         /// <summary>
         /// HideCSNDesktopTask (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("HideCSNDesktopTask")]
+        [Display(Name = "HideCSNDesktopTask")]
         public bool? UserPreferencesHideCSNDesktopTask { get; set; }
 
         /// <summary>
         /// HideChatterOnboardingSplash (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("HideChatterOnboardingSplash")]
+        [Display(Name = "HideChatterOnboardingSplash")]
         public bool? UserPreferencesHideChatterOnboardingSplash { get; set; }
 
         /// <summary>
         /// HideSecondChatterOnboardingSplash (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("HideSecondChatterOnboardingSplash")]
+        [Display(Name = "HideSecondChatterOnboardingSplash")]
         public bool? UserPreferencesHideSecondChatterOnboardingSplash { get; set; }
 
         /// <summary>
         /// DisCommentAfterLikeEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisCommentAfterLikeEmail")]
+        [Display(Name = "DisCommentAfterLikeEmail")]
         public bool? UserPreferencesDisCommentAfterLikeEmail { get; set; }
 
         /// <summary>
         /// DisableLikeEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableLikeEmail")]
+        [Display(Name = "DisableLikeEmail")]
         public bool? UserPreferencesDisableLikeEmail { get; set; }
 
         /// <summary>
         /// DisableMessageEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableMessageEmail")]
+        [Display(Name = "DisableMessageEmail")]
         public bool? UserPreferencesDisableMessageEmail { get; set; }
 
         /// <summary>
         /// OptOutOfTouch (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("OptOutOfTouch")]
+        [Display(Name = "OptOutOfTouch")]
         public bool? UserPreferencesOptOutOfTouch { get; set; }
 
         /// <summary>
         /// DisableBookmarkEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableBookmarkEmail")]
+        [Display(Name = "DisableBookmarkEmail")]
         public bool? UserPreferencesDisableBookmarkEmail { get; set; }
 
         /// <summary>
         /// DisableSharePostEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableSharePostEmail")]
+        [Display(Name = "DisableSharePostEmail")]
         public bool? UserPreferencesDisableSharePostEmail { get; set; }
 
         /// <summary>
         /// EnableAutoSubForFeeds (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("EnableAutoSubForFeeds")]
+        [Display(Name = "EnableAutoSubForFeeds")]
         public bool? UserPreferencesEnableAutoSubForFeeds { get; set; }
 
         /// <summary>
         /// DisableFileShareNotificationsForApi (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableFileShareNotificationsForApi")]
+        [Display(Name = "DisableFileShareNotificationsForApi")]
         public bool? UserPreferencesDisableFileShareNotificationsForApi { get; set; }
 
         /// <summary>
         /// ShowTitleToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowTitleToExternalUsers")]
+        [Display(Name = "ShowTitleToExternalUsers")]
         public bool? UserPreferencesShowTitleToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowManagerToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowManagerToExternalUsers")]
+        [Display(Name = "ShowManagerToExternalUsers")]
         public bool? UserPreferencesShowManagerToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowEmailToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowEmailToExternalUsers")]
+        [Display(Name = "ShowEmailToExternalUsers")]
         public bool? UserPreferencesShowEmailToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowWorkPhoneToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowWorkPhoneToExternalUsers")]
+        [Display(Name = "ShowWorkPhoneToExternalUsers")]
         public bool? UserPreferencesShowWorkPhoneToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowMobilePhoneToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowMobilePhoneToExternalUsers")]
+        [Display(Name = "ShowMobilePhoneToExternalUsers")]
         public bool? UserPreferencesShowMobilePhoneToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowFaxToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowFaxToExternalUsers")]
+        [Display(Name = "ShowFaxToExternalUsers")]
         public bool? UserPreferencesShowFaxToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowStreetAddressToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowStreetAddressToExternalUsers")]
+        [Display(Name = "ShowStreetAddressToExternalUsers")]
         public bool? UserPreferencesShowStreetAddressToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowCityToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowCityToExternalUsers")]
+        [Display(Name = "ShowCityToExternalUsers")]
         public bool? UserPreferencesShowCityToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowStateToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowStateToExternalUsers")]
+        [Display(Name = "ShowStateToExternalUsers")]
         public bool? UserPreferencesShowStateToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowPostalCodeToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowPostalCodeToExternalUsers")]
+        [Display(Name = "ShowPostalCodeToExternalUsers")]
         public bool? UserPreferencesShowPostalCodeToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowCountryToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowCountryToExternalUsers")]
+        [Display(Name = "ShowCountryToExternalUsers")]
         public bool? UserPreferencesShowCountryToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowProfilePicToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowProfilePicToGuestUsers")]
+        [Display(Name = "ShowProfilePicToGuestUsers")]
         public bool? UserPreferencesShowProfilePicToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowTitleToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowTitleToGuestUsers")]
+        [Display(Name = "ShowTitleToGuestUsers")]
         public bool? UserPreferencesShowTitleToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowCityToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowCityToGuestUsers")]
+        [Display(Name = "ShowCityToGuestUsers")]
         public bool? UserPreferencesShowCityToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowStateToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowStateToGuestUsers")]
+        [Display(Name = "ShowStateToGuestUsers")]
         public bool? UserPreferencesShowStateToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowPostalCodeToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowPostalCodeToGuestUsers")]
+        [Display(Name = "ShowPostalCodeToGuestUsers")]
         public bool? UserPreferencesShowPostalCodeToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowCountryToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("ShowCountryToGuestUsers")]
+        [Display(Name = "ShowCountryToGuestUsers")]
         public bool? UserPreferencesShowCountryToGuestUsers { get; set; }
 
         /// <summary>
         /// DisableFeedbackEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableFeedbackEmail")]
+        [Display(Name = "DisableFeedbackEmail")]
         public bool? UserPreferencesDisableFeedbackEmail { get; set; }
 
         /// <summary>
         /// DisableCoachingEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableCoachingEmail")]
+        [Display(Name = "DisableCoachingEmail")]
         public bool? UserPreferencesDisableCoachingEmail { get; set; }
 
         /// <summary>
         /// DisableGoalEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableGoalEmail")]
+        [Display(Name = "DisableGoalEmail")]
         public bool? UserPreferencesDisableGoalEmail { get; set; }
 
         /// <summary>
         /// DisableWorkEmail (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("DisableWorkEmail")]
+        [Display(Name = "DisableWorkEmail")]
         public bool? UserPreferencesDisableWorkEmail { get; set; }
 
         /// <summary>
         /// HideS1BrowserUI (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("HideS1BrowserUI")]
+        [Display(Name = "HideS1BrowserUI")]
         public bool? UserPreferencesHideS1BrowserUI { get; set; }
 
         /// <summary>
@@ -22207,7 +22207,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Contact ID")]
+        [Display(Name = "Contact ID")]
         public string ContactId { get; set; }
 
         /// <summary>
@@ -22215,14 +22215,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// Call Center ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Call Center ID")]
+        [Display(Name = "Call Center ID")]
         public string CallCenterId { get; set; }
 
         /// <summary>
@@ -22235,14 +22235,14 @@ namespace Sharpforce
         /// SAML Federation ID (string type in Salesforce)
         /// </summary>
         [StringLength(512)]
-        [DisplayName("SAML Federation ID")]
+        [Display(Name = "SAML Federation ID")]
         public string FederationIdentifier { get; set; }
 
         /// <summary>
         /// About Me (textarea type in Salesforce)
         /// </summary>
         [StringLength(1000)]
-        [DisplayName("About Me")]
+        [Display(Name = "About Me")]
         public string AboutMe { get; set; }
 
         /// <summary>
@@ -22250,7 +22250,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1024)]
         [Editable(false)]
-        [DisplayName("Url for full-sized Photo")]
+        [Display(Name = "Url for full-sized Photo")]
         public string FullPhotoUrl { get; set; }
 
         /// <summary>
@@ -22258,35 +22258,35 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1024)]
         [Editable(false)]
-        [DisplayName("Url for Thumbnail sized Photo")]
+        [Display(Name = "Url for Thumbnail sized Photo")]
         public string SmallPhotoUrl { get; set; }
 
         /// <summary>
         /// Chatter Email Highlights Frequency (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Chatter Email Highlights Frequency")]
+        [Display(Name = "Chatter Email Highlights Frequency")]
         public string DigestFrequency { get; set; }
 
         /// <summary>
         /// Default Notification Frequency when Joining Groups (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Default Notification Frequency when Joining Groups")]
+        [Display(Name = "Default Notification Frequency when Joining Groups")]
         public string DefaultGroupNotificationFrequency { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Viewed Date")]
+        [Display(Name = "Last Viewed Date")]
         public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Referenced Date")]
+        [Display(Name = "Last Referenced Date")]
         public string LastReferencedDate { get; set; }
 
     }
@@ -22303,7 +22303,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Feed Item ID")]
+        [Display(Name = "Feed Item ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -22311,7 +22311,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -22319,7 +22319,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Feed Item Type")]
+        [Display(Name = "Feed Item Type")]
         public string Type { get; set; }
 
         /// <summary>
@@ -22327,49 +22327,49 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Comment Count")]
+        [Display(Name = "Comment Count")]
         public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Like Count")]
+        [Display(Name = "Like Count")]
         public string LikeCount { get; set; }
 
         /// <summary>
@@ -22391,7 +22391,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Link Url")]
+        [Display(Name = "Link Url")]
         public string LinkUrl { get; set; }
 
         /// <summary>
@@ -22399,14 +22399,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Related Record ID")]
+        [Display(Name = "Related Record ID")]
         public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Data")]
+        [Display(Name = "Content Data")]
         public string ContentData { get; set; }
 
         /// <summary>
@@ -22414,7 +22414,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(255)]
         [Editable(false)]
-        [DisplayName("Content File Name")]
+        [Display(Name = "Content File Name")]
         public string ContentFileName { get; set; }
 
         /// <summary>
@@ -22422,7 +22422,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("Content Description")]
+        [Display(Name = "Content Description")]
         public string ContentDescription { get; set; }
 
         /// <summary>
@@ -22430,14 +22430,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(120)]
         [Editable(false)]
-        [DisplayName("Content File Type")]
+        [Display(Name = "Content File Type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Content Size")]
+        [Display(Name = "Content Size")]
         public string ContentSize { get; set; }
 
         /// <summary>
@@ -22445,7 +22445,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("InsertedBy ID")]
+        [Display(Name = "InsertedBy ID")]
         public string InsertedById { get; set; }
 
     }
@@ -22462,7 +22462,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User License ID")]
+        [Display(Name = "User License ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -22470,7 +22470,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("License Def. ID")]
+        [Display(Name = "License Def. ID")]
         public string LicenseDefinitionKey { get; set; }
 
         /// <summary>
@@ -22484,21 +22484,21 @@ namespace Sharpforce
         /// Monthly Logins Used (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Monthly Logins Used")]
+        [Display(Name = "Monthly Logins Used")]
         public string MonthlyLoginsUsed { get; set; }
 
         /// <summary>
         /// Monthly Logins Allotted (int type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Monthly Logins Allotted")]
+        [Display(Name = "Monthly Logins Allotted")]
         public string MonthlyLoginsEntitlement { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -22515,7 +22515,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User Login ID")]
+        [Display(Name = "User Login ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -22523,26 +22523,26 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string UserId { get; set; }
 
         /// <summary>
         /// Is Frozen (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Is Frozen")]
+        [Display(Name = "Is Frozen")]
         public bool? IsFrozen { get; set; }
 
         /// <summary>
         /// Is Password Locked (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Is Password Locked")]
+        [Display(Name = "Is Password Locked")]
         public bool? IsPasswordLocked { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -22550,7 +22550,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
     }
@@ -22567,7 +22567,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User Preference ID")]
+        [Display(Name = "User Preference ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -22575,7 +22575,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string UserId { get; set; }
 
         /// <summary>
@@ -22596,7 +22596,7 @@ namespace Sharpforce
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -22613,7 +22613,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -22621,7 +22621,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Last Name")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         /// <summary>
@@ -22629,7 +22629,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         /// <summary>
@@ -22651,7 +22651,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string ManagerId { get; set; }
 
         /// <summary>
@@ -22659,7 +22659,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("Company Name")]
+        [Display(Name = "Company Name")]
         public string CompanyName { get; set; }
 
         /// <summary>
@@ -22667,7 +22667,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1000)]
         [Editable(false)]
-        [DisplayName("About Me")]
+        [Display(Name = "About Me")]
         public string AboutMe { get; set; }
 
         /// <summary>
@@ -22675,7 +22675,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(128)]
         [Editable(false)]
-        [DisplayName("E-mail")]
+        [Display(Name = "E-mail")]
         public string Email { get; set; }
 
         /// <summary>
@@ -22690,7 +22690,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Cell")]
+        [Display(Name = "Cell")]
         public string MobilePhone { get; set; }
 
         /// <summary>
@@ -22719,7 +22719,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(80)]
         [Editable(false)]
-        [DisplayName("State/Province")]
+        [Display(Name = "State/Province")]
         public string State { get; set; }
 
         /// <summary>
@@ -22727,7 +22727,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(20)]
         [Editable(false)]
-        [DisplayName("Zip/Postal Code")]
+        [Display(Name = "Zip/Postal Code")]
         public string PostalCode { get; set; }
 
         /// <summary>
@@ -22753,357 +22753,357 @@ namespace Sharpforce
         /// User Photo has a badge overlay (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("User Photo has a badge overlay")]
+        [Display(Name = "User Photo has a badge overlay")]
         public bool? IsBadged { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
         /// ActivityRemindersPopup (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ActivityRemindersPopup")]
+        [Display(Name = "ActivityRemindersPopup")]
         public bool? UserPreferencesActivityRemindersPopup { get; set; }
 
         /// <summary>
         /// EventRemindersCheckboxDefault (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("EventRemindersCheckboxDefault")]
+        [Display(Name = "EventRemindersCheckboxDefault")]
         public bool? UserPreferencesEventRemindersCheckboxDefault { get; set; }
 
         /// <summary>
         /// TaskRemindersCheckboxDefault (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("TaskRemindersCheckboxDefault")]
+        [Display(Name = "TaskRemindersCheckboxDefault")]
         public bool? UserPreferencesTaskRemindersCheckboxDefault { get; set; }
 
         /// <summary>
         /// ReminderSoundOff (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ReminderSoundOff")]
+        [Display(Name = "ReminderSoundOff")]
         public bool? UserPreferencesReminderSoundOff { get; set; }
 
         /// <summary>
         /// DisableAllFeedsEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableAllFeedsEmail")]
+        [Display(Name = "DisableAllFeedsEmail")]
         public bool? UserPreferencesDisableAllFeedsEmail { get; set; }
 
         /// <summary>
         /// DisableFollowersEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableFollowersEmail")]
+        [Display(Name = "DisableFollowersEmail")]
         public bool? UserPreferencesDisableFollowersEmail { get; set; }
 
         /// <summary>
         /// DisableProfilePostEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableProfilePostEmail")]
+        [Display(Name = "DisableProfilePostEmail")]
         public bool? UserPreferencesDisableProfilePostEmail { get; set; }
 
         /// <summary>
         /// DisableChangeCommentEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableChangeCommentEmail")]
+        [Display(Name = "DisableChangeCommentEmail")]
         public bool? UserPreferencesDisableChangeCommentEmail { get; set; }
 
         /// <summary>
         /// DisableLaterCommentEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableLaterCommentEmail")]
+        [Display(Name = "DisableLaterCommentEmail")]
         public bool? UserPreferencesDisableLaterCommentEmail { get; set; }
 
         /// <summary>
         /// DisProfPostCommentEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisProfPostCommentEmail")]
+        [Display(Name = "DisProfPostCommentEmail")]
         public bool? UserPreferencesDisProfPostCommentEmail { get; set; }
 
         /// <summary>
         /// ContentNoEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ContentNoEmail")]
+        [Display(Name = "ContentNoEmail")]
         public bool? UserPreferencesContentNoEmail { get; set; }
 
         /// <summary>
         /// ContentEmailAsAndWhen (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ContentEmailAsAndWhen")]
+        [Display(Name = "ContentEmailAsAndWhen")]
         public bool? UserPreferencesContentEmailAsAndWhen { get; set; }
 
         /// <summary>
         /// ApexPagesDeveloperMode (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ApexPagesDeveloperMode")]
+        [Display(Name = "ApexPagesDeveloperMode")]
         public bool? UserPreferencesApexPagesDeveloperMode { get; set; }
 
         /// <summary>
         /// HideCSNGetChatterMobileTask (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("HideCSNGetChatterMobileTask")]
+        [Display(Name = "HideCSNGetChatterMobileTask")]
         public bool? UserPreferencesHideCSNGetChatterMobileTask { get; set; }
 
         /// <summary>
         /// DisableMentionsPostEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableMentionsPostEmail")]
+        [Display(Name = "DisableMentionsPostEmail")]
         public bool? UserPreferencesDisableMentionsPostEmail { get; set; }
 
         /// <summary>
         /// DisMentionsCommentEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisMentionsCommentEmail")]
+        [Display(Name = "DisMentionsCommentEmail")]
         public bool? UserPreferencesDisMentionsCommentEmail { get; set; }
 
         /// <summary>
         /// HideCSNDesktopTask (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("HideCSNDesktopTask")]
+        [Display(Name = "HideCSNDesktopTask")]
         public bool? UserPreferencesHideCSNDesktopTask { get; set; }
 
         /// <summary>
         /// HideChatterOnboardingSplash (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("HideChatterOnboardingSplash")]
+        [Display(Name = "HideChatterOnboardingSplash")]
         public bool? UserPreferencesHideChatterOnboardingSplash { get; set; }
 
         /// <summary>
         /// HideSecondChatterOnboardingSplash (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("HideSecondChatterOnboardingSplash")]
+        [Display(Name = "HideSecondChatterOnboardingSplash")]
         public bool? UserPreferencesHideSecondChatterOnboardingSplash { get; set; }
 
         /// <summary>
         /// DisCommentAfterLikeEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisCommentAfterLikeEmail")]
+        [Display(Name = "DisCommentAfterLikeEmail")]
         public bool? UserPreferencesDisCommentAfterLikeEmail { get; set; }
 
         /// <summary>
         /// DisableLikeEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableLikeEmail")]
+        [Display(Name = "DisableLikeEmail")]
         public bool? UserPreferencesDisableLikeEmail { get; set; }
 
         /// <summary>
         /// DisableMessageEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableMessageEmail")]
+        [Display(Name = "DisableMessageEmail")]
         public bool? UserPreferencesDisableMessageEmail { get; set; }
 
         /// <summary>
         /// OptOutOfTouch (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("OptOutOfTouch")]
+        [Display(Name = "OptOutOfTouch")]
         public bool? UserPreferencesOptOutOfTouch { get; set; }
 
         /// <summary>
         /// DisableBookmarkEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableBookmarkEmail")]
+        [Display(Name = "DisableBookmarkEmail")]
         public bool? UserPreferencesDisableBookmarkEmail { get; set; }
 
         /// <summary>
         /// DisableSharePostEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableSharePostEmail")]
+        [Display(Name = "DisableSharePostEmail")]
         public bool? UserPreferencesDisableSharePostEmail { get; set; }
 
         /// <summary>
         /// EnableAutoSubForFeeds (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("EnableAutoSubForFeeds")]
+        [Display(Name = "EnableAutoSubForFeeds")]
         public bool? UserPreferencesEnableAutoSubForFeeds { get; set; }
 
         /// <summary>
         /// DisableFileShareNotificationsForApi (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableFileShareNotificationsForApi")]
+        [Display(Name = "DisableFileShareNotificationsForApi")]
         public bool? UserPreferencesDisableFileShareNotificationsForApi { get; set; }
 
         /// <summary>
         /// ShowTitleToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowTitleToExternalUsers")]
+        [Display(Name = "ShowTitleToExternalUsers")]
         public bool? UserPreferencesShowTitleToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowManagerToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowManagerToExternalUsers")]
+        [Display(Name = "ShowManagerToExternalUsers")]
         public bool? UserPreferencesShowManagerToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowEmailToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowEmailToExternalUsers")]
+        [Display(Name = "ShowEmailToExternalUsers")]
         public bool? UserPreferencesShowEmailToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowWorkPhoneToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowWorkPhoneToExternalUsers")]
+        [Display(Name = "ShowWorkPhoneToExternalUsers")]
         public bool? UserPreferencesShowWorkPhoneToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowMobilePhoneToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowMobilePhoneToExternalUsers")]
+        [Display(Name = "ShowMobilePhoneToExternalUsers")]
         public bool? UserPreferencesShowMobilePhoneToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowFaxToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowFaxToExternalUsers")]
+        [Display(Name = "ShowFaxToExternalUsers")]
         public bool? UserPreferencesShowFaxToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowStreetAddressToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowStreetAddressToExternalUsers")]
+        [Display(Name = "ShowStreetAddressToExternalUsers")]
         public bool? UserPreferencesShowStreetAddressToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowCityToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowCityToExternalUsers")]
+        [Display(Name = "ShowCityToExternalUsers")]
         public bool? UserPreferencesShowCityToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowStateToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowStateToExternalUsers")]
+        [Display(Name = "ShowStateToExternalUsers")]
         public bool? UserPreferencesShowStateToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowPostalCodeToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowPostalCodeToExternalUsers")]
+        [Display(Name = "ShowPostalCodeToExternalUsers")]
         public bool? UserPreferencesShowPostalCodeToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowCountryToExternalUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowCountryToExternalUsers")]
+        [Display(Name = "ShowCountryToExternalUsers")]
         public bool? UserPreferencesShowCountryToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowProfilePicToGuestUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowProfilePicToGuestUsers")]
+        [Display(Name = "ShowProfilePicToGuestUsers")]
         public bool? UserPreferencesShowProfilePicToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowTitleToGuestUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowTitleToGuestUsers")]
+        [Display(Name = "ShowTitleToGuestUsers")]
         public bool? UserPreferencesShowTitleToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowCityToGuestUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowCityToGuestUsers")]
+        [Display(Name = "ShowCityToGuestUsers")]
         public bool? UserPreferencesShowCityToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowStateToGuestUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowStateToGuestUsers")]
+        [Display(Name = "ShowStateToGuestUsers")]
         public bool? UserPreferencesShowStateToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowPostalCodeToGuestUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowPostalCodeToGuestUsers")]
+        [Display(Name = "ShowPostalCodeToGuestUsers")]
         public bool? UserPreferencesShowPostalCodeToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowCountryToGuestUsers (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("ShowCountryToGuestUsers")]
+        [Display(Name = "ShowCountryToGuestUsers")]
         public bool? UserPreferencesShowCountryToGuestUsers { get; set; }
 
         /// <summary>
         /// DisableFeedbackEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableFeedbackEmail")]
+        [Display(Name = "DisableFeedbackEmail")]
         public bool? UserPreferencesDisableFeedbackEmail { get; set; }
 
         /// <summary>
         /// DisableCoachingEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableCoachingEmail")]
+        [Display(Name = "DisableCoachingEmail")]
         public bool? UserPreferencesDisableCoachingEmail { get; set; }
 
         /// <summary>
         /// DisableGoalEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableGoalEmail")]
+        [Display(Name = "DisableGoalEmail")]
         public bool? UserPreferencesDisableGoalEmail { get; set; }
 
         /// <summary>
         /// DisableWorkEmail (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("DisableWorkEmail")]
+        [Display(Name = "DisableWorkEmail")]
         public bool? UserPreferencesDisableWorkEmail { get; set; }
 
         /// <summary>
         /// HideS1BrowserUI (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("HideS1BrowserUI")]
+        [Display(Name = "HideS1BrowserUI")]
         public bool? UserPreferencesHideS1BrowserUI { get; set; }
 
         /// <summary>
@@ -23111,7 +23111,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1024)]
         [Editable(false)]
-        [DisplayName("Url for full-sized Photo")]
+        [Display(Name = "Url for full-sized Photo")]
         public string FullPhotoUrl { get; set; }
 
         /// <summary>
@@ -23119,14 +23119,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(1024)]
         [Editable(false)]
-        [DisplayName("Url for Thumbnail sized Photo")]
+        [Display(Name = "Url for Thumbnail sized Photo")]
         public string SmallPhotoUrl { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -23134,14 +23134,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -23158,7 +23158,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User Record Access ID")]
+        [Display(Name = "User Record Access ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -23166,7 +23166,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string UserId { get; set; }
 
         /// <summary>
@@ -23174,42 +23174,42 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Record ID")]
+        [Display(Name = "Record ID")]
         public string RecordId { get; set; }
 
         /// <summary>
         /// Has Read Access (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Has Read Access")]
+        [Display(Name = "Has Read Access")]
         public bool? HasReadAccess { get; set; }
 
         /// <summary>
         /// Has Edit Access (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Has Edit Access")]
+        [Display(Name = "Has Edit Access")]
         public bool? HasEditAccess { get; set; }
 
         /// <summary>
         /// Has Delete Access (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Has Delete Access")]
+        [Display(Name = "Has Delete Access")]
         public bool? HasDeleteAccess { get; set; }
 
         /// <summary>
         /// Has Transfer Access (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Has Transfer Access")]
+        [Display(Name = "Has Transfer Access")]
         public bool? HasTransferAccess { get; set; }
 
         /// <summary>
         /// Has All Access (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Has All Access")]
+        [Display(Name = "Has All Access")]
         public bool? HasAllAccess { get; set; }
 
         /// <summary>
@@ -23217,7 +23217,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Maximum Access Level")]
+        [Display(Name = "Maximum Access Level")]
         public string MaxAccessLevel { get; set; }
 
     }
@@ -23234,7 +23234,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Role ID")]
+        [Display(Name = "Role ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -23247,28 +23247,28 @@ namespace Sharpforce
         /// Parent Role ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Parent Role ID")]
+        [Display(Name = "Parent Role ID")]
         public string ParentRoleId { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Description")]
+        [Display(Name = "Description")]
         public string RollupDescription { get; set; }
 
         /// <summary>
         /// Opportunity Access Level for Account Owner (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Opportunity Access Level for Account Owner")]
+        [Display(Name = "Opportunity Access Level for Account Owner")]
         public string OpportunityAccessForAccountOwner { get; set; }
 
         /// <summary>
         /// Case Access Level for Account Owner (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Case Access Level for Account Owner")]
+        [Display(Name = "Case Access Level for Account Owner")]
         public string CaseAccessForAccountOwner { get; set; }
 
         /// <summary>
@@ -23276,28 +23276,28 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Contact Access Level for Account Owner")]
+        [Display(Name = "Contact Access Level for Account Owner")]
         public string ContactAccessForAccountOwner { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string ForecastUserId { get; set; }
 
         /// <summary>
         /// May Forecast Manager Share (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("May Forecast Manager Share")]
+        [Display(Name = "May Forecast Manager Share")]
         public bool? MayForecastManagerShare { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -23305,21 +23305,21 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Developer Name (string type in Salesforce)
         /// </summary>
         [StringLength(80)]
-        [DisplayName("Developer Name")]
+        [Display(Name = "Developer Name")]
         public string DeveloperName { get; set; }
 
         /// <summary>
@@ -23327,7 +23327,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Account ID")]
+        [Display(Name = "Account ID")]
         public string PortalAccountId { get; set; }
 
         /// <summary>
@@ -23335,7 +23335,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Portal Type")]
+        [Display(Name = "Portal Type")]
         public string PortalType { get; set; }
 
         /// <summary>
@@ -23343,7 +23343,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string PortalAccountOwnerId { get; set; }
 
     }
@@ -23360,7 +23360,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User Share ID")]
+        [Display(Name = "User Share ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -23368,7 +23368,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User ID")]
+        [Display(Name = "User ID")]
         public string UserId { get; set; }
 
         /// <summary>
@@ -23376,14 +23376,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("User/Group ID")]
+        [Display(Name = "User/Group ID")]
         public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// User Access Level (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("User Access Level")]
+        [Display(Name = "User Access Level")]
         public string UserAccessLevel { get; set; }
 
         /// <summary>
@@ -23391,14 +23391,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Row Cause")]
+        [Display(Name = "Row Cause")]
         public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -23406,14 +23406,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Active")]
+        [Display(Name = "Active")]
         public bool? IsActive { get; set; }
 
     }
@@ -23430,14 +23430,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Vote ID")]
+        [Display(Name = "Vote ID")]
         public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Deleted")]
+        [Display(Name = "Deleted")]
         public bool? IsDeleted { get; set; }
 
         /// <summary>
@@ -23445,7 +23445,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Parent ID")]
+        [Display(Name = "Parent ID")]
         public string ParentId { get; set; }
 
         /// <summary>
@@ -23453,14 +23453,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Vote Type")]
+        [Display(Name = "Vote Type")]
         public string Type { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -23468,14 +23468,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
@@ -23492,7 +23492,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Custom Link ID")]
+        [Display(Name = "Custom Link ID")]
         public string Id { get; set; }
 
         /// <summary>
@@ -23500,7 +23500,7 @@ namespace Sharpforce
         /// </summary>
         [StringLength(40)]
         [Editable(false)]
-        [DisplayName("Page Or sObject Type Name")]
+        [Display(Name = "Page Or sObject Type Name")]
         public string PageOrSobjectType { get; set; }
 
         /// <summary>
@@ -23512,104 +23512,104 @@ namespace Sharpforce
         /// <summary>
         /// Protected Component (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Protected Component")]
+        [Display(Name = "Protected Component")]
         public bool? IsProtected { get; set; }
 
         /// <summary>
         /// URL (textarea type in Salesforce)
         /// </summary>
         [StringLength(1048576)]
-        [DisplayName("URL")]
+        [Display(Name = "URL")]
         public string Url { get; set; }
 
         /// <summary>
         /// Link Encoding (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Link Encoding")]
+        [Display(Name = "Link Encoding")]
         public string EncodingKey { get; set; }
 
         /// <summary>
         /// Content Source (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Content Source")]
+        [Display(Name = "Content Source")]
         public string LinkType { get; set; }
 
         /// <summary>
         /// Behavior (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Behavior")]
+        [Display(Name = "Behavior")]
         public string OpenType { get; set; }
 
         /// <summary>
         /// Height (in pixels) (int type in Salesforce)
         /// </summary>
-        [DisplayName("Height (in pixels)")]
+        [Display(Name = "Height (in pixels)")]
         public string Height { get; set; }
 
         /// <summary>
         /// Width (in pixels) (int type in Salesforce)
         /// </summary>
-        [DisplayName("Width (in pixels)")]
+        [Display(Name = "Width (in pixels)")]
         public string Width { get; set; }
 
         /// <summary>
         /// Show Address Bar (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Show Address Bar")]
+        [Display(Name = "Show Address Bar")]
         public bool? ShowsLocation { get; set; }
 
         /// <summary>
         /// Show Scrollbars (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Show Scrollbars")]
+        [Display(Name = "Show Scrollbars")]
         public bool? HasScrollbars { get; set; }
 
         /// <summary>
         /// Show Toolbars (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Show Toolbars")]
+        [Display(Name = "Show Toolbars")]
         public bool? HasToolbar { get; set; }
 
         /// <summary>
         /// Show Menu Bar (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Show Menu Bar")]
+        [Display(Name = "Show Menu Bar")]
         public bool? HasMenubar { get; set; }
 
         /// <summary>
         /// Show Status Bar (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Show Status Bar")]
+        [Display(Name = "Show Status Bar")]
         public bool? ShowsStatus { get; set; }
 
         /// <summary>
         /// Resizeable (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Resizeable")]
+        [Display(Name = "Resizeable")]
         public bool? IsResizable { get; set; }
 
         /// <summary>
         /// Window Position (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Window Position")]
+        [Display(Name = "Window Position")]
         public string Position { get; set; }
 
         /// <summary>
         /// Custom S-Control ID (reference type in Salesforce)
         /// </summary>
         [StringLength(18)]
-        [DisplayName("Custom S-Control ID")]
+        [Display(Name = "Custom S-Control ID")]
         public string ScontrolId { get; set; }
 
         /// <summary>
         /// Label (string type in Salesforce)
         /// </summary>
         [StringLength(240)]
-        [DisplayName("Label")]
+        [Display(Name = "Label")]
         public string MasterLabel { get; set; }
 
         /// <summary>
@@ -23622,13 +23622,13 @@ namespace Sharpforce
         /// Display Type (picklist type in Salesforce)
         /// </summary>
         [StringLength(40)]
-        [DisplayName("Display Type")]
+        [Display(Name = "Display Type")]
         public string DisplayType { get; set; }
 
         /// <summary>
         /// Require Row Selection (boolean type in Salesforce)
         /// </summary>
-        [DisplayName("Require Row Selection")]
+        [Display(Name = "Require Row Selection")]
         public bool? RequireRowSelection { get; set; }
 
         /// <summary>
@@ -23636,14 +23636,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(15)]
         [Editable(false)]
-        [DisplayName("Namespace Prefix")]
+        [Display(Name = "Namespace Prefix")]
         public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Created Date")]
+        [Display(Name = "Created Date")]
         public string CreatedDate { get; set; }
 
         /// <summary>
@@ -23651,14 +23651,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Created By ID")]
+        [Display(Name = "Created By ID")]
         public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("Last Modified Date")]
+        [Display(Name = "Last Modified Date")]
         public string LastModifiedDate { get; set; }
 
         /// <summary>
@@ -23666,14 +23666,14 @@ namespace Sharpforce
         /// </summary>
         [StringLength(18)]
         [Editable(false)]
-        [DisplayName("Last Modified By ID")]
+        [Display(Name = "Last Modified By ID")]
         public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
         [Editable(false)]
-        [DisplayName("System Modstamp")]
+        [Display(Name = "System Modstamp")]
         public string SystemModstamp { get; set; }
 
     }
