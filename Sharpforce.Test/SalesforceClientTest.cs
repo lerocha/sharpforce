@@ -39,7 +39,7 @@ namespace Sharpforce.Test
         }
 
         [Test]
-        public void SalesforceClientQueryStrongType()
+        public void SalesforceClientQuery()
         {
             // Arrange
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
@@ -58,7 +58,18 @@ namespace Sharpforce.Test
         }
 
         [Test]
-        public void SalesforceClientQueryStrongTypeFail()
+        public void SalesforceClientQueryValidatesNull()
+        {
+            // Arrange
+            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
+            // Assert
+            Assert.Throws<ArgumentNullException>(()=>service.Query<Account>(null));
+        }
+
+        [Test]
+        public void SalesforceClientQueryFail()
         {
             // Arrange
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
@@ -107,6 +118,17 @@ namespace Sharpforce.Test
             Console.WriteLine(response.Undeletable);
             Console.WriteLine(response.Fields.Count);
             Console.WriteLine(response.Urls.Describe);
+        }
+
+        [Test]
+        public void SalesforceClientDescribeValidatesNull()
+        {
+            // Arrange
+            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
+            // Assert
+            Assert.Throws<ArgumentNullException>(() => service.Describe(null));
         }
 
         [Test]
@@ -167,6 +189,17 @@ namespace Sharpforce.Test
         }
 
         [Test]
+        public void SalesforceClientAddValidatesNull()
+        {
+            // Arrange
+            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
+            // Assert
+            Assert.Throws<ArgumentNullException>(() => service.Add<Account>(null));
+        }
+
+        [Test]
         public void SalesforceClientAddFails()
         {
             // Arrange
@@ -183,6 +216,17 @@ namespace Sharpforce.Test
             // Assert
             var exception = Assert.Throws<SalesforceException>(() => service.Add<Contact>(contact));
             Assert.AreEqual(HttpStatusCode.BadRequest, exception.StatusCode);
+        }
+
+        [Test]
+        public void SalesforceClientDeleteValidatesNull()
+        {
+            // Arrange
+            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
+            // Assert
+            Assert.Throws<ArgumentNullException>(() => service.Delete<Account>(null));
         }
 
         [Test]
@@ -211,7 +255,18 @@ namespace Sharpforce.Test
             Assert.AreEqual(ContactId, contact.Id);
 	    }
 
-	    [Test]
+        [Test]
+        public void SalesforceClientGetValidatesNull()
+        {
+            // Arrange
+            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
+            // Assert
+            Assert.Throws<ArgumentNullException>(() => service.Get<Account>(null));
+        }
+
+        [Test]
         public void SalesforceClientGetNonExistingObject()
 	    {
             // Arrange
@@ -237,6 +292,28 @@ namespace Sharpforce.Test
             // Assert
             contact = service.Get<Contact>(ContactId); 
             Assert.AreEqual(updateContact.Description, contact.Description);
+        }
+
+        [Test]
+        public void SalesforceClientUpdateValidatesNull()
+        {
+            // Arrange
+            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
+            // Assert
+            Assert.Throws<ArgumentNullException>(() => service.Update<Account>(null, "id"));
+        }
+
+        [Test]
+        public void SalesforceClientUpdateValidatesNullId()
+        {
+            // Arrange
+            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+
+            // Act
+            // Assert
+            Assert.Throws<ArgumentNullException>(() => service.Update<Account>(new Account(), null));
         }
 
         [Test]

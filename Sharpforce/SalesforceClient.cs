@@ -14,9 +14,9 @@ namespace Sharpforce
         /// http://www.salesforce.com/us/developer/docs/api_rest/Content/dome_sobject_create.htm
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="t">Salesforce object to be created.</param>
+        /// <param name="sfobject">Salesforce object to be created.</param>
         /// <returns></returns>
-        string Add<T>(object t) where T : new();
+        string Add<T>(object sfobject) where T : new();
 
         /// <summary>
         /// Get an Salesforce object.
@@ -30,10 +30,10 @@ namespace Sharpforce
         /// Updates an object in Salesforce.
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="t">Salesforce object to be updated.</param>
+        /// <param name="sfobject">Salesforce object to be updated.</param>
         /// <param name="id"></param>
         /// <returns></returns>
-        void Update<T>(object t, string id);
+        void Update<T>(object sfobject, string id);
 
         /// <summary>
         /// Deletes an Salesforce object.
@@ -126,17 +126,19 @@ namespace Sharpforce
         /// http://www.salesforce.com/us/developer/docs/api_rest/Content/dome_sobject_create.htm
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="t">Salesforce object to be created.</param>
+        /// <param name="sfobject">Salesforce object to be created.</param>
         /// <returns></returns>
-        public string Add<T>(object t) where T : new()
+        public string Add<T>(object sfobject) where T : new()
         {
+            if (sfobject == null) throw new ArgumentNullException("sfobject");
+
             IRestRequest request = new RestRequest
             {
                 Resource = string.Format("/services/data/{0}/sobjects/{1}", Version, typeof(T).Name),
                 Method = Method.POST,
                 RequestFormat = DataFormat.Json
             };
-            request.AddBody(t);
+            request.AddBody(sfobject);
             var response = ExecuteRequest<AddResponse>(request);
             return response.Data.Id;
         }
@@ -149,6 +151,8 @@ namespace Sharpforce
         /// <returns></returns>
         public T Get<T>(string id) where T : new()
         {
+            if (id == null) throw new ArgumentNullException("id");
+
             IRestRequest request = new RestRequest
             {
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
@@ -162,18 +166,21 @@ namespace Sharpforce
         /// Updates an object in Salesforce.
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="t">Salesforce object to be updated.</param>
+        /// <param name="sfobject">Salesforce object to be updated.</param>
         /// <param name="id"></param>
         /// <returns></returns>
-        public void Update<T>(object t, string id)
+        public void Update<T>(object sfobject, string id)
         {
+            if (sfobject == null) throw new ArgumentNullException("sfobject");
+            if (id == null) throw new ArgumentNullException("id");
+
             IRestRequest request = new RestRequest
             {
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
                 Method = Method.PATCH,
                 RequestFormat = DataFormat.Json
             };
-            request.AddBody(t);
+            request.AddBody(sfobject);
             ExecuteRequest<SalesforceResponse>(request);
         }
 
@@ -185,6 +192,8 @@ namespace Sharpforce
         /// <returns></returns>
         public void Delete<T>(string id) where T : new()
         {
+            if (id == null) throw new ArgumentNullException("id");
+
             IRestRequest request = new RestRequest
             {
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
@@ -201,6 +210,8 @@ namespace Sharpforce
         /// <returns></returns>
         public List<T> Query<T>(string query) where T : new()
         {
+            if (query == null) throw new ArgumentNullException("query");
+
             IRestRequest request = new RestRequest
             {
                 Resource = string.Format("/services/data/{0}/query/?q={1}", Version, query),
@@ -234,6 +245,8 @@ namespace Sharpforce
         /// <returns></returns>
         public DescribeResponse Describe(string name)
         {
+            if (name == null) throw new ArgumentNullException("name");
+
             IRestRequest request = new RestRequest
             {
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/describe/", Version, name),
