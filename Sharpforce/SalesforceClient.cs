@@ -33,7 +33,15 @@ namespace Sharpforce
         /// <param name="obj">Salesforce object to be updated.</param>
         /// <param name="id"></param>
         /// <returns></returns>
-        void Update<T>(object obj, string id);
+        void Update<T>(object obj, string id) where T : new();
+
+        /// <summary>
+        /// Updates an object in Salesforce.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj">Salesforce object to be updated.</param>
+        /// <returns></returns>
+        void Update<T>(T obj) where T : new();
 
         /// <summary>
         /// Deletes an Salesforce object.
@@ -181,7 +189,7 @@ namespace Sharpforce
         /// <param name="obj">Salesforce object to be updated.</param>
         /// <param name="id"></param>
         /// <returns></returns>
-        public void Update<T>(object obj, string id)
+        public void Update<T>(object obj, string id) where T : new()
         {
             if (obj == null) throw new ArgumentNullException("obj");
             if (id == null) throw new ArgumentNullException("id");
@@ -195,6 +203,26 @@ namespace Sharpforce
             };
             request.AddBody(obj);
             ExecuteRequest<SalesforceResponse>(request);
+        }
+
+        /// <summary>
+        /// Updates an object in Salesforce.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj">Salesforce object to be updated.</param>
+        /// <exception cref="System.ArgumentNullException">obj</exception>
+        /// <exception cref="System.ArgumentException">Object to update is missing Id property;obj</exception>
+        public void Update<T>(T obj) where T : new()
+        {
+            if (obj == null) throw new ArgumentNullException("obj");
+
+            var property = obj.GetType().GetProperty("Id");
+            if (property==null) throw new ArgumentException("Id property is missing", "obj");
+
+            var id = property.GetValue(obj, null) as string;
+            if (string.IsNullOrEmpty(id)) throw new ArgumentException("Id property cannot be null or empty", "obj");
+
+            Update<T>(obj, id);
         }
 
         /// <summary>
