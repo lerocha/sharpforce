@@ -34,10 +34,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\SalesforceObjectAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\GlobalAssemblyInfo.cs" />
     <Compile Include="Responses\DescribeGlobalResponse.cs" />
@@ -53,6 +53,7 @@
       <DependentUpon>SalesforceObjects.tt</DependentUpon>
     </Compile>
     <Compile Include="SalesforceClient.cs" />
+    <Compile Include="SalesforceSerializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

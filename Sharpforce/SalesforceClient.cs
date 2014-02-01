@@ -1,7 +1,7 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using RestSharp;
+﻿using RestSharp;
 ﻿using RestSharp.Deserializers;
 ﻿using Sharpforce.Responses;
 
@@ -14,9 +14,9 @@ namespace Sharpforce
         /// http://www.salesforce.com/us/developer/docs/api_rest/Content/dome_sobject_create.htm
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="sfobject">Salesforce object to be created.</param>
+        /// <param name="obj">Salesforce object to be created.</param>
         /// <returns></returns>
-        string Add<T>(object sfobject) where T : new();
+        string Add<T>(object obj) where T : new();
 
         /// <summary>
         /// Get an Salesforce object.
@@ -30,10 +30,10 @@ namespace Sharpforce
         /// Updates an object in Salesforce.
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="sfobject">Salesforce object to be updated.</param>
+        /// <param name="obj">Salesforce object to be updated.</param>
         /// <param name="id"></param>
         /// <returns></returns>
-        void Update<T>(object sfobject, string id);
+        void Update<T>(object obj, string id);
 
         /// <summary>
         /// Deletes an Salesforce object.
@@ -126,19 +126,20 @@ namespace Sharpforce
         /// http://www.salesforce.com/us/developer/docs/api_rest/Content/dome_sobject_create.htm
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="sfobject">Salesforce object to be created.</param>
+        /// <param name="obj">Salesforce object to be created.</param>
         /// <returns></returns>
-        public string Add<T>(object sfobject) where T : new()
+        public string Add<T>(object obj) where T : new()
         {
-            if (sfobject == null) throw new ArgumentNullException("sfobject");
+            if (obj == null) throw new ArgumentNullException("obj");
 
             IRestRequest request = new RestRequest
             {
                 Resource = string.Format("/services/data/{0}/sobjects/{1}", Version, typeof(T).Name),
                 Method = Method.POST,
-                RequestFormat = DataFormat.Json
+                RequestFormat = DataFormat.Json,
+                JsonSerializer = new SalesforceSerializer()
             };
-            request.AddBody(sfobject);
+            request.AddBody(obj);
             var response = ExecuteRequest<AddResponse>(request);
             return response.Data.Id;
         }
@@ -166,21 +167,22 @@ namespace Sharpforce
         /// Updates an object in Salesforce.
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="sfobject">Salesforce object to be updated.</param>
+        /// <param name="obj">Salesforce object to be updated.</param>
         /// <param name="id"></param>
         /// <returns></returns>
-        public void Update<T>(object sfobject, string id)
+        public void Update<T>(object obj, string id)
         {
-            if (sfobject == null) throw new ArgumentNullException("sfobject");
+            if (obj == null) throw new ArgumentNullException("obj");
             if (id == null) throw new ArgumentNullException("id");
 
             IRestRequest request = new RestRequest
             {
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
                 Method = Method.PATCH,
-                RequestFormat = DataFormat.Json
+                RequestFormat = DataFormat.Json,
+                JsonSerializer = new SalesforceSerializer()
             };
-            request.AddBody(sfobject);
+            request.AddBody(obj);
             ExecuteRequest<SalesforceResponse>(request);
         }
 
@@ -297,7 +299,7 @@ namespace Sharpforce
                 }
 
                 Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}", response.StatusCode, errorCode, message);
-                throw new SalesforceException(message, response.StatusCode, errorCode, response.ErrorException);
+                throw new SalesforceException(message, response.StatusCode, errorCode, null);
             }
 
             var salesforceResponse = new SalesforceResponse<T>

@@ -23,20 +23,20 @@ foreach (Contact account in contacts)
 	Console.WriteLine(account.Name);
 }
 
-// Create a new record
-var newContact = new
-{
-	FirstName = "John",
-	LastName = "Smith"
-};
-var id = service.Add<Contact>(newContact);
+// Add a new record using annonymous object
+var id = service.Add<Contact>(new { FirstName = "John", LastName = "Smith" });
+
+// Add a new record using POCO object
+id = service.Add<Contact>(new Contact { FirstName = "John", LastName = "Smith" });
 
 // Read a record
 Contact contact = service.Get<Contact>(id);
 
-// Update a record
-var updateContact = new { Email = "jsmith@gmail.com" };
-service.Update<Contact>(updateContact, id);
+// Update a record using annonymous object
+service.Update<Contact>(new { Email = "jsmith@gmail.com" }, id);
+
+// Update a record using POCO object (null values are not serialized)
+service.Update<Contact>(new Contact{ Email = "jsmith@gmail.com" }, id);
 
 // Delete a record
 service.Delete<Contact>(id);

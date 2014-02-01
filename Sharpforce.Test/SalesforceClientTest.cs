@@ -189,6 +189,31 @@ namespace Sharpforce.Test
         }
 
         [Test]
+        public void SalesforceClientAdd()
+        {
+            // Arrange
+            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var ticks = DateTime.UtcNow.Ticks;
+            var contact = new Contact
+            {
+                LastName = "TestContact",
+                FirstName = ticks.ToString(),
+                Email = "testcontact+" + ticks + "@gmail.com"
+            };
+
+            // Act
+            var id = service.Add<Contact>(contact);
+
+            // Assert
+            Assert.NotNull(id);
+
+            // Act
+            service.Delete<Contact>(id);
+
+            // Assert
+        }
+
+        [Test]
         public void SalesforceClientAddValidatesNull()
         {
             // Arrange
@@ -295,6 +320,22 @@ namespace Sharpforce.Test
         }
 
         [Test]
+        public void SalesforceClientUpdateEntireObject()
+        {
+            // Arrange
+            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            Contact contact = service.Get<Contact>(ContactId);
+            contact.Description = Guid.NewGuid().ToString();
+
+            // Act
+            service.Update<Contact>(contact, contact.Id);
+
+            // Assert
+            var updatedContact = service.Get<Contact>(ContactId);
+            Assert.AreEqual(contact.Description, updatedContact.Description);
+        }
+
+        [Test]
         public void SalesforceClientUpdateValidatesNull()
         {
             // Arrange
@@ -343,20 +384,20 @@ namespace Sharpforce.Test
                 Console.WriteLine(account.Name);
             }
 
-            // Create a new record
-            var newContact = new
-            {
-                FirstName = "John",
-                LastName = "Smith"
-            };
-            var id = service.Add<Contact>(newContact);
+            // Add a new record using annonymous object
+	        var id = service.Add<Contact>(new { FirstName = "John", LastName = "Smith" });
+
+            // Add a new record using POCO object
+            id = service.Add<Contact>(new Contact { FirstName = "John", LastName = "Smith" });
 
             // Read a record
             Contact contact = service.Get<Contact>(id);
 
-            // Update a record
-            var updateContact = new { Email = "jsmith@gmail.com" };
-            service.Update<Contact>(updateContact, id);
+            // Update a record using annonymous object
+            service.Update<Contact>(new { Email = "jsmith@gmail.com" }, id);
+
+            // Update a record using POCO object (null values are not serialized)
+            service.Update<Contact>(new Contact{ Email = "jsmith@gmail.com" }, id);
 
             // Delete a record
             service.Delete<Contact>(id);
