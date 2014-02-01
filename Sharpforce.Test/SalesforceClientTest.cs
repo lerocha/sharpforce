@@ -206,6 +206,7 @@ namespace Sharpforce.Test
 
             // Assert
             Assert.NotNull(id);
+            Assert.AreEqual(id, contact.Id);
 
             // Act
             service.Delete<Contact>(id);

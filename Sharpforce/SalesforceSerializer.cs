@@ -1,7 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using RestSharp.Serializers;
@@ -25,7 +23,7 @@ namespace Sharpforce
             if (obj==null) throw new ArgumentNullException();
 
             // Use JsonSerializer for anonymous types.
-            if (IsAnonymousType(obj.GetType()))
+            if (obj.GetType().IsAnonymous())
             {
                 var serializer = new JsonSerializer();
                 return serializer.Serialize(obj);
@@ -39,19 +37,6 @@ namespace Sharpforce
                 byte[] bytes = stream.ToArray();
                 return Encoding.UTF8.GetString(bytes, 0, bytes.Length);
             }
-        }
-
-        /// <summary>
-        /// http://www.liensberger.it/web/blog/?p=191
-        /// </summary>
-        /// <param name="type"></param>
-        /// <returns></returns>
-        private static bool IsAnonymousType(Type type)
-        {
-            return Attribute.IsDefined(type, typeof(CompilerGeneratedAttribute), false)
-                   && type.IsGenericType && type.Name.Contains("AnonymousType")
-                   && (type.Name.StartsWith("<>") || type.Name.StartsWith("VB$"))
-                   && (type.Attributes & TypeAttributes.NotPublic) == TypeAttributes.NotPublic;
         }
     }
 }

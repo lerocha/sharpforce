@@ -48,6 +48,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="..\Sharpforce\Extensions.cs" >
+      <Link>Extensions.cs</Link>
+    </Compile>
     <Compile Include="..\Sharpforce\Properties\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>

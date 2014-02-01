@@ -48,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="..\Sharpforce\Extensions.cs" >
+      <Link>Extensions.cs</Link>
+    </Compile>
     <Compile Include="..\Sharpforce\Properties\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>

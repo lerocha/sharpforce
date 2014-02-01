@@ -141,6 +141,17 @@ namespace Sharpforce
             };
             request.AddBody(obj);
             var response = ExecuteRequest<AddResponse>(request);
+
+            // Set Id property with the Id returned in the response.
+            if (!obj.GetType().IsAnonymous())
+            {
+                var property = obj.GetType().GetProperty("Id");
+                if (property != null)
+                {
+                    property.SetValue(obj,response.Data.Id, null);
+                }
+            }
+
             return response.Data.Id;
         }
 
