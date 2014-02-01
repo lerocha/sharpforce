@@ -376,6 +376,10 @@ namespace Sharpforce.Test
             // Instantiate the client using a RefreshToken
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
 
+            //-----------------------------------------------------------------------------
+            // Queries
+            //-----------------------------------------------------------------------------
+
             // Execute a SOQL query
             IList<Contact> contacts = service.Query<Contact>("SELECT id, name from Contact");
 
@@ -384,6 +388,10 @@ namespace Sharpforce.Test
             {
                 Console.WriteLine(account.Name);
             }
+
+            //-----------------------------------------------------------------------------
+            // CRUD Operations
+            //-----------------------------------------------------------------------------
 
             // Add a new record using annonymous object
 	        var id = service.Add<Contact>(new { FirstName = "John", LastName = "Smith" });
@@ -404,7 +412,10 @@ namespace Sharpforce.Test
             // Delete a record
             service.Delete<Contact>(id);
 
+            //-----------------------------------------------------------------------------
             // Error Handling
+            //-----------------------------------------------------------------------------
+
 	        try
 	        {
                 service.Add<Contact>(new { Name = "Read-only property" });
