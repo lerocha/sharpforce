@@ -1,7 +1,5 @@
 ## Sharpforce - Salesforce REST API client for .NET and Xamarin iOS/Android
 
-This project is on early stage with basic functionality at this point.
-
 It implements a simple client for the [Salesforce REST API][1] using [RestSharp][2] and targeting multiple platforms.
 
 ### Features
@@ -15,7 +13,7 @@ It implements a simple client for the [Salesforce REST API][1] using [RestSharp]
 var service = new SalesforceClient("ConsumerKey", "ConsumerSecret", "RefreshToken");
 
 // Execute a SOQL query
-List<Contact> contacts = service.Query<Contact>("SELECT id, name from Contact");
+IList<Contact> contacts = service.Query<Contact>("SELECT id, name from Contact");
 
 // Iterate through the records returned.
 foreach (Contact account in contacts)

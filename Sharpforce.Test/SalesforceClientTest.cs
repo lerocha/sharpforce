@@ -45,7 +45,7 @@ namespace Sharpforce.Test
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
 
             // Act
-            List<Account> accounts = service.Query<Account>("SELECT id, name from Account");
+            IList<Account> accounts = service.Query<Account>("SELECT id, name from Account");
 
             // Assert
             Assert.NotNull(accounts);
@@ -87,7 +87,7 @@ namespace Sharpforce.Test
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
 
             // Act
-            List<ApiVersion> versions = service.GetVersions();
+            IList<ApiVersion> versions = service.GetVersions();
 
             // Assert
             Assert.IsNotNull(versions);
@@ -376,7 +376,7 @@ namespace Sharpforce.Test
             var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
 
             // Execute a SOQL query
-            List<Contact> contacts = service.Query<Contact>("SELECT id, name from Contact");
+            IList<Contact> contacts = service.Query<Contact>("SELECT id, name from Contact");
 
             // Iterate through the records returned.
             foreach (Contact account in contacts)

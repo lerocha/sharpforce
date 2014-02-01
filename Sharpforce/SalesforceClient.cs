@@ -48,13 +48,13 @@ namespace Sharpforce
         /// </summary>
         /// <param name="query">SOQL query</param>
         /// <returns></returns>
-        List<T> Query<T>(string query) where T : new();
+        IList<T> Query<T>(string query) where T : new();
 
         /// <summary>
         /// Gets available API the versions.
         /// </summary>
         /// <returns></returns>
-        List<ApiVersion> GetVersions();
+        IList<ApiVersion> GetVersions();
 
         /// <summary>
         /// Completely describes the individual metadata at all levels for the specified object. 
@@ -210,7 +210,7 @@ namespace Sharpforce
         /// <typeparam name="T"></typeparam>
         /// <param name="query">SOQL query</param>
         /// <returns></returns>
-        public List<T> Query<T>(string query) where T : new()
+        public IList<T> Query<T>(string query) where T : new()
         {
             if (query == null) throw new ArgumentNullException("query");
 
@@ -228,7 +228,7 @@ namespace Sharpforce
         /// Gets available API the versions.
         /// </summary>
         /// <returns></returns>
-        public List<ApiVersion> GetVersions()
+        public IList<ApiVersion> GetVersions()
         {
             IRestRequest request = new RestRequest
             {
