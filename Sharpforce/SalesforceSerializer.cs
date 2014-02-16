@@ -1,7 +1,6 @@
 ﻿using System;
-using System.IO;
-using System.Runtime.Serialization.Json;
-using System.Text;
+using System.Diagnostics;
+using Newtonsoft.Json;
 using RestSharp.Serializers;
 
 namespace Sharpforce
@@ -22,21 +21,9 @@ namespace Sharpforce
         {
             if (obj==null) throw new ArgumentNullException();
 
-            // Use JsonSerializer for anonymous types.
-            if (obj.GetType().IsAnonymous())
-            {
-                var serializer = new JsonSerializer();
-                return serializer.Serialize(obj);
-            }
-
-            // Use DataContractJsonSerializer for other types.
-            using (var stream = new MemoryStream())
-            {
-                var serializer = new DataContractJsonSerializer(obj.GetType());
-                serializer.WriteObject(stream, obj);
-                byte[] bytes = stream.ToArray();
-                return Encoding.UTF8.GetString(bytes, 0, bytes.Length);
-            }
+            string json = JsonConvert.SerializeObject(obj, Formatting.Indented, new JsonSerializerSettings{NullValueHandling = NullValueHandling.Ignore});
+            Debug.WriteLine("Serialization; type={0}; json={1}", obj.GetType(), json);
+            return json;
         }
     }
 }

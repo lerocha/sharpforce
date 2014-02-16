@@ -1,4 +1,4 @@
-﻿<#@ template debug="true" hostSpecific="true" #>
+﻿<#@ template debug="true" hostSpecific="true" language="C#" #>
 <#@ output extension=".cs" #>
 <#@ Assembly Name="System.Core.dll" #>
 <#@ Assembly Name="System.Data.Entity.Design.dll" #>
@@ -17,10 +17,10 @@
 <#@ import namespace="System.Globalization" #>
 <#@ import namespace="System.Data.Entity.Design.PluralizationServices" #>
 <#@ include file="SalesforceObjects.ttinclude"#>
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
-using System.Runtime.Serialization;
+using Newtonsoft.Json;
+
 
 // ReSharper disable PartialTypeWithSinglePart
 // ReSharper disable UnusedMember.Local
@@ -37,7 +37,6 @@ namespace Sharpforce
     /// POCO for <#= entity.SalesforceName #>
     /// </summary>
     [DebuggerDisplay("Id={Id}; Name={Name}")]
-    [DataContract]
     public partial class <#= entity.Name #>
     {
 <#
@@ -54,10 +53,10 @@ namespace Sharpforce
         [StringLength(<#= property.Length #>)]
 <#
             }
-                        if (property.IsEditable)
+                        if (!property.IsEditable)
             {
 #>
-        [DataMember(EmitDefaultValue = false)]
+        [JsonIgnore]
 <#
             }
                         if (property.Label!=property.Name)
