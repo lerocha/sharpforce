@@ -30,8 +30,7 @@ namespace Sharpforce
 
             if (Body != null)
             {
-                var json = JsonConvert.SerializeObject(Body, Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-                request.Content = new StringContent(json, Encoding.UTF8, "application/json");
+                request.Content = new StringContent(Body.ToJson(), Encoding.UTF8, "application/json");
             }
 
             request.Headers.Add("Authorization", "Bearer " + AccessToken);

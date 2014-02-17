@@ -53,7 +53,6 @@
     </Compile>
     <Compile Include="SalesforceClient.cs" />
     <Compile Include="SalesforceRequest.cs" />
-    <Compile Include="SalesforceSerializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

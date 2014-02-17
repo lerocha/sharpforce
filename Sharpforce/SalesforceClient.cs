@@ -132,7 +132,7 @@ namespace Sharpforce
                 AccessToken = AccessToken,
                 BaseUrl = InstanceUrl,
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
-                Method = HttpMethod.Post,
+                Method = new HttpMethod("PATCH"),
                 Body = obj,
             };
             ExecuteRequest<SalesforceResponse>(request);
@@ -273,10 +273,9 @@ namespace Sharpforce
                 {
                     // Sets the error information
                     string message = httpResponseMessage.ReasonPhrase;
-                    var errors = JsonConvert.DeserializeObject<List<SalesforceResponse>>(responseContent);
+                    var errors = responseContent.ToObject<List<SalesforceResponse>>();
 
                     string errorCode = null;
-
                     if (errors.Count > 0)
                     {
                         errorCode = errors[0].ErrorCode;
@@ -288,8 +287,7 @@ namespace Sharpforce
                 }
 
                 // Parse the response.
-                var settings = new JsonSerializerSettings();
-                var data = JsonConvert.DeserializeObject<T>(responseContent, settings);
+                var data = responseContent.ToObject<T>();
 
                 var salesforceResponse = new SalesforceResponse<T>
                 {

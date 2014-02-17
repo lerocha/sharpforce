@@ -6219,7 +6219,7 @@ namespace Sharpforce
         /// </summary>
         [JsonIgnore]
         //[Display(Name = "Contact ID")]
-        public string Id { get; set; }
+        public string Id { get; private set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
