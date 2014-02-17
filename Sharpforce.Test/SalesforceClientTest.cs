@@ -10,9 +10,9 @@ namespace Sharpforce.Test
 	[TestFixture]
 	public class SalesforceClientTest
 	{
-        private string ConsumerKey = ConfigurationManager.AppSettings["ConsumerKey"];
-        private string ConsumerSecret = ConfigurationManager.AppSettings["ConsumerSecret"];
-        private string RefreshToken = ConfigurationManager.AppSettings["RefreshToken"];
+        private readonly string _consumerKey = ConfigurationManager.AppSettings["ConsumerKey"];
+        private readonly string _consumerSecret = ConfigurationManager.AppSettings["ConsumerSecret"];
+        private readonly string _refreshToken = ConfigurationManager.AppSettings["RefreshToken"];
 
 	    private const string ContactId = "003i000000W2RMDAA3";
 
@@ -21,7 +21,7 @@ namespace Sharpforce.Test
 		{
             // Arrange
             // Act
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Assert
             Assert.NotNull(service.AccessToken);
@@ -32,7 +32,7 @@ namespace Sharpforce.Test
         {
             // Arrange
             // Act
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken + "Wrong");
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken + "Wrong");
 
             // Assert
             Assert.Null(service.AccessToken);
@@ -42,7 +42,7 @@ namespace Sharpforce.Test
         public void SalesforceClientQuery()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             IList<Account> accounts = service.Query<Account>("SELECT id, name from Account");
@@ -61,7 +61,7 @@ namespace Sharpforce.Test
         public void SalesforceClientQueryValidatesNull()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -72,7 +72,7 @@ namespace Sharpforce.Test
         public void SalesforceClientQueryFail()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -84,7 +84,7 @@ namespace Sharpforce.Test
         public void SalesforceClientGetVersions()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             IList<ApiVersion> versions = service.GetVersions();
@@ -103,7 +103,7 @@ namespace Sharpforce.Test
         public void SalesforceClientDescribe()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             var response = service.Describe("Account");
@@ -124,7 +124,7 @@ namespace Sharpforce.Test
         public void SalesforceClientDescribeValidatesNull()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -135,7 +135,7 @@ namespace Sharpforce.Test
         public void SalesforceClientDescribeFails()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -147,7 +147,7 @@ namespace Sharpforce.Test
         public void SalesforceClientDescribeGlobal()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
             
             // Act
             var response = service.DescribeGlobal();
@@ -167,7 +167,7 @@ namespace Sharpforce.Test
         public void SalesforceClientAddAndDelete()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
             var ticks = DateTime.UtcNow.Ticks;
             var contact = new
                           {
@@ -192,7 +192,7 @@ namespace Sharpforce.Test
         public void SalesforceClientAdd()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
             var ticks = DateTime.UtcNow.Ticks;
             var contact = new Contact
             {
@@ -207,18 +207,13 @@ namespace Sharpforce.Test
             // Assert
             Assert.NotNull(id);
             Assert.AreEqual(id, contact.Id);
-
-            // Act
-            service.Delete<Contact>(id);
-
-            // Assert
         }
 
         [Test]
         public void SalesforceClientAddValidatesNull()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -229,7 +224,7 @@ namespace Sharpforce.Test
         public void SalesforceClientAddFails()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
             var ticks = DateTime.UtcNow.Ticks;
             var contact = new
                           {
@@ -248,7 +243,7 @@ namespace Sharpforce.Test
         public void SalesforceClientDeleteValidatesNull()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -259,7 +254,7 @@ namespace Sharpforce.Test
         public void SalesforceClientDeleteFails()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -271,7 +266,7 @@ namespace Sharpforce.Test
         public void SalesforceClientGetExistingObject()
 	    {
             // Arrange
-	        var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+	        var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
             
             // Act
             Contact contact = service.Get<Contact>(ContactId);
@@ -285,7 +280,7 @@ namespace Sharpforce.Test
         public void SalesforceClientGetValidatesNull()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -296,7 +291,7 @@ namespace Sharpforce.Test
         public void SalesforceClientGetNonExistingObject()
 	    {
             // Arrange
-	        var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+	        var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
             
             // Act
             // Assert
@@ -308,7 +303,7 @@ namespace Sharpforce.Test
         public void SalesforceClientUpdateExistingObject()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
             Contact contact = service.Get<Contact>(ContactId);
             var updateContact = new {Description = Guid.NewGuid().ToString()};
 
@@ -324,7 +319,7 @@ namespace Sharpforce.Test
         public void SalesforceClientUpdateEntireObject()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
             Contact contact = service.Get<Contact>(ContactId);
             contact.Description = Guid.NewGuid().ToString();
 
@@ -340,7 +335,7 @@ namespace Sharpforce.Test
         public void SalesforceClientUpdateValidatesNull()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -351,7 +346,7 @@ namespace Sharpforce.Test
         public void SalesforceClientUpdateValidatesNullId()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -362,7 +357,7 @@ namespace Sharpforce.Test
         public void SalesforceClientUpdateNonExistingObject()
         {
             // Arrange
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             // Act
             // Assert
@@ -374,7 +369,7 @@ namespace Sharpforce.Test
 	    public void ReadmeTest()
 	    {
             // Instantiate the client using a RefreshToken
-            var service = new SalesforceClient(ConsumerKey, ConsumerSecret, RefreshToken);
+            var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
 
             //-----------------------------------------------------------------------------
             // Queries

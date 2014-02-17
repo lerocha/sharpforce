@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-﻿using RestSharp;
-﻿using RestSharp.Deserializers;
-﻿using Sharpforce.Responses;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using Newtonsoft.Json;
+using Sharpforce.Responses;
 
 namespace Sharpforce
 {
@@ -24,36 +26,37 @@ namespace Sharpforce
         /// <param name="refreshToken">The OAuth refresh token.</param>
         /// <param name="version">API version to be used.</param>
         /// <param name="baseUrl">The Salesforce base URL.</param>
-        public SalesforceClient(string consumerKey, string consumerSecret, string refreshToken, string version = DefaultVersion, string baseUrl = DefaultBaseUrl)
+        public SalesforceClient(string consumerKey, string consumerSecret, string refreshToken,
+            string version = DefaultVersion, string baseUrl = DefaultBaseUrl)
         {
-            // Create the RefreshToken request.
-            IRestRequest request = new RestRequest
-                                   {
-                                       Resource = "/services/oauth2/token",
-                                       Method = Method.POST
-                                   };
+            Version = version;
 
-            request.AddParameter("grant_type", "refresh_token");
-            request.AddParameter("client_id", consumerKey);
-            request.AddParameter("client_secret", consumerSecret);
-            request.AddParameter("refresh_token", refreshToken);
+            var httpClient = new HttpClient(new HttpClientHandler());
 
-            IRestClient client = new RestClient();
-            client.BaseUrl = baseUrl;
-            var response = client.Execute<RefreshTokenResponse>(request);
+            // This is the request content
+            HttpContent content = new FormUrlEncodedContent(new[]
+                                                            {
+                                                                new KeyValuePair<string, string>("grant_type", "refresh_token"),
+                                                                new KeyValuePair<string, string>("client_id", consumerKey),
+                                                                new KeyValuePair<string, string>("client_secret", consumerSecret),
+                                                                new KeyValuePair<string, string>("refresh_token", refreshToken),
+                                                            });
 
-            if (response.ErrorException != null)
+            // Send request to Salesforce.
+            HttpResponseMessage httpResponseMessage = httpClient.PostAsync(baseUrl + "/services/oauth2/token", content).Result;
+
+            // Read response as RefreshTokenResponse.
+            var responseContent = httpResponseMessage.Content.ReadAsStringAsync().Result;
+
+            var response = JsonConvert.DeserializeObject(responseContent, typeof (RefreshTokenResponse)) as RefreshTokenResponse;
+            if (response != null)
             {
-                Debug.WriteLine("StatusCode={0}; Message={1}; AccessToken=null", response.StatusCode, response.ErrorMessage);
-                return;
+                AccessToken = response.AccessToken;
+                InstanceUrl = response.InstanceUrl;
             }
 
-            response.Data.StatusCode = response.StatusCode;
-            Debug.WriteLine(response.Data.ToString());
-
-            AccessToken = response.Data.AccessToken;
-            InstanceUrl = response.Data.InstanceUrl;
-            Version = version;
+            Debug.WriteLine("AccessToken={0}; StatusCode={1}; Reason={2}; ResponseContent={3}", 
+                AccessToken, httpResponseMessage.StatusCode, httpResponseMessage.ReasonPhrase, responseContent);
         }
 
         /// <summary>
@@ -67,14 +70,15 @@ namespace Sharpforce
         {
             if (obj == null) throw new ArgumentNullException("obj");
 
-            IRestRequest request = new RestRequest
-            {
-                Resource = string.Format("/services/data/{0}/sobjects/{1}", Version, typeof(T).Name),
-                Method = Method.POST,
-                RequestFormat = DataFormat.Json,
-                JsonSerializer = new SalesforceSerializer()
-            };
-            request.AddBody(obj);
+            var request = new SalesforceRequest
+                                    {
+                                        AccessToken = AccessToken,
+                                        BaseUrl = InstanceUrl,
+                                        Resource = string.Format("/services/data/{0}/sobjects/{1}", Version, typeof(T).Name),
+                                        Method = HttpMethod.Post,
+                                        Body = obj,
+                                    };
+
             var response = ExecuteRequest<AddResponse>(request);
 
             // Set Id property with the Id returned in the response.
@@ -100,10 +104,12 @@ namespace Sharpforce
         {
             if (id == null) throw new ArgumentNullException("id");
 
-            IRestRequest request = new RestRequest
+            var request = new SalesforceRequest
             {
+                AccessToken = AccessToken,
+                BaseUrl = InstanceUrl,
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
-                Method = Method.GET
+                Method = HttpMethod.Get,
             };
             var response = ExecuteRequest<T>(request);
             return response.Data;
@@ -121,14 +127,14 @@ namespace Sharpforce
             if (obj == null) throw new ArgumentNullException("obj");
             if (id == null) throw new ArgumentNullException("id");
 
-            IRestRequest request = new RestRequest
+            var request = new SalesforceRequest
             {
+                AccessToken = AccessToken,
+                BaseUrl = InstanceUrl,
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
-                Method = Method.PATCH,
-                RequestFormat = DataFormat.Json,
-                JsonSerializer = new SalesforceSerializer()
+                Method = HttpMethod.Post,
+                Body = obj,
             };
-            request.AddBody(obj);
             ExecuteRequest<SalesforceResponse>(request);
         }
 
@@ -162,10 +168,12 @@ namespace Sharpforce
         {
             if (id == null) throw new ArgumentNullException("id");
 
-            IRestRequest request = new RestRequest
+            var request = new SalesforceRequest
             {
+                AccessToken = AccessToken,
+                BaseUrl = InstanceUrl,
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
-                Method = Method.DELETE
+                Method = HttpMethod.Delete
             };
             ExecuteRequest<SalesforceResponse>(request);
         }
@@ -180,10 +188,12 @@ namespace Sharpforce
         {
             if (query == null) throw new ArgumentNullException("query");
 
-            IRestRequest request = new RestRequest
+            var request = new SalesforceRequest
             {
+                AccessToken = AccessToken,
+                BaseUrl = InstanceUrl,
                 Resource = string.Format("/services/data/{0}/query/?q={1}", Version, query),
-                Method = Method.GET
+                Method = HttpMethod.Get
             };
 
             var response = ExecuteRequest<QueryResponse<T>>(request);
@@ -196,10 +206,12 @@ namespace Sharpforce
         /// <returns></returns>
         public IList<ApiVersion> GetVersions()
         {
-            IRestRequest request = new RestRequest
+            var request = new SalesforceRequest
             {
+                AccessToken = AccessToken,
+                BaseUrl = InstanceUrl,
                 Resource = "/services/data/",
-                Method = Method.GET
+                Method = HttpMethod.Get
             };
             var response = ExecuteRequest<List<ApiVersion>>(request);
             return response.Data;
@@ -215,10 +227,12 @@ namespace Sharpforce
         {
             if (name == null) throw new ArgumentNullException("name");
 
-            IRestRequest request = new RestRequest
+            var request = new SalesforceRequest
             {
+                AccessToken = AccessToken,
+                BaseUrl = InstanceUrl,
                 Resource = string.Format("/services/data/{0}/sobjects/{1}/describe/", Version, name),
-                Method = Method.GET
+                Method = HttpMethod.Get
             };
 
             var response = ExecuteRequest<DescribeResponse>(request);
@@ -232,50 +246,61 @@ namespace Sharpforce
         /// <returns></returns>
         public DescribeGlobalResponse DescribeGlobal()
         {
-            IRestRequest request = new RestRequest
+            var request = new SalesforceRequest
             {
+                AccessToken = AccessToken,
+                BaseUrl = InstanceUrl,
                 Resource = string.Format("/services/data/{0}/sobjects/", Version),
-                Method = Method.GET
+                Method = HttpMethod.Get
             };
 
             var response = ExecuteRequest<DescribeGlobalResponse>(request);
             return response.Data;
         }
 
-        private SalesforceResponse<T> ExecuteRequest<T>(IRestRequest request) where T : new()
+        private SalesforceResponse<T> ExecuteRequest<T>(SalesforceRequest request) where T : new()
         {
-            request.AddHeader("Authorization", "Bearer " + AccessToken);
-
-            IRestClient client = new RestClient();
-            client.BaseUrl = InstanceUrl;
-            var response = client.Execute<T>(request);
-
-            if (response.ErrorException != null)
+            using (var httpClient = new HttpClient(new HttpClientHandler()))
             {
-                // Sets the error information
-                string message = response.ErrorMessage;
-                var deserializer = new JsonDeserializer();
-                var errors = deserializer.Deserialize<List<SalesforceResponse>>(response);
-                string errorCode = null;
+                var httpResponseMessage = httpClient.SendAsync(request.ToHttpRequestMessage()).Result;
 
-                if (errors.Count > 0)
+                // Read response as RefreshTokenResponse.
+                var responseContent = httpResponseMessage.Content.ReadAsStringAsync().Result;
+                Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}; Data={3}", httpResponseMessage.StatusCode, string.Empty, httpResponseMessage.ReasonPhrase, responseContent);
+
+                // Check for errors
+                if (!httpResponseMessage.IsSuccessStatusCode)
                 {
-                    errorCode = errors[0].ErrorCode;
-                    message = errors[0].Message;
+                    // Sets the error information
+                    string message = httpResponseMessage.ReasonPhrase;
+                    var errors = JsonConvert.DeserializeObject<List<SalesforceResponse>>(responseContent);
+
+                    string errorCode = null;
+
+                    if (errors.Count > 0)
+                    {
+                        errorCode = errors[0].ErrorCode;
+                        message = errors[0].Message;
+                    }
+
+                    Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}", httpResponseMessage.StatusCode, errorCode, message);
+                    throw new SalesforceException(message, httpResponseMessage.StatusCode, errorCode, null);
                 }
 
-                Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}", response.StatusCode, errorCode, message);
-                throw new SalesforceException(message, response.StatusCode, errorCode, null);
+                // Parse the response.
+                var settings = new JsonSerializerSettings();
+                var data = JsonConvert.DeserializeObject<T>(responseContent, settings);
+
+                var salesforceResponse = new SalesforceResponse<T>
+                {
+                    Data = data,
+                    StatusCode = httpResponseMessage.StatusCode, 
+                    Message = httpResponseMessage.ReasonPhrase
+                };
+
+                Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}; Data={3}", salesforceResponse.StatusCode, string.Empty, salesforceResponse.Message, responseContent);
+                return salesforceResponse;
             }
-
-            var salesforceResponse = new SalesforceResponse<T>
-            {
-                Data = response.Data,
-                StatusCode = response.StatusCode
-            };
-
-            Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}; Data={3}", response.StatusCode, string.Empty, response.ErrorMessage, response.Data);
-            return salesforceResponse;
         }
     }
 }

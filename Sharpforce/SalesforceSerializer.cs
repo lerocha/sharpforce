@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
 using Newtonsoft.Json;
-using RestSharp.Serializers;
 
 namespace Sharpforce
 {
-    internal class SalesforceSerializer : ISerializer
+    internal class SalesforceSerializer //: ISerializer
     {
         public string RootElement { get; set; }
         public string Namespace { get; set; }
