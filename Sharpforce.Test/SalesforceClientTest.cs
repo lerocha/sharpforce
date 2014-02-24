@@ -320,8 +320,7 @@ namespace Sharpforce.Test
         {
             // Arrange
             var service = new SalesforceClient(_consumerKey, _consumerSecret, _refreshToken);
-            Contact contact = service.Get<Contact>(ContactId);
-            contact.Description = Guid.NewGuid().ToString();
+            var contact = new Contact {Id = ContactId, Description = Guid.NewGuid().ToString()};
 
             // Act
             service.Update<Contact>(contact);
@@ -398,8 +397,8 @@ namespace Sharpforce.Test
             Contact contact = service.Get<Contact>(id);
 
             // Update a record using POCO object (null values are not serialized)
-            contact.Email = "jsmith@gmail.com";
-            service.Update<Contact>(contact);
+	        contact = new Contact {Id = id, Email = "jsmith@gmail.com"};
+	        service.Update<Contact>(contact);
 
             // Update a record using annonymous object
             service.Update<Contact>(new { Email = "jsmith@yahoo.com" }, id);

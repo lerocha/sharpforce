@@ -114,7 +114,7 @@ public class SalesforceProperty
         Type = SalesforceModel.GetClrType(SalesforceType);
         Label = x.Element("label") != null ? x.Element("label").Value : string.Empty;
         Length = x.Element("length") != null ? x.Element("length").Value : string.Empty;
-        IsEditable = (x.Element("updateable") != null && x.Element("updateable").Value == "true");
+        IsEditable = (x.Element("   ") != null && x.Element("updateable").Value == "true");
         IsCustom = (x.Element("custom") != null && x.Element("custom").Value == "true");
         IsExternalId = (x.Element("externalId") != null && x.Element("externalId").Value == "true");
         IsUnique = (x.Element("unique") != null && x.Element("unique").Value == "true");

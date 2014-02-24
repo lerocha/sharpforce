@@ -81,7 +81,7 @@ namespace Sharpforce.Responses
         public string ControllerName { get; set; }
         public bool ExternalId { get; set; }
         public bool IDLookup { get; set; }
-        public List<string> PicklistValues { get; set; }
+        public List<PicklistValue> PicklistValues { get; set; }
         public int ByteLength { get; set; }
         public string Label { get; set; }
         public int Precision { get; set; }
@@ -107,5 +107,14 @@ namespace Sharpforce.Responses
         public string Describe { get; set; }
         public string RowTemplate { get; set; }
         public string UiNewRecord { get; set; }
+    }
+
+    public class PicklistValue
+    {
+        public string Value { get; set; }
+        public object ValidFor { get; set; }
+        public bool Active { get; set; }
+        public string Label { get; set; }
+        public bool DefaultValue { get; set; }
     }
 }

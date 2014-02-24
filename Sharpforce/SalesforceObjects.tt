@@ -50,23 +50,23 @@ namespace Sharpforce
                         if (property.IsEditable && property.Type == "string" && property.Length!="0")
             {
 #>
-        [StringLength(<#= property.Length #>)]
+        //[StringLength(<#= property.Length #>)]
 <#
             }
                         if (!property.IsEditable)
             {
 #>
-        [JsonIgnore]
+        //[JsonIgnore]
 <#
             }
                         if (property.Label!=property.Name)
             {
 #>
-        [Display(Name = "<#= property.Label #>")]
+        //[Display(Name = "<#= property.Label #>")]
 <#
             }
 #>
-        public <#= property.Type #> <#= property.Name #> { get; <#=property.IsEditable ? "" : "private "#>set; }
+        public <#= property.Type #> <#= property.Name #> { get; set; }
 
 <#
         }

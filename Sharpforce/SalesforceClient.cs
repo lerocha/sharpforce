@@ -155,7 +155,17 @@ namespace Sharpforce
             var id = property.GetValue(obj, null) as string;
             if (string.IsNullOrEmpty(id)) throw new ArgumentException("Id property cannot be null or empty", "obj");
 
-            Update<T>(obj, id);
+            try
+            {
+                // remove id property
+                property.SetValue(obj, null, null);
+                Update<T>(obj, id);
+            }
+            finally
+            {
+                // restore id property
+                property.SetValue(obj, id, null);
+            }
         }
 
         /// <summary>

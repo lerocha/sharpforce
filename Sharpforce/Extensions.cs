@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
-using System.IO;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Runtime.Serialization.Json;
-using System.Text;
 using Newtonsoft.Json;
 
 namespace Sharpforce
@@ -37,26 +34,14 @@ namespace Sharpforce
         {
             if (obj == null) return null;
 
-            string json = JsonConvert.SerializeObject(obj, Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            var settings = new JsonSerializerSettings
+                           {
+                               NullValueHandling = NullValueHandling.Ignore,
+                               DefaultValueHandling = DefaultValueHandling.Ignore
+                           };
+            string json = JsonConvert.SerializeObject(obj, Formatting.Indented, settings);
             Debug.WriteLine("Serialization; type={0}; json={1}", obj.GetType(), json);
             return json;
-
-            //// Use JsonSerializer for anonymous types.
-            //if (obj.GetType().IsAnonymous())
-            //{
-            //    string json = JsonConvert.SerializeObject(obj, Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-            //    Debug.WriteLine("Serialization; type={0}; json={1}", obj.GetType(), json);
-            //    return json;
-            //}
-
-            //// Use DataContractJsonSerializer for other types.
-            //using (var stream = new MemoryStream())
-            //{
-            //    var serializer = new DataContractJsonSerializer(obj.GetType());
-            //    serializer.WriteObject(stream, obj);
-            //    byte[] bytes = stream.ToArray();
-            //    return Encoding.UTF8.GetString(bytes, 0, bytes.Length);
-            //}
         }
 
         /// <summary>
@@ -69,14 +54,15 @@ namespace Sharpforce
         {
             if (value == null) return default(T);
 
-            var settings = new JsonSerializerSettings();
-            return JsonConvert.DeserializeObject<T>(value, settings);
-
-            //using (var stream = new MemoryStream(Encoding.UTF8.GetBytes(value)))
-            //{
-            //    var serializer = new DataContractJsonSerializer(typeof(T));
-            //    return (T) serializer.ReadObject(stream);
-            //}
+            try
+            {
+                return JsonConvert.DeserializeObject<T>(value);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e);
+                return default(T);
+            }
         }
     }
 }

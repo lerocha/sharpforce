@@ -18,84 +18,84 @@ namespace Sharpforce
         /// <summary>
         /// Event Relation ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Event Relation ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Relation ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Relation ID")]
-        public string RelationId { get; private set; }
+        public string RelationId { get; set; }
 
         /// <summary>
         /// Event ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Event ID")]
-        public string EventId { get; private set; }
+        public string EventId { get; set; }
 
         /// <summary>
         /// Response Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Response Date")]
-        public string RespondedDate { get; private set; }
+        public string RespondedDate { get; set; }
 
         /// <summary>
         /// Response (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Response { get; private set; }
+        //[JsonIgnore]
+        public string Response { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Type { get; private set; }
+        //[JsonIgnore]
+        public string Type { get; set; }
 
     }
 
@@ -108,23 +108,23 @@ namespace Sharpforce
         /// <summary>
         /// Account ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Master Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Record ID")]
-        public string MasterRecordId { get; private set; }
+        public string MasterRecordId { get; set; }
 
         /// <summary>
         /// Account Name (string type in Salesforce)
@@ -337,58 +337,58 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Activity")]
-        public string LastActivityDate { get; private set; }
+        public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Data.com Key (string type in Salesforce)
@@ -400,9 +400,9 @@ namespace Sharpforce
         /// <summary>
         /// Jigsaw Company ID (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Jigsaw Company ID")]
-        public string JigsawCompanyId { get; private set; }
+        public string JigsawCompanyId { get; set; }
 
         /// <summary>
         /// Account Source (picklist type in Salesforce)
@@ -476,16 +476,16 @@ namespace Sharpforce
         /// <summary>
         /// Contact Role ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact Role ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountId { get; private set; }
+        public string AccountId { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
@@ -509,44 +509,44 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -559,140 +559,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -705,58 +705,58 @@ namespace Sharpforce
         /// <summary>
         /// Account History ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account History ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountId { get; private set; }
+        public string AccountId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -769,92 +769,92 @@ namespace Sharpforce
         /// <summary>
         /// Account Partner ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account Partner ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountFromId { get; private set; }
+        public string AccountFromId { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountToId { get; private set; }
+        public string AccountToId { get; set; }
 
         /// <summary>
         /// Opportunity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity ID")]
-        public string OpportunityId { get; private set; }
+        public string OpportunityId { get; set; }
 
         /// <summary>
         /// Role (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Role { get; private set; }
+        //[JsonIgnore]
+        public string Role { get; set; }
 
         /// <summary>
         /// Primary (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Primary")]
-        public bool? IsPrimary { get; private set; }
+        public bool? IsPrimary { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Reverse Partner ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reverse Partner ID")]
-        public string ReversePartnerId { get; private set; }
+        public string ReversePartnerId { get; set; }
 
     }
 
@@ -867,79 +867,79 @@ namespace Sharpforce
         /// <summary>
         /// Account Share ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account Share ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountId { get; private set; }
+        public string AccountId { get; set; }
 
         /// <summary>
         /// User/Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User/Group ID")]
-        public string UserOrGroupId { get; private set; }
+        public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// Account Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account Access")]
-        public string AccountAccessLevel { get; private set; }
+        public string AccountAccessLevel { get; set; }
 
         /// <summary>
         /// Opportunity Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity Access")]
-        public string OpportunityAccessLevel { get; private set; }
+        public string OpportunityAccessLevel { get; set; }
 
         /// <summary>
         /// Case Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case Access")]
-        public string CaseAccessLevel { get; private set; }
+        public string CaseAccessLevel { get; set; }
 
         /// <summary>
         /// Contact Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact Access")]
-        public string ContactAccessLevel { get; private set; }
+        public string ContactAccessLevel { get; set; }
 
         /// <summary>
         /// Row Cause (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Row Cause")]
-        public string RowCause { get; private set; }
+        public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -952,215 +952,215 @@ namespace Sharpforce
         /// <summary>
         /// Activity ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Activity ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountId { get; private set; }
+        public string AccountId { get; set; }
 
         /// <summary>
         /// Contact/Lead ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact/Lead ID")]
-        public string WhoId { get; private set; }
+        public string WhoId { get; set; }
 
         /// <summary>
         /// Opportunity/Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity/Account ID")]
-        public string WhatId { get; private set; }
+        public string WhatId { get; set; }
 
         /// <summary>
         /// Subject (combobox type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Subject { get; private set; }
+        //[JsonIgnore]
+        public string Subject { get; set; }
 
         /// <summary>
         /// Task (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Task")]
-        public bool? IsTask { get; private set; }
+        public bool? IsTask { get; set; }
 
         /// <summary>
         /// Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Date")]
-        public string ActivityDate { get; private set; }
+        public string ActivityDate { get; set; }
 
         /// <summary>
         /// Assigned To ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Assigned To ID")]
-        public string OwnerId { get; private set; }
+        public string OwnerId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Status { get; private set; }
+        //[JsonIgnore]
+        public string Status { get; set; }
 
         /// <summary>
         /// Priority (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Priority { get; private set; }
+        //[JsonIgnore]
+        public string Priority { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Type")]
-        public string ActivityType { get; private set; }
+        public string ActivityType { get; set; }
 
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Closed")]
-        public bool? IsClosed { get; private set; }
+        public bool? IsClosed { get; set; }
 
         /// <summary>
         /// All Day Event (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "All Day Event")]
-        public bool? IsAllDayEvent { get; private set; }
+        public bool? IsAllDayEvent { get; set; }
 
         /// <summary>
         /// Public (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Public")]
-        public bool? IsVisibleInSelfService { get; private set; }
+        public bool? IsVisibleInSelfService { get; set; }
 
         /// <summary>
         /// Duration (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Duration")]
-        public string DurationInMinutes { get; private set; }
+        public string DurationInMinutes { get; set; }
 
         /// <summary>
         /// Location (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Location { get; private set; }
+        //[JsonIgnore]
+        public string Location { get; set; }
 
         /// <summary>
         /// Comments (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comments")]
-        public string Description { get; private set; }
+        public string Description { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Call Duration (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Call Duration")]
-        public string CallDurationInSeconds { get; private set; }
+        public string CallDurationInSeconds { get; set; }
 
         /// <summary>
         /// Call Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Call Type")]
-        public string CallType { get; private set; }
+        public string CallType { get; set; }
 
         /// <summary>
         /// Call Result (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Call Result")]
-        public string CallDisposition { get; private set; }
+        public string CallDisposition { get; set; }
 
         /// <summary>
         /// Call Object Identifier (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Call Object Identifier")]
-        public string CallObject { get; private set; }
+        public string CallObject { get; set; }
 
         /// <summary>
         /// Reminder Date/Time (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reminder Date/Time")]
-        public string ReminderDateTime { get; private set; }
+        public string ReminderDateTime { get; set; }
 
         /// <summary>
         /// Reminder Set (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reminder Set")]
-        public bool? IsReminderSet { get; private set; }
+        public bool? IsReminderSet { get; set; }
 
         /// <summary>
         /// End (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "End")]
-        public string EndDateTime { get; private set; }
+        public string EndDateTime { get; set; }
 
         /// <summary>
         /// Start (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Start")]
-        public string StartDateTime { get; private set; }
+        public string StartDateTime { get; set; }
 
     }
 
@@ -1173,16 +1173,16 @@ namespace Sharpforce
         /// <summary>
         /// Additional Directory Number ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Additional Directory Number ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Call Center ID (reference type in Salesforce)
@@ -1212,37 +1212,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -1255,9 +1255,9 @@ namespace Sharpforce
         /// <summary>
         /// Aggregate Result ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Aggregate Result ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
     }
 
@@ -1270,16 +1270,16 @@ namespace Sharpforce
         /// <summary>
         /// Class ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Class ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -1326,37 +1326,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -1369,16 +1369,16 @@ namespace Sharpforce
         /// <summary>
         /// Component ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Component ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -1428,37 +1428,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -1471,82 +1471,82 @@ namespace Sharpforce
         /// <summary>
         /// Log ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Log ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Log User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Log User ID")]
-        public string LogUserId { get; private set; }
+        public string LogUserId { get; set; }
 
         /// <summary>
         /// Log Size (bytes) (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Log Size (bytes)")]
-        public string LogLength { get; private set; }
+        public string LogLength { get; set; }
 
         /// <summary>
         /// Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Request Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Request Type")]
-        public string Request { get; private set; }
+        public string Request { get; set; }
 
         /// <summary>
         /// Operation (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Operation { get; private set; }
+        //[JsonIgnore]
+        public string Operation { get; set; }
 
         /// <summary>
         /// Application (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Application { get; private set; }
+        //[JsonIgnore]
+        public string Application { get; set; }
 
         /// <summary>
         /// Status (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Status { get; private set; }
+        //[JsonIgnore]
+        public string Status { get; set; }
 
         /// <summary>
         /// Duration (ms) (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Duration (ms)")]
-        public string DurationMilliseconds { get; private set; }
+        public string DurationMilliseconds { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Start Time (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Start Time")]
-        public string StartTime { get; private set; }
+        public string StartTime { get; set; }
 
         /// <summary>
         /// Location (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Location { get; private set; }
+        //[JsonIgnore]
+        public string Location { get; set; }
 
     }
 
@@ -1559,16 +1559,16 @@ namespace Sharpforce
         /// <summary>
         /// Page ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Page ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -1630,37 +1630,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -1673,37 +1673,37 @@ namespace Sharpforce
         /// <summary>
         /// Apex Test Queue Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Apex Test Queue Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Class ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Class ID")]
-        public string ApexClassId { get; private set; }
+        public string ApexClassId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
@@ -1714,16 +1714,16 @@ namespace Sharpforce
         /// <summary>
         /// Status Detail (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Status Detail")]
-        public string ExtendedStatus { get; private set; }
+        public string ExtendedStatus { get; set; }
 
         /// <summary>
         /// Apex Job ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Apex Job ID")]
-        public string ParentJobId { get; private set; }
+        public string ParentJobId { get; set; }
 
     }
 
@@ -1736,79 +1736,79 @@ namespace Sharpforce
         /// <summary>
         /// Apex Test Result ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Apex Test Result ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Time Started (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Time Started")]
-        public string TestTimestamp { get; private set; }
+        public string TestTimestamp { get; set; }
 
         /// <summary>
         /// Pass/Fail (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Pass/Fail")]
-        public string Outcome { get; private set; }
+        public string Outcome { get; set; }
 
         /// <summary>
         /// Class ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Class ID")]
-        public string ApexClassId { get; private set; }
+        public string ApexClassId { get; set; }
 
         /// <summary>
         /// Method Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Method Name")]
-        public string MethodName { get; private set; }
+        public string MethodName { get; set; }
 
         /// <summary>
         /// Error Message (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Error Message")]
-        public string Message { get; private set; }
+        public string Message { get; set; }
 
         /// <summary>
         /// Stack Trace (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Stack Trace")]
-        public string StackTrace { get; private set; }
+        public string StackTrace { get; set; }
 
         /// <summary>
         /// Apex Job ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Apex Job ID")]
-        public string AsyncApexJobId { get; private set; }
+        public string AsyncApexJobId { get; set; }
 
         /// <summary>
         /// Apex Test Queue Item ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Apex Test Queue Item ID")]
-        public string QueueItemId { get; private set; }
+        public string QueueItemId { get; set; }
 
         /// <summary>
         /// Log ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Log ID")]
-        public string ApexLogId { get; private set; }
+        public string ApexLogId { get; set; }
 
     }
 
@@ -1821,16 +1821,16 @@ namespace Sharpforce
         /// <summary>
         /// Trigger ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Trigger ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -1932,37 +1932,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -1975,195 +1975,195 @@ namespace Sharpforce
         /// <summary>
         /// AppMenuItem ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "AppMenuItem ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sort Order")]
-        public string SortOrder { get; private set; }
+        public string SortOrder { get; set; }
 
         /// <summary>
         /// Developer Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Developer Name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Label { get; private set; }
+        //[JsonIgnore]
+        public string Label { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Description { get; private set; }
+        //[JsonIgnore]
+        public string Description { get; set; }
 
         /// <summary>
         /// Start Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Start Url")]
-        public string StartUrl { get; private set; }
+        public string StartUrl { get; set; }
 
         /// <summary>
         /// Mobile Start Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Mobile Start Url")]
-        public string MobileStartUrl { get; private set; }
+        public string MobileStartUrl { get; set; }
 
         /// <summary>
         /// Logo Image URL (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Logo Image URL")]
-        public string LogoUrl { get; private set; }
+        public string LogoUrl { get; set; }
 
         /// <summary>
         /// Icon Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Icon Url")]
-        public string IconUrl { get; private set; }
+        public string IconUrl { get; set; }
 
         /// <summary>
         /// Info URL (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Info URL")]
-        public string InfoUrl { get; private set; }
+        public string InfoUrl { get; set; }
 
         /// <summary>
         /// IsUsingAdminAuthorization (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public bool? IsUsingAdminAuthorization { get; private set; }
+        //[JsonIgnore]
+        public bool? IsUsingAdminAuthorization { get; set; }
 
         /// <summary>
         /// Mobile device OS platform (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Mobile device OS platform")]
-        public string MobilePlatform { get; private set; }
+        public string MobilePlatform { get; set; }
 
         /// <summary>
         /// Minimum required mobile device OS version (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Minimum required mobile device OS version")]
-        public string MobileMinOsVer { get; private set; }
+        public string MobileMinOsVer { get; set; }
 
         /// <summary>
         /// Type of mobile device (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Type of mobile device")]
-        public string MobileDeviceType { get; private set; }
+        public string MobileDeviceType { get; set; }
 
         /// <summary>
         /// App requires a registered mobile device (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "App requires a registered mobile device")]
-        public bool? IsRegisteredDeviceOnly { get; private set; }
+        public bool? IsRegisteredDeviceOnly { get; set; }
 
         /// <summary>
         /// Version of the mobile app (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Version of the mobile app")]
-        public string MobileAppVer { get; private set; }
+        public string MobileAppVer { get; set; }
 
         /// <summary>
         /// Date the mobile app was most recently installed (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Date the mobile app was most recently installed")]
-        public string MobileAppInstalledDate { get; private set; }
+        public string MobileAppInstalledDate { get; set; }
 
         /// <summary>
         /// Most recently installed version of the mobile app (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Most recently installed version of the mobile app")]
-        public string MobileAppInstalledVersion { get; private set; }
+        public string MobileAppInstalledVersion { get; set; }
 
         /// <summary>
         /// ID for the related mobile app binary (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ID for the related mobile app binary")]
-        public string MobileAppBinaryId { get; private set; }
+        public string MobileAppBinaryId { get; set; }
 
         /// <summary>
         /// URL to install the mobile app (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "URL to install the mobile app")]
-        public string MobileAppInstallUrl { get; private set; }
+        public string MobileAppInstallUrl { get; set; }
 
         /// <summary>
         /// App Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "App Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
     }
 
@@ -2176,23 +2176,23 @@ namespace Sharpforce
         /// <summary>
         /// Approval ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Approval ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
@@ -2204,30 +2204,30 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
@@ -2252,9 +2252,9 @@ namespace Sharpforce
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -2267,9 +2267,9 @@ namespace Sharpforce
         /// <summary>
         /// Asset ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Asset ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
@@ -2301,44 +2301,44 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Asset Name (string type in Salesforce)
@@ -2405,140 +2405,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -2551,63 +2551,63 @@ namespace Sharpforce
         /// <summary>
         /// Rule ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Rule ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Name { get; private set; }
+        //[JsonIgnore]
+        public string Name { get; set; }
 
         /// <summary>
         /// SObject Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "SObject Type")]
-        public string SobjectType { get; private set; }
+        public string SobjectType { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public bool? Active { get; private set; }
+        //[JsonIgnore]
+        public bool? Active { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -2620,106 +2620,106 @@ namespace Sharpforce
         /// <summary>
         /// Apex Job ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Apex Job ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Job Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Job Type")]
-        public string JobType { get; private set; }
+        public string JobType { get; set; }
 
         /// <summary>
         /// Class ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Class ID")]
-        public string ApexClassId { get; private set; }
+        public string ApexClassId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Status { get; private set; }
+        //[JsonIgnore]
+        public string Status { get; set; }
 
         /// <summary>
         /// Batches Processed (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Batches Processed")]
-        public string JobItemsProcessed { get; private set; }
+        public string JobItemsProcessed { get; set; }
 
         /// <summary>
         /// Total Batches (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Total Batches")]
-        public string TotalJobItems { get; private set; }
+        public string TotalJobItems { get; set; }
 
         /// <summary>
         /// Failures (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Failures")]
-        public string NumberOfErrors { get; private set; }
+        public string NumberOfErrors { get; set; }
 
         /// <summary>
         /// Completion Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Completion Date")]
-        public string CompletedDate { get; private set; }
+        public string CompletedDate { get; set; }
 
         /// <summary>
         /// Apex Method (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Apex Method")]
-        public string MethodName { get; private set; }
+        public string MethodName { get; set; }
 
         /// <summary>
         /// Status Detail (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Status Detail")]
-        public string ExtendedStatus { get; private set; }
+        public string ExtendedStatus { get; set; }
 
         /// <summary>
         /// Apex Job ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Apex Job ID")]
-        public string ParentJobId { get; private set; }
+        public string ParentJobId { get; set; }
 
         /// <summary>
         /// Last ID processed and committed (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last ID processed and committed")]
-        public string LastProcessed { get; private set; }
+        public string LastProcessed { get; set; }
 
         /// <summary>
         /// Offset of last ID processed and committed (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Offset of last ID processed and committed")]
-        public string LastProcessedOffset { get; private set; }
+        public string LastProcessedOffset { get; set; }
 
     }
 
@@ -2732,64 +2732,64 @@ namespace Sharpforce
         /// <summary>
         /// Content Document Link Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Document Link Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string LinkedEntityId { get; private set; }
+        public string LinkedEntityId { get; set; }
 
         /// <summary>
         /// ContentDocument ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentDocument ID")]
-        public string ContentDocumentId { get; private set; }
+        public string ContentDocumentId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Content Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
     }
 
@@ -2802,23 +2802,23 @@ namespace Sharpforce
         /// <summary>
         /// Attachment ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Attachment ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// File Name (string type in Salesforce)
@@ -2843,9 +2843,9 @@ namespace Sharpforce
         /// <summary>
         /// Body Length (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Body Length")]
-        public string BodyLength { get; private set; }
+        public string BodyLength { get; set; }
 
         /// <summary>
         /// Body (base64 type in Salesforce)
@@ -2862,37 +2862,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
@@ -2911,16 +2911,16 @@ namespace Sharpforce
         /// <summary>
         /// Auth. Provider ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Auth. Provider ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Provider Type (picklist type in Salesforce)
@@ -2967,9 +2967,9 @@ namespace Sharpforce
         /// <summary>
         /// Consumer Secret (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Consumer Secret")]
-        public string ConsumerSecret { get; private set; }
+        public string ConsumerSecret { get; set; }
 
         /// <summary>
         /// Custom Error URL (string type in Salesforce)
@@ -3017,72 +3017,72 @@ namespace Sharpforce
         /// <summary>
         /// Auth Session ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Auth Session ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string UsersId { get; private set; }
+        public string UsersId { get; set; }
 
         /// <summary>
         /// Created (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Updated (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Updated")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Valid For (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Valid For")]
-        public string NumSecondsValid { get; private set; }
+        public string NumSecondsValid { get; set; }
 
         /// <summary>
         /// User Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User Type")]
-        public string UserType { get; private set; }
+        public string UserType { get; set; }
 
         /// <summary>
         /// Source IP (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Source IP")]
-        public string SourceIp { get; private set; }
+        public string SourceIp { get; set; }
 
         /// <summary>
         /// Login (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Login")]
-        public string LoginType { get; private set; }
+        public string LoginType { get; set; }
 
         /// <summary>
         /// Session Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Session Type")]
-        public string SessionType { get; private set; }
+        public string SessionType { get; set; }
 
         /// <summary>
         /// Session Security Level (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Session Security Level")]
-        public string SessionSecurityLevel { get; private set; }
+        public string SessionSecurityLevel { get; set; }
 
     }
 
@@ -3095,9 +3095,9 @@ namespace Sharpforce
         /// <summary>
         /// Letterhead ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Letterhead ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Brand Template Name (string type in Salesforce)
@@ -3134,44 +3134,44 @@ namespace Sharpforce
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -3184,9 +3184,9 @@ namespace Sharpforce
         /// <summary>
         /// Business Hours ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Business Hours ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Business Hours Name (string type in Salesforce)
@@ -3301,37 +3301,37 @@ namespace Sharpforce
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
     }
 
@@ -3344,9 +3344,9 @@ namespace Sharpforce
         /// <summary>
         /// Business Process ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Business Process ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -3357,9 +3357,9 @@ namespace Sharpforce
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
@@ -3370,9 +3370,9 @@ namespace Sharpforce
         /// <summary>
         /// Entity Enumeration Or ID (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Entity Enumeration Or ID")]
-        public string TableEnumOrId { get; private set; }
+        public string TableEnumOrId { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
@@ -3383,37 +3383,37 @@ namespace Sharpforce
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -3426,77 +3426,77 @@ namespace Sharpforce
         /// <summary>
         /// Call Center ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Call Center ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Name { get; private set; }
+        //[JsonIgnore]
+        public string Name { get; set; }
 
         /// <summary>
         /// Internal Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Internal Name")]
-        public string InternalName { get; private set; }
+        public string InternalName { get; set; }
 
         /// <summary>
         /// Version (double type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Version { get; private set; }
+        //[JsonIgnore]
+        public string Version { get; set; }
 
         /// <summary>
         /// CTI Adapter URL (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "CTI Adapter URL")]
-        public string AdapterUrl { get; private set; }
+        public string AdapterUrl { get; set; }
 
         /// <summary>
         /// Custom Settings (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Custom Settings")]
-        public string CustomSettings { get; private set; }
+        public string CustomSettings { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
     }
 
@@ -3509,16 +3509,16 @@ namespace Sharpforce
         /// <summary>
         /// Campaign ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Campaign ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -3602,58 +3602,58 @@ namespace Sharpforce
         /// <summary>
         /// Total Leads (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Total Leads")]
-        public string NumberOfLeads { get; private set; }
+        public string NumberOfLeads { get; set; }
 
         /// <summary>
         /// Converted Leads (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Converted Leads")]
-        public string NumberOfConvertedLeads { get; private set; }
+        public string NumberOfConvertedLeads { get; set; }
 
         /// <summary>
         /// Total Contacts (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Total Contacts")]
-        public string NumberOfContacts { get; private set; }
+        public string NumberOfContacts { get; set; }
 
         /// <summary>
         /// Total Responses (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Total Responses")]
-        public string NumberOfResponses { get; private set; }
+        public string NumberOfResponses { get; set; }
 
         /// <summary>
         /// Num Total Opportunities (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Num Total Opportunities")]
-        public string NumberOfOpportunities { get; private set; }
+        public string NumberOfOpportunities { get; set; }
 
         /// <summary>
         /// Num Won Opportunities (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Num Won Opportunities")]
-        public string NumberOfWonOpportunities { get; private set; }
+        public string NumberOfWonOpportunities { get; set; }
 
         /// <summary>
         /// Total Value Opportunities (currency type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Total Value Opportunities")]
-        public string AmountAllOpportunities { get; private set; }
+        public string AmountAllOpportunities { get; set; }
 
         /// <summary>
         /// Total Value Won Opportunities (currency type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Total Value Won Opportunities")]
-        public string AmountWonOpportunities { get; private set; }
+        public string AmountWonOpportunities { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
@@ -3665,58 +3665,58 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Activity")]
-        public string LastActivityDate { get; private set; }
+        public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Record Type ID (reference type in Salesforce)
@@ -3736,140 +3736,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -3882,37 +3882,37 @@ namespace Sharpforce
         /// <summary>
         /// Campaign Member ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Campaign Member ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Campaign ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Campaign ID")]
-        public string CampaignId { get; private set; }
+        public string CampaignId { get; set; }
 
         /// <summary>
         /// Lead ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Lead ID")]
-        public string LeadId { get; private set; }
+        public string LeadId { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact ID")]
-        public string ContactId { get; private set; }
+        public string ContactId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
@@ -3923,51 +3923,51 @@ namespace Sharpforce
         /// <summary>
         /// Responded (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Responded")]
-        public bool? HasResponded { get; private set; }
+        public bool? HasResponded { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// First Responded Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "First Responded Date")]
-        public string FirstRespondedDate { get; private set; }
+        public string FirstRespondedDate { get; set; }
 
     }
 
@@ -3980,29 +3980,29 @@ namespace Sharpforce
         /// <summary>
         /// Campaign Member Status ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Campaign Member Status ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Campaign ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Campaign ID")]
-        public string CampaignId { get; private set; }
+        public string CampaignId { get; set; }
 
         /// <summary>
         /// Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Label { get; private set; }
+        //[JsonIgnore]
+        public string Label { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
@@ -4025,37 +4025,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -4068,58 +4068,58 @@ namespace Sharpforce
         /// <summary>
         /// Campaign Share ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Campaign Share ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Campaign ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Campaign ID")]
-        public string CampaignId { get; private set; }
+        public string CampaignId { get; set; }
 
         /// <summary>
         /// User/Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User/Group ID")]
-        public string UserOrGroupId { get; private set; }
+        public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// Campaign Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Campaign Access")]
-        public string CampaignAccessLevel { get; private set; }
+        public string CampaignAccessLevel { get; set; }
 
         /// <summary>
         /// Row Cause (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Row Cause")]
-        public string RowCause { get; private set; }
+        public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -4132,23 +4132,23 @@ namespace Sharpforce
         /// <summary>
         /// Case ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Case Number (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case Number")]
-        public string CaseNumber { get; private set; }
+        public string CaseNumber { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
@@ -4254,16 +4254,16 @@ namespace Sharpforce
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Closed")]
-        public bool? IsClosed { get; private set; }
+        public bool? IsClosed { get; set; }
 
         /// <summary>
         /// Closed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Closed Date")]
-        public string ClosedDate { get; private set; }
+        public string ClosedDate { get; set; }
 
         /// <summary>
         /// Escalated (boolean type in Salesforce)
@@ -4281,51 +4281,51 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Engineering Req Number (string type in Salesforce)
@@ -4366,16 +4366,16 @@ namespace Sharpforce
         /// <summary>
         /// Case Comment ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case Comment ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Published (boolean type in Salesforce)
@@ -4393,44 +4393,44 @@ namespace Sharpforce
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -4443,16 +4443,16 @@ namespace Sharpforce
         /// <summary>
         /// Contact Role ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact Role ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Case ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case ID")]
-        public string CasesId { get; private set; }
+        public string CasesId { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
@@ -4470,44 +4470,44 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -4520,140 +4520,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -4666,58 +4666,58 @@ namespace Sharpforce
         /// <summary>
         /// Case History ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case History ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Case ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case ID")]
-        public string CaseId { get; private set; }
+        public string CaseId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -4730,58 +4730,58 @@ namespace Sharpforce
         /// <summary>
         /// Case Share ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case Share ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Case ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case ID")]
-        public string CaseId { get; private set; }
+        public string CaseId { get; set; }
 
         /// <summary>
         /// User/Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User/Group ID")]
-        public string UserOrGroupId { get; private set; }
+        public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// Case Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case Access")]
-        public string CaseAccessLevel { get; private set; }
+        public string CaseAccessLevel { get; set; }
 
         /// <summary>
         /// Row Cause (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Row Cause")]
-        public string RowCause { get; private set; }
+        public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -4794,51 +4794,51 @@ namespace Sharpforce
         /// <summary>
         /// Case Solution ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case Solution ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Case ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case ID")]
-        public string CaseId { get; private set; }
+        public string CaseId { get; set; }
 
         /// <summary>
         /// Solution ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Solution ID")]
-        public string SolutionId { get; private set; }
+        public string SolutionId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -4851,72 +4851,72 @@ namespace Sharpforce
         /// <summary>
         /// Case Status Value ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case Status Value ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Master Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Label")]
-        public string MasterLabel { get; private set; }
+        public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sort Order")]
-        public string SortOrder { get; private set; }
+        public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Default")]
-        public bool? IsDefault { get; private set; }
+        public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Is Closed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Closed")]
-        public bool? IsClosed { get; private set; }
+        public bool? IsClosed { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -4929,30 +4929,30 @@ namespace Sharpforce
         /// <summary>
         /// Team Member Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Team Member Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Case ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Member ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Member ID")]
-        public string MemberId { get; private set; }
+        public string MemberId { get; set; }
 
         /// <summary>
         /// Team Template Member ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Team Template Member ID")]
-        public string TeamTemplateMemberId { get; private set; }
+        public string TeamTemplateMemberId { get; set; }
 
         /// <summary>
         /// Team Role ID (reference type in Salesforce)
@@ -4964,37 +4964,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -5007,9 +5007,9 @@ namespace Sharpforce
         /// <summary>
         /// Team Role Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Team Role Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -5033,37 +5033,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -5076,9 +5076,9 @@ namespace Sharpforce
         /// <summary>
         /// Team Template Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Team Template Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -5095,37 +5095,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -5138,23 +5138,23 @@ namespace Sharpforce
         /// <summary>
         /// Team Template Member Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Team Template Member Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Team Template ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Team Template ID")]
-        public string TeamTemplateId { get; private set; }
+        public string TeamTemplateId { get; set; }
 
         /// <summary>
         /// Member ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Member ID")]
-        public string MemberId { get; private set; }
+        public string MemberId { get; set; }
 
         /// <summary>
         /// Team Role ID (reference type in Salesforce)
@@ -5166,37 +5166,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -5209,44 +5209,44 @@ namespace Sharpforce
         /// <summary>
         /// Predefined Team Record Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Predefined Team Record Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Case ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Case ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Team Template ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Team Template ID")]
-        public string TeamTemplateId { get; private set; }
+        public string TeamTemplateId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -5259,9 +5259,9 @@ namespace Sharpforce
         /// <summary>
         /// Category Data ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Category Data ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Category Node ID (reference type in Salesforce)
@@ -5280,44 +5280,44 @@ namespace Sharpforce
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -5330,9 +5330,9 @@ namespace Sharpforce
         /// <summary>
         /// Category Node ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Category Node ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent Category Node ID (reference type in Salesforce)
@@ -5364,37 +5364,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -5407,58 +5407,58 @@ namespace Sharpforce
         /// <summary>
         /// Chatter Activity ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Chatter Activity ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Post Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Post Count")]
-        public string PostCount { get; private set; }
+        public string PostCount { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Comment Received Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Received Count")]
-        public string CommentReceivedCount { get; private set; }
+        public string CommentReceivedCount { get; set; }
 
         /// <summary>
         /// Like Received Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Received Count")]
-        public string LikeReceivedCount { get; private set; }
+        public string LikeReceivedCount { get; set; }
 
         /// <summary>
         /// Influence Raw Rank (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Influence Raw Rank")]
-        public string InfluenceRawRank { get; private set; }
+        public string InfluenceRawRank { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -5471,44 +5471,44 @@ namespace Sharpforce
         /// <summary>
         /// Client Browser ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Client Browser ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string UsersId { get; private set; }
+        public string UsersId { get; set; }
 
         /// <summary>
         /// Full User Agent (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Full User Agent")]
-        public string FullUserAgent { get; private set; }
+        public string FullUserAgent { get; set; }
 
         /// <summary>
         /// Proxy Info (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Proxy Info")]
-        public string ProxyInfo { get; private set; }
+        public string ProxyInfo { get; set; }
 
         /// <summary>
         /// Last Update (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Update")]
-        public string LastUpdate { get; private set; }
+        public string LastUpdate { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
     }
 
@@ -5521,9 +5521,9 @@ namespace Sharpforce
         /// <summary>
         /// Chatter Group Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Chatter Group Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -5534,9 +5534,9 @@ namespace Sharpforce
         /// <summary>
         /// Member Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Member Count")]
-        public string MemberCount { get; private set; }
+        public string MemberCount { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
@@ -5561,58 +5561,58 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Url for full-sized Photo (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Url for full-sized Photo")]
-        public string FullPhotoUrl { get; private set; }
+        public string FullPhotoUrl { get; set; }
 
         /// <summary>
         /// Url for Thumbnail sized Photo (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Url for Thumbnail sized Photo")]
-        public string SmallPhotoUrl { get; private set; }
+        public string SmallPhotoUrl { get; set; }
 
         /// <summary>
         /// Last Feed Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Feed Modified Date")]
-        public string LastFeedModifiedDate { get; private set; }
+        public string LastFeedModifiedDate { get; set; }
 
         /// <summary>
         /// Information Title (string type in Salesforce)
@@ -5631,9 +5631,9 @@ namespace Sharpforce
         /// <summary>
         /// Has Private Fields Access (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Has Private Fields Access")]
-        public bool? HasPrivateFieldsAccess { get; private set; }
+        public bool? HasPrivateFieldsAccess { get; set; }
 
         /// <summary>
         /// Allow Customers (boolean type in Salesforce)
@@ -5644,16 +5644,16 @@ namespace Sharpforce
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Is Archived (boolean type in Salesforce)
@@ -5678,140 +5678,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -5824,23 +5824,23 @@ namespace Sharpforce
         /// <summary>
         /// Chatter Group Member Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Chatter Group Member Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// CollaborationGroup ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "CollaborationGroup ID")]
-        public string CollaborationGroupId { get; private set; }
+        public string CollaborationGroupId { get; set; }
 
         /// <summary>
         /// Member ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Member ID")]
-        public string MemberId { get; private set; }
+        public string MemberId { get; set; }
 
         /// <summary>
         /// Chatter Role (picklist type in Salesforce)
@@ -5859,37 +5859,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -5902,23 +5902,23 @@ namespace Sharpforce
         /// <summary>
         /// Chatter Group Member Request Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Chatter Group Member Request Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// CollaborationGroup ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "CollaborationGroup ID")]
-        public string CollaborationGroupId { get; private set; }
+        public string CollaborationGroupId { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string RequesterId { get; private set; }
+        public string RequesterId { get; set; }
 
         /// <summary>
         /// Response Message (string type in Salesforce)
@@ -5936,37 +5936,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -5979,93 +5979,93 @@ namespace Sharpforce
         /// <summary>
         /// Chatter Invitation Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Chatter Invitation Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Shared Entity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Shared Entity ID")]
-        public string SharedEntityId { get; private set; }
+        public string SharedEntityId { get; set; }
 
         /// <summary>
         /// Inviter User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Inviter User ID")]
-        public string InviterId { get; private set; }
+        public string InviterId { get; set; }
 
         /// <summary>
         /// Invited Email (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Invited Email")]
-        public string InvitedUserEmail { get; private set; }
+        public string InvitedUserEmail { get; set; }
 
         /// <summary>
         /// Invited Email (Normalized) (email type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Invited Email (Normalized)")]
-        public string InvitedUserEmailNormalized { get; private set; }
+        public string InvitedUserEmailNormalized { get; set; }
 
         /// <summary>
         /// Invitation Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Invitation Status")]
-        public string Status { get; private set; }
+        public string Status { get; set; }
 
         /// <summary>
         /// Optional Message (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Optional Message")]
-        public string OptionalMessage { get; private set; }
+        public string OptionalMessage { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -6078,64 +6078,64 @@ namespace Sharpforce
         /// <summary>
         /// Combined Attachment Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Combined Attachment Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Type")]
-        public string RecordType { get; private set; }
+        public string RecordType { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Created (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Content Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
     }
 
@@ -6148,63 +6148,63 @@ namespace Sharpforce
         /// <summary>
         /// Zone ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Zone ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Name { get; private set; }
+        //[JsonIgnore]
+        public string Name { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Description { get; private set; }
+        //[JsonIgnore]
+        public string Description { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Active")]
-        public bool? IsActive { get; private set; }
+        public bool? IsActive { get; set; }
 
     }
 
@@ -6217,23 +6217,23 @@ namespace Sharpforce
         /// <summary>
         /// Contact ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Master Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Record ID")]
-        public string MasterRecordId { get; private set; }
+        public string MasterRecordId { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
@@ -6265,9 +6265,9 @@ namespace Sharpforce
         /// <summary>
         /// Full Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Full Name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Other Street (textarea type in Salesforce)
@@ -6466,72 +6466,72 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Activity")]
-        public string LastActivityDate { get; private set; }
+        public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Last Stay-in-Touch Request Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Stay-in-Touch Request Date")]
-        public string LastCURequestDate { get; private set; }
+        public string LastCURequestDate { get; set; }
 
         /// <summary>
         /// Last Stay-in-Touch Save Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Stay-in-Touch Save Date")]
-        public string LastCUUpdateDate { get; private set; }
+        public string LastCUUpdateDate { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Email Bounced Reason (string type in Salesforce)
@@ -6549,9 +6549,9 @@ namespace Sharpforce
         /// <summary>
         /// Is Email Bounced (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Email Bounced")]
-        public bool? IsEmailBounced { get; private set; }
+        public bool? IsEmailBounced { get; set; }
 
         /// <summary>
         /// Data.com Key (string type in Salesforce)
@@ -6563,9 +6563,9 @@ namespace Sharpforce
         /// <summary>
         /// Jigsaw Contact ID (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Jigsaw Contact ID")]
-        public string JigsawContactId { get; private set; }
+        public string JigsawContactId { get; set; }
 
         /// <summary>
         /// Level (picklist type in Salesforce)
@@ -6592,140 +6592,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -6738,58 +6738,58 @@ namespace Sharpforce
         /// <summary>
         /// Contact History ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact History ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact ID")]
-        public string ContactId { get; private set; }
+        public string ContactId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -6802,58 +6802,58 @@ namespace Sharpforce
         /// <summary>
         /// Contact Share ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact Share ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact ID")]
-        public string ContactId { get; private set; }
+        public string ContactId { get; set; }
 
         /// <summary>
         /// User/Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User/Group ID")]
-        public string UserOrGroupId { get; private set; }
+        public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// Contact Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact Access")]
-        public string ContactAccessLevel { get; private set; }
+        public string ContactAccessLevel { get; set; }
 
         /// <summary>
         /// Row Cause (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Row Cause")]
-        public string RowCause { get; private set; }
+        public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -6866,37 +6866,37 @@ namespace Sharpforce
         /// <summary>
         /// ContentDocument ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentDocument ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Is Archived (boolean type in Salesforce)
@@ -6907,23 +6907,23 @@ namespace Sharpforce
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string ArchivedById { get; private set; }
+        public string ArchivedById { get; set; }
 
         /// <summary>
         /// Archived Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Archived Date")]
-        public string ArchivedDate { get; private set; }
+        public string ArchivedDate { get; set; }
 
         /// <summary>
         /// Is Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
@@ -6935,29 +6935,29 @@ namespace Sharpforce
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Publish Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Publish Status")]
-        public string PublishStatus { get; private set; }
+        public string PublishStatus { get; set; }
 
         /// <summary>
         /// Latest Published Version ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Latest Published Version ID")]
-        public string LatestPublishedVersionId { get; private set; }
+        public string LatestPublishedVersionId { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
@@ -6969,16 +6969,16 @@ namespace Sharpforce
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
     }
 
@@ -6991,140 +6991,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -7137,58 +7137,58 @@ namespace Sharpforce
         /// <summary>
         /// Content Document ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Document ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// ContentDocument ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentDocument ID")]
-        public string ContentDocumentId { get; private set; }
+        public string ContentDocumentId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -7201,37 +7201,37 @@ namespace Sharpforce
         /// <summary>
         /// ContentDocumentLink ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentDocumentLink ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Linked Entity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Linked Entity ID")]
-        public string LinkedEntityId { get; private set; }
+        public string LinkedEntityId { get; set; }
 
         /// <summary>
         /// ContentDocument ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentDocument ID")]
-        public string ContentDocumentId { get; private set; }
+        public string ContentDocumentId { get; set; }
 
         /// <summary>
         /// Is Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Share Type (picklist type in Salesforce)
@@ -7251,23 +7251,23 @@ namespace Sharpforce
         /// <summary>
         /// ContentVersion ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentVersion ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// ContentDocument ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentDocument ID")]
-        public string ContentDocumentId { get; private set; }
+        public string ContentDocumentId { get; set; }
 
         /// <summary>
         /// Is Latest (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Latest")]
-        public bool? IsLatest { get; private set; }
+        public bool? IsLatest { get; set; }
 
         /// <summary>
         /// Content URL (url type in Salesforce)
@@ -7279,9 +7279,9 @@ namespace Sharpforce
         /// <summary>
         /// Version Number (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Version Number")]
-        public string VersionNumber { get; private set; }
+        public string VersionNumber { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
@@ -7298,72 +7298,72 @@ namespace Sharpforce
         /// <summary>
         /// Reason For Change (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reason For Change")]
-        public string ReasonForChange { get; private set; }
+        public string ReasonForChange { get; set; }
 
         /// <summary>
         /// Path On Client (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Path On Client")]
-        public string PathOnClient { get; private set; }
+        public string PathOnClient { get; set; }
 
         /// <summary>
         /// Rating Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Rating Count")]
-        public string RatingCount { get; private set; }
+        public string RatingCount { get; set; }
 
         /// <summary>
         /// Is Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Content Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Modified Date")]
-        public string ContentModifiedDate { get; private set; }
+        public string ContentModifiedDate { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string ContentModifiedById { get; private set; }
+        public string ContentModifiedById { get; set; }
 
         /// <summary>
         /// Positive Rating Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Positive Rating Count")]
-        public string PositiveRatingCount { get; private set; }
+        public string PositiveRatingCount { get; set; }
 
         /// <summary>
         /// Negative Rating Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Negative Rating Count")]
-        public string NegativeRatingCount { get; private set; }
+        public string NegativeRatingCount { get; set; }
 
         /// <summary>
         /// Featured Content Boost (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Featured Content Boost")]
-        public string FeaturedContentBoost { get; private set; }
+        public string FeaturedContentBoost { get; set; }
 
         /// <summary>
         /// Featured Content Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Featured Content Date")]
-        public string FeaturedContentDate { get; private set; }
+        public string FeaturedContentDate { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
@@ -7375,37 +7375,37 @@ namespace Sharpforce
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Tags (textarea type in Salesforce)
@@ -7417,50 +7417,50 @@ namespace Sharpforce
         /// <summary>
         /// File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "File Type")]
-        public string FileType { get; private set; }
+        public string FileType { get; set; }
 
         /// <summary>
         /// Publish Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Publish Status")]
-        public string PublishStatus { get; private set; }
+        public string PublishStatus { get; set; }
 
         /// <summary>
         /// Version Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Version Data")]
-        public string VersionData { get; private set; }
+        public string VersionData { get; set; }
 
         /// <summary>
         /// Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// First Publish Location ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "First Publish Location ID")]
-        public string FirstPublishLocationId { get; private set; }
+        public string FirstPublishLocationId { get; set; }
 
         /// <summary>
         /// Content Origin (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Origin")]
-        public string Origin { get; private set; }
+        public string Origin { get; set; }
 
         /// <summary>
         /// Checksum (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Checksum { get; private set; }
+        //[JsonIgnore]
+        public string Checksum { get; set; }
 
     }
 
@@ -7473,58 +7473,58 @@ namespace Sharpforce
         /// <summary>
         /// Content Version ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Version ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// ContentVersion ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentVersion ID")]
-        public string ContentVersionId { get; private set; }
+        public string ContentVersionId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -7537,84 +7537,84 @@ namespace Sharpforce
         /// <summary>
         /// Library ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Library ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Name { get; private set; }
+        //[JsonIgnore]
+        public string Name { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Description { get; private set; }
+        //[JsonIgnore]
+        public string Description { get; set; }
 
         /// <summary>
         /// Tag Model (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Tag Model")]
-        public string TagModel { get; private set; }
+        public string TagModel { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Record Type ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Record Type ID")]
-        public string DefaultRecordTypeId { get; private set; }
+        public string DefaultRecordTypeId { get; set; }
 
         /// <summary>
         /// Restrict Content Types (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Restrict Content Types")]
-        public bool? IsRestrictContentTypes { get; private set; }
+        public bool? IsRestrictContentTypes { get; set; }
 
         /// <summary>
         /// Restrict Linked Content Types (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Restrict Linked Content Types")]
-        public bool? IsRestrictLinkedContentTypes { get; private set; }
+        public bool? IsRestrictLinkedContentTypes { get; set; }
 
     }
 
@@ -7627,51 +7627,51 @@ namespace Sharpforce
         /// <summary>
         /// Library Document ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Library Document ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Library ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Library ID")]
-        public string ContentWorkspaceId { get; private set; }
+        public string ContentWorkspaceId { get; set; }
 
         /// <summary>
         /// ContentDocument ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentDocument ID")]
-        public string ContentDocumentId { get; private set; }
+        public string ContentDocumentId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Is Owning Library (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Owning Library")]
-        public bool? IsOwner { get; private set; }
+        public bool? IsOwner { get; set; }
 
         /// <summary>
         /// Is Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -7684,9 +7684,9 @@ namespace Sharpforce
         /// <summary>
         /// Contract ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contract ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
@@ -7711,9 +7711,9 @@ namespace Sharpforce
         /// <summary>
         /// Contract End Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contract End Date")]
-        public string EndDate { get; private set; }
+        public string EndDate { get; set; }
 
         /// <summary>
         /// Billing Street (textarea type in Salesforce)
@@ -7837,9 +7837,9 @@ namespace Sharpforce
         /// <summary>
         /// Status Category (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Status Category")]
-        public string StatusCode { get; private set; }
+        public string StatusCode { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
@@ -7850,79 +7850,79 @@ namespace Sharpforce
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Contract Number (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contract Number")]
-        public string ContractNumber { get; private set; }
+        public string ContractNumber { get; set; }
 
         /// <summary>
         /// Last Approved Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Approved Date")]
-        public string LastApprovedDate { get; private set; }
+        public string LastApprovedDate { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Activity")]
-        public string LastActivityDate { get; private set; }
+        public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
     }
 
@@ -7935,16 +7935,16 @@ namespace Sharpforce
         /// <summary>
         /// Contact Role ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact Role ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Contract ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contract ID")]
-        public string ContractId { get; private set; }
+        public string ContractId { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
@@ -7968,44 +7968,44 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -8018,140 +8018,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -8164,58 +8164,58 @@ namespace Sharpforce
         /// <summary>
         /// Contract History ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contract History ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Contract ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contract ID")]
-        public string ContractId { get; private set; }
+        public string ContractId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -8228,72 +8228,72 @@ namespace Sharpforce
         /// <summary>
         /// Contract Status Value ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contract Status Value ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Master Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Label")]
-        public string MasterLabel { get; private set; }
+        public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sort Order")]
-        public string SortOrder { get; private set; }
+        public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Default")]
-        public bool? IsDefault { get; private set; }
+        public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Status Code (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Status Code")]
-        public string StatusCode { get; private set; }
+        public string StatusCode { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -8306,23 +8306,23 @@ namespace Sharpforce
         /// <summary>
         /// Job ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Job ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Job Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Job Name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Type")]
-        public string JobType { get; private set; }
+        public string JobType { get; set; }
 
     }
 
@@ -8335,100 +8335,100 @@ namespace Sharpforce
         /// <summary>
         /// Scheduled Job ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Scheduled Job ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Job ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Job ID")]
-        public string CronJobDetailId { get; private set; }
+        public string CronJobDetailId { get; set; }
 
         /// <summary>
         /// Next Run Time (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Next Run Time")]
-        public string NextFireTime { get; private set; }
+        public string NextFireTime { get; set; }
 
         /// <summary>
         /// Previous Run Time (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Previous Run Time")]
-        public string PreviousFireTime { get; private set; }
+        public string PreviousFireTime { get; set; }
 
         /// <summary>
         /// Job State (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Job State")]
-        public string State { get; private set; }
+        public string State { get; set; }
 
         /// <summary>
         /// Start Time (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Start Time")]
-        public string StartTime { get; private set; }
+        public string StartTime { get; set; }
 
         /// <summary>
         /// End Time (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "End Time")]
-        public string EndTime { get; private set; }
+        public string EndTime { get; set; }
 
         /// <summary>
         /// Cron Expression (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Cron Expression")]
-        public string CronExpression { get; private set; }
+        public string CronExpression { get; set; }
 
         /// <summary>
         /// Java Time Zone Id (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Java Time Zone Id")]
-        public string TimeZoneSidKey { get; private set; }
+        public string TimeZoneSidKey { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string OwnerId { get; private set; }
+        public string OwnerId { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Job Fired Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Job Fired Count")]
-        public string TimesTriggered { get; private set; }
+        public string TimesTriggered { get; set; }
 
     }
 
@@ -8441,175 +8441,175 @@ namespace Sharpforce
         /// <summary>
         /// Dashboard ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Dashboard ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Folder ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Folder ID")]
-        public string FolderId { get; private set; }
+        public string FolderId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Dashboard Unique Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Dashboard Unique Name")]
-        public string DeveloperName { get; private set; }
+        public string DeveloperName { get; set; }
 
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Description { get; private set; }
+        //[JsonIgnore]
+        public string Description { get; set; }
 
         /// <summary>
         /// Left Size (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Left Size")]
-        public string LeftSize { get; private set; }
+        public string LeftSize { get; set; }
 
         /// <summary>
         /// Middle Size (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Middle Size")]
-        public string MiddleSize { get; private set; }
+        public string MiddleSize { get; set; }
 
         /// <summary>
         /// Right Size (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Right Size")]
-        public string RightSize { get; private set; }
+        public string RightSize { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Running User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Running User ID")]
-        public string RunningUserId { get; private set; }
+        public string RunningUserId { get; set; }
 
         /// <summary>
         /// Title Color (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Title Color")]
-        public string TitleColor { get; private set; }
+        public string TitleColor { get; set; }
 
         /// <summary>
         /// Title Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Title Size")]
-        public string TitleSize { get; private set; }
+        public string TitleSize { get; set; }
 
         /// <summary>
         /// Text Color (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Text Color")]
-        public string TextColor { get; private set; }
+        public string TextColor { get; set; }
 
         /// <summary>
         /// Starting Color (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Starting Color")]
-        public string BackgroundStart { get; private set; }
+        public string BackgroundStart { get; set; }
 
         /// <summary>
         /// Ending Color (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Ending Color")]
-        public string BackgroundEnd { get; private set; }
+        public string BackgroundEnd { get; set; }
 
         /// <summary>
         /// Background Fade Direction (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Background Fade Direction")]
-        public string BackgroundDirection { get; private set; }
+        public string BackgroundDirection { get; set; }
 
         /// <summary>
         /// Dashboard Running User (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Dashboard Running User")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
     }
 
@@ -8622,23 +8622,23 @@ namespace Sharpforce
         /// <summary>
         /// Dashboard Component ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Dashboard Component ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Dashboard Component Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Dashboard Component Name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Dashboard ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Dashboard ID")]
-        public string DashboardId { get; private set; }
+        public string DashboardId { get; set; }
 
     }
 
@@ -8651,140 +8651,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -8797,140 +8797,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -8943,84 +8943,84 @@ namespace Sharpforce
         /// <summary>
         /// Event Relation ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Event Relation ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Relation ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Relation ID")]
-        public string RelationId { get; private set; }
+        public string RelationId { get; set; }
 
         /// <summary>
         /// Event ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Event ID")]
-        public string EventId { get; private set; }
+        public string EventId { get; set; }
 
         /// <summary>
         /// Response Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Response Date")]
-        public string RespondedDate { get; private set; }
+        public string RespondedDate { get; set; }
 
         /// <summary>
         /// Response (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Response { get; private set; }
+        //[JsonIgnore]
+        public string Response { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Type { get; private set; }
+        //[JsonIgnore]
+        public string Type { get; set; }
 
     }
 
@@ -9033,9 +9033,9 @@ namespace Sharpforce
         /// <summary>
         /// Document ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Document ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Folder ID (reference type in Salesforce)
@@ -9047,9 +9047,9 @@ namespace Sharpforce
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Document Name (string type in Salesforce)
@@ -9068,9 +9068,9 @@ namespace Sharpforce
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// MIME Type (string type in Salesforce)
@@ -9095,9 +9095,9 @@ namespace Sharpforce
         /// <summary>
         /// Body Length (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Body Length")]
-        public string BodyLength { get; private set; }
+        public string BodyLength { get; set; }
 
         /// <summary>
         /// Body (base64 type in Salesforce)
@@ -9138,58 +9138,58 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Document Content Searchable (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Document Content Searchable")]
-        public bool? IsBodySearchable { get; private set; }
+        public bool? IsBodySearchable { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
     }
 
@@ -9202,9 +9202,9 @@ namespace Sharpforce
         /// <summary>
         /// Document Entity Map Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Document Entity Map Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Entity ID (reference type in Salesforce)
@@ -9229,16 +9229,16 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
     }
 
@@ -9251,58 +9251,58 @@ namespace Sharpforce
         /// <summary>
         /// Domain ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Domain ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Domain Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Domain Type")]
-        public string DomainType { get; private set; }
+        public string DomainType { get; set; }
 
         /// <summary>
         /// Domain Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Domain Name")]
-        public string Domain2 { get; private set; }
+        public string Domain2 { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -9315,65 +9315,65 @@ namespace Sharpforce
         /// <summary>
         /// Custom URL ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Custom URL ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Domain ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Domain ID")]
-        public string DomainId { get; private set; }
+        public string DomainId { get; set; }
 
         /// <summary>
         /// Site ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Site ID")]
-        public string SiteId { get; private set; }
+        public string SiteId { get; set; }
 
         /// <summary>
         /// Path (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Path")]
-        public string PathPrefix { get; private set; }
+        public string PathPrefix { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -9386,9 +9386,9 @@ namespace Sharpforce
         /// <summary>
         /// Address ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Address ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
@@ -9406,9 +9406,9 @@ namespace Sharpforce
         /// <summary>
         /// Email address domain (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Email address domain")]
-        public string EmailDomainName { get; private set; }
+        public string EmailDomainName { get; set; }
 
         /// <summary>
         /// Accept Email From (textarea type in Salesforce)
@@ -9434,37 +9434,37 @@ namespace Sharpforce
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -9477,9 +9477,9 @@ namespace Sharpforce
         /// <summary>
         /// Service ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Service ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
@@ -9584,37 +9584,37 @@ namespace Sharpforce
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -9627,79 +9627,79 @@ namespace Sharpforce
         /// <summary>
         /// Email Status ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Email Status ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Activity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Activity ID")]
-        public string TaskId { get; private set; }
+        public string TaskId { get; set; }
 
         /// <summary>
         /// Contact/Lead ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact/Lead ID")]
-        public string WhoId { get; private set; }
+        public string WhoId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// # Times Opened (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "# Times Opened")]
-        public string TimesOpened { get; private set; }
+        public string TimesOpened { get; set; }
 
         /// <summary>
         /// Date Opened (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Date Opened")]
-        public string FirstOpenDate { get; private set; }
+        public string FirstOpenDate { get; set; }
 
         /// <summary>
         /// Last Opened (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Opened")]
-        public string LastOpenDate { get; private set; }
+        public string LastOpenDate { get; set; }
 
         /// <summary>
         /// Email Template Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Email Template Name")]
-        public string EmailTemplateName { get; private set; }
+        public string EmailTemplateName { get; set; }
 
     }
 
@@ -9712,9 +9712,9 @@ namespace Sharpforce
         /// <summary>
         /// Email Template ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Email Template ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Email Template Name (string type in Salesforce)
@@ -9733,9 +9733,9 @@ namespace Sharpforce
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
@@ -9754,16 +9754,16 @@ namespace Sharpforce
         /// <summary>
         /// Letterhead ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Letterhead ID")]
-        public string BrandTemplateId { get; private set; }
+        public string BrandTemplateId { get; set; }
 
         /// <summary>
         /// Style (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Style")]
-        public string TemplateStyle { get; private set; }
+        public string TemplateStyle { get; set; }
 
         /// <summary>
         /// Available For Use (boolean type in Salesforce)
@@ -9774,9 +9774,9 @@ namespace Sharpforce
         /// <summary>
         /// Template Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Template Type")]
-        public string TemplateType { get; private set; }
+        public string TemplateType { get; set; }
 
         /// <summary>
         /// Encoding (picklist type in Salesforce)
@@ -9813,51 +9813,51 @@ namespace Sharpforce
         /// <summary>
         /// Times Used (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Times Used")]
-        public string TimesUsed { get; private set; }
+        public string TimesUsed { get; set; }
 
         /// <summary>
         /// Last Used Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Used Date")]
-        public string LastUsedDate { get; private set; }
+        public string LastUsedDate { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// API Version (double type in Salesforce)
@@ -9882,44 +9882,44 @@ namespace Sharpforce
         /// <summary>
         /// Entity Subscription ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Entity Subscription ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Subscriber ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Subscriber ID")]
-        public string SubscriberId { get; private set; }
+        public string SubscriberId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -9932,9 +9932,9 @@ namespace Sharpforce
         /// <summary>
         /// Activity ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Activity ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Contact/Lead ID (reference type in Salesforce)
@@ -10007,9 +10007,9 @@ namespace Sharpforce
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountId { get; private set; }
+        public string AccountId { get; set; }
 
         /// <summary>
         /// Assigned To ID (reference type in Salesforce)
@@ -10034,86 +10034,86 @@ namespace Sharpforce
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Is Child (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Child")]
-        public bool? IsChild { get; private set; }
+        public bool? IsChild { get; set; }
 
         /// <summary>
         /// Is Group Event (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Group Event")]
-        public bool? IsGroupEvent { get; private set; }
+        public bool? IsGroupEvent { get; set; }
 
         /// <summary>
         /// Group Event Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Group Event Type")]
-        public string GroupEventType { get; private set; }
+        public string GroupEventType { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Archived (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Archived")]
-        public bool? IsArchived { get; private set; }
+        public bool? IsArchived { get; set; }
 
         /// <summary>
         /// Recurrence Activity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Recurrence Activity ID")]
-        public string RecurrenceActivityId { get; private set; }
+        public string RecurrenceActivityId { get; set; }
 
         /// <summary>
         /// Create Recurring Series of Events (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Create Recurring Series of Events")]
-        public bool? IsRecurrence { get; private set; }
+        public bool? IsRecurrence { get; set; }
 
         /// <summary>
         /// Start Date (datetime type in Salesforce)
@@ -10196,140 +10196,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -10342,23 +10342,23 @@ namespace Sharpforce
         /// <summary>
         /// Event Relation ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Event Relation ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Relation ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Relation ID")]
-        public string RelationId { get; private set; }
+        public string RelationId { get; set; }
 
         /// <summary>
         /// Event ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Event ID")]
-        public string EventId { get; private set; }
+        public string EventId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
@@ -10381,44 +10381,44 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -10431,72 +10431,72 @@ namespace Sharpforce
         /// <summary>
         /// Feed Comment ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Comment ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Feed Item ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string FeedItemId { get; private set; }
+        public string FeedItemId { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Comment Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Body")]
-        public string CommentBody { get; private set; }
+        public string CommentBody { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
         /// <summary>
         /// Comment Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Type")]
-        public string CommentType { get; private set; }
+        public string CommentType { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
     }
 
@@ -10509,140 +10509,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -10655,51 +10655,51 @@ namespace Sharpforce
         /// <summary>
         /// Feed Like ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Like ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Feed Item ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string FeedItemId { get; private set; }
+        public string FeedItemId { get; set; }
 
         /// <summary>
         /// Feed Item ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string FeedEntityId { get; private set; }
+        public string FeedEntityId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -10712,49 +10712,49 @@ namespace Sharpforce
         /// <summary>
         /// Feed Poll Choice ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Poll Choice ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Feed Item ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string FeedItemId { get; private set; }
+        public string FeedItemId { get; set; }
 
         /// <summary>
         /// Position (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Position { get; private set; }
+        //[JsonIgnore]
+        public string Position { get; set; }
 
         /// <summary>
         /// ChoiceBody (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string ChoiceBody { get; private set; }
+        //[JsonIgnore]
+        public string ChoiceBody { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -10767,51 +10767,51 @@ namespace Sharpforce
         /// <summary>
         /// Feed Poll Vote ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Poll Vote ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Feed Item ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string FeedItemId { get; private set; }
+        public string FeedItemId { get; set; }
 
         /// <summary>
         /// Feed Poll Choice ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Poll Choice ID")]
-        public string ChoiceId { get; private set; }
+        public string ChoiceId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -10824,37 +10824,37 @@ namespace Sharpforce
         /// <summary>
         /// Feed Tracked Change ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Tracked Change ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Feed Item ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string FeedItemId { get; private set; }
+        public string FeedItemId { get; set; }
 
         /// <summary>
         /// Field (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Field")]
-        public string FieldName { get; private set; }
+        public string FieldName { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -10867,30 +10867,30 @@ namespace Sharpforce
         /// <summary>
         /// Field Permissions ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Field Permissions ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Sobject Type Name (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sobject Type Name")]
-        public string SobjectType { get; private set; }
+        public string SobjectType { get; set; }
 
         /// <summary>
         /// Field Name (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Field Name")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Edit Field (boolean type in Salesforce)
@@ -10907,9 +10907,9 @@ namespace Sharpforce
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -10922,105 +10922,105 @@ namespace Sharpforce
         /// <summary>
         /// Fiscal Year Settings ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Fiscal Year Settings ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Period ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Period ID")]
-        public string PeriodId { get; private set; }
+        public string PeriodId { get; set; }
 
         /// <summary>
         /// Start Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Start Date")]
-        public string StartDate { get; private set; }
+        public string StartDate { get; set; }
 
         /// <summary>
         /// End Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "End Date")]
-        public string EndDate { get; private set; }
+        public string EndDate { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Name { get; private set; }
+        //[JsonIgnore]
+        public string Name { get; set; }
 
         /// <summary>
         /// Is Standard Year (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Standard Year")]
-        public bool? IsStandardYear { get; private set; }
+        public bool? IsStandardYear { get; set; }
 
         /// <summary>
         /// Year Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Year Type")]
-        public string YearType { get; private set; }
+        public string YearType { get; set; }
 
         /// <summary>
         /// Quarter Name Scheme (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Quarter Name Scheme")]
-        public string QuarterLabelScheme { get; private set; }
+        public string QuarterLabelScheme { get; set; }
 
         /// <summary>
         /// Period Name Scheme (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Period Name Scheme")]
-        public string PeriodLabelScheme { get; private set; }
+        public string PeriodLabelScheme { get; set; }
 
         /// <summary>
         /// Week Name Scheme (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Week Name Scheme")]
-        public string WeekLabelScheme { get; private set; }
+        public string WeekLabelScheme { get; set; }
 
         /// <summary>
         /// Quarter Prefix (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Quarter Prefix")]
-        public string QuarterPrefix { get; private set; }
+        public string QuarterPrefix { get; set; }
 
         /// <summary>
         /// Period Prefix (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Period Prefix")]
-        public string PeriodPrefix { get; private set; }
+        public string PeriodPrefix { get; set; }
 
         /// <summary>
         /// Week Start Day (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Week Start Day")]
-        public string WeekStartDay { get; private set; }
+        public string WeekStartDay { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Description { get; private set; }
+        //[JsonIgnore]
+        public string Description { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -11033,9 +11033,9 @@ namespace Sharpforce
         /// <summary>
         /// Folder ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Folder ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -11066,50 +11066,50 @@ namespace Sharpforce
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Type { get; private set; }
+        //[JsonIgnore]
+        public string Type { get; set; }
 
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -11122,58 +11122,58 @@ namespace Sharpforce
         /// <summary>
         /// Forecast Share ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Forecast Share ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// User Role ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User Role ID")]
-        public string UserRoleId { get; private set; }
+        public string UserRoleId { get; set; }
 
         /// <summary>
         /// User/Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User/Group ID")]
-        public string UserOrGroupId { get; private set; }
+        public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// Forecast Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Forecast Access")]
-        public string AccessLevel { get; private set; }
+        public string AccessLevel { get; set; }
 
         /// <summary>
         /// Submit Allowed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Submit Allowed")]
-        public bool? CanSubmit { get; private set; }
+        public bool? CanSubmit { get; set; }
 
         /// <summary>
         /// Row Cause (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Row Cause")]
-        public string RowCause { get; private set; }
+        public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
     }
 
@@ -11186,9 +11186,9 @@ namespace Sharpforce
         /// <summary>
         /// Group ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Group ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -11206,15 +11206,15 @@ namespace Sharpforce
         /// <summary>
         /// Related ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related ID")]
-        public string RelatedId { get; private set; }
+        public string RelatedId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Type { get; private set; }
+        //[JsonIgnore]
+        public string Type { get; set; }
 
         /// <summary>
         /// Email (email type in Salesforce)
@@ -11225,9 +11225,9 @@ namespace Sharpforce
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Owner ID")]
-        public string OwnerId { get; private set; }
+        public string OwnerId { get; set; }
 
         /// <summary>
         /// Send Email to Members (boolean type in Salesforce)
@@ -11244,37 +11244,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -11287,30 +11287,30 @@ namespace Sharpforce
         /// <summary>
         /// Group Member ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Group Member ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Group ID")]
-        public string GroupId { get; private set; }
+        public string GroupId { get; set; }
 
         /// <summary>
         /// User/Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User/Group ID")]
-        public string UserOrGroupId { get; private set; }
+        public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -11323,44 +11323,44 @@ namespace Sharpforce
         /// <summary>
         /// Hashtag Definition ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Hashtag Definition ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Normalized Hashtag Text (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Normalized Hashtag Text")]
-        public string NameNorm { get; private set; }
+        public string NameNorm { get; set; }
 
         /// <summary>
         /// Hashtag Text (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Hashtag Text")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Hashtag Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Hashtag Count")]
-        public string HashtagCount { get; private set; }
+        public string HashtagCount { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -11373,9 +11373,9 @@ namespace Sharpforce
         /// <summary>
         /// Holiday ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Holiday ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Holiday Name (string type in Salesforce)
@@ -11417,37 +11417,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Recurring Holiday (boolean type in Salesforce)
@@ -11517,16 +11517,16 @@ namespace Sharpforce
         /// <summary>
         /// Idea ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Idea ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
@@ -11537,65 +11537,65 @@ namespace Sharpforce
         /// <summary>
         /// Record Type ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Record Type ID")]
-        public string RecordTypeId { get; private set; }
+        public string RecordTypeId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Zone ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Zone ID")]
-        public string CommunityId { get; private set; }
+        public string CommunityId { get; set; }
 
         /// <summary>
         /// Idea Body (textarea type in Salesforce)
@@ -11607,23 +11607,23 @@ namespace Sharpforce
         /// <summary>
         /// Number of Comments (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Number of Comments")]
-        public string NumComments { get; private set; }
+        public string NumComments { get; set; }
 
         /// <summary>
         /// Vote Score (double type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Vote Score")]
-        public string VoteScore { get; private set; }
+        public string VoteScore { get; set; }
 
         /// <summary>
         /// Vote Total (double type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Vote Total")]
-        public string VoteTotal { get; private set; }
+        public string VoteTotal { get; set; }
 
         /// <summary>
         /// Categories (multipicklist type in Salesforce)
@@ -11640,57 +11640,57 @@ namespace Sharpforce
         /// <summary>
         /// Last Idea Comment Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Idea Comment Date")]
-        public string LastCommentDate { get; private set; }
+        public string LastCommentDate { get; set; }
 
         /// <summary>
         /// Idea Comment ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Idea Comment ID")]
-        public string LastCommentId { get; private set; }
+        public string LastCommentId { get; set; }
 
         /// <summary>
         /// Idea ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Idea ID")]
-        public string ParentIdeaId { get; private set; }
+        public string ParentIdeaId { get; set; }
 
         /// <summary>
         /// IsHtml (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public bool? IsHtml { get; private set; }
+        //[JsonIgnore]
+        public bool? IsHtml { get; set; }
 
         /// <summary>
         /// Is Merged (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Merged")]
-        public bool? IsMerged { get; private set; }
+        public bool? IsMerged { get; set; }
 
         /// <summary>
         /// Url of Creator's Profile Photo (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Url of Creator's Profile Photo")]
-        public string CreatorFullPhotoUrl { get; private set; }
+        public string CreatorFullPhotoUrl { get; set; }
 
         /// <summary>
         /// Url of Creator's Thumbnail Photo (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Url of Creator's Thumbnail Photo")]
-        public string CreatorSmallPhotoUrl { get; private set; }
+        public string CreatorSmallPhotoUrl { get; set; }
 
         /// <summary>
         /// Name of Creator (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Name of Creator")]
-        public string CreatorName { get; private set; }
+        public string CreatorName { get; set; }
 
     }
 
@@ -11703,23 +11703,23 @@ namespace Sharpforce
         /// <summary>
         /// Idea Comment ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Idea Comment ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Idea ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Idea ID")]
-        public string IdeaId { get; private set; }
+        public string IdeaId { get; set; }
 
         /// <summary>
         /// Zone ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Zone ID")]
-        public string CommunityId { get; private set; }
+        public string CommunityId { get; set; }
 
         /// <summary>
         /// Comment Body (textarea type in Salesforce)
@@ -11731,64 +11731,64 @@ namespace Sharpforce
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// IsHtml (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public bool? IsHtml { get; private set; }
+        //[JsonIgnore]
+        public bool? IsHtml { get; set; }
 
         /// <summary>
         /// Url of Creator's Profile Photo (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Url of Creator's Profile Photo")]
-        public string CreatorFullPhotoUrl { get; private set; }
+        public string CreatorFullPhotoUrl { get; set; }
 
         /// <summary>
         /// Url of Creator's Thumbnail Photo (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Url of Creator's Thumbnail Photo")]
-        public string CreatorSmallPhotoUrl { get; private set; }
+        public string CreatorSmallPhotoUrl { get; set; }
 
         /// <summary>
         /// Name of Creator (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Name of Creator")]
-        public string CreatorName { get; private set; }
+        public string CreatorName { get; set; }
 
         /// <summary>
         /// Up Votes (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Up Votes")]
-        public string UpVotes { get; private set; }
+        public string UpVotes { get; set; }
 
     }
 
@@ -11801,23 +11801,23 @@ namespace Sharpforce
         /// <summary>
         /// Lead ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Lead ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Master Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Record ID")]
-        public string MasterRecordId { get; private set; }
+        public string MasterRecordId { get; set; }
 
         /// <summary>
         /// Last Name (string type in Salesforce)
@@ -11842,9 +11842,9 @@ namespace Sharpforce
         /// <summary>
         /// Full Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Full Name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
@@ -11984,37 +11984,37 @@ namespace Sharpforce
         /// <summary>
         /// Converted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Converted")]
-        public bool? IsConverted { get; private set; }
+        public bool? IsConverted { get; set; }
 
         /// <summary>
         /// Converted Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Converted Date")]
-        public string ConvertedDate { get; private set; }
+        public string ConvertedDate { get; set; }
 
         /// <summary>
         /// Converted Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Converted Account ID")]
-        public string ConvertedAccountId { get; private set; }
+        public string ConvertedAccountId { get; set; }
 
         /// <summary>
         /// Converted Contact ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Converted Contact ID")]
-        public string ConvertedContactId { get; private set; }
+        public string ConvertedContactId { get; set; }
 
         /// <summary>
         /// Converted Opportunity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Converted Opportunity ID")]
-        public string ConvertedOpportunityId { get; private set; }
+        public string ConvertedOpportunityId { get; set; }
 
         /// <summary>
         /// Unread By Owner (boolean type in Salesforce)
@@ -12025,58 +12025,58 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Activity")]
-        public string LastActivityDate { get; private set; }
+        public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Data.com Key (string type in Salesforce)
@@ -12088,9 +12088,9 @@ namespace Sharpforce
         /// <summary>
         /// Jigsaw Contact ID (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Jigsaw Contact ID")]
-        public string JigsawContactId { get; private set; }
+        public string JigsawContactId { get; set; }
 
         /// <summary>
         /// Email Bounced Reason (string type in Salesforce)
@@ -12150,140 +12150,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -12296,58 +12296,58 @@ namespace Sharpforce
         /// <summary>
         /// Lead History ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Lead History ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Lead ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Lead ID")]
-        public string LeadId { get; private set; }
+        public string LeadId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -12360,58 +12360,58 @@ namespace Sharpforce
         /// <summary>
         /// Lead Share ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Lead Share ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Lead ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Lead ID")]
-        public string LeadId { get; private set; }
+        public string LeadId { get; set; }
 
         /// <summary>
         /// User/Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User/Group ID")]
-        public string UserOrGroupId { get; private set; }
+        public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// Lead Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Lead Access")]
-        public string LeadAccessLevel { get; private set; }
+        public string LeadAccessLevel { get; set; }
 
         /// <summary>
         /// Row Cause (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Row Cause")]
-        public string RowCause { get; private set; }
+        public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -12424,72 +12424,72 @@ namespace Sharpforce
         /// <summary>
         /// Lead Status Value ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Lead Status Value ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Master Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Label")]
-        public string MasterLabel { get; private set; }
+        public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sort Order")]
-        public string SortOrder { get; private set; }
+        public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Default")]
-        public bool? IsDefault { get; private set; }
+        public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Is Converted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Converted")]
-        public bool? IsConverted { get; private set; }
+        public bool? IsConverted { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -12502,89 +12502,89 @@ namespace Sharpforce
         /// <summary>
         /// Login History Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Login History Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string UserId { get; private set; }
+        public string UserId { get; set; }
 
         /// <summary>
         /// Login Time (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Login Time")]
-        public string LoginTime { get; private set; }
+        public string LoginTime { get; set; }
 
         /// <summary>
         /// Login Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Login Type")]
-        public string LoginType { get; private set; }
+        public string LoginType { get; set; }
 
         /// <summary>
         /// Source IP (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Source IP")]
-        public string SourceIp { get; private set; }
+        public string SourceIp { get; set; }
 
         /// <summary>
         /// Login URL (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Login URL")]
-        public string LoginUrl { get; private set; }
+        public string LoginUrl { get; set; }
 
         /// <summary>
         /// Browser (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Browser { get; private set; }
+        //[JsonIgnore]
+        public string Browser { get; set; }
 
         /// <summary>
         /// Platform (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Platform { get; private set; }
+        //[JsonIgnore]
+        public string Platform { get; set; }
 
         /// <summary>
         /// Status (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Status { get; private set; }
+        //[JsonIgnore]
+        public string Status { get; set; }
 
         /// <summary>
         /// Application (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Application { get; private set; }
+        //[JsonIgnore]
+        public string Application { get; set; }
 
         /// <summary>
         /// Client Version (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Client Version")]
-        public string ClientVersion { get; private set; }
+        public string ClientVersion { get; set; }
 
         /// <summary>
         /// API Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "API Type")]
-        public string ApiType { get; private set; }
+        public string ApiType { get; set; }
 
         /// <summary>
         /// API Version (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "API Version")]
-        public string ApiVersion { get; private set; }
+        public string ApiVersion { get; set; }
 
     }
 
@@ -12597,50 +12597,50 @@ namespace Sharpforce
         /// <summary>
         /// Login IP ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Login IP ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string UsersId { get; private set; }
+        public string UsersId { get; set; }
 
         /// <summary>
         /// Source IP (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Source IP")]
-        public string SourceIp { get; private set; }
+        public string SourceIp { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// IsAuthenticated (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public bool? IsAuthenticated { get; private set; }
+        //[JsonIgnore]
+        public bool? IsAuthenticated { get; set; }
 
         /// <summary>
         /// Challenge SentDate (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Challenge SentDate")]
-        public string ChallengeSentDate { get; private set; }
+        public string ChallengeSentDate { get; set; }
 
         /// <summary>
         /// Challenge Method (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Challenge Method")]
-        public string ChallengeMethod { get; private set; }
+        public string ChallengeMethod { get; set; }
 
     }
 
@@ -12653,16 +12653,16 @@ namespace Sharpforce
         /// <summary>
         /// Mail Merge Template ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Mail Merge Template ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -12679,64 +12679,64 @@ namespace Sharpforce
         /// <summary>
         /// File (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "File")]
-        public string Filename { get; private set; }
+        public string Filename { get; set; }
 
         /// <summary>
         /// Body Length (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Body Length")]
-        public string BodyLength { get; private set; }
+        public string BodyLength { get; set; }
 
         /// <summary>
         /// Body (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Last Used Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Used Date")]
-        public string LastUsedDate { get; private set; }
+        public string LastUsedDate { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -12749,109 +12749,109 @@ namespace Sharpforce
         /// <summary>
         /// ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Name")]
-        public string Name2 { get; private set; }
+        public string Name2 { get; set; }
 
         /// <summary>
         /// Last Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Name")]
-        public string LastName { get; private set; }
+        public string LastName { get; set; }
 
         /// <summary>
         /// First Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "First Name")]
-        public string FirstName { get; private set; }
+        public string FirstName { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Type { get; private set; }
+        //[JsonIgnore]
+        public string Type { get; set; }
 
         /// <summary>
         /// Alias (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Alias { get; private set; }
+        //[JsonIgnore]
+        public string Alias { get; set; }
 
         /// <summary>
         /// Role ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Role ID")]
-        public string UserRoleId { get; private set; }
+        public string UserRoleId { get; set; }
 
         /// <summary>
         /// Record Type ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Record Type ID")]
-        public string RecordTypeId { get; private set; }
+        public string RecordTypeId { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Active")]
-        public bool? IsActive { get; private set; }
+        public bool? IsActive { get; set; }
 
         /// <summary>
         /// Profile ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Profile ID")]
-        public string ProfileId { get; private set; }
+        public string ProfileId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// E-mail (email type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "E-mail")]
-        public string Email { get; private set; }
+        public string Email { get; set; }
 
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Phone { get; private set; }
+        //[JsonIgnore]
+        public string Phone { get; set; }
 
         /// <summary>
         /// Username (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Username { get; private set; }
+        //[JsonIgnore]
+        public string Username { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
     }
 
@@ -12864,23 +12864,23 @@ namespace Sharpforce
         /// <summary>
         /// Note Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Note Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
@@ -12910,37 +12910,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -12953,85 +12953,85 @@ namespace Sharpforce
         /// <summary>
         /// Note or Attachment Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Note or Attachment Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Is Note (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Note")]
-        public bool? IsNote { get; private set; }
+        public bool? IsNote { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Private (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Private")]
-        public bool? IsPrivate { get; private set; }
+        public bool? IsPrivate { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Owner ID")]
-        public string OwnerId { get; private set; }
+        public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -13044,23 +13044,23 @@ namespace Sharpforce
         /// <summary>
         /// ObjectPermissions ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ObjectPermissions ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Sobject Type Name (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sobject Type Name")]
-        public string SobjectType { get; private set; }
+        public string SobjectType { get; set; }
 
         /// <summary>
         /// Create Records (boolean type in Salesforce)
@@ -13101,37 +13101,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -13144,215 +13144,215 @@ namespace Sharpforce
         /// <summary>
         /// Activity ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Activity ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountId { get; private set; }
+        public string AccountId { get; set; }
 
         /// <summary>
         /// Contact/Lead ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact/Lead ID")]
-        public string WhoId { get; private set; }
+        public string WhoId { get; set; }
 
         /// <summary>
         /// Opportunity/Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity/Account ID")]
-        public string WhatId { get; private set; }
+        public string WhatId { get; set; }
 
         /// <summary>
         /// Subject (combobox type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Subject { get; private set; }
+        //[JsonIgnore]
+        public string Subject { get; set; }
 
         /// <summary>
         /// Task (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Task")]
-        public bool? IsTask { get; private set; }
+        public bool? IsTask { get; set; }
 
         /// <summary>
         /// Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Date")]
-        public string ActivityDate { get; private set; }
+        public string ActivityDate { get; set; }
 
         /// <summary>
         /// Assigned To ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Assigned To ID")]
-        public string OwnerId { get; private set; }
+        public string OwnerId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Status { get; private set; }
+        //[JsonIgnore]
+        public string Status { get; set; }
 
         /// <summary>
         /// Priority (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Priority { get; private set; }
+        //[JsonIgnore]
+        public string Priority { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Type")]
-        public string ActivityType { get; private set; }
+        public string ActivityType { get; set; }
 
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Closed")]
-        public bool? IsClosed { get; private set; }
+        public bool? IsClosed { get; set; }
 
         /// <summary>
         /// All Day Event (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "All Day Event")]
-        public bool? IsAllDayEvent { get; private set; }
+        public bool? IsAllDayEvent { get; set; }
 
         /// <summary>
         /// Public (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Public")]
-        public bool? IsVisibleInSelfService { get; private set; }
+        public bool? IsVisibleInSelfService { get; set; }
 
         /// <summary>
         /// Duration (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Duration")]
-        public string DurationInMinutes { get; private set; }
+        public string DurationInMinutes { get; set; }
 
         /// <summary>
         /// Location (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Location { get; private set; }
+        //[JsonIgnore]
+        public string Location { get; set; }
 
         /// <summary>
         /// Comments (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comments")]
-        public string Description { get; private set; }
+        public string Description { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Call Duration (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Call Duration")]
-        public string CallDurationInSeconds { get; private set; }
+        public string CallDurationInSeconds { get; set; }
 
         /// <summary>
         /// Call Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Call Type")]
-        public string CallType { get; private set; }
+        public string CallType { get; set; }
 
         /// <summary>
         /// Call Result (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Call Result")]
-        public string CallDisposition { get; private set; }
+        public string CallDisposition { get; set; }
 
         /// <summary>
         /// Call Object Identifier (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Call Object Identifier")]
-        public string CallObject { get; private set; }
+        public string CallObject { get; set; }
 
         /// <summary>
         /// Reminder Date/Time (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reminder Date/Time")]
-        public string ReminderDateTime { get; private set; }
+        public string ReminderDateTime { get; set; }
 
         /// <summary>
         /// Reminder Set (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reminder Set")]
-        public bool? IsReminderSet { get; private set; }
+        public bool? IsReminderSet { get; set; }
 
         /// <summary>
         /// End (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "End")]
-        public string EndDateTime { get; private set; }
+        public string EndDateTime { get; set; }
 
         /// <summary>
         /// Start (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Start")]
-        public string StartDateTime { get; private set; }
+        public string StartDateTime { get; set; }
 
     }
 
@@ -13365,16 +13365,16 @@ namespace Sharpforce
         /// <summary>
         /// Opportunity ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
@@ -13422,9 +13422,9 @@ namespace Sharpforce
         /// <summary>
         /// Expected Amount (currency type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Expected Amount")]
-        public string ExpectedRevenue { get; private set; }
+        public string ExpectedRevenue { get; set; }
 
         /// <summary>
         /// Quantity (double type in Salesforce)
@@ -13462,23 +13462,23 @@ namespace Sharpforce
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Closed")]
-        public bool? IsClosed { get; private set; }
+        public bool? IsClosed { get; set; }
 
         /// <summary>
         /// Won (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Won")]
-        public bool? IsWon { get; private set; }
+        public bool? IsWon { get; set; }
 
         /// <summary>
         /// Forecast Category (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Forecast Category")]
-        public string ForecastCategory { get; private set; }
+        public string ForecastCategory { get; set; }
 
         /// <summary>
         /// Forecast Category (picklist type in Salesforce)
@@ -13497,9 +13497,9 @@ namespace Sharpforce
         /// <summary>
         /// Has Line Item (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Has Line Item")]
-        public bool? HasOpportunityLineItem { get; private set; }
+        public bool? HasOpportunityLineItem { get; set; }
 
         /// <summary>
         /// Price Book ID (reference type in Salesforce)
@@ -13518,79 +13518,79 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Activity (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Activity")]
-        public string LastActivityDate { get; private set; }
+        public string LastActivityDate { get; set; }
 
         /// <summary>
         /// Fiscal Quarter (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Fiscal Quarter")]
-        public string FiscalQuarter { get; private set; }
+        public string FiscalQuarter { get; set; }
 
         /// <summary>
         /// Fiscal Year (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Fiscal Year")]
-        public string FiscalYear { get; private set; }
+        public string FiscalYear { get; set; }
 
         /// <summary>
         /// Fiscal Period (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Fiscal Period")]
-        public string Fiscal { get; private set; }
+        public string Fiscal { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Delivery/Installation Status (picklist type in Salesforce)
@@ -13638,16 +13638,16 @@ namespace Sharpforce
         /// <summary>
         /// Opportunity: Competitor ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity: Competitor ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Opportunity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity ID")]
-        public string OpportunityId { get; private set; }
+        public string OpportunityId { get; set; }
 
         /// <summary>
         /// Competitor Name (combobox type in Salesforce)
@@ -13671,44 +13671,44 @@ namespace Sharpforce
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -13721,16 +13721,16 @@ namespace Sharpforce
         /// <summary>
         /// Contact Role ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact Role ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Opportunity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity ID")]
-        public string OpportunityId { get; private set; }
+        public string OpportunityId { get; set; }
 
         /// <summary>
         /// Contact ID (reference type in Salesforce)
@@ -13754,44 +13754,44 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -13804,140 +13804,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -13950,58 +13950,58 @@ namespace Sharpforce
         /// <summary>
         /// Opportunity History ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity History ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Opportunity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity ID")]
-        public string OpportunityId { get; private set; }
+        public string OpportunityId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -14014,84 +14014,84 @@ namespace Sharpforce
         /// <summary>
         /// Opportunity History ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity History ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Opportunity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity ID")]
-        public string OpportunityId { get; private set; }
+        public string OpportunityId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Stage Name (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Stage Name")]
-        public string StageName { get; private set; }
+        public string StageName { get; set; }
 
         /// <summary>
         /// Amount (currency type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Amount { get; private set; }
+        //[JsonIgnore]
+        public string Amount { get; set; }
 
         /// <summary>
         /// Expected Revenue (currency type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Expected Revenue")]
-        public string ExpectedRevenue { get; private set; }
+        public string ExpectedRevenue { get; set; }
 
         /// <summary>
         /// Close Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Close Date")]
-        public string CloseDate { get; private set; }
+        public string CloseDate { get; set; }
 
         /// <summary>
         /// Probability (percent type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Probability { get; private set; }
+        //[JsonIgnore]
+        public string Probability { get; set; }
 
         /// <summary>
         /// To ForecastCategory (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "To ForecastCategory")]
-        public string ForecastCategory { get; private set; }
+        public string ForecastCategory { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -14104,30 +14104,30 @@ namespace Sharpforce
         /// <summary>
         /// Line Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Line Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Opportunity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity ID")]
-        public string OpportunityId { get; private set; }
+        public string OpportunityId { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sort Order")]
-        public string SortOrder { get; private set; }
+        public string SortOrder { get; set; }
 
         /// <summary>
         /// Price Book Entry ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Price Book Entry ID")]
-        public string PricebookEntryId { get; private set; }
+        public string PricebookEntryId { get; set; }
 
         /// <summary>
         /// Quantity (double type in Salesforce)
@@ -14149,9 +14149,9 @@ namespace Sharpforce
         /// <summary>
         /// List Price (currency type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "List Price")]
-        public string ListPrice { get; private set; }
+        public string ListPrice { get; set; }
 
         /// <summary>
         /// Date (date type in Salesforce)
@@ -14169,44 +14169,44 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -14219,85 +14219,85 @@ namespace Sharpforce
         /// <summary>
         /// Opportunity Partner ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity Partner ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Opportunity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity ID")]
-        public string OpportunityId { get; private set; }
+        public string OpportunityId { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountToId { get; private set; }
+        public string AccountToId { get; set; }
 
         /// <summary>
         /// Role (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Role { get; private set; }
+        //[JsonIgnore]
+        public string Role { get; set; }
 
         /// <summary>
         /// Primary (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Primary")]
-        public bool? IsPrimary { get; private set; }
+        public bool? IsPrimary { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Reverse Partner ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reverse Partner ID")]
-        public string ReversePartnerId { get; private set; }
+        public string ReversePartnerId { get; set; }
 
     }
 
@@ -14310,58 +14310,58 @@ namespace Sharpforce
         /// <summary>
         /// Opportunity Share ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity Share ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Opportunity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity ID")]
-        public string OpportunityId { get; private set; }
+        public string OpportunityId { get; set; }
 
         /// <summary>
         /// User/Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User/Group ID")]
-        public string UserOrGroupId { get; private set; }
+        public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// Opportunity Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity Access")]
-        public string OpportunityAccessLevel { get; private set; }
+        public string OpportunityAccessLevel { get; set; }
 
         /// <summary>
         /// Row Cause (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Row Cause")]
-        public string RowCause { get; private set; }
+        public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -14374,106 +14374,106 @@ namespace Sharpforce
         /// <summary>
         /// Opportunity Stage ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity Stage ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Master Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Label")]
-        public string MasterLabel { get; private set; }
+        public string MasterLabel { get; set; }
 
         /// <summary>
         /// Is Active (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Active")]
-        public bool? IsActive { get; private set; }
+        public bool? IsActive { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sort Order")]
-        public string SortOrder { get; private set; }
+        public string SortOrder { get; set; }
 
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Closed")]
-        public bool? IsClosed { get; private set; }
+        public bool? IsClosed { get; set; }
 
         /// <summary>
         /// Won (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Won")]
-        public bool? IsWon { get; private set; }
+        public bool? IsWon { get; set; }
 
         /// <summary>
         /// Forecast Category (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Forecast Category")]
-        public string ForecastCategory { get; private set; }
+        public string ForecastCategory { get; set; }
 
         /// <summary>
         /// Forecast Category Name (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Forecast Category Name")]
-        public string ForecastCategoryName { get; private set; }
+        public string ForecastCategoryName { get; set; }
 
         /// <summary>
         /// Probability (%) (percent type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Probability (%)")]
-        public string DefaultProbability { get; private set; }
+        public string DefaultProbability { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Description { get; private set; }
+        //[JsonIgnore]
+        public string Description { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -14486,44 +14486,44 @@ namespace Sharpforce
         /// <summary>
         /// Organization-wide From Email Address ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Organization-wide From Email Address ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Email Address (email type in Salesforce)
@@ -14556,9 +14556,9 @@ namespace Sharpforce
         /// <summary>
         /// Organization ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Organization ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -14601,8 +14601,8 @@ namespace Sharpforce
         /// <summary>
         /// Country (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Country { get; private set; }
+        //[JsonIgnore]
+        public string Country { get; set; }
 
         /// <summary>
         /// Latitude (double type in Salesforce)
@@ -14674,86 +14674,86 @@ namespace Sharpforce
         /// <summary>
         /// Fiscal Year Starts In (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Fiscal Year Starts In")]
-        public string FiscalYearStartMonth { get; private set; }
+        public string FiscalYearStartMonth { get; set; }
 
         /// <summary>
         /// Fiscal Year Name by Start (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Fiscal Year Name by Start")]
-        public bool? UsesStartDateAsFiscalYearName { get; private set; }
+        public bool? UsesStartDateAsFiscalYearName { get; set; }
 
         /// <summary>
         /// Default Account Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Default Account Access")]
-        public string DefaultAccountAccess { get; private set; }
+        public string DefaultAccountAccess { get; set; }
 
         /// <summary>
         /// Default Contact Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Default Contact Access")]
-        public string DefaultContactAccess { get; private set; }
+        public string DefaultContactAccess { get; set; }
 
         /// <summary>
         /// Default Opportunity Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Default Opportunity Access")]
-        public string DefaultOpportunityAccess { get; private set; }
+        public string DefaultOpportunityAccess { get; set; }
 
         /// <summary>
         /// Default Lead Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Default Lead Access")]
-        public string DefaultLeadAccess { get; private set; }
+        public string DefaultLeadAccess { get; set; }
 
         /// <summary>
         /// Default Case Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Default Case Access")]
-        public string DefaultCaseAccess { get; private set; }
+        public string DefaultCaseAccess { get; set; }
 
         /// <summary>
         /// Default Calendar Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Default Calendar Access")]
-        public string DefaultCalendarAccess { get; private set; }
+        public string DefaultCalendarAccess { get; set; }
 
         /// <summary>
         /// Default Price Book Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Default Price Book Access")]
-        public string DefaultPricebookAccess { get; private set; }
+        public string DefaultPricebookAccess { get; set; }
 
         /// <summary>
         /// Default Campaign Access (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Default Campaign Access")]
-        public string DefaultCampaignAccess { get; private set; }
+        public string DefaultCampaignAccess { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Compliance BCC Email (email type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Compliance BCC Email")]
-        public string ComplianceBccEmail { get; private set; }
+        public string ComplianceBccEmail { get; set; }
 
         /// <summary>
         /// UI Skin (picklist type in Salesforce)
@@ -14765,16 +14765,16 @@ namespace Sharpforce
         /// <summary>
         /// Trial Expiration Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Trial Expiration Date")]
-        public string TrialExpirationDate { get; private set; }
+        public string TrialExpirationDate { get; set; }
 
         /// <summary>
         /// Edition (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Edition")]
-        public string OrganizationType { get; private set; }
+        public string OrganizationType { get; set; }
 
         /// <summary>
         /// Web to Cases Default Origin (string type in Salesforce)
@@ -14786,44 +14786,44 @@ namespace Sharpforce
         /// <summary>
         /// Monthly Page Views Used (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Monthly Page Views Used")]
-        public string MonthlyPageViewsUsed { get; private set; }
+        public string MonthlyPageViewsUsed { get; set; }
 
         /// <summary>
         /// Monthly Page Views Allowed (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Monthly Page Views Allowed")]
-        public string MonthlyPageViewsEntitlement { get; private set; }
+        public string MonthlyPageViewsEntitlement { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
     }
 
@@ -14836,92 +14836,92 @@ namespace Sharpforce
         /// <summary>
         /// Partner ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Partner ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Opportunity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Opportunity ID")]
-        public string OpportunityId { get; private set; }
+        public string OpportunityId { get; set; }
 
         /// <summary>
         /// Account From ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account From ID")]
-        public string AccountFromId { get; private set; }
+        public string AccountFromId { get; set; }
 
         /// <summary>
         /// Account To ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account To ID")]
-        public string AccountToId { get; private set; }
+        public string AccountToId { get; set; }
 
         /// <summary>
         /// Role (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Role { get; private set; }
+        //[JsonIgnore]
+        public string Role { get; set; }
 
         /// <summary>
         /// Primary (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Primary")]
-        public bool? IsPrimary { get; private set; }
+        public bool? IsPrimary { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Reverse Partner ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reverse Partner ID")]
-        public string ReversePartnerId { get; private set; }
+        public string ReversePartnerId { get; set; }
 
     }
 
@@ -14934,65 +14934,65 @@ namespace Sharpforce
         /// <summary>
         /// Partner Role Value ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Partner Role Value ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Master Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Label")]
-        public string MasterLabel { get; private set; }
+        public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sort Order")]
-        public string SortOrder { get; private set; }
+        public string SortOrder { get; set; }
 
         /// <summary>
         /// Reverse Role (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reverse Role")]
-        public string ReverseRole { get; private set; }
+        public string ReverseRole { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -15005,70 +15005,70 @@ namespace Sharpforce
         /// <summary>
         /// Period ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Period ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Fiscal Year Settings ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Fiscal Year Settings ID")]
-        public string FiscalYearSettingsId { get; private set; }
+        public string FiscalYearSettingsId { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Type { get; private set; }
+        //[JsonIgnore]
+        public string Type { get; set; }
 
         /// <summary>
         /// Start Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Start Date")]
-        public string StartDate { get; private set; }
+        public string StartDate { get; set; }
 
         /// <summary>
         /// End Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "End Date")]
-        public string EndDate { get; private set; }
+        public string EndDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Is Forecast Period (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Forecast Period")]
-        public bool? IsForecastPeriod { get; private set; }
+        public bool? IsForecastPeriod { get; set; }
 
         /// <summary>
         /// Quarter Name (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Quarter Name")]
-        public string QuarterLabel { get; private set; }
+        public string QuarterLabel { get; set; }
 
         /// <summary>
         /// Period Name (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Period Name")]
-        public string PeriodLabel { get; private set; }
+        public string PeriodLabel { get; set; }
 
         /// <summary>
         /// Number (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Number { get; private set; }
+        //[JsonIgnore]
+        public string Number { get; set; }
 
     }
 
@@ -15081,9 +15081,9 @@ namespace Sharpforce
         /// <summary>
         /// PermissionSet ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "PermissionSet ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Permission Set Name (string type in Salesforce)
@@ -15102,23 +15102,23 @@ namespace Sharpforce
         /// <summary>
         /// User License ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User License ID")]
-        public string UserLicenseId { get; private set; }
+        public string UserLicenseId { get; set; }
 
         /// <summary>
         /// Profile ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Profile ID")]
-        public string ProfileId { get; private set; }
+        public string ProfileId { get; set; }
 
         /// <summary>
         /// Is Owned By Profile (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Owned By Profile")]
-        public bool? IsOwnedByProfile { get; private set; }
+        public bool? IsOwnedByProfile { get; set; }
 
         /// <summary>
         /// Edit Tasks (boolean type in Salesforce)
@@ -15567,44 +15567,44 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
     }
 
@@ -15617,30 +15617,30 @@ namespace Sharpforce
         /// <summary>
         /// PermissionSetAssignment ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "PermissionSetAssignment ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// PermissionSet ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "PermissionSet ID")]
-        public string PermissionSetId { get; private set; }
+        public string PermissionSetId { get; set; }
 
         /// <summary>
         /// Assignee ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Assignee ID")]
-        public string AssigneeId { get; private set; }
+        public string AssigneeId { get; set; }
 
         /// <summary>
         /// Date Assigned (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Date Assigned")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -15653,617 +15653,617 @@ namespace Sharpforce
         /// <summary>
         /// Permission Set License ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Permission Set License ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Developer Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Developer Name")]
-        public string DeveloperName { get; private set; }
+        public string DeveloperName { get; set; }
 
         /// <summary>
         /// Master Language (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Language")]
-        public string Language { get; private set; }
+        public string Language { get; set; }
 
         /// <summary>
         /// Permission Set License Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Permission Set License Label")]
-        public string MasterLabel { get; private set; }
+        public string MasterLabel { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Permission Set License Key (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Permission Set License Key")]
-        public string PermissionSetLicenseKey { get; private set; }
+        public string PermissionSetLicenseKey { get; set; }
 
         /// <summary>
         /// Total Licenses (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Total Licenses")]
-        public string TotalLicenses { get; private set; }
+        public string TotalLicenses { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Status { get; private set; }
+        //[JsonIgnore]
+        public string Status { get; set; }
 
         /// <summary>
         /// Expiration Date (date type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Expiration Date")]
-        public string ExpirationDate { get; private set; }
+        public string ExpirationDate { get; set; }
 
         /// <summary>
         /// Edit Tasks (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Edit Tasks")]
-        public bool? MaximumPermissionsEditTask { get; private set; }
+        public bool? MaximumPermissionsEditTask { get; set; }
 
         /// <summary>
         /// Edit Events (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Edit Events")]
-        public bool? MaximumPermissionsEditEvent { get; private set; }
+        public bool? MaximumPermissionsEditEvent { get; set; }
 
         /// <summary>
         /// Manage Users (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Users")]
-        public bool? MaximumPermissionsManageUsers { get; private set; }
+        public bool? MaximumPermissionsManageUsers { get; set; }
 
         /// <summary>
         /// Modify All Data (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Modify All Data")]
-        public bool? MaximumPermissionsModifyAllData { get; private set; }
+        public bool? MaximumPermissionsModifyAllData { get; set; }
 
         /// <summary>
         /// Manage Cases (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Cases")]
-        public bool? MaximumPermissionsManageCases { get; private set; }
+        public bool? MaximumPermissionsManageCases { get; set; }
 
         /// <summary>
         /// Mass Edits from Lists (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Mass Edits from Lists")]
-        public bool? MaximumPermissionsMassInlineEdit { get; private set; }
+        public bool? MaximumPermissionsMassInlineEdit { get; set; }
 
         /// <summary>
         /// Manage Articles (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Articles")]
-        public bool? MaximumPermissionsEditKnowledge { get; private set; }
+        public bool? MaximumPermissionsEditKnowledge { get; set; }
 
         /// <summary>
         /// Manage Salesforce Knowledge (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Salesforce Knowledge")]
-        public bool? MaximumPermissionsManageKnowledge { get; private set; }
+        public bool? MaximumPermissionsManageKnowledge { get; set; }
 
         /// <summary>
         /// Manage Published Solutions (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Published Solutions")]
-        public bool? MaximumPermissionsManageSolutions { get; private set; }
+        public bool? MaximumPermissionsManageSolutions { get; set; }
 
         /// <summary>
         /// Customize Application (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Customize Application")]
-        public bool? MaximumPermissionsCustomizeApplication { get; private set; }
+        public bool? MaximumPermissionsCustomizeApplication { get; set; }
 
         /// <summary>
         /// Edit Read Only Fields (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Edit Read Only Fields")]
-        public bool? MaximumPermissionsEditReadonlyFields { get; private set; }
+        public bool? MaximumPermissionsEditReadonlyFields { get; set; }
 
         /// <summary>
         /// Run Reports (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Run Reports")]
-        public bool? MaximumPermissionsRunReports { get; private set; }
+        public bool? MaximumPermissionsRunReports { get; set; }
 
         /// <summary>
         /// View Setup and Configuration (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "View Setup and Configuration")]
-        public bool? MaximumPermissionsViewSetup { get; private set; }
+        public bool? MaximumPermissionsViewSetup { get; set; }
 
         /// <summary>
         /// Transfer Record (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Transfer Record")]
-        public bool? MaximumPermissionsTransferAnyEntity { get; private set; }
+        public bool? MaximumPermissionsTransferAnyEntity { get; set; }
 
         /// <summary>
         /// Report Builder (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Report Builder")]
-        public bool? MaximumPermissionsNewReportBuilder { get; private set; }
+        public bool? MaximumPermissionsNewReportBuilder { get; set; }
 
         /// <summary>
         /// Import Leads (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Import Leads")]
-        public bool? MaximumPermissionsImportLeads { get; private set; }
+        public bool? MaximumPermissionsImportLeads { get; set; }
 
         /// <summary>
         /// Manage Leads (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Leads")]
-        public bool? MaximumPermissionsManageLeads { get; private set; }
+        public bool? MaximumPermissionsManageLeads { get; set; }
 
         /// <summary>
         /// Transfer Leads (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Transfer Leads")]
-        public bool? MaximumPermissionsTransferAnyLead { get; private set; }
+        public bool? MaximumPermissionsTransferAnyLead { get; set; }
 
         /// <summary>
         /// View All Data (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "View All Data")]
-        public bool? MaximumPermissionsViewAllData { get; private set; }
+        public bool? MaximumPermissionsViewAllData { get; set; }
 
         /// <summary>
         /// Manage Public Documents (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Public Documents")]
-        public bool? MaximumPermissionsEditPublicDocuments { get; private set; }
+        public bool? MaximumPermissionsEditPublicDocuments { get; set; }
 
         /// <summary>
         /// Send Stay-in-Touch Requests (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Send Stay-in-Touch Requests")]
-        public bool? MaximumPermissionsSendSitRequests { get; private set; }
+        public bool? MaximumPermissionsSendSitRequests { get; set; }
 
         /// <summary>
         /// Manage Connected Apps (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Connected Apps")]
-        public bool? MaximumPermissionsManageRemoteAccess { get; private set; }
+        public bool? MaximumPermissionsManageRemoteAccess { get; set; }
 
         /// <summary>
         /// Drag-and-Drop Dashboard Builder (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Drag-and-Drop Dashboard Builder")]
-        public bool? MaximumPermissionsCanUseNewDashboardBuilder { get; private set; }
+        public bool? MaximumPermissionsCanUseNewDashboardBuilder { get; set; }
 
         /// <summary>
         /// Manage Categories (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Categories")]
-        public bool? MaximumPermissionsManageCategories { get; private set; }
+        public bool? MaximumPermissionsManageCategories { get; set; }
 
         /// <summary>
         /// Convert Leads (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Convert Leads")]
-        public bool? MaximumPermissionsConvertLeads { get; private set; }
+        public bool? MaximumPermissionsConvertLeads { get; set; }
 
         /// <summary>
         /// Password Never Expires (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Password Never Expires")]
-        public bool? MaximumPermissionsPasswordNeverExpires { get; private set; }
+        public bool? MaximumPermissionsPasswordNeverExpires { get; set; }
 
         /// <summary>
         /// Use Team Reassignment Wizards (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Use Team Reassignment Wizards")]
-        public bool? MaximumPermissionsUseTeamReassignWizards { get; private set; }
+        public bool? MaximumPermissionsUseTeamReassignWizards { get; set; }
 
         /// <summary>
         /// Download AppExchange Packages (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Download AppExchange Packages")]
-        public bool? MaximumPermissionsInstallPackaging { get; private set; }
+        public bool? MaximumPermissionsInstallPackaging { get; set; }
 
         /// <summary>
         /// Upload AppExchange Packages (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Upload AppExchange Packages")]
-        public bool? MaximumPermissionsPublishPackaging { get; private set; }
+        public bool? MaximumPermissionsPublishPackaging { get; set; }
 
         /// <summary>
         /// Edit Opportunity Product Sales Price (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Edit Opportunity Product Sales Price")]
-        public bool? MaximumPermissionsEditOppLineItemUnitPrice { get; private set; }
+        public bool? MaximumPermissionsEditOppLineItemUnitPrice { get; set; }
 
         /// <summary>
         /// Create AppExchange Packages (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Create AppExchange Packages")]
-        public bool? MaximumPermissionsCreatePackaging { get; private set; }
+        public bool? MaximumPermissionsCreatePackaging { get; set; }
 
         /// <summary>
         /// Bulk API Hard Delete (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Bulk API Hard Delete")]
-        public bool? MaximumPermissionsBulkApiHardDelete { get; private set; }
+        public bool? MaximumPermissionsBulkApiHardDelete { get; set; }
 
         /// <summary>
         /// Import Solutions (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Import Solutions")]
-        public bool? MaximumPermissionsSolutionImport { get; private set; }
+        public bool? MaximumPermissionsSolutionImport { get; set; }
 
         /// <summary>
         /// Manage Call Centers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Call Centers")]
-        public bool? MaximumPermissionsManageCallCenters { get; private set; }
+        public bool? MaximumPermissionsManageCallCenters { get; set; }
 
         /// <summary>
         /// Manage Synonyms (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Synonyms")]
-        public bool? MaximumPermissionsManageSynonyms { get; private set; }
+        public bool? MaximumPermissionsManageSynonyms { get; set; }
 
         /// <summary>
         /// Manage Email Client Configurations (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Email Client Configurations")]
-        public bool? MaximumPermissionsManageEmailClientConfig { get; private set; }
+        public bool? MaximumPermissionsManageEmailClientConfig { get; set; }
 
         /// <summary>
         /// Send Outbound Messages (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Send Outbound Messages")]
-        public bool? MaximumPermissionsEnableNotifications { get; private set; }
+        public bool? MaximumPermissionsEnableNotifications { get; set; }
 
         /// <summary>
         /// Manage Data Integrations (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Data Integrations")]
-        public bool? MaximumPermissionsManageDataIntegrations { get; private set; }
+        public bool? MaximumPermissionsManageDataIntegrations { get; set; }
 
         /// <summary>
         /// Deliver Uploaded Files and Personal Content (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deliver Uploaded Files and Personal Content")]
-        public bool? MaximumPermissionsDistributeFromPersWksp { get; private set; }
+        public bool? MaximumPermissionsDistributeFromPersWksp { get; set; }
 
         /// <summary>
         /// View Data Categories (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "View Data Categories")]
-        public bool? MaximumPermissionsViewDataCategories { get; private set; }
+        public bool? MaximumPermissionsViewDataCategories { get; set; }
 
         /// <summary>
         /// Manage Data Categories (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Data Categories")]
-        public bool? MaximumPermissionsManageDataCategories { get; private set; }
+        public bool? MaximumPermissionsManageDataCategories { get; set; }
 
         /// <summary>
         /// Author Apex (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Author Apex")]
-        public bool? MaximumPermissionsAuthorApex { get; private set; }
+        public bool? MaximumPermissionsAuthorApex { get; set; }
 
         /// <summary>
         /// Manage Mobile Configurations (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Mobile Configurations")]
-        public bool? MaximumPermissionsManageMobile { get; private set; }
+        public bool? MaximumPermissionsManageMobile { get; set; }
 
         /// <summary>
         /// API Enabled (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "API Enabled")]
-        public bool? MaximumPermissionsApiEnabled { get; private set; }
+        public bool? MaximumPermissionsApiEnabled { get; set; }
 
         /// <summary>
         /// Manage Custom Report Types (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Custom Report Types")]
-        public bool? MaximumPermissionsManageCustomReportTypes { get; private set; }
+        public bool? MaximumPermissionsManageCustomReportTypes { get; set; }
 
         /// <summary>
         /// Edit Case Comments (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Edit Case Comments")]
-        public bool? MaximumPermissionsEditCaseComments { get; private set; }
+        public bool? MaximumPermissionsEditCaseComments { get; set; }
 
         /// <summary>
         /// Transfer Cases (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Transfer Cases")]
-        public bool? MaximumPermissionsTransferAnyCase { get; private set; }
+        public bool? MaximumPermissionsTransferAnyCase { get; set; }
 
         /// <summary>
         /// Manage Analytic Snapshots (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Analytic Snapshots")]
-        public bool? MaximumPermissionsManageAnalyticSnapshots { get; private set; }
+        public bool? MaximumPermissionsManageAnalyticSnapshots { get; set; }
 
         /// <summary>
         /// Schedule Reports (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Schedule Reports")]
-        public bool? MaximumPermissionsScheduleReports { get; private set; }
+        public bool? MaximumPermissionsScheduleReports { get; set; }
 
         /// <summary>
         /// Manage Business Hours Holidays (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Business Hours Holidays")]
-        public bool? MaximumPermissionsManageBusinessHourHolidays { get; private set; }
+        public bool? MaximumPermissionsManageBusinessHourHolidays { get; set; }
 
         /// <summary>
         /// Manage Dynamic Dashboards (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Dynamic Dashboards")]
-        public bool? MaximumPermissionsManageDynamicDashboards { get; private set; }
+        public bool? MaximumPermissionsManageDynamicDashboards { get; set; }
 
         /// <summary>
         /// Show Custom Sidebar On All Pages (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Show Custom Sidebar On All Pages")]
-        public bool? MaximumPermissionsCustomSidebarOnAllPages { get; private set; }
+        public bool? MaximumPermissionsCustomSidebarOnAllPages { get; set; }
 
         /// <summary>
         /// Manage Force.com Flow (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Force.com Flow")]
-        public bool? MaximumPermissionsManageInteraction { get; private set; }
+        public bool? MaximumPermissionsManageInteraction { get; set; }
 
         /// <summary>
         /// View My Team's Dashboards (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "View My Team's Dashboards")]
-        public bool? MaximumPermissionsViewMyTeamsDashboards { get; private set; }
+        public bool? MaximumPermissionsViewMyTeamsDashboards { get; set; }
 
         /// <summary>
         /// Reset User Passwords and Unlock Users (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reset User Passwords and Unlock Users")]
-        public bool? MaximumPermissionsResetPasswords { get; private set; }
+        public bool? MaximumPermissionsResetPasswords { get; set; }
 
         /// <summary>
         /// Require Force.com Flow User Feature License (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Require Force.com Flow User Feature License")]
-        public bool? MaximumPermissionsFlowUFLRequired { get; private set; }
+        public bool? MaximumPermissionsFlowUFLRequired { get; set; }
 
         /// <summary>
         /// Insert System Field Values for Chatter Feeds (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Insert System Field Values for Chatter Feeds")]
-        public bool? MaximumPermissionsCanInsertFeedSystemFields { get; private set; }
+        public bool? MaximumPermissionsCanInsertFeedSystemFields { get; set; }
 
         /// <summary>
         /// Manage Knowledge Article Import/Export (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Knowledge Article Import/Export")]
-        public bool? MaximumPermissionsManageKnowledgeImportExport { get; private set; }
+        public bool? MaximumPermissionsManageKnowledgeImportExport { get; set; }
 
         /// <summary>
         /// Manage Email Templates (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Email Templates")]
-        public bool? MaximumPermissionsEmailTemplateManagement { get; private set; }
+        public bool? MaximumPermissionsEmailTemplateManagement { get; set; }
 
         /// <summary>
         /// Email Administration (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Email Administration")]
-        public bool? MaximumPermissionsEmailAdministration { get; private set; }
+        public bool? MaximumPermissionsEmailAdministration { get; set; }
 
         /// <summary>
         /// Manage Chatter Messages (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Chatter Messages")]
-        public bool? MaximumPermissionsManageChatterMessages { get; private set; }
+        public bool? MaximumPermissionsManageChatterMessages { get; set; }
 
         /// <summary>
         /// Create and Share Links to Chatter Files (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Create and Share Links to Chatter Files")]
-        public bool? MaximumPermissionsChatterFileLink { get; private set; }
+        public bool? MaximumPermissionsChatterFileLink { get; set; }
 
         /// <summary>
         /// Use Case Feed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Use Case Feed")]
-        public bool? MaximumPermissionsViewCaseInteraction { get; private set; }
+        public bool? MaximumPermissionsViewCaseInteraction { get; set; }
 
         /// <summary>
         /// Manage Auth. Providers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Manage Auth. Providers")]
-        public bool? MaximumPermissionsManageAuthProviders { get; private set; }
+        public bool? MaximumPermissionsManageAuthProviders { get; set; }
 
         /// <summary>
         /// Run Flows (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Run Flows")]
-        public bool? MaximumPermissionsRunFlow { get; private set; }
+        public bool? MaximumPermissionsRunFlow { get; set; }
 
         /// <summary>
         /// View All Users (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "View All Users")]
-        public bool? MaximumPermissionsViewAllUsers { get; private set; }
+        public bool? MaximumPermissionsViewAllUsers { get; set; }
 
         /// <summary>
         /// Knowledge One (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Knowledge One")]
-        public bool? MaximumPermissionsAllowUniversalSearch { get; private set; }
+        public bool? MaximumPermissionsAllowUniversalSearch { get; set; }
 
         /// <summary>
         /// Connect Organization to Environment Hub (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Connect Organization to Environment Hub")]
-        public bool? MaximumPermissionsConnectOrgToEnvironmentHub { get; private set; }
+        public bool? MaximumPermissionsConnectOrgToEnvironmentHub { get; set; }
 
         /// <summary>
         /// Enable Work.com Calibration (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Enable Work.com Calibration")]
-        public bool? MaximumPermissionsWorkCalibrationUser { get; private set; }
+        public bool? MaximumPermissionsWorkCalibrationUser { get; set; }
 
         /// <summary>
         /// Enable Work.com (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Enable Work.com")]
-        public bool? MaximumPermissionsWorkDotComUserPerm { get; private set; }
+        public bool? MaximumPermissionsWorkDotComUserPerm { get; set; }
 
         /// <summary>
         /// Sales Console (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sales Console")]
-        public bool? MaximumPermissionsSalesConsole { get; private set; }
+        public bool? MaximumPermissionsSalesConsole { get; set; }
 
         /// <summary>
         /// Use Identity Connect (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Use Identity Connect")]
-        public bool? MaximumPermissionsIdentityConnect { get; private set; }
+        public bool? MaximumPermissionsIdentityConnect { get; set; }
 
         /// <summary>
         /// Allow View Knowledge (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Allow View Knowledge")]
-        public bool? MaximumPermissionsAllowViewKnowledge { get; private set; }
+        public bool? MaximumPermissionsAllowViewKnowledge { get; set; }
 
         /// <summary>
         /// Used Licenses (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Used Licenses")]
-        public string UsedLicenses { get; private set; }
+        public string UsedLicenses { get; set; }
 
     }
 
@@ -16276,65 +16276,65 @@ namespace Sharpforce
         /// <summary>
         /// Permission Set License Assignment ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Permission Set License Assignment ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Date Assigned (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Date Assigned")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Permission Set License ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Permission Set License ID")]
-        public string PermissionSetLicenseId { get; private set; }
+        public string PermissionSetLicenseId { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string AssigneeId { get; private set; }
+        public string AssigneeId { get; set; }
 
     }
 
@@ -16347,16 +16347,16 @@ namespace Sharpforce
         /// <summary>
         /// Price Book ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Price Book ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Price Book Name (string type in Salesforce)
@@ -16368,51 +16368,51 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
@@ -16429,9 +16429,9 @@ namespace Sharpforce
         /// <summary>
         /// Is Standard Price Book (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Standard Price Book")]
-        public bool? IsStandard { get; private set; }
+        public bool? IsStandard { get; set; }
 
     }
 
@@ -16444,58 +16444,58 @@ namespace Sharpforce
         /// <summary>
         /// Price Book History ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Price Book History ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Price Book ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Price Book ID")]
-        public string Pricebook2Id { get; private set; }
+        public string Pricebook2Id { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -16508,30 +16508,30 @@ namespace Sharpforce
         /// <summary>
         /// Price Book Entry ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Price Book Entry ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Product Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Product Name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Price Book ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Price Book ID")]
-        public string Pricebook2Id { get; private set; }
+        public string Pricebook2Id { get; set; }
 
         /// <summary>
         /// Product ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Product ID")]
-        public string Product2Id { get; private set; }
+        public string Product2Id { get; set; }
 
         /// <summary>
         /// List Price (currency type in Salesforce)
@@ -16554,51 +16554,51 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Product Code (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Product Code")]
-        public string ProductCode { get; private set; }
+        public string ProductCode { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -16611,64 +16611,64 @@ namespace Sharpforce
         /// <summary>
         /// Process Instance ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Process Instance ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Target Object ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Target Object ID")]
-        public string TargetObjectId { get; private set; }
+        public string TargetObjectId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Status { get; private set; }
+        //[JsonIgnore]
+        public string Status { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -16681,91 +16681,91 @@ namespace Sharpforce
         /// <summary>
         /// Process Instance History ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Process Instance History ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Is Pending (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Pending")]
-        public bool? IsPending { get; private set; }
+        public bool? IsPending { get; set; }
 
         /// <summary>
         /// Process Instance ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Process Instance ID")]
-        public string ProcessInstanceId { get; private set; }
+        public string ProcessInstanceId { get; set; }
 
         /// <summary>
         /// Target Object ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Target Object ID")]
-        public string TargetObjectId { get; private set; }
+        public string TargetObjectId { get; set; }
 
         /// <summary>
         /// Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Status")]
-        public string StepStatus { get; private set; }
+        public string StepStatus { get; set; }
 
         /// <summary>
         /// Original Actor ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Original Actor ID")]
-        public string OriginalActorId { get; private set; }
+        public string OriginalActorId { get; set; }
 
         /// <summary>
         /// Actor ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Actor ID")]
-        public string ActorId { get; private set; }
+        public string ActorId { get; set; }
 
         /// <summary>
         /// RemindersSent (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string RemindersSent { get; private set; }
+        //[JsonIgnore]
+        public string RemindersSent { get; set; }
 
         /// <summary>
         /// Comments (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Comments { get; private set; }
+        //[JsonIgnore]
+        public string Comments { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -16778,64 +16778,64 @@ namespace Sharpforce
         /// <summary>
         /// Process Instance Step ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Process Instance Step ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Process Instance ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Process Instance ID")]
-        public string ProcessInstanceId { get; private set; }
+        public string ProcessInstanceId { get; set; }
 
         /// <summary>
         /// Step Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Step Status")]
-        public string StepStatus { get; private set; }
+        public string StepStatus { get; set; }
 
         /// <summary>
         /// Original Actor ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Original Actor ID")]
-        public string OriginalActorId { get; private set; }
+        public string OriginalActorId { get; set; }
 
         /// <summary>
         /// Actor ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Actor ID")]
-        public string ActorId { get; private set; }
+        public string ActorId { get; set; }
 
         /// <summary>
         /// Comments (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Comments { get; private set; }
+        //[JsonIgnore]
+        public string Comments { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -16848,9 +16848,9 @@ namespace Sharpforce
         /// <summary>
         /// Process Instance Workitem ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Process Instance Workitem ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Process Instance ID (reference type in Salesforce)
@@ -16876,30 +16876,30 @@ namespace Sharpforce
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -16912,9 +16912,9 @@ namespace Sharpforce
         /// <summary>
         /// Product ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Product ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Product Name (string type in Salesforce)
@@ -16946,37 +16946,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Product Family (picklist type in Salesforce)
@@ -16988,9 +16988,9 @@ namespace Sharpforce
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
     }
 
@@ -17003,140 +17003,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -17149,9 +17149,9 @@ namespace Sharpforce
         /// <summary>
         /// Profile ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Profile ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -17600,51 +17600,51 @@ namespace Sharpforce
         /// <summary>
         /// User License ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User License ID")]
-        public string UserLicenseId { get; private set; }
+        public string UserLicenseId { get; set; }
 
         /// <summary>
         /// User Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User Type")]
-        public string UserType { get; private set; }
+        public string UserType { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
@@ -17655,16 +17655,16 @@ namespace Sharpforce
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
     }
 
@@ -17677,9 +17677,9 @@ namespace Sharpforce
         /// <summary>
         /// Push Topic ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Push Topic ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Topic Name (string type in Salesforce)
@@ -17717,9 +17717,9 @@ namespace Sharpforce
         /// <summary>
         /// Notify For Operations (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Notify For Operations")]
-        public string NotifyForOperations { get; private set; }
+        public string NotifyForOperations { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
@@ -17754,44 +17754,44 @@ namespace Sharpforce
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -17804,37 +17804,37 @@ namespace Sharpforce
         /// <summary>
         /// Queue Sobject ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Queue Sobject ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Group ID")]
-        public string QueueId { get; private set; }
+        public string QueueId { get; set; }
 
         /// <summary>
         /// Sobject Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sobject Type")]
-        public string SobjectType { get; private set; }
+        public string SobjectType { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -17847,88 +17847,88 @@ namespace Sharpforce
         /// <summary>
         /// Recently Viewed ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Recently Viewed ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Name { get; private set; }
+        //[JsonIgnore]
+        public string Name { get; set; }
 
         /// <summary>
         /// Last Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Name")]
-        public string LastName { get; private set; }
+        public string LastName { get; set; }
 
         /// <summary>
         /// First Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "First Name")]
-        public string FirstName { get; private set; }
+        public string FirstName { get; set; }
 
         /// <summary>
         /// Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Type { get; private set; }
+        //[JsonIgnore]
+        public string Type { get; set; }
 
         /// <summary>
         /// Alias (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Alias { get; private set; }
+        //[JsonIgnore]
+        public string Alias { get; set; }
 
         /// <summary>
         /// Role ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Role ID")]
-        public string UserRoleId { get; private set; }
+        public string UserRoleId { get; set; }
 
         /// <summary>
         /// Record Type ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Record Type ID")]
-        public string RecordTypeId { get; private set; }
+        public string RecordTypeId { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Active")]
-        public bool? IsActive { get; private set; }
+        public bool? IsActive { get; set; }
 
         /// <summary>
         /// Profile ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Profile ID")]
-        public string ProfileId { get; private set; }
+        public string ProfileId { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// E-mail (email type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "E-mail")]
-        public string Email { get; private set; }
+        public string Email { get; set; }
 
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Phone { get; private set; }
+        //[JsonIgnore]
+        public string Phone { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
@@ -17953,9 +17953,9 @@ namespace Sharpforce
         /// <summary>
         /// Record Type ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Record Type ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -17973,9 +17973,9 @@ namespace Sharpforce
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
@@ -17993,9 +17993,9 @@ namespace Sharpforce
         /// <summary>
         /// Sobject Type Name (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sobject Type Name")]
-        public string SobjectType { get; private set; }
+        public string SobjectType { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
@@ -18006,37 +18006,37 @@ namespace Sharpforce
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -18049,112 +18049,112 @@ namespace Sharpforce
         /// <summary>
         /// Report ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Report ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Owner ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Owner ID")]
-        public string OwnerId { get; private set; }
+        public string OwnerId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Report Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Report Name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Description (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Description { get; private set; }
+        //[JsonIgnore]
+        public string Description { get; set; }
 
         /// <summary>
         /// Report Unique Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Report Unique Name")]
-        public string DeveloperName { get; private set; }
+        public string DeveloperName { get; set; }
 
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Last Run (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Run")]
-        public string LastRunDate { get; private set; }
+        public string LastRunDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Format (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Format { get; private set; }
+        //[JsonIgnore]
+        public string Format { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
     }
 
@@ -18167,140 +18167,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -18313,37 +18313,37 @@ namespace Sharpforce
         /// <summary>
         /// SetupEntityAccess ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "SetupEntityAccess ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Setup Entity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Setup Entity ID")]
-        public string SetupEntityId { get; private set; }
+        public string SetupEntityId { get; set; }
 
         /// <summary>
         /// Setup Entity Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Setup Entity Type")]
-        public string SetupEntityType { get; private set; }
+        public string SetupEntityType { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -18356,184 +18356,184 @@ namespace Sharpforce
         /// <summary>
         /// Site ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Site ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Site Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Site Name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Site Subdomain Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Site Subdomain Prefix")]
-        public string Subdomain { get; private set; }
+        public string Subdomain { get; set; }
 
         /// <summary>
         /// Default Web Address (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Default Web Address")]
-        public string UrlPathPrefix { get; private set; }
+        public string UrlPathPrefix { get; set; }
 
         /// <summary>
         /// Site Status (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Site Status")]
-        public string Status { get; private set; }
+        public string Status { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string AdminId { get; private set; }
+        public string AdminId { get; set; }
 
         /// <summary>
         /// Enable Feeds (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Enable Feeds")]
-        public bool? OptionsEnableFeeds { get; private set; }
+        public bool? OptionsEnableFeeds { get; set; }
 
         /// <summary>
         /// Enable Standard Home Page (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Enable Standard Home Page")]
-        public bool? OptionsAllowHomePage { get; private set; }
+        public bool? OptionsAllowHomePage { get; set; }
 
         /// <summary>
         /// Enable Standard Ideas Pages (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Enable Standard Ideas Pages")]
-        public bool? OptionsAllowStandardIdeasPages { get; private set; }
+        public bool? OptionsAllowStandardIdeasPages { get; set; }
 
         /// <summary>
         /// Enable Standard Lookup Pages (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Enable Standard Lookup Pages")]
-        public bool? OptionsAllowStandardSearch { get; private set; }
+        public bool? OptionsAllowStandardSearch { get; set; }
 
         /// <summary>
         /// Enable Standard Search Pages (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Enable Standard Search Pages")]
-        public bool? OptionsAllowStandardLookups { get; private set; }
+        public bool? OptionsAllowStandardLookups { get; set; }
 
         /// <summary>
         /// Enable Standard Answers Pages (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Enable Standard Answers Pages")]
-        public bool? OptionsAllowStandardAnswersPages { get; private set; }
+        public bool? OptionsAllowStandardAnswersPages { get; set; }
 
         /// <summary>
         /// Site Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Site Description")]
-        public string Description { get; private set; }
+        public string Description { get; set; }
 
         /// <summary>
         /// Site Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Site Label")]
-        public string MasterLabel { get; private set; }
+        public string MasterLabel { get; set; }
 
         /// <summary>
         /// Analytics Tracking Code (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Analytics Tracking Code")]
-        public string AnalyticsTrackingCode { get; private set; }
+        public string AnalyticsTrackingCode { get; set; }
 
         /// <summary>
         /// Site Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Site Type")]
-        public string SiteType { get; private set; }
+        public string SiteType { get; set; }
 
         /// <summary>
         /// Daily Bandwidth Limit (MB) (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Daily Bandwidth Limit (MB)")]
-        public string DailyBandwidthLimit { get; private set; }
+        public string DailyBandwidthLimit { get; set; }
 
         /// <summary>
         /// Daily Bandwidth Used (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Daily Bandwidth Used")]
-        public string DailyBandwidthUsed { get; private set; }
+        public string DailyBandwidthUsed { get; set; }
 
         /// <summary>
         /// Daily Request Time Limit (min) (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Daily Request Time Limit (min)")]
-        public string DailyRequestTimeLimit { get; private set; }
+        public string DailyRequestTimeLimit { get; set; }
 
         /// <summary>
         /// Daily Request Time Used (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Daily Request Time Used")]
-        public string DailyRequestTimeUsed { get; private set; }
+        public string DailyRequestTimeUsed { get; set; }
 
         /// <summary>
         /// Monthly Page Views Allowed (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Monthly Page Views Allowed")]
-        public string MonthlyPageViewsEntitlement { get; private set; }
+        public string MonthlyPageViewsEntitlement { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -18546,140 +18546,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -18692,58 +18692,58 @@ namespace Sharpforce
         /// <summary>
         /// Custom Site ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Custom Site ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Site ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Site ID")]
-        public string SiteId { get; private set; }
+        public string SiteId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -18756,23 +18756,23 @@ namespace Sharpforce
         /// <summary>
         /// Solution ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Solution ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Solution Number (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Solution Number")]
-        public string SolutionNumber { get; private set; }
+        public string SolutionNumber { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
@@ -18802,9 +18802,9 @@ namespace Sharpforce
         /// <summary>
         /// Reviewed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Reviewed")]
-        public bool? IsReviewed { get; private set; }
+        public bool? IsReviewed { get; set; }
 
         /// <summary>
         /// Description (textarea type in Salesforce)
@@ -18823,65 +18823,65 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Num Related Cases (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Num Related Cases")]
-        public string TimesUsed { get; private set; }
+        public string TimesUsed { get; set; }
 
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
         /// <summary>
         /// Is Html (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Html")]
-        public bool? IsHtml { get; private set; }
+        public bool? IsHtml { get; set; }
 
     }
 
@@ -18894,140 +18894,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -19040,58 +19040,58 @@ namespace Sharpforce
         /// <summary>
         /// Solution History ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Solution History ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Solution ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Solution ID")]
-        public string SolutionId { get; private set; }
+        public string SolutionId { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Changed Field (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Changed Field")]
-        public string Field { get; private set; }
+        public string Field { get; set; }
 
         /// <summary>
         /// Old Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Old Value")]
-        public string OldValue { get; private set; }
+        public string OldValue { get; set; }
 
         /// <summary>
         /// New Value (anyType type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "New Value")]
-        public string NewValue { get; private set; }
+        public string NewValue { get; set; }
 
     }
 
@@ -19104,72 +19104,72 @@ namespace Sharpforce
         /// <summary>
         /// Solution Status Value ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Solution Status Value ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Master Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Label")]
-        public string MasterLabel { get; private set; }
+        public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sort Order")]
-        public string SortOrder { get; private set; }
+        public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Default")]
-        public bool? IsDefault { get; private set; }
+        public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Is Reviewed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Reviewed")]
-        public bool? IsReviewed { get; private set; }
+        public bool? IsReviewed { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -19182,16 +19182,16 @@ namespace Sharpforce
         /// <summary>
         /// Static Resource ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Static Resource ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -19209,9 +19209,9 @@ namespace Sharpforce
         /// <summary>
         /// Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Size")]
-        public string BodyLength { get; private set; }
+        public string BodyLength { get; set; }
 
         /// <summary>
         /// Body (base64 type in Salesforce)
@@ -19227,37 +19227,37 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Cache Control (picklist type in Salesforce)
@@ -19277,9 +19277,9 @@ namespace Sharpforce
         /// <summary>
         /// Activity ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Activity ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Contact/Lead ID (reference type in Salesforce)
@@ -19335,65 +19335,65 @@ namespace Sharpforce
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountId { get; private set; }
+        public string AccountId { get; set; }
 
         /// <summary>
         /// Closed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Closed")]
-        public bool? IsClosed { get; private set; }
+        public bool? IsClosed { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Archived (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Archived")]
-        public bool? IsArchived { get; private set; }
+        public bool? IsArchived { get; set; }
 
         /// <summary>
         /// Call Duration (int type in Salesforce)
@@ -19437,16 +19437,16 @@ namespace Sharpforce
         /// <summary>
         /// Recurrence Activity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Recurrence Activity ID")]
-        public string RecurrenceActivityId { get; private set; }
+        public string RecurrenceActivityId { get; set; }
 
         /// <summary>
         /// Create Recurring Series of Tasks (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Create Recurring Series of Tasks")]
-        public bool? IsRecurrence { get; private set; }
+        public bool? IsRecurrence { get; set; }
 
         /// <summary>
         /// Start Date (date type in Salesforce)
@@ -19517,140 +19517,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -19663,72 +19663,72 @@ namespace Sharpforce
         /// <summary>
         /// Task Priority Value ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Task Priority Value ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Master Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Label")]
-        public string MasterLabel { get; private set; }
+        public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sort Order")]
-        public string SortOrder { get; private set; }
+        public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Default")]
-        public bool? IsDefault { get; private set; }
+        public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Is High Priority (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is High Priority")]
-        public bool? IsHighPriority { get; private set; }
+        public bool? IsHighPriority { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -19741,72 +19741,72 @@ namespace Sharpforce
         /// <summary>
         /// Task Status Value ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Task Status Value ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Master Label (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Master Label")]
-        public string MasterLabel { get; private set; }
+        public string MasterLabel { get; set; }
 
         /// <summary>
         /// Sort Order (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sort Order")]
-        public string SortOrder { get; private set; }
+        public string SortOrder { get; set; }
 
         /// <summary>
         /// Is Default (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Default")]
-        public bool? IsDefault { get; private set; }
+        public bool? IsDefault { get; set; }
 
         /// <summary>
         /// Is Closed (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Is Closed")]
-        public bool? IsClosed { get; private set; }
+        public bool? IsClosed { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -19819,9 +19819,9 @@ namespace Sharpforce
         /// <summary>
         /// Topic ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Topic ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -19838,30 +19838,30 @@ namespace Sharpforce
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Talking About (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Talking About")]
-        public string TalkingAbout { get; private set; }
+        public string TalkingAbout { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -19874,51 +19874,51 @@ namespace Sharpforce
         /// <summary>
         /// Topic Assignment Id (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Topic Assignment Id")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Topic ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Topic ID")]
-        public string TopicId { get; private set; }
+        public string TopicId { get; set; }
 
         /// <summary>
         /// Entity ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Entity ID")]
-        public string EntityId { get; private set; }
+        public string EntityId { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -19931,140 +19931,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -20077,84 +20077,84 @@ namespace Sharpforce
         /// <summary>
         /// Event Relation ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Event Relation ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Relation ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Relation ID")]
-        public string RelationId { get; private set; }
+        public string RelationId { get; set; }
 
         /// <summary>
         /// Event ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Event ID")]
-        public string EventId { get; private set; }
+        public string EventId { get; set; }
 
         /// <summary>
         /// Response Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Response Date")]
-        public string RespondedDate { get; private set; }
+        public string RespondedDate { get; set; }
 
         /// <summary>
         /// Response (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Response { get; private set; }
+        //[JsonIgnore]
+        public string Response { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Type { get; private set; }
+        //[JsonIgnore]
+        public string Type { get; set; }
 
     }
 
@@ -20167,9 +20167,9 @@ namespace Sharpforce
         /// <summary>
         /// User ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Username (string type in Salesforce)
@@ -20194,9 +20194,9 @@ namespace Sharpforce
         /// <summary>
         /// Full Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Full Name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Company Name (string type in Salesforce)
@@ -20420,9 +20420,9 @@ namespace Sharpforce
         /// <summary>
         /// User Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User Type")]
-        public string UserType { get; private set; }
+        public string UserType { get; set; }
 
         /// <summary>
         /// Language (picklist type in Salesforce)
@@ -20455,65 +20455,65 @@ namespace Sharpforce
         /// <summary>
         /// Last Login (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Login")]
-        public string LastLoginDate { get; private set; }
+        public string LastLoginDate { get; set; }
 
         /// <summary>
         /// Last Password Change or Reset (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Password Change or Reset")]
-        public string LastPasswordChangeDate { get; private set; }
+        public string LastPasswordChangeDate { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Offline Edition Trial Expiration Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Offline Edition Trial Expiration Date")]
-        public string OfflineTrialExpirationDate { get; private set; }
+        public string OfflineTrialExpirationDate { get; set; }
 
         /// <summary>
         /// Sales Anywhere Trial Expiration Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Sales Anywhere Trial Expiration Date")]
-        public string OfflinePdaTrialExpirationDate { get; private set; }
+        public string OfflinePdaTrialExpirationDate { get; set; }
 
         /// <summary>
         /// Marketing User (boolean type in Salesforce)
@@ -20890,16 +20890,16 @@ namespace Sharpforce
         /// <summary>
         /// Contact ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact ID")]
-        public string ContactId { get; private set; }
+        public string ContactId { get; set; }
 
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string AccountId { get; private set; }
+        public string AccountId { get; set; }
 
         /// <summary>
         /// Call Center ID (reference type in Salesforce)
@@ -20931,16 +20931,16 @@ namespace Sharpforce
         /// <summary>
         /// Url for full-sized Photo (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Url for full-sized Photo")]
-        public string FullPhotoUrl { get; private set; }
+        public string FullPhotoUrl { get; set; }
 
         /// <summary>
         /// Url for Thumbnail sized Photo (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Url for Thumbnail sized Photo")]
-        public string SmallPhotoUrl { get; private set; }
+        public string SmallPhotoUrl { get; set; }
 
         /// <summary>
         /// Chatter Email Highlights Frequency (picklist type in Salesforce)
@@ -20959,16 +20959,16 @@ namespace Sharpforce
         /// <summary>
         /// Last Viewed Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Viewed Date")]
-        public string LastViewedDate { get; private set; }
+        public string LastViewedDate { get; set; }
 
         /// <summary>
         /// Last Referenced Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Referenced Date")]
-        public string LastReferencedDate { get; private set; }
+        public string LastReferencedDate { get; set; }
 
     }
 
@@ -20981,140 +20981,140 @@ namespace Sharpforce
         /// <summary>
         /// Feed Item ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Feed Item Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Feed Item Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Comment Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Comment Count")]
-        public string CommentCount { get; private set; }
+        public string CommentCount { get; set; }
 
         /// <summary>
         /// Like Count (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Like Count")]
-        public string LikeCount { get; private set; }
+        public string LikeCount { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// Body (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Body { get; private set; }
+        //[JsonIgnore]
+        public string Body { get; set; }
 
         /// <summary>
         /// Link Url (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Link Url")]
-        public string LinkUrl { get; private set; }
+        public string LinkUrl { get; set; }
 
         /// <summary>
         /// Related Record ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Related Record ID")]
-        public string RelatedRecordId { get; private set; }
+        public string RelatedRecordId { get; set; }
 
         /// <summary>
         /// Content Data (base64 type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Data")]
-        public string ContentData { get; private set; }
+        public string ContentData { get; set; }
 
         /// <summary>
         /// Content File Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Name")]
-        public string ContentFileName { get; private set; }
+        public string ContentFileName { get; set; }
 
         /// <summary>
         /// Content Description (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Description")]
-        public string ContentDescription { get; private set; }
+        public string ContentDescription { get; set; }
 
         /// <summary>
         /// Content File Type (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content File Type")]
-        public string ContentType { get; private set; }
+        public string ContentType { get; set; }
 
         /// <summary>
         /// Content Size (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Content Size")]
-        public string ContentSize { get; private set; }
+        public string ContentSize { get; set; }
 
         /// <summary>
         /// InsertedBy ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "InsertedBy ID")]
-        public string InsertedById { get; private set; }
+        public string InsertedById { get; set; }
 
     }
 
@@ -21127,43 +21127,43 @@ namespace Sharpforce
         /// <summary>
         /// User License ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User License ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// License Def. ID (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "License Def. ID")]
-        public string LicenseDefinitionKey { get; private set; }
+        public string LicenseDefinitionKey { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Name { get; private set; }
+        //[JsonIgnore]
+        public string Name { get; set; }
 
         /// <summary>
         /// Monthly Logins Used (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Monthly Logins Used")]
-        public string MonthlyLoginsUsed { get; private set; }
+        public string MonthlyLoginsUsed { get; set; }
 
         /// <summary>
         /// Monthly Logins Allotted (int type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Monthly Logins Allotted")]
-        public string MonthlyLoginsEntitlement { get; private set; }
+        public string MonthlyLoginsEntitlement { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -21176,16 +21176,16 @@ namespace Sharpforce
         /// <summary>
         /// User Login ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User Login ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string UserId { get; private set; }
+        public string UserId { get; set; }
 
         /// <summary>
         /// Is Frozen (boolean type in Salesforce)
@@ -21202,16 +21202,16 @@ namespace Sharpforce
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
     }
 
@@ -21224,35 +21224,35 @@ namespace Sharpforce
         /// <summary>
         /// User Preference ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User Preference ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string UserId { get; private set; }
+        public string UserId { get; set; }
 
         /// <summary>
         /// Preference (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Preference { get; private set; }
+        //[JsonIgnore]
+        public string Preference { get; set; }
 
         /// <summary>
         /// Value (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Value { get; private set; }
+        //[JsonIgnore]
+        public string Value { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -21265,518 +21265,518 @@ namespace Sharpforce
         /// <summary>
         /// User ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Last Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Name")]
-        public string LastName { get; private set; }
+        public string LastName { get; set; }
 
         /// <summary>
         /// First Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "First Name")]
-        public string FirstName { get; private set; }
+        public string FirstName { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Name { get; private set; }
+        //[JsonIgnore]
+        public string Name { get; set; }
 
         /// <summary>
         /// Title (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Title { get; private set; }
+        //[JsonIgnore]
+        public string Title { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string ManagerId { get; private set; }
+        public string ManagerId { get; set; }
 
         /// <summary>
         /// Company Name (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Company Name")]
-        public string CompanyName { get; private set; }
+        public string CompanyName { get; set; }
 
         /// <summary>
         /// About Me (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "About Me")]
-        public string AboutMe { get; private set; }
+        public string AboutMe { get; set; }
 
         /// <summary>
         /// E-mail (email type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "E-mail")]
-        public string Email { get; private set; }
+        public string Email { get; set; }
 
         /// <summary>
         /// Phone (phone type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Phone { get; private set; }
+        //[JsonIgnore]
+        public string Phone { get; set; }
 
         /// <summary>
         /// Cell (phone type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Cell")]
-        public string MobilePhone { get; private set; }
+        public string MobilePhone { get; set; }
 
         /// <summary>
         /// Fax (phone type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Fax { get; private set; }
+        //[JsonIgnore]
+        public string Fax { get; set; }
 
         /// <summary>
         /// Street (textarea type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Street { get; private set; }
+        //[JsonIgnore]
+        public string Street { get; set; }
 
         /// <summary>
         /// City (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string City { get; private set; }
+        //[JsonIgnore]
+        public string City { get; set; }
 
         /// <summary>
         /// State/Province (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "State/Province")]
-        public string State { get; private set; }
+        public string State { get; set; }
 
         /// <summary>
         /// Zip/Postal Code (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Zip/Postal Code")]
-        public string PostalCode { get; private set; }
+        public string PostalCode { get; set; }
 
         /// <summary>
         /// Country (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Country { get; private set; }
+        //[JsonIgnore]
+        public string Country { get; set; }
 
         /// <summary>
         /// Latitude (double type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Latitude { get; private set; }
+        //[JsonIgnore]
+        public string Latitude { get; set; }
 
         /// <summary>
         /// Longitude (double type in Salesforce)
         /// </summary>
-        [JsonIgnore]
-        public string Longitude { get; private set; }
+        //[JsonIgnore]
+        public string Longitude { get; set; }
 
         /// <summary>
         /// User Photo has a badge overlay (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User Photo has a badge overlay")]
-        public bool? IsBadged { get; private set; }
+        public bool? IsBadged { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Active")]
-        public bool? IsActive { get; private set; }
+        public bool? IsActive { get; set; }
 
         /// <summary>
         /// ActivityRemindersPopup (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ActivityRemindersPopup")]
-        public bool? UserPreferencesActivityRemindersPopup { get; private set; }
+        public bool? UserPreferencesActivityRemindersPopup { get; set; }
 
         /// <summary>
         /// EventRemindersCheckboxDefault (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "EventRemindersCheckboxDefault")]
-        public bool? UserPreferencesEventRemindersCheckboxDefault { get; private set; }
+        public bool? UserPreferencesEventRemindersCheckboxDefault { get; set; }
 
         /// <summary>
         /// TaskRemindersCheckboxDefault (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "TaskRemindersCheckboxDefault")]
-        public bool? UserPreferencesTaskRemindersCheckboxDefault { get; private set; }
+        public bool? UserPreferencesTaskRemindersCheckboxDefault { get; set; }
 
         /// <summary>
         /// ReminderSoundOff (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ReminderSoundOff")]
-        public bool? UserPreferencesReminderSoundOff { get; private set; }
+        public bool? UserPreferencesReminderSoundOff { get; set; }
 
         /// <summary>
         /// DisableAllFeedsEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableAllFeedsEmail")]
-        public bool? UserPreferencesDisableAllFeedsEmail { get; private set; }
+        public bool? UserPreferencesDisableAllFeedsEmail { get; set; }
 
         /// <summary>
         /// DisableFollowersEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableFollowersEmail")]
-        public bool? UserPreferencesDisableFollowersEmail { get; private set; }
+        public bool? UserPreferencesDisableFollowersEmail { get; set; }
 
         /// <summary>
         /// DisableProfilePostEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableProfilePostEmail")]
-        public bool? UserPreferencesDisableProfilePostEmail { get; private set; }
+        public bool? UserPreferencesDisableProfilePostEmail { get; set; }
 
         /// <summary>
         /// DisableChangeCommentEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableChangeCommentEmail")]
-        public bool? UserPreferencesDisableChangeCommentEmail { get; private set; }
+        public bool? UserPreferencesDisableChangeCommentEmail { get; set; }
 
         /// <summary>
         /// DisableLaterCommentEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableLaterCommentEmail")]
-        public bool? UserPreferencesDisableLaterCommentEmail { get; private set; }
+        public bool? UserPreferencesDisableLaterCommentEmail { get; set; }
 
         /// <summary>
         /// DisProfPostCommentEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisProfPostCommentEmail")]
-        public bool? UserPreferencesDisProfPostCommentEmail { get; private set; }
+        public bool? UserPreferencesDisProfPostCommentEmail { get; set; }
 
         /// <summary>
         /// ContentNoEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentNoEmail")]
-        public bool? UserPreferencesContentNoEmail { get; private set; }
+        public bool? UserPreferencesContentNoEmail { get; set; }
 
         /// <summary>
         /// ContentEmailAsAndWhen (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ContentEmailAsAndWhen")]
-        public bool? UserPreferencesContentEmailAsAndWhen { get; private set; }
+        public bool? UserPreferencesContentEmailAsAndWhen { get; set; }
 
         /// <summary>
         /// ApexPagesDeveloperMode (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ApexPagesDeveloperMode")]
-        public bool? UserPreferencesApexPagesDeveloperMode { get; private set; }
+        public bool? UserPreferencesApexPagesDeveloperMode { get; set; }
 
         /// <summary>
         /// HideCSNGetChatterMobileTask (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "HideCSNGetChatterMobileTask")]
-        public bool? UserPreferencesHideCSNGetChatterMobileTask { get; private set; }
+        public bool? UserPreferencesHideCSNGetChatterMobileTask { get; set; }
 
         /// <summary>
         /// DisableMentionsPostEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableMentionsPostEmail")]
-        public bool? UserPreferencesDisableMentionsPostEmail { get; private set; }
+        public bool? UserPreferencesDisableMentionsPostEmail { get; set; }
 
         /// <summary>
         /// DisMentionsCommentEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisMentionsCommentEmail")]
-        public bool? UserPreferencesDisMentionsCommentEmail { get; private set; }
+        public bool? UserPreferencesDisMentionsCommentEmail { get; set; }
 
         /// <summary>
         /// HideCSNDesktopTask (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "HideCSNDesktopTask")]
-        public bool? UserPreferencesHideCSNDesktopTask { get; private set; }
+        public bool? UserPreferencesHideCSNDesktopTask { get; set; }
 
         /// <summary>
         /// HideChatterOnboardingSplash (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "HideChatterOnboardingSplash")]
-        public bool? UserPreferencesHideChatterOnboardingSplash { get; private set; }
+        public bool? UserPreferencesHideChatterOnboardingSplash { get; set; }
 
         /// <summary>
         /// HideSecondChatterOnboardingSplash (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "HideSecondChatterOnboardingSplash")]
-        public bool? UserPreferencesHideSecondChatterOnboardingSplash { get; private set; }
+        public bool? UserPreferencesHideSecondChatterOnboardingSplash { get; set; }
 
         /// <summary>
         /// DisCommentAfterLikeEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisCommentAfterLikeEmail")]
-        public bool? UserPreferencesDisCommentAfterLikeEmail { get; private set; }
+        public bool? UserPreferencesDisCommentAfterLikeEmail { get; set; }
 
         /// <summary>
         /// DisableLikeEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableLikeEmail")]
-        public bool? UserPreferencesDisableLikeEmail { get; private set; }
+        public bool? UserPreferencesDisableLikeEmail { get; set; }
 
         /// <summary>
         /// DisableMessageEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableMessageEmail")]
-        public bool? UserPreferencesDisableMessageEmail { get; private set; }
+        public bool? UserPreferencesDisableMessageEmail { get; set; }
 
         /// <summary>
         /// OptOutOfTouch (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "OptOutOfTouch")]
-        public bool? UserPreferencesOptOutOfTouch { get; private set; }
+        public bool? UserPreferencesOptOutOfTouch { get; set; }
 
         /// <summary>
         /// DisableBookmarkEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableBookmarkEmail")]
-        public bool? UserPreferencesDisableBookmarkEmail { get; private set; }
+        public bool? UserPreferencesDisableBookmarkEmail { get; set; }
 
         /// <summary>
         /// DisableSharePostEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableSharePostEmail")]
-        public bool? UserPreferencesDisableSharePostEmail { get; private set; }
+        public bool? UserPreferencesDisableSharePostEmail { get; set; }
 
         /// <summary>
         /// EnableAutoSubForFeeds (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "EnableAutoSubForFeeds")]
-        public bool? UserPreferencesEnableAutoSubForFeeds { get; private set; }
+        public bool? UserPreferencesEnableAutoSubForFeeds { get; set; }
 
         /// <summary>
         /// DisableFileShareNotificationsForApi (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableFileShareNotificationsForApi")]
-        public bool? UserPreferencesDisableFileShareNotificationsForApi { get; private set; }
+        public bool? UserPreferencesDisableFileShareNotificationsForApi { get; set; }
 
         /// <summary>
         /// ShowTitleToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowTitleToExternalUsers")]
-        public bool? UserPreferencesShowTitleToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowTitleToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowManagerToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowManagerToExternalUsers")]
-        public bool? UserPreferencesShowManagerToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowManagerToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowEmailToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowEmailToExternalUsers")]
-        public bool? UserPreferencesShowEmailToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowEmailToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowWorkPhoneToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowWorkPhoneToExternalUsers")]
-        public bool? UserPreferencesShowWorkPhoneToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowWorkPhoneToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowMobilePhoneToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowMobilePhoneToExternalUsers")]
-        public bool? UserPreferencesShowMobilePhoneToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowMobilePhoneToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowFaxToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowFaxToExternalUsers")]
-        public bool? UserPreferencesShowFaxToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowFaxToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowStreetAddressToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowStreetAddressToExternalUsers")]
-        public bool? UserPreferencesShowStreetAddressToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowStreetAddressToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowCityToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowCityToExternalUsers")]
-        public bool? UserPreferencesShowCityToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowCityToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowStateToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowStateToExternalUsers")]
-        public bool? UserPreferencesShowStateToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowStateToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowPostalCodeToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowPostalCodeToExternalUsers")]
-        public bool? UserPreferencesShowPostalCodeToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowPostalCodeToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowCountryToExternalUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowCountryToExternalUsers")]
-        public bool? UserPreferencesShowCountryToExternalUsers { get; private set; }
+        public bool? UserPreferencesShowCountryToExternalUsers { get; set; }
 
         /// <summary>
         /// ShowProfilePicToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowProfilePicToGuestUsers")]
-        public bool? UserPreferencesShowProfilePicToGuestUsers { get; private set; }
+        public bool? UserPreferencesShowProfilePicToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowTitleToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowTitleToGuestUsers")]
-        public bool? UserPreferencesShowTitleToGuestUsers { get; private set; }
+        public bool? UserPreferencesShowTitleToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowCityToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowCityToGuestUsers")]
-        public bool? UserPreferencesShowCityToGuestUsers { get; private set; }
+        public bool? UserPreferencesShowCityToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowStateToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowStateToGuestUsers")]
-        public bool? UserPreferencesShowStateToGuestUsers { get; private set; }
+        public bool? UserPreferencesShowStateToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowPostalCodeToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowPostalCodeToGuestUsers")]
-        public bool? UserPreferencesShowPostalCodeToGuestUsers { get; private set; }
+        public bool? UserPreferencesShowPostalCodeToGuestUsers { get; set; }
 
         /// <summary>
         /// ShowCountryToGuestUsers (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "ShowCountryToGuestUsers")]
-        public bool? UserPreferencesShowCountryToGuestUsers { get; private set; }
+        public bool? UserPreferencesShowCountryToGuestUsers { get; set; }
 
         /// <summary>
         /// DisableFeedbackEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableFeedbackEmail")]
-        public bool? UserPreferencesDisableFeedbackEmail { get; private set; }
+        public bool? UserPreferencesDisableFeedbackEmail { get; set; }
 
         /// <summary>
         /// DisableCoachingEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableCoachingEmail")]
-        public bool? UserPreferencesDisableCoachingEmail { get; private set; }
+        public bool? UserPreferencesDisableCoachingEmail { get; set; }
 
         /// <summary>
         /// DisableGoalEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableGoalEmail")]
-        public bool? UserPreferencesDisableGoalEmail { get; private set; }
+        public bool? UserPreferencesDisableGoalEmail { get; set; }
 
         /// <summary>
         /// DisableWorkEmail (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "DisableWorkEmail")]
-        public bool? UserPreferencesDisableWorkEmail { get; private set; }
+        public bool? UserPreferencesDisableWorkEmail { get; set; }
 
         /// <summary>
         /// HideS1BrowserUI (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "HideS1BrowserUI")]
-        public bool? UserPreferencesHideS1BrowserUI { get; private set; }
+        public bool? UserPreferencesHideS1BrowserUI { get; set; }
 
         /// <summary>
         /// Url for full-sized Photo (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Url for full-sized Photo")]
-        public string FullPhotoUrl { get; private set; }
+        public string FullPhotoUrl { get; set; }
 
         /// <summary>
         /// Url for Thumbnail sized Photo (url type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Url for Thumbnail sized Photo")]
-        public string SmallPhotoUrl { get; private set; }
+        public string SmallPhotoUrl { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -21789,65 +21789,65 @@ namespace Sharpforce
         /// <summary>
         /// User Record Access ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User Record Access ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string UserId { get; private set; }
+        public string UserId { get; set; }
 
         /// <summary>
         /// Record ID (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Record ID")]
-        public string RecordId { get; private set; }
+        public string RecordId { get; set; }
 
         /// <summary>
         /// Has Read Access (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Has Read Access")]
-        public bool? HasReadAccess { get; private set; }
+        public bool? HasReadAccess { get; set; }
 
         /// <summary>
         /// Has Edit Access (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Has Edit Access")]
-        public bool? HasEditAccess { get; private set; }
+        public bool? HasEditAccess { get; set; }
 
         /// <summary>
         /// Has Delete Access (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Has Delete Access")]
-        public bool? HasDeleteAccess { get; private set; }
+        public bool? HasDeleteAccess { get; set; }
 
         /// <summary>
         /// Has Transfer Access (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Has Transfer Access")]
-        public bool? HasTransferAccess { get; private set; }
+        public bool? HasTransferAccess { get; set; }
 
         /// <summary>
         /// Has All Access (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Has All Access")]
-        public bool? HasAllAccess { get; private set; }
+        public bool? HasAllAccess { get; set; }
 
         /// <summary>
         /// Maximum Access Level (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Maximum Access Level")]
-        public string MaxAccessLevel { get; private set; }
+        public string MaxAccessLevel { get; set; }
 
     }
 
@@ -21860,9 +21860,9 @@ namespace Sharpforce
         /// <summary>
         /// Role ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Role ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -21901,9 +21901,9 @@ namespace Sharpforce
         /// <summary>
         /// Contact Access Level for Account Owner (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Contact Access Level for Account Owner")]
-        public string ContactAccessForAccountOwner { get; private set; }
+        public string ContactAccessForAccountOwner { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
@@ -21915,30 +21915,30 @@ namespace Sharpforce
         /// <summary>
         /// May Forecast Manager Share (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "May Forecast Manager Share")]
-        public bool? MayForecastManagerShare { get; private set; }
+        public bool? MayForecastManagerShare { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
         /// <summary>
         /// Developer Name (string type in Salesforce)
@@ -21950,23 +21950,23 @@ namespace Sharpforce
         /// <summary>
         /// Account ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Account ID")]
-        public string PortalAccountId { get; private set; }
+        public string PortalAccountId { get; set; }
 
         /// <summary>
         /// Portal Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Portal Type")]
-        public string PortalType { get; private set; }
+        public string PortalType { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string PortalAccountOwnerId { get; private set; }
+        public string PortalAccountOwnerId { get; set; }
 
     }
 
@@ -21979,23 +21979,23 @@ namespace Sharpforce
         /// <summary>
         /// User Share ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User Share ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// User ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User ID")]
-        public string UserId { get; private set; }
+        public string UserId { get; set; }
 
         /// <summary>
         /// User/Group ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "User/Group ID")]
-        public string UserOrGroupId { get; private set; }
+        public string UserOrGroupId { get; set; }
 
         /// <summary>
         /// User Access Level (picklist type in Salesforce)
@@ -22007,30 +22007,30 @@ namespace Sharpforce
         /// <summary>
         /// Row Cause (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Row Cause")]
-        public string RowCause { get; private set; }
+        public string RowCause { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// Active (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Active")]
-        public bool? IsActive { get; private set; }
+        public bool? IsActive { get; set; }
 
     }
 
@@ -22043,51 +22043,51 @@ namespace Sharpforce
         /// <summary>
         /// Vote ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Vote ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Deleted (boolean type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Deleted")]
-        public bool? IsDeleted { get; private set; }
+        public bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Parent ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Parent ID")]
-        public string ParentId { get; private set; }
+        public string ParentId { get; set; }
 
         /// <summary>
         /// Vote Type (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Vote Type")]
-        public string Type { get; private set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
@@ -22100,16 +22100,16 @@ namespace Sharpforce
         /// <summary>
         /// Custom Link ID (id type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Custom Link ID")]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Page Or sObject Type Name (picklist type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Page Or sObject Type Name")]
-        public string PageOrSobjectType { get; private set; }
+        public string PageOrSobjectType { get; set; }
 
         /// <summary>
         /// Name (string type in Salesforce)
@@ -22242,44 +22242,44 @@ namespace Sharpforce
         /// <summary>
         /// Namespace Prefix (string type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Namespace Prefix")]
-        public string NamespacePrefix { get; private set; }
+        public string NamespacePrefix { get; set; }
 
         /// <summary>
         /// Created Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created Date")]
-        public string CreatedDate { get; private set; }
+        public string CreatedDate { get; set; }
 
         /// <summary>
         /// Created By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Created By ID")]
-        public string CreatedById { get; private set; }
+        public string CreatedById { get; set; }
 
         /// <summary>
         /// Last Modified Date (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified Date")]
-        public string LastModifiedDate { get; private set; }
+        public string LastModifiedDate { get; set; }
 
         /// <summary>
         /// Last Modified By ID (reference type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "Last Modified By ID")]
-        public string LastModifiedById { get; private set; }
+        public string LastModifiedById { get; set; }
 
         /// <summary>
         /// System Modstamp (datetime type in Salesforce)
         /// </summary>
-        [JsonIgnore]
+        //[JsonIgnore]
         //[Display(Name = "System Modstamp")]
-        public string SystemModstamp { get; private set; }
+        public string SystemModstamp { get; set; }
 
     }
 
