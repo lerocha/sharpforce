@@ -387,7 +387,7 @@ namespace Sharpforce.Test
             // CRUD Operations
             //-----------------------------------------------------------------------------
 
-            // Add a new record using annonymous object
+            // Add a new record using anonymous object
 	        var id = service.Add<Contact>(new { FirstName = "John", LastName = "Smith" });
 
             // Add a new record using POCO object
@@ -400,7 +400,7 @@ namespace Sharpforce.Test
 	        contact = new Contact {Id = id, Email = "jsmith@gmail.com"};
 	        service.Update<Contact>(contact);
 
-            // Update a record using annonymous object
+            // Update a record using anonymous object
             service.Update<Contact>(new { Email = "jsmith@yahoo.com" }, id);
 
             // Delete a record
