@@ -4,9 +4,11 @@ It implements a simple client for the [Salesforce REST API][1] targeting multipl
 
 ### Features
 
-* Supports .NET 4 or later, Xamarin iOS, Xamarin Android, Windows Phone 8, Windows 8, and Silverlight 5
+* Supported Platforms: .NET 4 or later, Xamarin iOS, Xamarin Android, Windows Phone 8, Windows 8, and Silverlight 5
 * Supported Salesforce APIs: Query, CRUD, Versions, Describe
 * Auto-generated C# classes (POCOs) for Salesforce objects
+
+### Usage
 
 ```csharp
 // Instantiate the client using a RefreshToken
