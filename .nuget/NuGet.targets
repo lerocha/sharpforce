@@ -36,7 +36,8 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <PackagesProjectConfig>packages.$(MSBuildProjectName.Replace(' ', '_')).config</PackagesProjectConfig>
+        <PackagesProjectConfig Condition=" '$(OS)' == 'Windows_NT'">packages.$(MSBuildProjectName.Replace(' ', '_')).config</PackagesProjectConfig>
+        <PackagesConfig Condition=" '$(OS)' != 'Windows_NT'">$(MSBuildProjectDirectory)/packages.config</PackagesConfig>
     </PropertyGroup>
 
     <Choose>
