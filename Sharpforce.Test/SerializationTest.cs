@@ -19,7 +19,7 @@ namespace Sharpforce.Test
             };
 
             var jsonRequest = contact.ToJson();
-            Assert.AreEqual("{\r\n  \"LastName\": \"Rocha\",\r\n  \"FirstName\": \"Luis\",\r\n  \"Salutation\": \"Mr.\",\r\n  \"Phone\": \"(512) 757-6000\"\r\n}", jsonRequest);
+            Assert.AreEqual("{\n  \"LastName\": \"Rocha\",\n  \"FirstName\": \"Luis\",\n  \"Salutation\": \"Mr.\",\n  \"Phone\": \"(512) 757-6000\"\n}", jsonRequest.Replace("\r",""));
         }
 
         [Test]
@@ -44,7 +44,7 @@ namespace Sharpforce.Test
             var jsonRequest = contact.ToJson();
 
             // Assert that updatable and non null properties are serialized.
-            Assert.AreEqual("{\r\n  \"LastName\": \"Rocha\",\r\n  \"FirstName\": \"Luis\",\r\n  \"Salutation\": \"Mr.\",\r\n  \"Phone\": \"(512) 757-6000\"\r\n}", jsonRequest);
+            Assert.AreEqual("{\n  \"LastName\": \"Rocha\",\n  \"FirstName\": \"Luis\",\n  \"Salutation\": \"Mr.\",\n  \"Phone\": \"(512) 757-6000\"\n}", jsonRequest.Replace("\r",""));
         }
 
         [Test]
