@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="SalesforceClient.cs" />
     <Compile Include="SalesforceRequest.cs" />
+    <Compile Include="SalesforceRequestFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

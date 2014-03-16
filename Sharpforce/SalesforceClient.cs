@@ -70,16 +70,7 @@ namespace Sharpforce
         public string Add<T>(object obj) where T : new()
         {
             if (obj == null) throw new ArgumentNullException("obj");
-
-            var request = new SalesforceRequest
-                                    {
-                                        AccessToken = AccessToken,
-                                        BaseUrl = InstanceUrl,
-                                        Resource = string.Format("/services/data/{0}/sobjects/{1}", Version, typeof(T).Name),
-                                        Method = HttpMethod.Post,
-                                        Body = obj,
-                                    };
-
+            var request = SalesforceRequestFactory.CreateAddRequest<T>(AccessToken, InstanceUrl, Version, obj);
             var response = ExecuteRequest<AddResponse>(request);
 
             // Set Id property with the Id returned in the response.
@@ -104,14 +95,7 @@ namespace Sharpforce
         public T Get<T>(string id) where T : new()
         {
             if (id == null) throw new ArgumentNullException("id");
-
-            var request = new SalesforceRequest
-            {
-                AccessToken = AccessToken,
-                BaseUrl = InstanceUrl,
-                Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
-                Method = HttpMethod.Get,
-            };
+            var request = SalesforceRequestFactory.CreateGetRequest<T>(AccessToken, InstanceUrl, Version, id);
             var response = ExecuteRequest<T>(request);
             return response.Data;
         }
@@ -127,15 +111,7 @@ namespace Sharpforce
         {
             if (obj == null) throw new ArgumentNullException("obj");
             if (id == null) throw new ArgumentNullException("id");
-
-            var request = new SalesforceRequest
-            {
-                AccessToken = AccessToken,
-                BaseUrl = InstanceUrl,
-                Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
-                Method = new HttpMethod("PATCH"),
-                Body = obj,
-            };
+            var request = SalesforceRequestFactory.CreateUpdateRequest<T>(AccessToken, InstanceUrl, Version, obj, id);
             ExecuteRequest<SalesforceResponse>(request);
         }
 
@@ -178,14 +154,7 @@ namespace Sharpforce
         public void Delete<T>(string id) where T : new()
         {
             if (id == null) throw new ArgumentNullException("id");
-
-            var request = new SalesforceRequest
-            {
-                AccessToken = AccessToken,
-                BaseUrl = InstanceUrl,
-                Resource = string.Format("/services/data/{0}/sobjects/{1}/{2}", Version, typeof(T).Name, id),
-                Method = HttpMethod.Delete
-            };
+            var request = SalesforceRequestFactory.CreateDeleteRequest<T>(AccessToken, InstanceUrl, Version, id);
             ExecuteRequest<SalesforceResponse>(request);
         }
 
@@ -198,15 +167,7 @@ namespace Sharpforce
         public IList<T> Query<T>(string query) where T : new()
         {
             if (query == null) throw new ArgumentNullException("query");
-
-            var request = new SalesforceRequest
-            {
-                AccessToken = AccessToken,
-                BaseUrl = InstanceUrl,
-                Resource = string.Format("/services/data/{0}/query/?q={1}", Version, query),
-                Method = HttpMethod.Get
-            };
-
+            var request = SalesforceRequestFactory.CreateQueryRequest<T>(AccessToken, InstanceUrl, Version, query);
             var response = ExecuteRequest<QueryResponse<T>>(request);
             return response.Data.Records;
         }
@@ -217,13 +178,7 @@ namespace Sharpforce
         /// <returns></returns>
         public IList<ApiVersion> GetVersions()
         {
-            var request = new SalesforceRequest
-            {
-                AccessToken = AccessToken,
-                BaseUrl = InstanceUrl,
-                Resource = "/services/data/",
-                Method = HttpMethod.Get
-            };
+            var request = SalesforceRequestFactory.CreateVersionsRequest(AccessToken, InstanceUrl, Version);
             var response = ExecuteRequest<List<ApiVersion>>(request);
             return response.Data;
         }
@@ -238,14 +193,7 @@ namespace Sharpforce
         {
             if (name == null) throw new ArgumentNullException("name");
 
-            var request = new SalesforceRequest
-            {
-                AccessToken = AccessToken,
-                BaseUrl = InstanceUrl,
-                Resource = string.Format("/services/data/{0}/sobjects/{1}/describe/", Version, name),
-                Method = HttpMethod.Get
-            };
-
+            var request = SalesforceRequestFactory.CreateDescribeRequest(AccessToken, InstanceUrl, Version, name);
             var response = ExecuteRequest<DescribeResponse>(request);
             return response.Data;
         }
@@ -257,14 +205,7 @@ namespace Sharpforce
         /// <returns></returns>
         public DescribeGlobalResponse DescribeGlobal()
         {
-            var request = new SalesforceRequest
-            {
-                AccessToken = AccessToken,
-                BaseUrl = InstanceUrl,
-                Resource = string.Format("/services/data/{0}/sobjects/", Version),
-                Method = HttpMethod.Get
-            };
-
+            var request = SalesforceRequestFactory.CreateDescribeGlobalRequest(AccessToken, InstanceUrl, Version);
             var response = ExecuteRequest<DescribeGlobalResponse>(request);
             return response.Data;
         }
