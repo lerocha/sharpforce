@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Sharpforce.Responses;
 
@@ -270,41 +271,47 @@ namespace Sharpforce
 
         private SalesforceResponse<T> ExecuteRequest<T>(SalesforceRequest request) where T : new()
         {
+            var response = ExecuteRequestAsync<T>(request).Result;
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new SalesforceException(response.Message, response.StatusCode, response.ErrorCode, null);
+            }
+            return response;
+        }
+
+        private async Task<SalesforceResponse<T>> ExecuteRequestAsync<T>(SalesforceRequest request) where T : new()
+        {
             using (var httpClient = new HttpClient(new HttpClientHandler()))
             {
-                var httpResponseMessage = httpClient.SendAsync(request.ToHttpRequestMessage()).Result;
+                var httpResponseMessage = await httpClient.SendAsync(request.ToHttpRequestMessage());
 
                 // Read response as RefreshTokenResponse.
-                var responseContent = httpResponseMessage.Content.ReadAsStringAsync().Result;
+                var responseContent = await httpResponseMessage.Content.ReadAsStringAsync();
                 Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}; Data={3}", httpResponseMessage.StatusCode, string.Empty, httpResponseMessage.ReasonPhrase, responseContent);
 
-                // Check for errors
-                if (!httpResponseMessage.IsSuccessStatusCode)
-                {
-                    // Sets the error information
-                    string message = httpResponseMessage.ReasonPhrase;
-                    var errors = responseContent.ToObject<List<SalesforceResponse>>();
+                var salesforceResponse = new SalesforceResponse<T>
+                                         {
+                                             StatusCode = httpResponseMessage.StatusCode,
+                                             IsSuccessStatusCode = httpResponseMessage.IsSuccessStatusCode,
+                                             Message = httpResponseMessage.ReasonPhrase
+                                         };
 
-                    string errorCode = null;
+                // Parse the response
+                if (httpResponseMessage.IsSuccessStatusCode)
+                {
+                    // Parse the successful the response.
+                    salesforceResponse.Data = responseContent.ToObject<T>();
+                }
+                else
+                {
+                    // Parse the error response.
+                    var errors = responseContent.ToObject<List<SalesforceResponse>>();
                     if (errors.Count > 0)
                     {
-                        errorCode = errors[0].ErrorCode;
-                        message = errors[0].Message;
+                        salesforceResponse.ErrorCode = errors[0].ErrorCode;
+                        salesforceResponse.Message = errors[0].Message;
                     }
-
-                    Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}", httpResponseMessage.StatusCode, errorCode, message);
-                    throw new SalesforceException(message, httpResponseMessage.StatusCode, errorCode, null);
                 }
-
-                // Parse the response.
-                var data = responseContent.ToObject<T>();
-
-                var salesforceResponse = new SalesforceResponse<T>
-                {
-                    Data = data,
-                    StatusCode = httpResponseMessage.StatusCode, 
-                    Message = httpResponseMessage.ReasonPhrase
-                };
 
                 Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}; Data={3}", salesforceResponse.StatusCode, string.Empty, salesforceResponse.Message, responseContent);
                 return salesforceResponse;

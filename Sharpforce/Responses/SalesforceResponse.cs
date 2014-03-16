@@ -10,6 +10,7 @@ namespace Sharpforce.Responses
         public string ErrorCode { get; set; }
         public string Message { get; set; }
         public HttpStatusCode StatusCode { get; set; }
+        public bool IsSuccessStatusCode { get; set; }
     }
 
     public class SalesforceResponse<T> : SalesforceResponse
