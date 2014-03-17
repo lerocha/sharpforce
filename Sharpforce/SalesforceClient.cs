@@ -72,18 +72,23 @@ namespace Sharpforce
             if (obj == null) throw new ArgumentNullException("obj");
             var request = SalesforceRequestFactory.CreateAddRequest<T>(AccessToken, InstanceUrl, Version, obj);
             var response = ExecuteRequest<AddResponse>(request);
+            return SetObjectId<T>(obj, response.Data.Id);
+        }
 
-            // Set Id property with the Id returned in the response.
-            if (!obj.GetType().IsAnonymous())
-            {
-                var property = obj.GetType().GetProperty("Id");
-                if (property != null)
-                {
-                    property.SetValue(obj,response.Data.Id, null);
-                }
-            }
-
-            return response.Data.Id;
+        /// <summary>
+        /// Creates an object in Salesforce.
+        /// http://www.salesforce.com/us/developer/docs/api_rest/Content/dome_sobject_create.htm
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj">Salesforce object to be created.</param>
+        /// <returns></returns>
+        public async Task<AddResponse> AddAsync<T>(object obj) where T : new()
+        {
+            if (obj == null) throw new ArgumentNullException("obj");
+            var request = SalesforceRequestFactory.CreateAddRequest<T>(AccessToken, InstanceUrl, Version, obj);
+            var response = await ExecuteRequestAsync<AddResponse>(request);
+            if (response.Data != null) SetObjectId<T>(obj, response.Data.Id);
+            return response.Data;
         }
 
         /// <summary>
@@ -101,6 +106,20 @@ namespace Sharpforce
         }
 
         /// <summary>
+        /// Get an Salesforce object.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id">The id of the Salesforce object to be retrieved.</param>
+        /// <returns></returns>
+        public async Task<T> GetAsync<T>(string id) where T : new()
+        {
+            if (id == null) throw new ArgumentNullException("id");
+            var request = SalesforceRequestFactory.CreateGetRequest<T>(AccessToken, InstanceUrl, Version, id);
+            var response = await ExecuteRequestAsync<T>(request);
+            return response.Data;
+        }
+
+        /// <summary>
         /// Updates an object in Salesforce.
         /// </summary>
         /// <typeparam name="T"></typeparam>
@@ -113,6 +132,22 @@ namespace Sharpforce
             if (id == null) throw new ArgumentNullException("id");
             var request = SalesforceRequestFactory.CreateUpdateRequest<T>(AccessToken, InstanceUrl, Version, obj, id);
             ExecuteRequest<SalesforceResponse>(request);
+        }
+
+        /// <summary>
+        /// Updates an object in Salesforce.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj">Salesforce object to be updated.</param>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<SalesforceResponse> UpdateAsync<T>(object obj, string id) where T : new()
+        {
+            if (obj == null) throw new ArgumentNullException("obj");
+            if (id == null) throw new ArgumentNullException("id");
+            var request = SalesforceRequestFactory.CreateUpdateRequest<T>(AccessToken, InstanceUrl, Version, obj, id);
+            var response = await ExecuteRequestAsync<SalesforceResponse>(request);
+            return response;
         }
 
         /// <summary>
@@ -146,6 +181,36 @@ namespace Sharpforce
         }
 
         /// <summary>
+        /// Updates an object in Salesforce.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj">Salesforce object to be updated.</param>
+        /// <exception cref="System.ArgumentNullException">obj</exception>
+        /// <exception cref="System.ArgumentException">Object to update is missing Id property;obj</exception>
+        public Task<SalesforceResponse> UpdateAsync<T>(T obj) where T : new()
+        {
+            if (obj == null) throw new ArgumentNullException("obj");
+
+            var property = obj.GetType().GetProperty("Id");
+            if (property == null) throw new ArgumentException("Id property is missing", "obj");
+
+            var id = property.GetValue(obj, null) as string;
+            if (string.IsNullOrEmpty(id)) throw new ArgumentException("Id property cannot be null or empty", "obj");
+
+            try
+            {
+                // remove id property
+                property.SetValue(obj, null, null);
+                return UpdateAsync<T>(obj, id);
+            }
+            finally
+            {
+                // restore id property
+                property.SetValue(obj, id, null);
+            }
+        }
+
+        /// <summary>
         /// Deletes an Salesforce object.
         /// </summary>
         /// <typeparam name="T"></typeparam>
@@ -156,6 +221,20 @@ namespace Sharpforce
             if (id == null) throw new ArgumentNullException("id");
             var request = SalesforceRequestFactory.CreateDeleteRequest<T>(AccessToken, InstanceUrl, Version, id);
             ExecuteRequest<SalesforceResponse>(request);
+        }
+
+        /// <summary>
+        /// Deletes an Salesforce object.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id">The id of the Salesforce object to be deleted.</param>
+        /// <returns></returns>
+        public async Task<SalesforceResponse> DeleteAsync<T>(string id) where T : new()
+        {
+            if (id == null) throw new ArgumentNullException("id");
+            var request = SalesforceRequestFactory.CreateDeleteRequest<T>(AccessToken, InstanceUrl, Version, id);
+            var response = await ExecuteRequestAsync<SalesforceResponse>(request);
+            return response;
         }
 
         /// <summary>
@@ -173,6 +252,20 @@ namespace Sharpforce
         }
 
         /// <summary>
+        /// Execute a SOQL Query
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="query">SOQL query</param>
+        /// <returns></returns>
+        public async Task<IList<T>> QueryAsync<T>(string query) where T : new()
+        {
+            if (query == null) throw new ArgumentNullException("query");
+            var request = SalesforceRequestFactory.CreateQueryRequest<T>(AccessToken, InstanceUrl, Version, query);
+            var response = await ExecuteRequestAsync<QueryResponse<T>>(request);
+            return (response.Data != null ? response.Data.Records : null);
+        }
+
+        /// <summary>
         /// Gets available API the versions.
         /// </summary>
         /// <returns></returns>
@@ -180,6 +273,17 @@ namespace Sharpforce
         {
             var request = SalesforceRequestFactory.CreateVersionsRequest(AccessToken, InstanceUrl, Version);
             var response = ExecuteRequest<List<ApiVersion>>(request);
+            return response.Data;
+        }
+
+        /// <summary>
+        /// Gets available API the versions.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<IList<ApiVersion>> GetVersionsAsync()
+        {
+            var request = SalesforceRequestFactory.CreateVersionsRequest(AccessToken, InstanceUrl, Version);
+            var response = await ExecuteRequestAsync<List<ApiVersion>>(request);
             return response.Data;
         }
 
@@ -192,9 +296,22 @@ namespace Sharpforce
         public DescribeResponse Describe(string name)
         {
             if (name == null) throw new ArgumentNullException("name");
-
             var request = SalesforceRequestFactory.CreateDescribeRequest(AccessToken, InstanceUrl, Version, name);
             var response = ExecuteRequest<DescribeResponse>(request);
+            return response.Data;
+        }
+
+        /// <summary>
+        /// Completely describes the individual metadata at all levels for the specified object.
+        /// For example, this can be used to retrieve the fields, URLs, and child relationships for the Account object.
+        /// </summary>
+        /// <param name="name">The Salesforce object name.</param>
+        /// <returns></returns>
+        public async Task<DescribeResponse> DescribeAsync(string name)
+        {
+            if (name == null) throw new ArgumentNullException("name");
+            var request = SalesforceRequestFactory.CreateDescribeRequest(AccessToken, InstanceUrl, Version, name);
+            var response = await ExecuteRequestAsync<DescribeResponse>(request);
             return response.Data;
         }
 
@@ -207,6 +324,18 @@ namespace Sharpforce
         {
             var request = SalesforceRequestFactory.CreateDescribeGlobalRequest(AccessToken, InstanceUrl, Version);
             var response = ExecuteRequest<DescribeGlobalResponse>(request);
+            return response.Data;
+        }
+
+        /// <summary>
+        /// Lists the available objects and their metadata for your organization's data.
+        /// In addition, it provides the organization encoding, as well as maximum batch size permitted in queries
+        /// </summary>
+        /// <returns></returns>
+        public async Task<DescribeGlobalResponse> DescribeGlobalAsync()
+        {
+            var request = SalesforceRequestFactory.CreateDescribeGlobalRequest(AccessToken, InstanceUrl, Version);
+            var response = await ExecuteRequestAsync<DescribeGlobalResponse>(request);
             return response.Data;
         }
 
@@ -257,6 +386,20 @@ namespace Sharpforce
                 Debug.WriteLine("StatusCode={0}; ErrorCode={1}; Message={2}; Data={3}", salesforceResponse.StatusCode, string.Empty, salesforceResponse.Message, responseContent);
                 return salesforceResponse;
             }
+        }
+
+        private static string SetObjectId<T>(object obj, string id) where T : new()
+        {
+            // Set Id property with the Id returned in the response.
+            if (!obj.GetType().IsAnonymous())
+            {
+                var property = obj.GetType().GetProperty("Id");
+                if (property != null)
+                {
+                    property.SetValue(obj, id, null);
+                }
+            }
+            return id;
         }
     }
 }

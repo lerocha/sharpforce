@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Net;
 
 namespace Sharpforce.Responses
@@ -29,18 +28,6 @@ namespace Sharpforce.Responses
         public override string ToString()
         {
             return string.Format("StatusCode={0}; ErrorCode={1}; Message={2}; Data={3}", StatusCode, ErrorCode, Message, Data);
-        }
-    }
-
-    public class AddResponse : SalesforceResponse
-    {
-        public string Id { get; set; }
-        public bool Success { get; set; }
-        public List<string> Errors { get; set; }
-
-        public override string ToString()
-        {
-            return string.Format("{0}; Id={1}; Success={2}", base.ToString(), Id, Success);
         }
     }
 }
