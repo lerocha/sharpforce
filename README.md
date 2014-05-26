@@ -1,4 +1,4 @@
-## Sharpforce - Salesforce REST API client for .NET and Xamarin iOS & Android
+## Sharpforce - Salesforce REST API client for .NET, Xamarin.iOS and Xamarin.Android
 
 It implements a simple client for the [Salesforce REST API][1] targeting multiple platforms (Portable Class Library).
 
